@@ -1,0 +1,207 @@
+[
+  {
+    "finding": "A11",
+    "case": "positive_false_no_entry",
+    "params": {
+      "growth": 400000000000000.0,
+      "network": 0.0,
+      "growth_end": 1.0,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 1.0,
+      "margin_y": 1.0,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "bounds": {
+      "delay_lower": 0.0,
+      "delay_upper": 0.0,
+      "announcement_upper": 2.0,
+      "scouting_points": 65,
+      "tolerance": 1e-10,
+      "payoff_atol": 1e-10,
+      "payoff_rtol": 1e-08,
+      "max_evaluations": 20000
+    },
+    "outside_option": 99999999999999.75,
+    "reference_payoff_fraction": "100000000000000",
+    "reference_payoff": 100000000000000.0,
+    "reference_gap_fraction": "1/4",
+    "reference_gap": 0.25,
+    "actual_payoffs": {
+      "RF": 99999999999999.42,
+      "RL": 99999999999999.42,
+      "DF": 99999999999999.42,
+      "DL": 99999999999999.42
+    },
+    "actual_gap": -0.328125,
+    "expected_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL"
+    ],
+    "actual_preference": [
+      "no_entry"
+    ],
+    "local_quality_status": "pass",
+    "defect_reproduced": true
+  },
+  {
+    "finding": "A11",
+    "case": "negative_false_entry",
+    "params": {
+      "growth": 4000000000000.0,
+      "network": 0.0,
+      "growth_end": 1.0,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 1.0,
+      "margin_y": 1.0,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "bounds": {
+      "delay_lower": 0.0,
+      "delay_upper": 0.0,
+      "announcement_upper": 2.0,
+      "scouting_points": 65,
+      "tolerance": 1e-10,
+      "payoff_atol": 1e-10,
+      "payoff_rtol": 1e-08,
+      "max_evaluations": 20000
+    },
+    "outside_option": 1000000000000.0002,
+    "reference_payoff_fraction": "1000000000000",
+    "reference_payoff": 1000000000000.0,
+    "reference_gap_fraction": "-1/4096",
+    "reference_gap": -0.000244140625,
+    "actual_payoffs": {
+      "RF": 1000000000000.0026,
+      "RL": 1000000000000.0026,
+      "DF": 1000000000000.0026,
+      "DL": 1000000000000.0026
+    },
+    "actual_gap": 0.0023193359375,
+    "expected_preference": [
+      "no_entry"
+    ],
+    "actual_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL"
+    ],
+    "local_quality_status": "pass",
+    "defect_reproduced": true
+  },
+  {
+    "finding": "A11",
+    "case": "zero_false_entry",
+    "params": {
+      "growth": 400000000.0,
+      "network": 0.0,
+      "growth_end": 1.0,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 1.0,
+      "margin_y": 1.0,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "bounds": {
+      "delay_lower": 0.0,
+      "delay_upper": 0.0,
+      "announcement_upper": 2.0,
+      "scouting_points": 65,
+      "tolerance": 1e-10,
+      "payoff_atol": 1e-10,
+      "payoff_rtol": 1e-08,
+      "max_evaluations": 20000
+    },
+    "outside_option": 100000000.0,
+    "reference_payoff_fraction": "100000000",
+    "reference_payoff": 100000000.0,
+    "reference_gap_fraction": "0",
+    "reference_gap": 0.0,
+    "actual_payoffs": {
+      "RF": 100000000.00000018,
+      "RL": 100000000.00000018,
+      "DF": 100000000.00000018,
+      "DL": 100000000.00000018
+    },
+    "actual_gap": 1.7881393432617188e-07,
+    "expected_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL",
+      "no_entry"
+    ],
+    "actual_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL"
+    ],
+    "local_quality_status": "pass",
+    "defect_reproduced": true
+  },
+  {
+    "finding": "A11",
+    "case": "zero_false_no_entry",
+    "params": {
+      "growth": 400000000000000.0,
+      "network": 0.0,
+      "growth_end": 1.0,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 1.0,
+      "margin_y": 1.0,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "bounds": {
+      "delay_lower": 0.0,
+      "delay_upper": 0.0,
+      "announcement_upper": 2.0,
+      "scouting_points": 65,
+      "tolerance": 1e-10,
+      "payoff_atol": 1e-10,
+      "payoff_rtol": 1e-08,
+      "max_evaluations": 20000
+    },
+    "outside_option": 100000000000000.0,
+    "reference_payoff_fraction": "100000000000000",
+    "reference_payoff": 100000000000000.0,
+    "reference_gap_fraction": "0",
+    "reference_gap": 0.0,
+    "actual_payoffs": {
+      "RF": 99999999999999.42,
+      "RL": 99999999999999.42,
+      "DF": 99999999999999.42,
+      "DL": 99999999999999.42
+    },
+    "actual_gap": -0.578125,
+    "expected_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL",
+      "no_entry"
+    ],
+    "actual_preference": [
+      "no_entry"
+    ],
+    "local_quality_status": "pass",
+    "defect_reproduced": true
+  }
+]

@@ -1,0 +1,2810 @@
+[
+  {
+    "params": {
+      "growth": 1.0,
+      "network": 0.0,
+      "growth_end": 3.0,
+      "horizon": 3.0,
+      "quality_ratio": 1.0,
+      "margin_x": 1.0,
+      "margin_y": 0.25,
+      "discount": 800.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 6.011550988392243e+17,
+      "learning_rate": 50.0
+    },
+    "lower": {
+      "reference_200": {
+        "precision": 200,
+        "bracket": "-0.00011516653054888878749213557425575293374295383279063236705690522546119462749683569653357874251715012116908300900319207088780633266082328912534166445948562000052485470118098684276554225362003523424490900",
+        "sign": -1,
+        "log_abs": "-809.06913138534528137382412491016915916478693788416766720551738004646171643099245629296475816597610857326141537609889119833431178059830099595597137767241747160286580409399157209340354678871921691986237",
+        "rounded_value": -0.0
+      },
+      "reference_400": {
+        "precision": 400,
+        "bracket": "-0.0001151665305488887874921355742557529337429538327906323670569052254611946274968356965335787425171501211690830090031920708878063326608232891253416644594856200005248547011809868427655422536200352342449089952744938742892850964250991507650816755042386692132446859130641929965068581517752290968665137303733411071740962439270210927730098644484531718061522037435315755050512214752693137424496192138491711250567",
+        "sign": -1,
+        "log_abs": "-809.0691313853452813738241249101691591647869378841676672055173800464617164309924562929647581659761085732614153760988911983343117805983009959559713776724174716028658040939915720934035467887192169198623716057722729367338641016890765099086112464446627568961596299199485151682364389684508831378462218202697372643766705057549427392776178112642815257554437064165525925828882983835844044162689169562180219087",
+        "rounded_value": -0.0
+      }
+    },
+    "upper": {
+      "reference_200": {
+        "precision": 200,
+        "bracket": "7.8124999999999999997763657358945770475320617332132082418915539183055244003607828557009260162335070445565174544311939299801377514552204230488098570985463663458252189723064308597241131778468559408200207E-7",
+        "sign": 1,
+        "log_abs": "-1614.0623706358957999020212158547501869448492126938167875595546290306441217637227187564656403711534404638106262760053089397057837781692830890161963705233237940065164958645932806471426523377346914179538",
+        "rounded_value": 0.0
+      },
+      "reference_400": {
+        "precision": 400,
+        "bracket": "7.812499999999999999776365735894577047532061733213208241891553918305524400360782855700926016233507044556517454431193929980137751455220423048809857098546366345825218972306430859724113177846855940820020661107353012088021654266942757028695561915452811577183400642018081407560326275770024325346510427532293087214552418338047520243596635048701129684842047244192551755341788137167689496344062631121189446340E-7",
+        "sign": 1,
+        "log_abs": "-1614.062370635895799902021215854750186944849212693816787559554629030644121763722718756465640371153440463810626276005308939705783778169283089016196370523323794006516495864593280647142652337734691417953794506687978767031970465729189979336086295983958249576242944696522820086078779072626932406562197912568265857343200852243210695303364005460573008010305770096319966274778307559902447590238792609690899618",
+        "rounded_value": 0.0
+      }
+    },
+    "selected_followers": [
+      {
+        "strategy": "RL",
+        "status": "numerical_candidate",
+        "delay": 1.0,
+        "announcement": 0.0,
+        "payoff": -0.0,
+        "share_x": 0.5,
+        "share_y": 0.5,
+        "evaluations": 138,
+        "delay_refinement_intervals": 2,
+        "delay_active": "lower",
+        "announcement_active": "fixed",
+        "announcement_nonunique": false,
+        "delay_nonunique": false,
+        "announcement_stationarity_residual": 0.0,
+        "announcement_stationarity_log_residual": null,
+        "announcement_stationarity_scaled_residual": 0.0,
+        "announcement_stationarity_representation": "finite",
+        "local_improvement_residual": 0.0,
+        "probe_improvement_found": 0.0,
+        "probe_rounds": 1,
+        "local_quality_passed": true,
+        "last_probe_improvement": 0.0,
+        "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+        "attainment": "attained",
+        "supremum": null,
+        "envelope_evaluations": 0,
+        "envelope_root_diagnostics": [],
+        "equilibrium": false,
+        "globally_certified": false,
+        "conditional_control": "delay and announcement"
+      },
+      {
+        "strategy": "DL",
+        "status": "numerical_candidate",
+        "delay": 1.0,
+        "announcement": 0.0,
+        "payoff": -0.0,
+        "share_x": 0.5,
+        "share_y": 0.5,
+        "evaluations": 138,
+        "delay_refinement_intervals": 2,
+        "delay_active": "lower",
+        "announcement_active": "not_applicable",
+        "announcement_nonunique": false,
+        "delay_nonunique": false,
+        "announcement_stationarity_residual": 0.0,
+        "announcement_stationarity_log_residual": null,
+        "announcement_stationarity_scaled_residual": 0.0,
+        "announcement_stationarity_representation": "finite",
+        "local_improvement_residual": 0.0,
+        "probe_improvement_found": 0.0,
+        "probe_rounds": 1,
+        "local_quality_passed": true,
+        "last_probe_improvement": 0.0,
+        "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+        "attainment": "attained",
+        "supremum": null,
+        "envelope_evaluations": 0,
+        "envelope_root_diagnostics": [],
+        "equilibrium": false,
+        "globally_certified": false,
+        "conditional_control": "delay"
+      }
+    ],
+    "actual_preference": [
+      "no_entry"
+    ],
+    "positive_feasible_control_exists": true
+  },
+  {
+    "params": {
+      "growth": 1.0,
+      "network": 0.85,
+      "growth_end": 3.0,
+      "horizon": 3.0,
+      "quality_ratio": 1.0,
+      "margin_x": 1.0,
+      "margin_y": 0.25,
+      "discount": 800.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 6.011550988392243e+17,
+      "learning_rate": 50.0
+    },
+    "lower": {
+      "reference_200": {
+        "precision": 200,
+        "bracket": "-0.00011539953493485369976856592580767215292934417483620717684749470249308396647353347403454101392533977179598395501206314032285106731741801866453378037212759894355617850426610262094871989072129881445948384",
+        "sign": -1,
+        "log_abs": "-809.06711023392565979902416699991861736387484706644271980299747695131207912598359782457762563432911979886403983147532024017041679743185543373286133908958988499366392450789584251559812520722774082127552",
+        "rounded_value": -0.0
+      },
+      "reference_400": {
+        "precision": 400,
+        "bracket": "-0.0001153995349348536997685659258076721529293441748362071768474947024930839664735334740345410139253397717959839550120631403228510673174180186645337803721275989435561785042661026209487198907212988144594838356514618197786159638733417319008721451718521254317483291487696633200480360711919522224544245776922232912402748229730377375345875899769385255404383006104845762132771573399308628033045942246874475304839",
+        "sign": -1,
+        "log_abs": "-809.0671102339256597990241669999186173638748470664427198029974769513120791259835978245776256343291197988640398314753202401704167974318554337328613390895898849936639245078958425155981252072277408212755193424553560990777757444009657240659081206081068118762197877588091659478868693329574978792526657726133264669809541626332600723813058360902508219840412299000143446809291368368081866439115629285657554219",
+        "rounded_value": -0.0
+      }
+    },
+    "upper": {
+      "reference_200": {
+        "precision": 200,
+        "bracket": "4.2229729729729730234351962976712641251884165918750050042697635183979631298835893773688699839301481610433267960585753339332097808435234901081082690359937043518648653656906201356814136823419685724339719E-7",
+        "sign": 1,
+        "log_abs": "-1614.6775562749860333409760082805450439217064970343519624662945879282086432338505708929088154733890226722238495073249192328101504318171149073617783269389760069501328879517779273581271115375446227201984",
+        "rounded_value": 0.0
+      },
+      "reference_400": {
+        "precision": 400,
+        "bracket": "4.222972972972973023435196297671264125188416591875005004269763518397963129883589377368869983930148161043326796058575333933209780843523490108108269035993704351864865365690620135681413682341968572433971852469910318678415860224891149140244267038329469463784445690911310871313433862596646471511485435666563161295251049929457092325675145797544492783942973790561389895376482173148296325219103488138964866054E-7",
+        "sign": 1,
+        "log_abs": "-1614.677556274986033340976008280545043921706497034351962466294587928208643233850570892908815473389022672223849507324919232810150431817114907361778326938976006950132887951777927358127111537544622720198424492887895877408790874534583290746975554062572965776387822450966727935316606057482803081393992460674582591451612199588854418166334522448013761161966076295974863901109101630345378377911828365333795709",
+        "rounded_value": 0.0
+      }
+    },
+    "selected_followers": [
+      {
+        "strategy": "RL",
+        "status": "numerical_candidate",
+        "delay": 1.0,
+        "announcement": 0.0,
+        "payoff": -0.0,
+        "share_x": 0.3508771929824561,
+        "share_y": 0.6491228070175439,
+        "evaluations": 138,
+        "delay_refinement_intervals": 2,
+        "delay_active": "lower",
+        "announcement_active": "fixed",
+        "announcement_nonunique": false,
+        "delay_nonunique": false,
+        "announcement_stationarity_residual": 0.0,
+        "announcement_stationarity_log_residual": null,
+        "announcement_stationarity_scaled_residual": 0.0,
+        "announcement_stationarity_representation": "finite",
+        "local_improvement_residual": 0.0,
+        "probe_improvement_found": 0.0,
+        "probe_rounds": 1,
+        "local_quality_passed": true,
+        "last_probe_improvement": 0.0,
+        "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+        "attainment": "attained",
+        "supremum": null,
+        "envelope_evaluations": 0,
+        "envelope_root_diagnostics": [],
+        "equilibrium": false,
+        "globally_certified": false,
+        "conditional_control": "delay and announcement"
+      },
+      {
+        "strategy": "DL",
+        "status": "numerical_candidate",
+        "delay": 1.0,
+        "announcement": 0.0,
+        "payoff": -0.0,
+        "share_x": 0.3508771929824561,
+        "share_y": 0.6491228070175439,
+        "evaluations": 138,
+        "delay_refinement_intervals": 2,
+        "delay_active": "lower",
+        "announcement_active": "not_applicable",
+        "announcement_nonunique": false,
+        "delay_nonunique": false,
+        "announcement_stationarity_residual": 0.0,
+        "announcement_stationarity_log_residual": null,
+        "announcement_stationarity_scaled_residual": 0.0,
+        "announcement_stationarity_representation": "finite",
+        "local_improvement_residual": 0.0,
+        "probe_improvement_found": 0.0,
+        "probe_rounds": 1,
+        "local_quality_passed": true,
+        "last_probe_improvement": 0.0,
+        "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+        "attainment": "attained",
+        "supremum": null,
+        "envelope_evaluations": 0,
+        "envelope_root_diagnostics": [],
+        "equilibrium": false,
+        "globally_certified": false,
+        "conditional_control": "delay"
+      }
+    ],
+    "actual_preference": [
+      "no_entry"
+    ],
+    "positive_feasible_control_exists": true
+  },
+  {
+    "params": {
+      "growth": 1.0,
+      "network": 0.0,
+      "growth_end": 3.0,
+      "horizon": 3.0,
+      "quality_ratio": 1.0,
+      "margin_x": 1.0,
+      "margin_y": 0.25,
+      "discount": 800.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 4.625759396613089e+41,
+      "learning_rate": 100.0
+    },
+    "lower": {
+      "reference_200": {
+        "precision": 200,
+        "bracket": "-0.017207395152192991342532933235827413467627240759896874059012176244385513507530362506420951529406079799566050323111192206864667542543401491314308497472430468251232696282466046677487479924263152026902381",
+        "sign": -1,
+        "log_abs": "-804.06241603685615620755271560687794855783020416291808156539764147194170586831813880161446128554967067438554830088979209139684693800873047215026452833815843221251339733511031115970405336549389273799495",
+        "rounded_value": -0.0
+      },
+      "reference_400": {
+        "precision": 400,
+        "bracket": "-0.01720739515219299134253293323582741346762724075989687405901217624438551350753036250642095152940607979956605032311119220686466754254340149131430849747243046825123269628246604667748747992426315202690238057422943363936105682025398263497990524268719062906355985660178909509335657218860666425540930143624513557498565190180924969411881900500620853821315709064241854487969877021889493651806244086612088559217",
+        "sign": -1,
+        "log_abs": "-804.0624160368561562075527156068779485578302041629180815653976414719417058683181388016144612855496706743855483008897920913968469380087304721502645283381584322125133973351103111597040533654938927379949466151767481802357479733530116752112671519651051642427025831685643149021881315518185759466103520298278445228113921443009713075169494113008927229079224127313466508887449013131358547352215797403647914009",
+        "rounded_value": -0.0
+      }
+    },
+    "upper": {
+      "reference_200": {
+        "precision": 200,
+        "bracket": "7.8124999999999999999999999999999999999935984276375073190264947243510986205103527279767437597472831604460720937344942906116355858296840813109079156839487056842673477200855267513081214149910239147776388E-7",
+        "sign": 1,
+        "log_abs": "-1614.0623706358957999019925906689446928069337262962992777461426803456071051690719481167132233186748545393127520361208432389777510168392449460635623392913086461705331313517141447068186300298444246845850",
+        "rounded_value": 0.0
+      },
+      "reference_400": {
+        "precision": 400,
+        "bracket": "7.812499999999999999999999999999999999993598427637507319026494724351098620510352727976743759747283160446072093734494290611635585829684081310907915683948705684267347720085526751308121414991023914777638783775620074385759267516743872075835140288874953757497797773978677106327846601550588807505631599558280963948102454528747394610096047158403914940884720359689663601165965919338152504190599427873089555556E-7",
+        "sign": 1,
+        "log_abs": "-1614.062370635895799901992590668944692806933726296299277746142680345607105169071948116713223318674854539312752036120843238977751016839244946063562339291308646170533131351714144706818630029844424684584950287897015946626265544399635541005073646042618821009665707897853100783465738900660924727779356642575838418857734622623729900958530793594441526458600712040737258505697650098612844739469832656487691932",
+        "rounded_value": 0.0
+      }
+    },
+    "selected_followers": [
+      {
+        "strategy": "RL",
+        "status": "numerical_candidate",
+        "delay": 1.0,
+        "announcement": 0.0,
+        "payoff": -0.0,
+        "share_x": 0.5,
+        "share_y": 0.5,
+        "evaluations": 138,
+        "delay_refinement_intervals": 2,
+        "delay_active": "lower",
+        "announcement_active": "fixed",
+        "announcement_nonunique": false,
+        "delay_nonunique": false,
+        "announcement_stationarity_residual": 0.0,
+        "announcement_stationarity_log_residual": null,
+        "announcement_stationarity_scaled_residual": 0.0,
+        "announcement_stationarity_representation": "finite",
+        "local_improvement_residual": 0.0,
+        "probe_improvement_found": 0.0,
+        "probe_rounds": 1,
+        "local_quality_passed": true,
+        "last_probe_improvement": 0.0,
+        "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+        "attainment": "attained",
+        "supremum": null,
+        "envelope_evaluations": 0,
+        "envelope_root_diagnostics": [],
+        "equilibrium": false,
+        "globally_certified": false,
+        "conditional_control": "delay and announcement"
+      },
+      {
+        "strategy": "DL",
+        "status": "numerical_candidate",
+        "delay": 1.0,
+        "announcement": 0.0,
+        "payoff": -0.0,
+        "share_x": 0.5,
+        "share_y": 0.5,
+        "evaluations": 138,
+        "delay_refinement_intervals": 2,
+        "delay_active": "lower",
+        "announcement_active": "not_applicable",
+        "announcement_nonunique": false,
+        "delay_nonunique": false,
+        "announcement_stationarity_residual": 0.0,
+        "announcement_stationarity_log_residual": null,
+        "announcement_stationarity_scaled_residual": 0.0,
+        "announcement_stationarity_representation": "finite",
+        "local_improvement_residual": 0.0,
+        "probe_improvement_found": 0.0,
+        "probe_rounds": 1,
+        "local_quality_passed": true,
+        "last_probe_improvement": 0.0,
+        "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+        "attainment": "attained",
+        "supremum": null,
+        "envelope_evaluations": 0,
+        "envelope_root_diagnostics": [],
+        "equilibrium": false,
+        "globally_certified": false,
+        "conditional_control": "delay"
+      }
+    ],
+    "actual_preference": [
+      "no_entry"
+    ],
+    "positive_feasible_control_exists": true
+  },
+  {
+    "params": {
+      "growth": 1.0,
+      "network": 0.85,
+      "growth_end": 3.0,
+      "horizon": 3.0,
+      "quality_ratio": 1.0,
+      "margin_x": 1.0,
+      "margin_y": 0.25,
+      "discount": 800.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 4.625759396613089e+41,
+      "learning_rate": 100.0
+    },
+    "lower": {
+      "reference_200": {
+        "precision": 200,
+        "bracket": "-0.017207628156578956254809363587379332686813631101942448868802765721417402846507060283921913800814269450192951269120063276299712277199996220853500613385072447194264020085551162455670657561364415607116956",
+        "sign": -1,
+        "log_abs": "-804.06240249600314687179242098634306021188594948265712743653963376805386424597627554487418097758302434539677860142113603446611401359344692282193691981394709502607167204597973959854724282077511405128276",
+        "rounded_value": -0.0
+      },
+      "reference_400": {
+        "precision": 400,
+        "bracket": "-0.01720762815657895625480936358737933268681363110194244886880276572141740284650706028392191380081426945019295126912006327629971227719999622085350061338507244719426402008555116245567065756136441560711695541460640158485038768770222521611569571235480408528206349983749456541689775010802338738099721228356401775905183048085526633888039673053469389194744318750937154558792470608355648557891741587695916199760",
+        "sign": -1,
+        "log_abs": "-804.0624024960031468717924209863430602118859494826571274365396337680538642459762755448741809775830243453967786014211360344661140135934469228219369198139470950260716720459797395985472428207751140512827642770792962670612495352112902414173159605933562417085984740135594153904745675989997843934065748353274520483965064949081082557600729322340187007147344789016944556420713985120648645661060347706427724677",
+        "rounded_value": -0.0
+      }
+    },
+    "upper": {
+      "reference_200": {
+        "precision": 200,
+        "bracket": "4.2229729729729730236588305617766870776499532862993040814047043244435373500331592496446877274439242769328814353618756945647076152179871483702063276213960436903069941134697160272654219194861365463915900E-7",
+        "sign": 1,
+        "log_abs": "-1614.6775562749860333409230516868048797671978097520106640429214686469869239619147482347466411819480508502652285377485056591943964755722009481817617326727557159804061295414381532931003707024928824170130",
+        "rounded_value": 0.0
+      },
+      "reference_400": {
+        "precision": 400,
+        "bracket": "4.222972972972973023658830561776687077649953286299304081404704324443537350033159249644687727443924276932881435361875694564707615217987148370206327621396043690306994113469716027265421919486136546391589975138177380976153473474692264187383845411751611644098842822871906570080954188377210953670606607692551038028801086120156966692174557907247278039985646906058501741200659955318759333065640284890864975270E-7",
+        "sign": 1,
+        "log_abs": "-1614.677556274986033340923051686804879767197809752010664042921468646986923961914748234746641181948050850265228537748505659194396475572200948181761732672755715980406129541438153293100370702492882417013005491280710252964505798951400822227570238344404523477537356686317316508823589157057398488093849905232693626243476272142243435073466742412857033810712764602311520227847469326597898312834427257444366385",
+        "rounded_value": 0.0
+      }
+    },
+    "selected_followers": [
+      {
+        "strategy": "RL",
+        "status": "numerical_candidate",
+        "delay": 1.0,
+        "announcement": 0.0,
+        "payoff": -0.0,
+        "share_x": 0.3508771929824561,
+        "share_y": 0.6491228070175439,
+        "evaluations": 138,
+        "delay_refinement_intervals": 2,
+        "delay_active": "lower",
+        "announcement_active": "fixed",
+        "announcement_nonunique": false,
+        "delay_nonunique": false,
+        "announcement_stationarity_residual": 0.0,
+        "announcement_stationarity_log_residual": null,
+        "announcement_stationarity_scaled_residual": 0.0,
+        "announcement_stationarity_representation": "finite",
+        "local_improvement_residual": 0.0,
+        "probe_improvement_found": 0.0,
+        "probe_rounds": 1,
+        "local_quality_passed": true,
+        "last_probe_improvement": 0.0,
+        "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+        "attainment": "attained",
+        "supremum": null,
+        "envelope_evaluations": 0,
+        "envelope_root_diagnostics": [],
+        "equilibrium": false,
+        "globally_certified": false,
+        "conditional_control": "delay and announcement"
+      },
+      {
+        "strategy": "DL",
+        "status": "numerical_candidate",
+        "delay": 1.0,
+        "announcement": 0.0,
+        "payoff": -0.0,
+        "share_x": 0.3508771929824561,
+        "share_y": 0.6491228070175439,
+        "evaluations": 138,
+        "delay_refinement_intervals": 2,
+        "delay_active": "lower",
+        "announcement_active": "not_applicable",
+        "announcement_nonunique": false,
+        "delay_nonunique": false,
+        "announcement_stationarity_residual": 0.0,
+        "announcement_stationarity_log_residual": null,
+        "announcement_stationarity_scaled_residual": 0.0,
+        "announcement_stationarity_representation": "finite",
+        "local_improvement_residual": 0.0,
+        "probe_improvement_found": 0.0,
+        "probe_rounds": 1,
+        "local_quality_passed": true,
+        "last_probe_improvement": 0.0,
+        "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+        "attainment": "attained",
+        "supremum": null,
+        "envelope_evaluations": 0,
+        "envelope_root_diagnostics": [],
+        "equilibrium": false,
+        "globally_certified": false,
+        "conditional_control": "delay"
+      }
+    ],
+    "actual_preference": [
+      "no_entry"
+    ],
+    "positive_feasible_control_exists": true
+  },
+  {
+    "params": {
+      "growth": 1.0,
+      "network": 0.0,
+      "growth_end": 3.0,
+      "horizon": 3.0,
+      "quality_ratio": 1.0,
+      "margin_x": 1.0,
+      "margin_y": 0.25,
+      "discount": 800.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 2.7388991994053494e+89,
+      "learning_rate": 200.0
+    },
+    "lower": {
+      "reference_200": {
+        "precision": 200,
+        "bracket": "-379.03530813265940776585413426700659153018904767905418310903524048811103978928417999555846906774897075734178598724902477506860110938777381045440052543101802118368742428520685035052654801154116189262358",
+        "sign": -1,
+        "log_abs": "-794.06237063795692515689619703896714483772163106100086558351678582524328549442421323600875068872244040658445676583582703190928231420429964677957903718418580314491429313833445058783193135572394849342021",
+        "rounded_value": -0.0
+      },
+      "reference_400": {
+        "precision": 400,
+        "bracket": "-379.0353081326594077658541342670065915301890476790541831090352404881110397892841799955584690677489707573417859872490247750686011093877738104544005254310180211836874242852068503505265480115411618926235892556551418948293663608730837443060864805586352133164390691175156602506931775866720597313665339707867313062853557978491638828928480603153471353001998800261213968246138358466223378937257894202121970754",
+        "sign": -1,
+        "log_abs": "-794.0623706379569251568961970389671448377216310610008655835167858252432854944242132360087506887224404065844567658358270319092823142042996467795790371841858031449142931383344505878319313557239484934202069908136267143546490063701998840456369121423363624549240224684817312734747709171854257707697801287270140355961277990493847346219206530960083820289090518471693036123703786687576483726241976927907651632",
+        "rounded_value": -0.0
+      }
+    },
+    "upper": {
+      "reference_200": {
+        "precision": 200,
+        "bracket": "7.8124999999999999999999999999999999999999999999999999999999999999999999999999947545435248345439999622326601118162887583363965608089435042154999784067233822867955912288723026910437787205271837961165045E-7",
+        "sign": 1,
+        "log_abs": "-1614.0623706358957999019925906689446928069329068950368786829780716703240457924972736016034609305116920109961010090006548336023779837270933723863098475017800655589622875050855139065443234175453520993994",
+        "rounded_value": 0.0
+      },
+      "reference_400": {
+        "precision": 400,
+        "bracket": "7.812499999999999999999999999999999999999999999999999999999999999999999999999994754543524834543999962232660111816288758336396560808943504215499978406723382286795591228872302691043778720527183796116504489911996098630187236849847239625645432487206308997829438538784279338533545515755393042189553491629284587732999818214774727861546898351865458380291714763043490105426743799765809810104430840771045068343E-7",
+        "sign": 1,
+        "log_abs": "-1614.062370635895799901992590668944692806932906895036878682978071670324045792497273601603460930511692010996101009000654833602377983727093372386309847501780065558962287505085513906544323417545352099399437536696360992713969561790805600784922508079309212059603179337043157678659985495722336421616943754494650195779523579517867977855261985064120730063787862630384170490430144332517748608406343813208292773",
+        "rounded_value": 0.0
+      }
+    },
+    "selected_followers": [
+      {
+        "strategy": "RL",
+        "status": "numerical_candidate",
+        "delay": 1.0,
+        "announcement": 0.0,
+        "payoff": -0.0,
+        "share_x": 0.5,
+        "share_y": 0.5,
+        "evaluations": 138,
+        "delay_refinement_intervals": 2,
+        "delay_active": "lower",
+        "announcement_active": "fixed",
+        "announcement_nonunique": false,
+        "delay_nonunique": false,
+        "announcement_stationarity_residual": 0.0,
+        "announcement_stationarity_log_residual": null,
+        "announcement_stationarity_scaled_residual": 0.0,
+        "announcement_stationarity_representation": "finite",
+        "local_improvement_residual": 0.0,
+        "probe_improvement_found": 0.0,
+        "probe_rounds": 1,
+        "local_quality_passed": true,
+        "last_probe_improvement": 0.0,
+        "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+        "attainment": "attained",
+        "supremum": null,
+        "envelope_evaluations": 0,
+        "envelope_root_diagnostics": [],
+        "equilibrium": false,
+        "globally_certified": false,
+        "conditional_control": "delay and announcement"
+      },
+      {
+        "strategy": "DL",
+        "status": "numerical_candidate",
+        "delay": 1.0,
+        "announcement": 0.0,
+        "payoff": -0.0,
+        "share_x": 0.5,
+        "share_y": 0.5,
+        "evaluations": 138,
+        "delay_refinement_intervals": 2,
+        "delay_active": "lower",
+        "announcement_active": "not_applicable",
+        "announcement_nonunique": false,
+        "delay_nonunique": false,
+        "announcement_stationarity_residual": 0.0,
+        "announcement_stationarity_log_residual": null,
+        "announcement_stationarity_scaled_residual": 0.0,
+        "announcement_stationarity_representation": "finite",
+        "local_improvement_residual": 0.0,
+        "probe_improvement_found": 0.0,
+        "probe_rounds": 1,
+        "local_quality_passed": true,
+        "last_probe_improvement": 0.0,
+        "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+        "attainment": "attained",
+        "supremum": null,
+        "envelope_evaluations": 0,
+        "envelope_root_diagnostics": [],
+        "equilibrium": false,
+        "globally_certified": false,
+        "conditional_control": "delay"
+      }
+    ],
+    "actual_preference": [
+      "no_entry"
+    ],
+    "positive_feasible_control_exists": true
+  },
+  {
+    "params": {
+      "growth": 1.0,
+      "network": 0.85,
+      "growth_end": 3.0,
+      "horizon": 3.0,
+      "quality_ratio": 1.0,
+      "margin_x": 1.0,
+      "margin_y": 0.25,
+      "discount": 800.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 2.7388991994053494e+89,
+      "learning_rate": 200.0
+    },
+    "lower": {
+      "reference_200": {
+        "precision": 200,
+        "bracket": "-379.03530836566379373076641069735814344940823406939622868384503107758807167862315669333597003002037894699241288819503364613803615412243040518393971754693066316263045560900993546630473118917826315620379",
+        "sign": -1,
+        "log_abs": "-794.06237063734219512807327493159419548626789127324471596238143685077066064350111721848751532648602503391002765267400169257659528482344400021178425121536864135294145813593313873253159598246859563837028",
+        "rounded_value": -0.0
+      },
+      "reference_400": {
+        "precision": 400,
+        "bracket": "-379.0353083656637937307664106973581434494082340693962286838450310775880716786231566933359700300203789469924128881950336461380361541224304051839397175469306631626304556090099354663047311891782631562038038304955188627748556917405319868872222710283028267726575727607513657210167187645914764544921218816340501884694219764282098995376096380408756206539341661229883498253220617824869994427866443952230353518",
+        "sign": -1,
+        "log_abs": "-794.0623706373421951280732749315941954862678912732447159623814368507706606435011172184875153264860250339100276526740016925765952848234440002117842512153686413529414581359331387325315959824685956383702813601407952808336526234230539805346283091861152823687307192171318087891758715150842629135578282813117111935274888808823013821159311384221597163635615255084387346386281322944651940228814070932886879807",
+        "rounded_value": -0.0
+      }
+    },
+    "upper": {
+      "reference_200": {
+        "precision": 200,
+        "bracket": "4.2229729729729730236588305617766870776563548586617967623782096000924387295228012762114688022406410787194694534436701622894685901972465712747983903441707202928352376222564919670010792250222964277304557E-7",
+        "sign": 1,
+        "log_abs": "-1614.6775562749860333409230516868048797671962938596752257760851369606717113044475800138957668234948370123909529099416604580455486984079333546999023568235647688547573802745236226365274855290570870954500",
+        "rounded_value": 0.0
+      },
+      "reference_400": {
+        "precision": 400,
+        "bracket": "4.222972972972973023658830561776687077656354858661796762378209600092438729522801276211468802240641078719469453443670162289468590197246571274798390344170720292835237622256491967001079225022296427730455681274553405220581442807795631737194137610082966884430483587677508802286653102582015188354528499763554661813698449806184299943625409100708821479392641309412328245461437835746416638979471697788820488057E-7",
+        "sign": 1,
+        "log_abs": "-1614.677556274986033340923051686804879767196293859675225776085136960671711304447580013895766823494837012390952909941660458045548698407933354699902356823564768854757380274523622636527485529057087095449960278405249791942580994400092181213989993229541304676490900337745620423069416163608515426425055248227281451922980686050083574659699495234203444730158815595020166533977659431900363343423585471112205343",
+        "rounded_value": 0.0
+      }
+    },
+    "selected_followers": [
+      {
+        "strategy": "RL",
+        "status": "numerical_candidate",
+        "delay": 1.0,
+        "announcement": 0.0,
+        "payoff": -0.0,
+        "share_x": 0.3508771929824561,
+        "share_y": 0.6491228070175439,
+        "evaluations": 138,
+        "delay_refinement_intervals": 2,
+        "delay_active": "lower",
+        "announcement_active": "fixed",
+        "announcement_nonunique": false,
+        "delay_nonunique": false,
+        "announcement_stationarity_residual": 0.0,
+        "announcement_stationarity_log_residual": null,
+        "announcement_stationarity_scaled_residual": 0.0,
+        "announcement_stationarity_representation": "finite",
+        "local_improvement_residual": 0.0,
+        "probe_improvement_found": 0.0,
+        "probe_rounds": 1,
+        "local_quality_passed": true,
+        "last_probe_improvement": 0.0,
+        "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+        "attainment": "attained",
+        "supremum": null,
+        "envelope_evaluations": 0,
+        "envelope_root_diagnostics": [],
+        "equilibrium": false,
+        "globally_certified": false,
+        "conditional_control": "delay and announcement"
+      },
+      {
+        "strategy": "DL",
+        "status": "numerical_candidate",
+        "delay": 1.0,
+        "announcement": 0.0,
+        "payoff": -0.0,
+        "share_x": 0.3508771929824561,
+        "share_y": 0.6491228070175439,
+        "evaluations": 138,
+        "delay_refinement_intervals": 2,
+        "delay_active": "lower",
+        "announcement_active": "not_applicable",
+        "announcement_nonunique": false,
+        "delay_nonunique": false,
+        "announcement_stationarity_residual": 0.0,
+        "announcement_stationarity_log_residual": null,
+        "announcement_stationarity_scaled_residual": 0.0,
+        "announcement_stationarity_representation": "finite",
+        "local_improvement_residual": 0.0,
+        "probe_improvement_found": 0.0,
+        "probe_rounds": 1,
+        "local_quality_passed": true,
+        "last_probe_improvement": 0.0,
+        "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+        "attainment": "attained",
+        "supremum": null,
+        "envelope_evaluations": 0,
+        "envelope_root_diagnostics": [],
+        "equilibrium": false,
+        "globally_certified": false,
+        "conditional_control": "delay"
+      }
+    ],
+    "actual_preference": [
+      "no_entry"
+    ],
+    "positive_feasible_control_exists": true
+  },
+  {
+    "params": {
+      "growth": 1.0,
+      "network": 0.0,
+      "growth_end": 3.0,
+      "horizon": 3.0,
+      "quality_ratio": 1.0,
+      "margin_x": 1.0,
+      "margin_y": 0.25,
+      "discount": 1000.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 3.8473926325710355e+17,
+      "learning_rate": 50.0
+    },
+    "lower": {
+      "reference_200": {
+        "precision": 200,
+        "bracket": "-0.000073706579551288821526166962129867115333291647831428619232793550720428035648779192891235515237028440233175200926541950010954555572497953590138795899736869984342114511077003987305636692295931040095933113",
+        "sign": -1,
+        "log_abs": "-1009.5154184879737009188516869158739562767581009583945754283893836967659065088552134901528948612749243831818155849941702545878459518335626036104594904226596392173893020914621450049285684445524630452813",
+        "rounded_value": -0.0
+      },
+      "reference_400": {
+        "precision": 400,
+        "bracket": "-0.00007370657955128882152616696212986711533329164783142861923279355072042803564877919289123551523702844023317520092654195001095455557249795359013879589973686998434211451107700398730563669229593104009593311232652175817726983063191047367655969875864421627399667611711621828730108972650375651739385826129336734136323261917319110865295818032165335778716175612718938781466605364156846355911206373386286791814836",
+        "sign": -1,
+        "log_abs": "-1009.515418487973700918851686915873956276758100958394575428389383696765906508855213490152894861274924383181815584994170254587845951833562603610459490422659639217389302091462145004928568444552463045281290475090721564795329985625691717439919596231799686299612311330902774112604992359578143704641520679195497607047808338347295071886661529478693971836665671344776999128018599655273526985851628283850138717",
+        "rounded_value": -0.0
+      }
+    },
+    "upper": {
+      "reference_200": {
+        "precision": 200,
+        "bracket": "4.9999999999999999998568740709725293151822167585631233073990051366603270880502831618908735683038302706451829799826082344284001975934613864017158991252278438056455617641033613185641501148253894756465017E-7",
+        "sign": 1,
+        "log_abs": "-2014.5086577385242194135538060353698559506460754150514679803522617561277642028953600140759448087456524849999002175636226816084773699955346744365488430415704642490140277760320203054662213672565555701699",
+        "rounded_value": 0.0
+      },
+      "reference_400": {
+        "precision": 400,
+        "bracket": "4.999999999999999999856874070972529315182216758563123307399005136660327088050283161890873568303830270645182979982608234428400197593461386401715899125227843805645561764103361318564150114825389475646501691617947360248024848184003890801291082489339571579915873083851172277539911508272578847555683662683134276353005375649517130613421715954470404280539861336926507617714182822103341660716718722576088763610E-7",
+        "sign": 1,
+        "log_abs": "-2014.508657738524219413553806035369855950646075415051467980352261756127764202895360014075944808745652484999900217563622681608477369995534674436548843041570464249014027776032020305466221367256555570169948368487151733653449334331661417898150198090291047153604065126956730170383914253363506300753543584648707931436424175909485398485255828725743655585821438877061804948773590367867090130374490107181309934",
+        "rounded_value": 0.0
+      }
+    },
+    "selected_followers": [
+      {
+        "strategy": "RL",
+        "status": "numerical_candidate",
+        "delay": 1.0,
+        "announcement": 0.0,
+        "payoff": -0.0,
+        "share_x": 0.5,
+        "share_y": 0.5,
+        "evaluations": 138,
+        "delay_refinement_intervals": 2,
+        "delay_active": "lower",
+        "announcement_active": "fixed",
+        "announcement_nonunique": false,
+        "delay_nonunique": false,
+        "announcement_stationarity_residual": 0.0,
+        "announcement_stationarity_log_residual": null,
+        "announcement_stationarity_scaled_residual": 0.0,
+        "announcement_stationarity_representation": "finite",
+        "local_improvement_residual": 0.0,
+        "probe_improvement_found": 0.0,
+        "probe_rounds": 1,
+        "local_quality_passed": true,
+        "last_probe_improvement": 0.0,
+        "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+        "attainment": "attained",
+        "supremum": null,
+        "envelope_evaluations": 0,
+        "envelope_root_diagnostics": [],
+        "equilibrium": false,
+        "globally_certified": false,
+        "conditional_control": "delay and announcement"
+      },
+      {
+        "strategy": "DL",
+        "status": "numerical_candidate",
+        "delay": 1.0,
+        "announcement": 0.0,
+        "payoff": -0.0,
+        "share_x": 0.5,
+        "share_y": 0.5,
+        "evaluations": 138,
+        "delay_refinement_intervals": 2,
+        "delay_active": "lower",
+        "announcement_active": "not_applicable",
+        "announcement_nonunique": false,
+        "delay_nonunique": false,
+        "announcement_stationarity_residual": 0.0,
+        "announcement_stationarity_log_residual": null,
+        "announcement_stationarity_scaled_residual": 0.0,
+        "announcement_stationarity_representation": "finite",
+        "local_improvement_residual": 0.0,
+        "probe_improvement_found": 0.0,
+        "probe_rounds": 1,
+        "local_quality_passed": true,
+        "last_probe_improvement": 0.0,
+        "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+        "attainment": "attained",
+        "supremum": null,
+        "envelope_evaluations": 0,
+        "envelope_root_diagnostics": [],
+        "equilibrium": false,
+        "globally_certified": false,
+        "conditional_control": "delay"
+      }
+    ],
+    "actual_preference": [
+      "no_entry"
+    ],
+    "positive_feasible_control_exists": true
+  },
+  {
+    "params": {
+      "growth": 1.0,
+      "network": 0.85,
+      "growth_end": 3.0,
+      "horizon": 3.0,
+      "quality_ratio": 1.0,
+      "margin_x": 1.0,
+      "margin_y": 0.25,
+      "discount": 1000.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 3.8473926325710355e+17,
+      "learning_rate": 50.0
+    },
+    "lower": {
+      "reference_200": {
+        "precision": 200,
+        "bracket": "-0.000073855702358306365383082387123095415612581466740596497498770816020837212593865770491851368938269816634391806372219434449383185752718580495221750083827736507882161745051478085342870380040739731433261011",
+        "sign": -1,
+        "log_abs": "-1009.5133973365540793439840989640688982944616298467884512086058395643036494909939059155748987271058081860182381380223385717485890460176475770957924384774574096386129657754730337121317316351359059214589",
+        "rounded_value": -0.0
+      },
+      "reference_400": {
+        "precision": 400,
+        "bracket": "-0.00007385570235830636538308238712309541561258146674059649749877081602083721259386577049185136893826981663439180637221943444938318575271858049522175008382773650788216174505147808534287038004073973143326101016778124329044158579878572560346559934591682825383900778796771929436744359493045931777012120357745193916558690976264176130036792465988398417710485812203930826793065259495185495805924774079936481762174",
+        "sign": -1,
+        "log_abs": "-1009.513397336554079343984098964068898294461629846788451208605839564303649490993905915574898727105808186018238138022338571748589046017647577095792438477457409638612965775473033712131731635135905921458943390869119485165248531477679269426501383866748916803758476410747895484000127314468794165050470393826292170287839829874000663589612589128204522048722474217341061034522972356772217814367490635629864291",
+        "rounded_value": -0.0
+      }
+    },
+    "upper": {
+      "reference_200": {
+        "precision": 200,
+        "bracket": "2.7027027027027027349985256305096090448822838681066732353210592807194878749448793357583577076296805851967409586241323329583662964019753493196668827651941401295109354558692424551768224377022615598794305E-7",
+        "sign": 1,
+        "log_abs": "-2015.1238433776144528525085984611647129266938712232045090026323350216762905469733199141552605148583572934934434328764095883507981448227878269363178955711739797059510342626154855844670473524860466738592",
+        "rounded_value": 0.0
+      },
+      "reference_400": {
+        "precision": 400,
+        "bracket": "2.702702702702702734998525630509609044882283868106673235321059280719487874944879335758357707629680585196740958624132332958366296401975349319666882765194140129510935455869242455176822437702261559879430454089984036465877139997090861752682253767980632627340541915142839134341900363841617021101267667889067123764652499868019256745951962833730156663957704941708949491379580302301102807124713063231899647462E-7",
+        "sign": 1,
+        "log_abs": "-2015.123843377614452852508598461164712926693871223204509002632335021676290546973319914155260514858357293493443432876409588350798144822787826936317895571173979705951034262615485584467047352486046673859185714395766596009949936611798601015221537993548130707020620678239099058906795704657174041478790310354381752537446781176300707066467621197512511250027582641688821919759239646548347018643797196733363889",
+        "rounded_value": 0.0
+      }
+    },
+    "selected_followers": [
+      {
+        "strategy": "RL",
+        "status": "numerical_candidate",
+        "delay": 1.0,
+        "announcement": 0.0,
+        "payoff": -0.0,
+        "share_x": 0.3508771929824561,
+        "share_y": 0.6491228070175439,
+        "evaluations": 138,
+        "delay_refinement_intervals": 2,
+        "delay_active": "lower",
+        "announcement_active": "fixed",
+        "announcement_nonunique": false,
+        "delay_nonunique": false,
+        "announcement_stationarity_residual": 0.0,
+        "announcement_stationarity_log_residual": null,
+        "announcement_stationarity_scaled_residual": 0.0,
+        "announcement_stationarity_representation": "finite",
+        "local_improvement_residual": 0.0,
+        "probe_improvement_found": 0.0,
+        "probe_rounds": 1,
+        "local_quality_passed": true,
+        "last_probe_improvement": 0.0,
+        "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+        "attainment": "attained",
+        "supremum": null,
+        "envelope_evaluations": 0,
+        "envelope_root_diagnostics": [],
+        "equilibrium": false,
+        "globally_certified": false,
+        "conditional_control": "delay and announcement"
+      },
+      {
+        "strategy": "DL",
+        "status": "numerical_candidate",
+        "delay": 1.0,
+        "announcement": 0.0,
+        "payoff": -0.0,
+        "share_x": 0.3508771929824561,
+        "share_y": 0.6491228070175439,
+        "evaluations": 138,
+        "delay_refinement_intervals": 2,
+        "delay_active": "lower",
+        "announcement_active": "not_applicable",
+        "announcement_nonunique": false,
+        "delay_nonunique": false,
+        "announcement_stationarity_residual": 0.0,
+        "announcement_stationarity_log_residual": null,
+        "announcement_stationarity_scaled_residual": 0.0,
+        "announcement_stationarity_representation": "finite",
+        "local_improvement_residual": 0.0,
+        "probe_improvement_found": 0.0,
+        "probe_rounds": 1,
+        "local_quality_passed": true,
+        "last_probe_improvement": 0.0,
+        "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+        "attainment": "attained",
+        "supremum": null,
+        "envelope_evaluations": 0,
+        "envelope_root_diagnostics": [],
+        "equilibrium": false,
+        "globally_certified": false,
+        "conditional_control": "delay"
+      }
+    ],
+    "actual_preference": [
+      "no_entry"
+    ],
+    "positive_feasible_control_exists": true
+  },
+  {
+    "params": {
+      "growth": 1.0,
+      "network": 0.0,
+      "growth_end": 3.0,
+      "horizon": 3.0,
+      "quality_ratio": 1.0,
+      "margin_x": 1.0,
+      "margin_y": 0.25,
+      "discount": 1000.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 2.9604860138323772e+41,
+      "learning_rate": 100.0
+    },
+    "lower": {
+      "reference_200": {
+        "precision": 200,
+        "bracket": "-0.011012732897403514804613402263417022730385114149462522975434179093114263677675520834996157671846054427983847643365638073909411181295619467957158420294268117601581471968860925989136112568078515850453996",
+        "sign": -1,
+        "log_abs": "-1004.5087031394845756877223073192499181462896144098173114433253193421251447877838505958897299312861442427630984670675463068837557041165748148897470378787611541313553052480685829434757947168399963593269",
+        "rounded_value": -0.0
+      },
+      "reference_400": {
+        "precision": 400,
+        "bracket": "-0.01101273289740351480461340226341702273038511414946252297543417909311426367767552083499615767184605442798384764336563807390941118129561946795715842029426811760158147196886092598913611256807851585045399589563495197531810189694702264009828011584059821489920695863675597421872858586729782797291863819994486149522910634348422162006027159562755973180810738191735425703304229221944872427139833981918567153012",
+        "sign": -1,
+        "log_abs": "-1004.508703139484575687722307319249918146289614409817311443325319342125144787783850595889729931286144242763098467067546306883755704116574814889747037878761154131355305248068582943475794716839996359326946579732368856344970459322137343083903485554831449840200205688010454690640257779374860150508289863347513897667261085649402680391604078615611610467750618631832979571479660616429714960646333069574906013",
+        "rounded_value": -0.0
+      }
+    },
+    "upper": {
+      "reference_200": {
+        "precision": 200,
+        "bracket": "4.9999999999999999999999999999999999999959029936880046840484680545340497541774208115641910001807811887190444487915935482613405119867268242245705993074217428154418448256177956342436408508104580125693171E-7",
+        "sign": 1,
+        "log_abs": "-2014.5086577385242194135251808495643618136829284673952921735109538043920193291983257704182227680870560742771038472345196709537155156623298384721525425879640621910898489235176439892772443289876696068404",
+        "rounded_value": 0.0
+      },
+      "reference_400": {
+        "precision": 400,
+        "bracket": "4.999999999999999999999999999999999999995902993688004684048468054534049754177420811564191000180781188719044448791593548261340511986726824224570599307421742815441844825617795634243640850810458012569317077173799348175591777257909043153946605365411547360821119778491228211883359483742077435475269331515332809768922291619583625722878307751205740963213170868106616985094524970792445799181492235552271340381E-7",
+        "sign": 1,
+        "log_abs": "-2014.508657738524219413525180849564361813682928467395292173510953804392019329198325770418222768087056074277103847234519670953715515662329838472152542587964062191089848923517643989277244328987669606840381326469789582581831557934307123220336837689507488427801102851235825021940002443830587767600466660049137883686905448489495728447992724340602979681789064178733832070656373401921559599697900323817652840",
+        "rounded_value": 0.0
+      }
+    },
+    "selected_followers": [
+      {
+        "strategy": "RL",
+        "status": "numerical_candidate",
+        "delay": 1.0,
+        "announcement": 0.0,
+        "payoff": -0.0,
+        "share_x": 0.5,
+        "share_y": 0.5,
+        "evaluations": 138,
+        "delay_refinement_intervals": 2,
+        "delay_active": "lower",
+        "announcement_active": "fixed",
+        "announcement_nonunique": false,
+        "delay_nonunique": false,
+        "announcement_stationarity_residual": 0.0,
+        "announcement_stationarity_log_residual": null,
+        "announcement_stationarity_scaled_residual": 0.0,
+        "announcement_stationarity_representation": "finite",
+        "local_improvement_residual": 0.0,
+        "probe_improvement_found": 0.0,
+        "probe_rounds": 1,
+        "local_quality_passed": true,
+        "last_probe_improvement": 0.0,
+        "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+        "attainment": "attained",
+        "supremum": null,
+        "envelope_evaluations": 0,
+        "envelope_root_diagnostics": [],
+        "equilibrium": false,
+        "globally_certified": false,
+        "conditional_control": "delay and announcement"
+      },
+      {
+        "strategy": "DL",
+        "status": "numerical_candidate",
+        "delay": 1.0,
+        "announcement": 0.0,
+        "payoff": -0.0,
+        "share_x": 0.5,
+        "share_y": 0.5,
+        "evaluations": 138,
+        "delay_refinement_intervals": 2,
+        "delay_active": "lower",
+        "announcement_active": "not_applicable",
+        "announcement_nonunique": false,
+        "delay_nonunique": false,
+        "announcement_stationarity_residual": 0.0,
+        "announcement_stationarity_log_residual": null,
+        "announcement_stationarity_scaled_residual": 0.0,
+        "announcement_stationarity_representation": "finite",
+        "local_improvement_residual": 0.0,
+        "probe_improvement_found": 0.0,
+        "probe_rounds": 1,
+        "local_quality_passed": true,
+        "last_probe_improvement": 0.0,
+        "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+        "attainment": "attained",
+        "supremum": null,
+        "envelope_evaluations": 0,
+        "envelope_root_diagnostics": [],
+        "equilibrium": false,
+        "globally_certified": false,
+        "conditional_control": "delay"
+      }
+    ],
+    "actual_preference": [
+      "no_entry"
+    ],
+    "positive_feasible_control_exists": true
+  },
+  {
+    "params": {
+      "growth": 1.0,
+      "network": 0.85,
+      "growth_end": 3.0,
+      "horizon": 3.0,
+      "quality_ratio": 1.0,
+      "margin_x": 1.0,
+      "margin_y": 0.25,
+      "discount": 1000.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 2.9604860138323772e+41,
+      "learning_rate": 100.0
+    },
+    "lower": {
+      "reference_200": {
+        "precision": 200,
+        "bracket": "-0.011012882020210532348470317688410251030664403968371690853700156358414672854620607412596773525547295804385064248811315558347839811475840094862241374478358984125121519202835400087173346255823324541791324",
+        "sign": -1,
+        "log_abs": "-1004.5086895986315663519624373775919567518154299152365842776586441367964425239555519769511323687495030754695438613431935109609763632399275382015616924727236810412580616107759248934896496508142408777657",
+        "rounded_value": -0.0
+      },
+      "reference_400": {
+        "precision": 400,
+        "bracket": "-0.01101288202021053234847031768841025103066440396837169085370015635841467285462060741259677352554729580438506424881131555834783981147584009486224137447835898412512151920283540008717334625582332454179132379347621146043127365211389789202518601642787082687904929030760747522579493973572453077329490114222894609303146063407367227270768133996579035819805048391220417748630689117283211567034552382612216842959",
+        "sign": -1,
+        "log_abs": "-1004.508689598631566351962437377591956751815429915236584277658644136796442523955551976951132368749503075469543861343193510960976363239927538201561692472723681041258061610775924893489649650814240877765737870894932046467419878028573881671129138762314997879984891576218284127115291593298730982085008993964770602129673400475157389172475860335821654481231932559349207193116012695774225223765902191454927783",
+        "rounded_value": -0.0
+      }
+    },
+    "upper": {
+      "reference_200": {
+        "precision": 200,
+        "bracket": "2.7027027027027027351416515595370797296959701032315546119705221985932105410720169854316751395066315032706024274331176467913066107952407871425215829473880391393072185173836767708563131736873300968022459E-7",
+        "sign": 1,
+        "log_abs": "-2015.1238433776144528524556418674245487739470119231066784703115851625104491931718868562448992619863740867227415430877568594784178198682241636745572659745358507910836335949237812698010364261961710080909",
+        "rounded_value": 0.0
+      },
+      "reference_400": {
+        "precision": 400,
+        "bracket": "2.702702702702702735141651559537079729695970103231554611970522198593210541072016985431675139506631503270602427433117646791306610795240787142521582947388039139307218517383676770856313173687330096802245839645836024393444069070996014105337776644052608408245788609782895068685348339311115609020853336721265657180569415838085751855408554630465493346631014472889058858759922450990206945589486576208082224233E-7",
+        "sign": 1,
+        "log_abs": "-2015.123843377614452852455641867424548773947011923106678470311585162510449193171886856244899261986374086722741543087756859478417819868224163674557265974535850791083633594923781269801036426196171008090862744700780443904210062542254370233260438519865186872318319717889921953282293053286059003655998678446836819514521203042387075335905957131284303216040150875097005903118545096300237579482486729181146076",
+        "rounded_value": 0.0
+      }
+    },
+    "selected_followers": [
+      {
+        "strategy": "RL",
+        "status": "numerical_candidate",
+        "delay": 1.0,
+        "announcement": 0.0,
+        "payoff": -0.0,
+        "share_x": 0.3508771929824561,
+        "share_y": 0.6491228070175439,
+        "evaluations": 138,
+        "delay_refinement_intervals": 2,
+        "delay_active": "lower",
+        "announcement_active": "fixed",
+        "announcement_nonunique": false,
+        "delay_nonunique": false,
+        "announcement_stationarity_residual": 0.0,
+        "announcement_stationarity_log_residual": null,
+        "announcement_stationarity_scaled_residual": 0.0,
+        "announcement_stationarity_representation": "finite",
+        "local_improvement_residual": 0.0,
+        "probe_improvement_found": 0.0,
+        "probe_rounds": 1,
+        "local_quality_passed": true,
+        "last_probe_improvement": 0.0,
+        "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+        "attainment": "attained",
+        "supremum": null,
+        "envelope_evaluations": 0,
+        "envelope_root_diagnostics": [],
+        "equilibrium": false,
+        "globally_certified": false,
+        "conditional_control": "delay and announcement"
+      },
+      {
+        "strategy": "DL",
+        "status": "numerical_candidate",
+        "delay": 1.0,
+        "announcement": 0.0,
+        "payoff": -0.0,
+        "share_x": 0.3508771929824561,
+        "share_y": 0.6491228070175439,
+        "evaluations": 138,
+        "delay_refinement_intervals": 2,
+        "delay_active": "lower",
+        "announcement_active": "not_applicable",
+        "announcement_nonunique": false,
+        "delay_nonunique": false,
+        "announcement_stationarity_residual": 0.0,
+        "announcement_stationarity_log_residual": null,
+        "announcement_stationarity_scaled_residual": 0.0,
+        "announcement_stationarity_representation": "finite",
+        "local_improvement_residual": 0.0,
+        "probe_improvement_found": 0.0,
+        "probe_rounds": 1,
+        "local_quality_passed": true,
+        "last_probe_improvement": 0.0,
+        "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+        "attainment": "attained",
+        "supremum": null,
+        "envelope_evaluations": 0,
+        "envelope_root_diagnostics": [],
+        "equilibrium": false,
+        "globally_certified": false,
+        "conditional_control": "delay"
+      }
+    ],
+    "actual_preference": [
+      "no_entry"
+    ],
+    "positive_feasible_control_exists": true
+  },
+  {
+    "params": {
+      "growth": 1.0,
+      "network": 0.0,
+      "growth_end": 3.0,
+      "horizon": 3.0,
+      "quality_ratio": 1.0,
+      "margin_x": 1.0,
+      "margin_y": 0.25,
+      "discount": 1000.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 1.7528954876194237e+89,
+      "learning_rate": 200.0
+    },
+    "lower": {
+      "reference_200": {
+        "precision": 200,
+        "bracket": "-242.58259720490203974877205051435105102882295923272677259659227607858894889068225981587421633893500091660944386101427794975936099985283802872014688661601541581018858107518497925234112487699992808121324",
+        "sign": -1,
+        "log_abs": "-994.50865774058534459101752350588462388555806740382627716163737487810361029346987865320062248240144514947615674346907822567518882958035178749016211578279283557924714443683612089826075066890946079310198",
+        "rounded_value": -0.0
+      },
+      "reference_400": {
+        "precision": 400,
+        "bracket": "-242.5825972049020397487720505143510510288229592327267725965922760785889488906822598158742163389350009166094438610142779497593609998528380287201468866160154158101885810751849792523411248769999280812132431891244636929293939742037141371224449537957241027011315354897477591859735170290096775499099843399645255063691252499318262515328835282166028989551231717685030037000850694425544301332007527995461202404",
+        "sign": -1,
+        "log_abs": "-994.5086577405853445910175235058846238855580674038262771616373748781036102934698786532006224824014451494761567434690782256751888295803517874901621157827928355792471444368361208982607506689094607931019772605158307191296531127285775426525476835434284799648735647201354578290687865907197599826713783150707855298571581012643338550390832313927860177457099548215309972409832902669864121342092429961697339970",
+        "rounded_value": -0.0
+      }
+    },
+    "upper": {
+      "reference_200": {
+        "precision": 200,
+        "bracket": "4.9999999999999999999999999999999999999999999999999999999999999999999999999999966429078558941079000990841595383390646802356395528127722881962219028807761066602264882668636688439922070977821154712287088E-7",
+        "sign": 1,
+        "log_abs": "-2014.5086577385242194135251808495643618136821090661328931103206474152988292800338102684402753787124284577769762776064752414870147624637005134577860143900725447670082745206893156676424503606180562515729",
+        "rounded_value": 0.0
+      },
+      "reference_400": {
+        "precision": 400,
+        "bracket": "4.999999999999999999999999999999999999999999999999999999999999999999999999999996642907855894107900099084159538339064680235639552812772288196221902880776106660226488266863668843992207097782115471228708829665606597268090783572002159402882418231533104402451251862087014800444786283739316450945329462116442036684470898887189358807937115405856941632332779456175277658388962914953961251275857518979967833699E-7",
+        "sign": 1,
+        "log_abs": "-2014.508657738524219413525180849564361813682109066132893110320647415298829280033810268440275378712428457776976277606475241487014762463700513457786014390072544767008274520689315667642450360618056251572875901782160249009671535969059678131290733861369303792440398675893054305976304231769693684339908868296181983062328920037313091727611174561856967564109943810217134722462065928997401530184846362863434040",
+        "rounded_value": 0.0
+      }
+    },
+    "selected_followers": [
+      {
+        "strategy": "RL",
+        "status": "numerical_candidate",
+        "delay": 1.0,
+        "announcement": 0.0,
+        "payoff": -0.0,
+        "share_x": 0.5,
+        "share_y": 0.5,
+        "evaluations": 138,
+        "delay_refinement_intervals": 2,
+        "delay_active": "lower",
+        "announcement_active": "fixed",
+        "announcement_nonunique": false,
+        "delay_nonunique": false,
+        "announcement_stationarity_residual": 0.0,
+        "announcement_stationarity_log_residual": null,
+        "announcement_stationarity_scaled_residual": 0.0,
+        "announcement_stationarity_representation": "finite",
+        "local_improvement_residual": 0.0,
+        "probe_improvement_found": 0.0,
+        "probe_rounds": 1,
+        "local_quality_passed": true,
+        "last_probe_improvement": 0.0,
+        "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+        "attainment": "attained",
+        "supremum": null,
+        "envelope_evaluations": 0,
+        "envelope_root_diagnostics": [],
+        "equilibrium": false,
+        "globally_certified": false,
+        "conditional_control": "delay and announcement"
+      },
+      {
+        "strategy": "DL",
+        "status": "numerical_candidate",
+        "delay": 1.0,
+        "announcement": 0.0,
+        "payoff": -0.0,
+        "share_x": 0.5,
+        "share_y": 0.5,
+        "evaluations": 138,
+        "delay_refinement_intervals": 2,
+        "delay_active": "lower",
+        "announcement_active": "not_applicable",
+        "announcement_nonunique": false,
+        "delay_nonunique": false,
+        "announcement_stationarity_residual": 0.0,
+        "announcement_stationarity_log_residual": null,
+        "announcement_stationarity_scaled_residual": 0.0,
+        "announcement_stationarity_representation": "finite",
+        "local_improvement_residual": 0.0,
+        "probe_improvement_found": 0.0,
+        "probe_rounds": 1,
+        "local_quality_passed": true,
+        "last_probe_improvement": 0.0,
+        "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+        "attainment": "attained",
+        "supremum": null,
+        "envelope_evaluations": 0,
+        "envelope_root_diagnostics": [],
+        "equilibrium": false,
+        "globally_certified": false,
+        "conditional_control": "delay"
+      }
+    ],
+    "actual_preference": [
+      "no_entry"
+    ],
+    "positive_feasible_control_exists": true
+  },
+  {
+    "params": {
+      "growth": 1.0,
+      "network": 0.85,
+      "growth_end": 3.0,
+      "horizon": 3.0,
+      "quality_ratio": 1.0,
+      "margin_x": 1.0,
+      "margin_y": 0.25,
+      "discount": 1000.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 1.7528954876194237e+89,
+      "learning_rate": 200.0
+    },
+    "lower": {
+      "reference_200": {
+        "precision": 200,
+        "bracket": "-242.58259735402484676631590742977604425712323852254568176447054205585424929985920490245181695478870215798584507761972362724379942848301824934705196957019950667671212112241895372643916211068767288990458",
+        "sign": -1,
+        "log_abs": "-994.50865773997061456219460144609870289342070960201236946653378107260712858674597762621557794587487123562330614335205559545624915322737277994211655813181986843433717222043414884815845183034328466226340",
+        "rounded_value": -0.0
+      },
+      "reference_400": {
+        "precision": 400,
+        "bracket": "-242.5825973540248467663159074297760442571232385225456817644705420558542492998592049024518169547887021579858450776197236272437994284830182493470519695701995066767121211224189537264391621106876728899045805170223049524145071459588810123743718596963113753131113778214186106869805833828781042527103606029068095909669276042224157021855309379609411295815131148704978536205383340415078135245996999835530567373",
+        "sign": -1,
+        "log_abs": "-994.5086577399706145621946014460987028934207096020123694665337810726071285867459776262155779458748712356233061433520555954562491532273727799421165581318198684343371722204341488481584518303432846622634024529436247404023315662730502482681539421014836918527066555605833956131716432667871797976833727207986776958623698556188378924308520347184587651668584073452791988239252425881729875221570284102648378245",
+        "rounded_value": -0.0
+      }
+    },
+    "upper": {
+      "reference_200": {
+        "precision": 200,
+        "bracket": "2.7027027027027027351416515595370797297000671095435499279220541440591607868945928167753400334337504136357175169805887787656056516212862511141728865207424029840918619586295499806048794206589875554616376E-7",
+        "sign": 1,
+        "log_abs": "-2015.1238433776144528524556418674245487739454960307712402034277127056464947919841166807325812716956176382184344771942980026148137426921862885510801476082158451560744517383802020803414282725594316820597",
+        "rounded_value": 0.0
+      },
+      "reference_400": {
+        "precision": 400,
+        "bracket": "2.702702702702702735141651559537079729700067109543549927922054144059160786894592816775340033433750413635717516980588778765605651621286251114172886520742402984091861958629549980604879420658987555461637592137643273485943075385089130354273589510174165449875920693378681657246775139308354624490913467322374884096118023105691484940467362285116694015750623060957719532054360395151722397683851859635778717551E-7",
+        "sign": 1,
+        "log_abs": "-2015.123843377614452852455641867424548773945496030771240203427712705646494791984116680732581271695617638218434477194298002614813742692186288551080147608215845156074451738380202080341428272559431682059725581148210885050029427123969351942698802425080992434647825348545633233155628327470951312481405626831825604037000084902331097156337468066402099303531096240422851734652479730075320956608636992015099347",
+        "rounded_value": 0.0
+      }
+    },
+    "selected_followers": [
+      {
+        "strategy": "RL",
+        "status": "numerical_candidate",
+        "delay": 1.0,
+        "announcement": 0.0,
+        "payoff": -0.0,
+        "share_x": 0.3508771929824561,
+        "share_y": 0.6491228070175439,
+        "evaluations": 138,
+        "delay_refinement_intervals": 2,
+        "delay_active": "lower",
+        "announcement_active": "fixed",
+        "announcement_nonunique": false,
+        "delay_nonunique": false,
+        "announcement_stationarity_residual": 0.0,
+        "announcement_stationarity_log_residual": null,
+        "announcement_stationarity_scaled_residual": 0.0,
+        "announcement_stationarity_representation": "finite",
+        "local_improvement_residual": 0.0,
+        "probe_improvement_found": 0.0,
+        "probe_rounds": 1,
+        "local_quality_passed": true,
+        "last_probe_improvement": 0.0,
+        "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+        "attainment": "attained",
+        "supremum": null,
+        "envelope_evaluations": 0,
+        "envelope_root_diagnostics": [],
+        "equilibrium": false,
+        "globally_certified": false,
+        "conditional_control": "delay and announcement"
+      },
+      {
+        "strategy": "DL",
+        "status": "numerical_candidate",
+        "delay": 1.0,
+        "announcement": 0.0,
+        "payoff": -0.0,
+        "share_x": 0.3508771929824561,
+        "share_y": 0.6491228070175439,
+        "evaluations": 138,
+        "delay_refinement_intervals": 2,
+        "delay_active": "lower",
+        "announcement_active": "not_applicable",
+        "announcement_nonunique": false,
+        "delay_nonunique": false,
+        "announcement_stationarity_residual": 0.0,
+        "announcement_stationarity_log_residual": null,
+        "announcement_stationarity_scaled_residual": 0.0,
+        "announcement_stationarity_representation": "finite",
+        "local_improvement_residual": 0.0,
+        "probe_improvement_found": 0.0,
+        "probe_rounds": 1,
+        "local_quality_passed": true,
+        "last_probe_improvement": 0.0,
+        "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+        "attainment": "attained",
+        "supremum": null,
+        "envelope_evaluations": 0,
+        "envelope_root_diagnostics": [],
+        "equilibrium": false,
+        "globally_certified": false,
+        "conditional_control": "delay"
+      }
+    ],
+    "actual_preference": [
+      "no_entry"
+    ],
+    "positive_feasible_control_exists": true
+  },
+  {
+    "params": {
+      "growth": 1.0,
+      "network": 0.0,
+      "growth_end": 3.0,
+      "horizon": 3.0,
+      "quality_ratio": 1.0,
+      "margin_x": 1.0,
+      "margin_y": 0.25,
+      "discount": 2000.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 9.618481581427589e+16,
+      "learning_rate": 50.0
+    },
+    "lower": {
+      "reference_200": {
+        "precision": 200,
+        "bracket": "-0.000018426644887822205381541740532466778833322911957857154808198387680107008912194798222808878809257110058293800231635487502738638893124488397534698974934217496085528627769250996826409173073982760023983278",
+        "sign": -1,
+        "log_abs": "-2010.9017128490935915376861511587903094129091012271150859366307437157526937527946029213646215152677617582658185470353116260552169923050788647245248319259297911412507572331188878753091825218002463922235",
+        "rounded_value": -0.0
+      },
+      "reference_400": {
+        "precision": 400,
+        "bracket": "-0.00001842664488782220538154174053246677883332291195785715480819838768010700891219479822280887880925711005829380023163548750273863889312448839753469897493421749608552862776925099682640917307398276002398327808163043954431745765797761841913992468966105406849916902927905457182527243162593912934846456532334183534080815479329777716323954508041333944679043903179734695366651341039211588977801593346571697953709",
+        "sign": -1,
+        "log_abs": "-2010.901712849093591537686151158790309412909101227115085936630743715752693752794602921364621515267761758265818547035311626055216992305078864724524831925929791141250757233118887875309182521800246392223537175321450560705808226576037080589783726542849154578664077231808788303257725644886352182957150583282978467818809942235636355229698818904373908180234765258829542390147691955787941790814903830629415819",
+        "rounded_value": -0.0
+      }
+    },
+    "upper": {
+      "reference_200": {
+        "precision": 200,
+        "bracket": "1.2499999999999999999642185177431323287955541896407808268497512841650817720125707904727183920759575676612957449956520586071000493983653466004289747813069609514113904410258403296410375287063473689116254E-7",
+        "sign": 1,
+        "log_abs": "-4015.8949520996441100323882702782862090867970756837719784885936217751145514468347494452876714627384898600839031796047640530758484104670509355506141845448406161728754829176887631758468354445043389171122",
+        "rounded_value": 0.0
+      },
+      "reference_400": {
+        "precision": 400,
+        "bracket": "1.249999999999999999964218517743132328795554189640780826849751284165081772012570790472718392075957567661295744995652058607100049398365346600428974781306960951411390441025840329641037528706347368911625422904486840062006212046000972700322770622334892894978968270962793069384977877068144711888920915670783569088251343912379282653355428988617601070134965334231626904428545705525835415179179680644022190902E-7",
+        "sign": 1,
+        "log_abs": "-4015.894952099644110032388270278286209086797075683771978488593621775114551446834749445287671462738489860083903179604764053075848410467050935550614184544840616172875482917688763175846835444504338917112195068717880729563927575282006781048014328401340515432655831027862744361036647538671714779069173488736188792207425779797826681828293118151423591929390532791114348210902682668381504935337765653960587035",
+        "rounded_value": 0.0
+      }
+    },
+    "selected_followers": [
+      {
+        "strategy": "RL",
+        "status": "numerical_candidate",
+        "delay": 1.0,
+        "announcement": 0.0,
+        "payoff": -0.0,
+        "share_x": 0.5,
+        "share_y": 0.5,
+        "evaluations": 138,
+        "delay_refinement_intervals": 2,
+        "delay_active": "lower",
+        "announcement_active": "fixed",
+        "announcement_nonunique": false,
+        "delay_nonunique": false,
+        "announcement_stationarity_residual": 0.0,
+        "announcement_stationarity_log_residual": null,
+        "announcement_stationarity_scaled_residual": 0.0,
+        "announcement_stationarity_representation": "finite",
+        "local_improvement_residual": 0.0,
+        "probe_improvement_found": 0.0,
+        "probe_rounds": 1,
+        "local_quality_passed": true,
+        "last_probe_improvement": 0.0,
+        "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+        "attainment": "attained",
+        "supremum": null,
+        "envelope_evaluations": 0,
+        "envelope_root_diagnostics": [],
+        "equilibrium": false,
+        "globally_certified": false,
+        "conditional_control": "delay and announcement"
+      },
+      {
+        "strategy": "DL",
+        "status": "numerical_candidate",
+        "delay": 1.0,
+        "announcement": 0.0,
+        "payoff": -0.0,
+        "share_x": 0.5,
+        "share_y": 0.5,
+        "evaluations": 138,
+        "delay_refinement_intervals": 2,
+        "delay_active": "lower",
+        "announcement_active": "not_applicable",
+        "announcement_nonunique": false,
+        "delay_nonunique": false,
+        "announcement_stationarity_residual": 0.0,
+        "announcement_stationarity_log_residual": null,
+        "announcement_stationarity_scaled_residual": 0.0,
+        "announcement_stationarity_representation": "finite",
+        "local_improvement_residual": 0.0,
+        "probe_improvement_found": 0.0,
+        "probe_rounds": 1,
+        "local_quality_passed": true,
+        "last_probe_improvement": 0.0,
+        "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+        "attainment": "attained",
+        "supremum": null,
+        "envelope_evaluations": 0,
+        "envelope_root_diagnostics": [],
+        "equilibrium": false,
+        "globally_certified": false,
+        "conditional_control": "delay"
+      }
+    ],
+    "actual_preference": [
+      "no_entry"
+    ],
+    "positive_feasible_control_exists": true
+  },
+  {
+    "params": {
+      "growth": 1.0,
+      "network": 0.85,
+      "growth_end": 3.0,
+      "horizon": 3.0,
+      "quality_ratio": 1.0,
+      "margin_x": 1.0,
+      "margin_y": 0.25,
+      "discount": 2000.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 9.618481581427589e+16,
+      "learning_rate": 50.0
+    },
+    "lower": {
+      "reference_200": {
+        "precision": 200,
+        "bracket": "-0.000018463925589576591345770596780773853903145366685149124374692704005209303148466442622962842234567454158597951593054858612345796438179645123805437520956934126970540436262869521335717595010184932858315252",
+        "sign": -1,
+        "log_abs": "-2010.8996916976739699628185632069852514306126301155089617168471995832904367349332953467866253810986455611022411000634799432159600864891638382098577799807275615624744209171297765825123457123836892684012",
+        "rounded_value": -0.0
+      },
+      "reference_400": {
+        "precision": 400,
+        "bracket": "-0.00001846392558957659134577059678077385390314536668514912437469270400520930314846644262296284223456745415859795159305485861234579643817964512380543752095693412697054043626286952133571759501018493285831525254194531082261039644969643140086639983647920706345975194699192982359186089873261482944253030089436298479139672744066044032509198116497099604427621453050982706698266314873796373951481193519984120440543",
+        "sign": -1,
+        "log_abs": "-2010.899691697673969962818563206985251430612630115508961716847199583290436734933295346786625381098645561102241100063479943215960086489163838209857779980727561562474420917129776582512345712383689268401190091099848481075726772428024632576365514177798385082810242311653909674652860599777002643366100297913773031058841433762341946932649878553884458392291568131393604296652064657286632619330766182409141392",
+        "rounded_value": -0.0
+      }
+    },
+    "upper": {
+      "reference_200": {
+        "precision": 200,
+        "bracket": "6.7567567567567568374963140762740226122057096702666830883026482017987196873621983393958942690742014629918523965603308323959157410049383732991672069129853503237773386396731061379420560942556538996985762E-8",
+        "sign": 1,
+        "log_abs": "-4016.5101377387343434713430627040810660628448714919250195108736950406630777909127093453669871688511946685774463949175509598181691852943040880503832370744441316298124894042722284548476614297338300208014",
+        "rounded_value": 0.0
+      },
+      "reference_400": {
+        "precision": 400,
+        "bracket": "6.756756756756756837496314076274022612205709670266683088302648201798719687362198339395894269074201462991852396560330832395915741004938373299167206912985350323777338639673106137942056094255653899698576135224960091164692849992727154381705634419951581568351354787857097835854750909604042552753169169722667809411631249670048141864879907084325391659894262354272373728448950755752757017811782658079749118655E-8",
+        "sign": 1,
+        "log_abs": "-4016.510137738734343471343062704081066062844871491925019510873695040663077790912709345366987168851194668577446394917550959818169185294304088050383237074444131629812489404272228454847661429733830020801432414626495591920428177562143964165085668304597598986072386579145113249559528989965382519794420214441862613308448385064641990409504910623192447593596676555741365181888331947062761823607072743512640990",
+        "rounded_value": 0.0
+      }
+    },
+    "selected_followers": [
+      {
+        "strategy": "RL",
+        "status": "numerical_candidate",
+        "delay": 1.0,
+        "announcement": 0.0,
+        "payoff": -0.0,
+        "share_x": 0.3508771929824561,
+        "share_y": 0.6491228070175439,
+        "evaluations": 138,
+        "delay_refinement_intervals": 2,
+        "delay_active": "lower",
+        "announcement_active": "fixed",
+        "announcement_nonunique": false,
+        "delay_nonunique": false,
+        "announcement_stationarity_residual": 0.0,
+        "announcement_stationarity_log_residual": null,
+        "announcement_stationarity_scaled_residual": 0.0,
+        "announcement_stationarity_representation": "finite",
+        "local_improvement_residual": 0.0,
+        "probe_improvement_found": 0.0,
+        "probe_rounds": 1,
+        "local_quality_passed": true,
+        "last_probe_improvement": 0.0,
+        "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+        "attainment": "attained",
+        "supremum": null,
+        "envelope_evaluations": 0,
+        "envelope_root_diagnostics": [],
+        "equilibrium": false,
+        "globally_certified": false,
+        "conditional_control": "delay and announcement"
+      },
+      {
+        "strategy": "DL",
+        "status": "numerical_candidate",
+        "delay": 1.0,
+        "announcement": 0.0,
+        "payoff": -0.0,
+        "share_x": 0.3508771929824561,
+        "share_y": 0.6491228070175439,
+        "evaluations": 138,
+        "delay_refinement_intervals": 2,
+        "delay_active": "lower",
+        "announcement_active": "not_applicable",
+        "announcement_nonunique": false,
+        "delay_nonunique": false,
+        "announcement_stationarity_residual": 0.0,
+        "announcement_stationarity_log_residual": null,
+        "announcement_stationarity_scaled_residual": 0.0,
+        "announcement_stationarity_representation": "finite",
+        "local_improvement_residual": 0.0,
+        "probe_improvement_found": 0.0,
+        "probe_rounds": 1,
+        "local_quality_passed": true,
+        "last_probe_improvement": 0.0,
+        "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+        "attainment": "attained",
+        "supremum": null,
+        "envelope_evaluations": 0,
+        "envelope_root_diagnostics": [],
+        "equilibrium": false,
+        "globally_certified": false,
+        "conditional_control": "delay"
+      }
+    ],
+    "actual_preference": [
+      "no_entry"
+    ],
+    "positive_feasible_control_exists": true
+  },
+  {
+    "params": {
+      "growth": 1.0,
+      "network": 0.0,
+      "growth_end": 3.0,
+      "horizon": 3.0,
+      "quality_ratio": 1.0,
+      "margin_x": 1.0,
+      "margin_y": 0.25,
+      "discount": 2000.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 7.401215034580943e+40,
+      "learning_rate": 100.0
+    },
+    "lower": {
+      "reference_200": {
+        "precision": 200,
+        "bracket": "-0.0027531832243508787011533505658542556825962785373656307438585447732785659194188802087490394179615136069959619108414095184773527953239048669892896050735670294003953679922152314972840281420196289626134990",
+        "sign": -1,
+        "log_abs": "-2005.8949975006044663065567715621662712824406146785378219515666793611119320317232400271014565852789816178471014291086876783511267445880910760038123793820313060552167603897253258138564087940877797062692",
+        "rounded_value": -0.0
+      },
+      "reference_400": {
+        "precision": 400,
+        "bracket": "-0.002753183224350878701153350565854255682596278537365630743858544773278565919418880208749039417961513606995961910841409518477352795323904866989289605073567029400395367992215231497284028142019628962613498973908737993829525474236755660024570028960149553724801739659188993554682146466824456993229659549986215373807276585871055405015067898906889932952026845479338564258260573054862181067849584954796417882529",
+        "sign": -1,
+        "log_abs": "-2005.894997500604466306556771562166271282440614678537821951566679361111932031723240027101456585278981617847101429108687678351126744588091076003812379382031306055216760389725325813856408794087779706269193279963097852255448700272482706233767615865880918119251971588916468881292991064683068628823919767434994758438262689537743963734641368041291546811319712545885522833608752916944129765609608616354183115",
+        "rounded_value": -0.0
+      }
+    },
+    "upper": {
+      "reference_200": {
+        "precision": 200,
+        "bracket": "1.2499999999999999999999999999999999999989757484220011710121170136335124385443552028910477500451952971797611121978983870653351279966817060561426498268554357038604612064044489085609102127026145031423293E-7",
+        "sign": 1,
+        "log_abs": "-4015.8949520996441100323596450924807149498339287361158026817523138233788065731377152016299494220798934493611068092756610424210865561338460995862178840912342141149513040651743868596578584062354529537826",
+        "rounded_value": 0.0
+      },
+      "reference_400": {
+        "precision": 400,
+        "bracket": "1.249999999999999999999999999999999999998975748422001171012117013633512438544355202891047750045195297179761112197898387065335127996681706056142649826855435703860461206404448908560910212702614503142329269293449837043897944314477260788486651341352886840205279944622807052970839870935519358868817332878833202442230572904895906430719576937801435240803292717026654246273631242698111449795373058888067835095E-7",
+        "sign": 1,
+        "log_abs": "-4015.894952099644110032359645092480714949833928736115802681752313823378806573137715201629949422079893449361106809275661042421086556133846099586217884091234214114951304065174386859657858406235452953782628026700518578492309798884652486370200968000556956706852868752141839212592735729138796245916096564136618744457907052377837011791030013766282916025358158092786375332785465702435974404661175870596929942",
+        "rounded_value": 0.0
+      }
+    },
+    "selected_followers": [
+      {
+        "strategy": "RL",
+        "status": "numerical_candidate",
+        "delay": 1.0,
+        "announcement": 0.0,
+        "payoff": -0.0,
+        "share_x": 0.5,
+        "share_y": 0.5,
+        "evaluations": 138,
+        "delay_refinement_intervals": 2,
+        "delay_active": "lower",
+        "announcement_active": "fixed",
+        "announcement_nonunique": false,
+        "delay_nonunique": false,
+        "announcement_stationarity_residual": 0.0,
+        "announcement_stationarity_log_residual": null,
+        "announcement_stationarity_scaled_residual": 0.0,
+        "announcement_stationarity_representation": "finite",
+        "local_improvement_residual": 0.0,
+        "probe_improvement_found": 0.0,
+        "probe_rounds": 1,
+        "local_quality_passed": true,
+        "last_probe_improvement": 0.0,
+        "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+        "attainment": "attained",
+        "supremum": null,
+        "envelope_evaluations": 0,
+        "envelope_root_diagnostics": [],
+        "equilibrium": false,
+        "globally_certified": false,
+        "conditional_control": "delay and announcement"
+      },
+      {
+        "strategy": "DL",
+        "status": "numerical_candidate",
+        "delay": 1.0,
+        "announcement": 0.0,
+        "payoff": -0.0,
+        "share_x": 0.5,
+        "share_y": 0.5,
+        "evaluations": 138,
+        "delay_refinement_intervals": 2,
+        "delay_active": "lower",
+        "announcement_active": "not_applicable",
+        "announcement_nonunique": false,
+        "delay_nonunique": false,
+        "announcement_stationarity_residual": 0.0,
+        "announcement_stationarity_log_residual": null,
+        "announcement_stationarity_scaled_residual": 0.0,
+        "announcement_stationarity_representation": "finite",
+        "local_improvement_residual": 0.0,
+        "probe_improvement_found": 0.0,
+        "probe_rounds": 1,
+        "local_quality_passed": true,
+        "last_probe_improvement": 0.0,
+        "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+        "attainment": "attained",
+        "supremum": null,
+        "envelope_evaluations": 0,
+        "envelope_root_diagnostics": [],
+        "equilibrium": false,
+        "globally_certified": false,
+        "conditional_control": "delay"
+      }
+    ],
+    "actual_preference": [
+      "no_entry"
+    ],
+    "positive_feasible_control_exists": true
+  },
+  {
+    "params": {
+      "growth": 1.0,
+      "network": 0.85,
+      "growth_end": 3.0,
+      "horizon": 3.0,
+      "quality_ratio": 1.0,
+      "margin_x": 1.0,
+      "margin_y": 0.25,
+      "discount": 2000.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 7.401215034580943e+40,
+      "learning_rate": 100.0
+    },
+    "lower": {
+      "reference_200": {
+        "precision": 200,
+        "bracket": "-0.0027532205050526330871175794221025627576661009920929227134250390896036682136551518531491933813868239510962660622028288895869599528689600237155603436195897460312803798007088500217933365639558311354478310",
+        "sign": -1,
+        "log_abs": "-2005.8949839597514569707969016205083098879664301839570947859000041557832297678949414081628590227423404505535468233843348824283474037114437993156270339759938329651195167524326677638702637280620242247080",
+        "rounded_value": -0.0
+      },
+      "reference_400": {
+        "precision": 400,
+        "bracket": "-0.002753220505052633087117579422102562757666100992092922713425039089603668213655151853149193381386823951096266062202828889586959952868960023715560343619589746031280379800708850021793336563955831135447830948369052865107818413028474473006296504106967706719762322576901868806448734933931132693323725285557236523257865158518418068176920334991447589549512620978051044371576722793208028917586380956530542107397",
+        "sign": -1,
+        "log_abs": "-2005.894983959751456970796901620508309887966430183957094785900004155783229767894941408162859022742340450553546823384334882428347403711443799315627033975993832965119516752432667763870263728062024224707984571125661042377898118978919244820993269073364466159036657477124298317768024878606939460400638898052251462900675004363498672515513149761501590824801026473401750455245104996288640028729177738234204885",
+        "rounded_value": -0.0
+      }
+    },
+    "upper": {
+      "reference_200": {
+        "precision": 200,
+        "bracket": "6.7567567567567568378541288988426993242399252580788865299263054964830263526800424635791878487665787581765060685827941169782665269881019678563039573684700978482680462934591919271407829342183252420056147E-8",
+        "sign": 1,
+        "log_abs": "-4016.5101377387343434712901061103409019100980121918271889785529451814972364371112762874566259159792114618067445051288982309457888603397404247886226074778060027149450887365805241401816505034439543550331",
+        "rounded_value": 0.0
+      },
+      "reference_400": {
+        "precision": 400,
+        "bracket": "6.756756756756756837854128898842699324239925258078886529926305496483026352680042463579187848766578758176506068582794116978266526988101967856303957368470097848268046293459191927140782934218325242005614599114590060983610172677490035263344441610131521020614471524457237671713370848277789022552133341803164142951423539595214379638521386576163733366577536182222647146899806127475517363973716440520205560581E-8",
+        "sign": 1,
+        "log_abs": "-4016.510137738734343471290106110340901910098012191827188978552945181497236437111276287456625915979211461806744505128898230945788860339740424788622607477806002714945088736580524140181650503443954355033109444931509439814688303492599733383124568830914655151370085618795936143935026338594267481971628582534317680285522806930728358678943246556964239559609244789149549165247637396814652384445762275960423178",
+        "rounded_value": 0.0
+      }
+    },
+    "selected_followers": [
+      {
+        "strategy": "RL",
+        "status": "numerical_candidate",
+        "delay": 1.0,
+        "announcement": 0.0,
+        "payoff": -0.0,
+        "share_x": 0.3508771929824561,
+        "share_y": 0.6491228070175439,
+        "evaluations": 138,
+        "delay_refinement_intervals": 2,
+        "delay_active": "lower",
+        "announcement_active": "fixed",
+        "announcement_nonunique": false,
+        "delay_nonunique": false,
+        "announcement_stationarity_residual": 0.0,
+        "announcement_stationarity_log_residual": null,
+        "announcement_stationarity_scaled_residual": 0.0,
+        "announcement_stationarity_representation": "finite",
+        "local_improvement_residual": 0.0,
+        "probe_improvement_found": 0.0,
+        "probe_rounds": 1,
+        "local_quality_passed": true,
+        "last_probe_improvement": 0.0,
+        "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+        "attainment": "attained",
+        "supremum": null,
+        "envelope_evaluations": 0,
+        "envelope_root_diagnostics": [],
+        "equilibrium": false,
+        "globally_certified": false,
+        "conditional_control": "delay and announcement"
+      },
+      {
+        "strategy": "DL",
+        "status": "numerical_candidate",
+        "delay": 1.0,
+        "announcement": 0.0,
+        "payoff": -0.0,
+        "share_x": 0.3508771929824561,
+        "share_y": 0.6491228070175439,
+        "evaluations": 138,
+        "delay_refinement_intervals": 2,
+        "delay_active": "lower",
+        "announcement_active": "not_applicable",
+        "announcement_nonunique": false,
+        "delay_nonunique": false,
+        "announcement_stationarity_residual": 0.0,
+        "announcement_stationarity_log_residual": null,
+        "announcement_stationarity_scaled_residual": 0.0,
+        "announcement_stationarity_representation": "finite",
+        "local_improvement_residual": 0.0,
+        "probe_improvement_found": 0.0,
+        "probe_rounds": 1,
+        "local_quality_passed": true,
+        "last_probe_improvement": 0.0,
+        "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+        "attainment": "attained",
+        "supremum": null,
+        "envelope_evaluations": 0,
+        "envelope_root_diagnostics": [],
+        "equilibrium": false,
+        "globally_certified": false,
+        "conditional_control": "delay"
+      }
+    ],
+    "actual_preference": [
+      "no_entry"
+    ],
+    "positive_feasible_control_exists": true
+  },
+  {
+    "params": {
+      "growth": 1.0,
+      "network": 0.0,
+      "growth_end": 3.0,
+      "horizon": 3.0,
+      "quality_ratio": 1.0,
+      "margin_x": 1.0,
+      "margin_y": 0.25,
+      "discount": 2000.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 4.382238719048559e+88,
+      "learning_rate": 200.0
+    },
+    "lower": {
+      "reference_200": {
+        "precision": 200,
+        "bracket": "-60.645649301225509937193012628587762757205739808181693149148069019647237222670564953968554084733750229152360965253569487439840249963209507180036721654003853952547145268796244813085281219249982020303309",
+        "sign": -1,
+        "log_abs": "-1995.8949521017052352098519877488009770217090676725467876698787348970903975374092680844123491363942825245601597055102195971425598700518680486042274572860629875031085995784928637686413647461572441400442",
+        "rounded_value": -0.0
+      },
+      "reference_400": {
+        "precision": 400,
+        "bracket": "-60.64564930122550993719301262858776275720573980818169314914806901964723722267056495396855408473375022915236096525356948743984024996320950718003672165400385395254714526879624481308528121924998202030331079728111592323234849355092853428061123844893102567528288387243693979649337925725241938747749608499113137659228131248295656288322088205415072473878079294212575092502126736063860753330018819988653006011",
+        "sign": -1,
+        "log_abs": "-1995.894952101705235209851987748800977021709067672546787669878734897090397537409268084412349136394282524560159705510219597142559870051868048604227457286062987503108599578492863768641364746157244140044223960746559715040131353678922905802411813854477948243925330621041472019721519876027968460987008219158266390628159705152675138382120520818465954089279048735583540503112382567500826939172518542949011098",
+        "rounded_value": -0.0
+      }
+    },
+    "upper": {
+      "reference_200": {
+        "precision": 200,
+        "bracket": "1.2499999999999999999999999999999999999999999999999999999999999999999999999999991607269639735269750247710398845847661700589098882031930720490554757201940266650566220667159172109980517744455288678071772E-7",
+        "sign": 1,
+        "log_abs": "-4015.8949520996441100323596450924807149498331093348534036185620074342856165239731996996520020327052658328609792396476166129543858029352167745718513558933426966908697296623460585380230644378658395985151",
+        "rounded_value": 0.0
+      },
+      "reference_400": {
+        "precision": 400,
+        "bracket": "1.249999999999999999999999999999999999999999999999999999999999999999999999999999160726963973526975024771039884584766170058909888203193072049055475720194026665056622066715917210998051774445528867807177207416401649317022695893000539850720604557883276100612812965521753700111196570934829112736332365529110509171117724721797339701984278851464235408083194864043819414597240728738490312818964379744991958425E-7",
+        "sign": 1,
+        "log_abs": "-4015.894952099644110032359645092480714949833109334853403618562007434285616523973199699652002032705265832860979239647616612954385802935216774571851355893342696690869729662346058538023064437865839598515122602012889244920149776919405041281154864172418772071492164576799068496629037517077902162655538772383662843833330523925654375070648463987536903907679037724269677984591158229511816335148121909642711141",
+        "rounded_value": 0.0
+      }
+    },
+    "selected_followers": [
+      {
+        "strategy": "RL",
+        "status": "numerical_candidate",
+        "delay": 1.0,
+        "announcement": 0.0,
+        "payoff": -0.0,
+        "share_x": 0.5,
+        "share_y": 0.5,
+        "evaluations": 138,
+        "delay_refinement_intervals": 2,
+        "delay_active": "lower",
+        "announcement_active": "fixed",
+        "announcement_nonunique": false,
+        "delay_nonunique": false,
+        "announcement_stationarity_residual": 0.0,
+        "announcement_stationarity_log_residual": null,
+        "announcement_stationarity_scaled_residual": 0.0,
+        "announcement_stationarity_representation": "finite",
+        "local_improvement_residual": 0.0,
+        "probe_improvement_found": 0.0,
+        "probe_rounds": 1,
+        "local_quality_passed": true,
+        "last_probe_improvement": 0.0,
+        "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+        "attainment": "attained",
+        "supremum": null,
+        "envelope_evaluations": 0,
+        "envelope_root_diagnostics": [],
+        "equilibrium": false,
+        "globally_certified": false,
+        "conditional_control": "delay and announcement"
+      },
+      {
+        "strategy": "DL",
+        "status": "numerical_candidate",
+        "delay": 1.0,
+        "announcement": 0.0,
+        "payoff": -0.0,
+        "share_x": 0.5,
+        "share_y": 0.5,
+        "evaluations": 138,
+        "delay_refinement_intervals": 2,
+        "delay_active": "lower",
+        "announcement_active": "not_applicable",
+        "announcement_nonunique": false,
+        "delay_nonunique": false,
+        "announcement_stationarity_residual": 0.0,
+        "announcement_stationarity_log_residual": null,
+        "announcement_stationarity_scaled_residual": 0.0,
+        "announcement_stationarity_representation": "finite",
+        "local_improvement_residual": 0.0,
+        "probe_improvement_found": 0.0,
+        "probe_rounds": 1,
+        "local_quality_passed": true,
+        "last_probe_improvement": 0.0,
+        "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+        "attainment": "attained",
+        "supremum": null,
+        "envelope_evaluations": 0,
+        "envelope_root_diagnostics": [],
+        "equilibrium": false,
+        "globally_certified": false,
+        "conditional_control": "delay"
+      }
+    ],
+    "actual_preference": [
+      "no_entry"
+    ],
+    "positive_feasible_control_exists": true
+  },
+  {
+    "params": {
+      "growth": 1.0,
+      "network": 0.85,
+      "growth_end": 3.0,
+      "horizon": 3.0,
+      "quality_ratio": 1.0,
+      "margin_x": 1.0,
+      "margin_y": 0.25,
+      "discount": 2000.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 4.382238719048559e+88,
+      "learning_rate": 200.0
+    },
+    "lower": {
+      "reference_200": {
+        "precision": 200,
+        "bracket": "-60.645649338506211691578976857444011064280809630636420441117635513963562324964801225612954238697175539496461269404930906810949857120754562336762992392549876669178030280604738431609790527671918222476143",
+        "sign": -1,
+        "log_abs": "-1995.8949521010905051810290656890150560295717098707328799747751410915939158306853670574273045998677086107073091053931969669236201936988890410561818996350900203581986273620908917185390659075910680092056",
+        "rounded_value": -0.0
+      },
+      "reference_400": {
+        "precision": 400,
+        "bracket": "-60.64564933850621169157897685744401106428080963063642044111763551396356232496480122561295423869717553949646126940493090681094985712075456233676299239254987666917803028060473843160979052767191822247614512925557623810362678648972025309359296492407784382827784445535465267174514584571952606317759015072670239774173190105560392554638273449023528239537827871762446340513458351037695338114992499588826418433",
+        "sign": -1,
+        "log_abs": "-1995.894952101090505181029065689015056029571709870732879974775141091593915830685367057427304599867708610707309105393196966923620193698889041056181899635090020358198627362090891718539065907591068009205649153174353736312809807223395611418018072412533160131758421461489409803824376552095388275999002624886158556633371459507179175773889324144138701510427501259331742086054334888687402327120303957044114926",
+        "rounded_value": -0.0
+      }
+    },
+    "upper": {
+      "reference_200": {
+        "precision": 200,
+        "bracket": "6.7567567567567568378541288988426993242501677738588748198051353601479019672364820419383500835843760340892937924514719469140141290532156277854322163018560074602296548965738749515121985516474688886540941E-8",
+        "sign": 1,
+        "log_abs": "-4016.5101377387343434712901061103409019100964962994917507116690727246332820359235061119443079256884550133024374392354393740821847831637025496651454891114859970799359068800369449507220423498072150290020",
+        "rounded_value": 0.0
+      },
+      "reference_400": {
+        "precision": 400,
+        "bracket": "6.756756756756756837854128898842699324250167773858874819805135360147901967236482041938350083584376034089293792451471946914014129053215627785432216301856007460229654896573874951512198551647468888654093980344108183714857688462722825885683973775435413624689801733446704143116937848270886561227283668305937210240295057764228712351168405712791735039376557652394298830135900987879305994209629649089446793879E-8",
+        "sign": 1,
+        "log_abs": "-4016.510137738734343471290106110340901910096496299491750711669072724633282035923506111944307925688455013302437439235439374082184783163702549665145489111485997079935906880036944950722042349807215029001972281378939880960507668074314715092562932736130460713699591249451647423808361612779159790797035530919306464808001688790672380499374757492082035647100190154475394996781572030589735761571912538794376448",
+        "rounded_value": 0.0
+      }
+    },
+    "selected_followers": [
+      {
+        "strategy": "RL",
+        "status": "numerical_candidate",
+        "delay": 1.0,
+        "announcement": 0.0,
+        "payoff": -0.0,
+        "share_x": 0.3508771929824561,
+        "share_y": 0.6491228070175439,
+        "evaluations": 138,
+        "delay_refinement_intervals": 2,
+        "delay_active": "lower",
+        "announcement_active": "fixed",
+        "announcement_nonunique": false,
+        "delay_nonunique": false,
+        "announcement_stationarity_residual": 0.0,
+        "announcement_stationarity_log_residual": null,
+        "announcement_stationarity_scaled_residual": 0.0,
+        "announcement_stationarity_representation": "finite",
+        "local_improvement_residual": 0.0,
+        "probe_improvement_found": 0.0,
+        "probe_rounds": 1,
+        "local_quality_passed": true,
+        "last_probe_improvement": 0.0,
+        "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+        "attainment": "attained",
+        "supremum": null,
+        "envelope_evaluations": 0,
+        "envelope_root_diagnostics": [],
+        "equilibrium": false,
+        "globally_certified": false,
+        "conditional_control": "delay and announcement"
+      },
+      {
+        "strategy": "DL",
+        "status": "numerical_candidate",
+        "delay": 1.0,
+        "announcement": 0.0,
+        "payoff": -0.0,
+        "share_x": 0.3508771929824561,
+        "share_y": 0.6491228070175439,
+        "evaluations": 138,
+        "delay_refinement_intervals": 2,
+        "delay_active": "lower",
+        "announcement_active": "not_applicable",
+        "announcement_nonunique": false,
+        "delay_nonunique": false,
+        "announcement_stationarity_residual": 0.0,
+        "announcement_stationarity_log_residual": null,
+        "announcement_stationarity_scaled_residual": 0.0,
+        "announcement_stationarity_representation": "finite",
+        "local_improvement_residual": 0.0,
+        "probe_improvement_found": 0.0,
+        "probe_rounds": 1,
+        "local_quality_passed": true,
+        "last_probe_improvement": 0.0,
+        "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+        "attainment": "attained",
+        "supremum": null,
+        "envelope_evaluations": 0,
+        "envelope_root_diagnostics": [],
+        "equilibrium": false,
+        "globally_certified": false,
+        "conditional_control": "delay"
+      }
+    ],
+    "actual_preference": [
+      "no_entry"
+    ],
+    "positive_feasible_control_exists": true
+  },
+  {
+    "params": {
+      "growth": 1.0,
+      "network": 0.0,
+      "growth_end": 3.0,
+      "horizon": 3.0,
+      "quality_ratio": 1.0,
+      "margin_x": 1.0,
+      "margin_y": 0.25,
+      "discount": 100001.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 38473156858725.87,
+      "learning_rate": 50.0
+    },
+    "lower": {
+      "reference_200": {
+        "precision": 200,
+        "bracket": "-7.3705105441809479017749460617239803516559522311018828792357760113915905869764504571082765216426021484799484598413476980447591217072931162375963978305654327529355677347074638210575937394303713349162089E-9",
+        "sign": -1,
+        "log_abs": "-100019.72577885984988426425877102319318796234833807092679416518969611134838496217978500736872983061863743314102818149485076073626805940381687160050657637837128046192275915383981254232896156463650702405",
+        "rounded_value": -0.0
+      },
+      "reference_400": {
+        "precision": 400,
+        "bracket": "-7.370510544180947901774946061723980351655952231101882879235776011391590586976450457108276521642602148479948459841347698044759121707293116237596397830565432752935567734707463821057593739430371334916208841126511602380105156924188869485309093983773774897678503187003530006949256210209059575107456656756769165048921848398377903720630277240007317004700650034593102745474850711611016435263835370283950781629E-9",
+        "sign": -1,
+        "log_abs": "-100019.7257788598498842642587710231931879623483380709267941651896961113483849621797850073687298306186374331410281814948507607362680594038168716005065763783712804619227591538398125423289615646365070240450307358180384172542147151755266484890006787865398405346682701065466758495908865115501371282837047616147315025425278932798753012803752963499208319080055675422840709212258549685621213636601778976311343",
+        "rounded_value": -0.0
+      }
+    },
+    "upper": {
+      "reference_200": {
+        "precision": 200,
+        "bracket": "4.9999000014999800001068739334831722502392635337647274312768345013517499943353207112921072974015157697671352193915891233442849290710083762615611578040137571646502926257196396732487622738307555777027341E-11",
+        "sign": 1,
+        "log_abs": "-200025.71901811040040281628743856077364611887085880316572942860252483686361581640392340548826885292648306991880356073900163785242225310239670784430584259171660436659712060691126314230892938663112970650",
+        "rounded_value": 0.0
+      },
+      "reference_400": {
+        "precision": 400,
+        "bracket": "4.999900001499980000106873933483172250239263533764727431276834501351749994335320711292107297401515769767135219391589123344284929071008376261561157804013757164650292625719639673248762273830755577702734164234912401894917396211572005309061581902527143887771675137216248674143442032668548742090199481493600111507502730474545164181107788532442154661458994488927667136130783822286456464238761502969241500759E-11",
+        "sign": 1,
+        "log_abs": "-200025.7190181104004028162874385607736461188708588031657294286025248368636158164039234054882688529264830699188035607390016378524222531023967078443058425917166043665971206069112631423089293866311297064971280812175431411637347585157232490663663997268298998131824267855146822378832385387526719012451234284782280897978806181072811714462643329337803248793021553252911719995972868057427388597544032234886780",
+        "rounded_value": 0.0
+      }
+    },
+    "selected_followers": [
+      {
+        "strategy": "RL",
+        "status": "numerical_candidate",
+        "delay": 1.0,
+        "announcement": 0.0,
+        "payoff": 0.0,
+        "share_x": 0.5,
+        "share_y": 0.5,
+        "evaluations": 138,
+        "delay_refinement_intervals": 2,
+        "delay_active": "lower",
+        "announcement_active": "fixed",
+        "announcement_nonunique": false,
+        "delay_nonunique": false,
+        "announcement_stationarity_residual": 0.0,
+        "announcement_stationarity_log_residual": null,
+        "announcement_stationarity_scaled_residual": 0.0,
+        "announcement_stationarity_representation": "finite",
+        "local_improvement_residual": 0.0,
+        "probe_improvement_found": 0.0,
+        "probe_rounds": 1,
+        "local_quality_passed": true,
+        "last_probe_improvement": 0.0,
+        "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+        "attainment": "attained",
+        "supremum": null,
+        "envelope_evaluations": 0,
+        "envelope_root_diagnostics": [],
+        "equilibrium": false,
+        "globally_certified": false,
+        "conditional_control": "delay and announcement"
+      },
+      {
+        "strategy": "DL",
+        "status": "numerical_candidate",
+        "delay": 1.0,
+        "announcement": 0.0,
+        "payoff": 0.0,
+        "share_x": 0.5,
+        "share_y": 0.5,
+        "evaluations": 138,
+        "delay_refinement_intervals": 2,
+        "delay_active": "lower",
+        "announcement_active": "not_applicable",
+        "announcement_nonunique": false,
+        "delay_nonunique": false,
+        "announcement_stationarity_residual": 0.0,
+        "announcement_stationarity_log_residual": null,
+        "announcement_stationarity_scaled_residual": 0.0,
+        "announcement_stationarity_representation": "finite",
+        "local_improvement_residual": 0.0,
+        "probe_improvement_found": 0.0,
+        "probe_rounds": 1,
+        "local_quality_passed": true,
+        "last_probe_improvement": 0.0,
+        "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+        "attainment": "attained",
+        "supremum": null,
+        "envelope_evaluations": 0,
+        "envelope_root_diagnostics": [],
+        "equilibrium": false,
+        "globally_certified": false,
+        "conditional_control": "delay"
+      }
+    ],
+    "actual_preference": [
+      "no_entry"
+    ],
+    "positive_feasible_control_exists": true
+  },
+  {
+    "params": {
+      "growth": 1.0,
+      "network": 0.85,
+      "growth_end": 3.0,
+      "horizon": 3.0,
+      "quality_ratio": 1.0,
+      "margin_x": 1.0,
+      "margin_y": 0.25,
+      "discount": 100001.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 38473156858725.87,
+      "learning_rate": 50.0
+    },
+    "lower": {
+      "reference_200": {
+        "precision": 200,
+        "bracket": "-7.3854225266415618769409238439745675896151162149430774835572966505875722979312909492645347173871990770885771389746506079160944220362156982613590827835767563851665141500034730630665214111569131706396300E-9",
+        "sign": -1,
+        "log_abs": "-100019.72375770843026268950693169395566632534493705481369948278374809735106833005442181453459293040965144239992662040100569152931318352473961563074247856500546130121568285019559313497760427448172177222",
+        "rounded_value": -0.0
+      },
+      "reference_400": {
+        "precision": 400,
+        "bracket": "-7.385422526641561876940923843974567589615116214943077483557296650587572297931290949264534717387199077088577138974650607916094422036215698261359082783576756385166514150003473063066521411156913170639629973257475381208607725677488739303172808454959177726736548828334999520061233862015105726630115816829761569428964066061085692539557553635649315519476354154025189018266081598053304395578800968590178044591E-9",
+        "sign": -1,
+        "log_abs": "-100019.7237577084302626895069316939556663253449370548136994827837480973510683300544218145345929304096514423999266204010056915293131835247396156307424785650054613012156828501955931349776042744817217722181328986393435974202162450514666525708181956701427542055762092093732136846547887055675196349547896173343637706859225526895263565759561762222675718979766060507257074394990428371507940853849722586831773",
+        "rounded_value": -0.0
+      }
+    },
+    "upper": {
+      "reference_200": {
+        "precision": 200,
+        "bracket": "2.7026486494594486810789591832180487574356990638780315401053816635848114037784218821918633245168481749590561190959270451453812137737186565036362719174902725468603705777054732979903564023508978462382780E-11",
+        "sign": 1,
+        "log_abs": "-200026.33420374949063625524223098656850309630409191778441543359749397757203898521443166901004474645557330175517288649499239391504679189170009676229845342886458009201519385715980784643063306309228001903",
+        "rounded_value": 0.0
+      },
+      "reference_400": {
+        "precision": 400,
+        "bracket": "2.702648649459448681078959183218048757435699063878031540105381663584811403778421882191863324516848174959056119095927045145381213773718656503636271917490272546860370577705473297990356402350897846238277988976899855889491051152102800150502844871764693887272598950081565843315515729846435988173073104618783092947002766548375810093336726241724827620489390189893050132039724824073287773841880650281794218826E-11",
+        "sign": 1,
+        "log_abs": "-200026.3342037494906362552422309865685030963040919177844154335974939775720389852144316690100447464555733017551728864949923939150467918917000967622984534288645800920151938571598078464306330630922800190294846656345155172917159881511225954027564645026197644450383001312193965366367074912506033174166242890638325206378790483877589487272273068934529075012999938102779716754850520095023116531517721935200751",
+        "rounded_value": 0.0
+      }
+    },
+    "selected_followers": [
+      {
+        "strategy": "RL",
+        "status": "numerical_candidate",
+        "delay": 1.0,
+        "announcement": 0.0,
+        "payoff": 0.0,
+        "share_x": 0.3508771929824561,
+        "share_y": 0.6491228070175439,
+        "evaluations": 138,
+        "delay_refinement_intervals": 2,
+        "delay_active": "lower",
+        "announcement_active": "fixed",
+        "announcement_nonunique": false,
+        "delay_nonunique": false,
+        "announcement_stationarity_residual": 0.0,
+        "announcement_stationarity_log_residual": null,
+        "announcement_stationarity_scaled_residual": 0.0,
+        "announcement_stationarity_representation": "finite",
+        "local_improvement_residual": 0.0,
+        "probe_improvement_found": 0.0,
+        "probe_rounds": 1,
+        "local_quality_passed": true,
+        "last_probe_improvement": 0.0,
+        "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+        "attainment": "attained",
+        "supremum": null,
+        "envelope_evaluations": 0,
+        "envelope_root_diagnostics": [],
+        "equilibrium": false,
+        "globally_certified": false,
+        "conditional_control": "delay and announcement"
+      },
+      {
+        "strategy": "DL",
+        "status": "numerical_candidate",
+        "delay": 1.0,
+        "announcement": 0.0,
+        "payoff": 0.0,
+        "share_x": 0.3508771929824561,
+        "share_y": 0.6491228070175439,
+        "evaluations": 138,
+        "delay_refinement_intervals": 2,
+        "delay_active": "lower",
+        "announcement_active": "not_applicable",
+        "announcement_nonunique": false,
+        "delay_nonunique": false,
+        "announcement_stationarity_residual": 0.0,
+        "announcement_stationarity_log_residual": null,
+        "announcement_stationarity_scaled_residual": 0.0,
+        "announcement_stationarity_representation": "finite",
+        "local_improvement_residual": 0.0,
+        "probe_improvement_found": 0.0,
+        "probe_rounds": 1,
+        "local_quality_passed": true,
+        "last_probe_improvement": 0.0,
+        "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+        "attainment": "attained",
+        "supremum": null,
+        "envelope_evaluations": 0,
+        "envelope_root_diagnostics": [],
+        "equilibrium": false,
+        "globally_certified": false,
+        "conditional_control": "delay"
+      }
+    ],
+    "actual_preference": [
+      "no_entry"
+    ],
+    "positive_feasible_control_exists": true
+  },
+  {
+    "params": {
+      "growth": 1.0,
+      "network": 0.0,
+      "growth_end": 3.0,
+      "horizon": 3.0,
+      "quality_ratio": 1.0,
+      "margin_x": 1.0,
+      "margin_y": 0.25,
+      "discount": 100001.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 2.9604268050002344e+37,
+      "learning_rate": 100.0
+    },
+    "lower": {
+      "reference_200": {
+        "precision": 200,
+        "bracket": "-0.0000011012512646049341924009702006516039319115396937237137209792172071304360120807984547285396625875436227459665702763834094186338796695649437766463483511570431432190538129605388059006337083638085897577995",
+        "sign": -1,
+        "log_abs": "-100014.71906351136075914758619913013930955771607315278040395876429624825107408987221087296047862749625552140695558384444387513634052234036163340405328782508488966621106812592002477316470052939270940807",
+        "rounded_value": -0.0
+      },
+      "reference_400": {
+        "precision": 400,
+        "bracket": "-0.000001101251264604934192400970200651603931911539693723713720979217207130436012080798454728539662587543622745966570276383409418633879669564943776646348351157043143219053812960538805900633708363808589757799533218420812277701643543601746982077538543085773367061614453097780827640300493647265742509874335105940236051702156571080691379567741329536539744451997686530157067656664721188251352917079273880989836081",
+        "sign": -1,
+        "log_abs": "-100014.7190635113607591475861991301393095577160731527804039587642962482510740898722108729604786274962555214069555838444438751363405223403616334040532878250848896662110681259200247731647005293927094080685172162158122505653265346447598133143436858660836097487255447791280040074129589209500016513695976490521292023373673028058753190946930358571131513070469225334174255019623877193464817088005460372354880",
+        "rounded_value": -0.0
+      }
+    },
+    "upper": {
+      "reference_200": {
+        "precision": 200,
+        "bracket": "4.9999000014999800002499970000349996000004030256274518326831216152867417796953872260923749350138594771218898548734982948173291616802469329870230715696068072217327243483921304316448003050550013501277159E-11",
+        "sign": 1,
+        "log_abs": "-200025.71901811040040281625881337496815198027778561260879477602833499118675044434838294035792474620227414400455184516073046349623245932927022436834591649727899328321541836329382172922797430279563057330",
+        "rounded_value": 0.0
+      },
+      "reference_400": {
+        "precision": 400,
+        "bracket": "4.999900001499980000249997000034999600000403025627451832683121615286741779695387226092374935013859477121889854873498294817329161680246932987023071569606807221732724348392130431644800305055001350127715931921634875474511620088686315024601964203621329281429888826090136324582163971367036307728447122018263322793588468390795981379777947397752761296636825278720980611229906716308177558264928686857294052218E-11",
+        "sign": 1,
+        "log_abs": "-200025.7190181104004028162588133749681519802777856126087947760283349911867504443483829403579247462022741440045518451607304634962324593292702243683459164972789932832154183632938217292279743027956305732965136783693171276248681056416375744126791679001855139138889784841841089515761111182916741319053610652947485622995314313692558094965342262649732088665471218366483085292578506249406498484179458883680788",
+        "rounded_value": 0.0
+      }
+    },
+    "selected_followers": [
+      {
+        "strategy": "RL",
+        "status": "numerical_candidate",
+        "delay": 1.0,
+        "announcement": 0.0,
+        "payoff": 0.0,
+        "share_x": 0.5,
+        "share_y": 0.5,
+        "evaluations": 138,
+        "delay_refinement_intervals": 2,
+        "delay_active": "lower",
+        "announcement_active": "fixed",
+        "announcement_nonunique": false,
+        "delay_nonunique": false,
+        "announcement_stationarity_residual": 0.0,
+        "announcement_stationarity_log_residual": null,
+        "announcement_stationarity_scaled_residual": 0.0,
+        "announcement_stationarity_representation": "finite",
+        "local_improvement_residual": 0.0,
+        "probe_improvement_found": 0.0,
+        "probe_rounds": 1,
+        "local_quality_passed": true,
+        "last_probe_improvement": 0.0,
+        "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+        "attainment": "attained",
+        "supremum": null,
+        "envelope_evaluations": 0,
+        "envelope_root_diagnostics": [],
+        "equilibrium": false,
+        "globally_certified": false,
+        "conditional_control": "delay and announcement"
+      },
+      {
+        "strategy": "DL",
+        "status": "numerical_candidate",
+        "delay": 1.0,
+        "announcement": 0.0,
+        "payoff": 0.0,
+        "share_x": 0.5,
+        "share_y": 0.5,
+        "evaluations": 138,
+        "delay_refinement_intervals": 2,
+        "delay_active": "lower",
+        "announcement_active": "not_applicable",
+        "announcement_nonunique": false,
+        "delay_nonunique": false,
+        "announcement_stationarity_residual": 0.0,
+        "announcement_stationarity_log_residual": null,
+        "announcement_stationarity_scaled_residual": 0.0,
+        "announcement_stationarity_representation": "finite",
+        "local_improvement_residual": 0.0,
+        "probe_improvement_found": 0.0,
+        "probe_rounds": 1,
+        "local_quality_passed": true,
+        "last_probe_improvement": 0.0,
+        "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+        "attainment": "attained",
+        "supremum": null,
+        "envelope_evaluations": 0,
+        "envelope_root_diagnostics": [],
+        "equilibrium": false,
+        "globally_certified": false,
+        "conditional_control": "delay"
+      }
+    ],
+    "actual_preference": [
+      "no_entry"
+    ],
+    "positive_feasible_control_exists": true
+  },
+  {
+    "params": {
+      "growth": 1.0,
+      "network": 0.85,
+      "growth_end": 3.0,
+      "horizon": 3.0,
+      "quality_ratio": 1.0,
+      "margin_x": 1.0,
+      "margin_y": 0.25,
+      "discount": 100001.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 2.9604268050002344e+37,
+      "learning_rate": 100.0
+    },
+    "lower": {
+      "reference_200": {
+        "precision": 200,
+        "bracket": "-0.0000011012661765873948063761361784338545191494988577075549155835387277696319937917532952206959207832882196745751989555167123285052149698938663586701110361100544668512847593758348151426426360355351315935229",
+        "sign": -1,
+        "log_abs": "-100014.71904997050774981182555560127550530545902464473021798690864565580827056641132769260678826874208919382531218440079159768850611252016235018609221022514944277602042937555760598470300721056138623864",
+        "rounded_value": -0.0
+      },
+      "reference_400": {
+        "precision": 400,
+        "bracket": "-0.000001101266176587394806376136178433854519149498857707554915583538727769631993791753295220695920783288219674575198955516712328505214969893866358670111036110054466851284759375834815142642636035535131593522954350551776056530146112355046851895402257556958769890672498739112297153412471299071788661396994266013228456082198788743399168386668605932181742966773390649589153929455952074693640877394239479296063344",
+        "sign": -1,
+        "log_abs": "-100014.7190499705077498118255556012755053054590246447302179869086456558082705664113276926067882687420891938253121844007915976885061125201623501860922102251494427760204293755576059847030072105613862386422671441926272478403819996953448887292188429212318638500372127546558026514931581205170461655230072102056363868132764586169488845494837085753235889901285083548296790720202611278747504960924578245226615",
+        "rounded_value": -0.0
+      }
+    },
+    "upper": {
+      "reference_200": {
+        "precision": 200,
+        "bracket": "2.7026486494594486812220822497698761071968385557407559415116687775198031891384883969921309621291918823138107545778362166184254463829572132290981856830833226039428023003779640563863944335751436186632598E-11",
+        "sign": 1,
+        "log_abs": "-200026.33420374949063625518927439282833894054186906832018107278917744020811762264136564359698067017142679727607986840035945505458490860561888917928842297754198750617287035736215372049933488780339448555",
+        "rounded_value": 0.0
+      },
+      "reference_400": {
+        "precision": 400,
+        "bracket": "2.702648649459448681222082249769876107196838555740755941511668777519803189138488396992130962129191882313810754577836216618425446382957213229098185683083322603942802300377964056386394433575143618663259756663622329469085275029217109866043227172858879280930812638955453493754237668544923553811320745143446304233088504464626627292006885107035434255667220979686363607138847718095008867868047834169846770285E-11",
+        "sign": 1,
+        "log_abs": "-200026.3342037494906362551892743928283389405418690683201810727891774402081176226413656435969806701714267972760798684003594550545849086056188891792884229775419875061728703573621537204993348878033944855462796394101018076762214109441693147207601079882268280037473603138509911676598034791054485242480367447010209158148644724675563037425626094829806451789256571418152428760645463423193456457004974862327653",
+        "rounded_value": 0.0
+      }
+    },
+    "selected_followers": [
+      {
+        "strategy": "RL",
+        "status": "numerical_candidate",
+        "delay": 1.0,
+        "announcement": 0.0,
+        "payoff": 0.0,
+        "share_x": 0.3508771929824561,
+        "share_y": 0.6491228070175439,
+        "evaluations": 138,
+        "delay_refinement_intervals": 2,
+        "delay_active": "lower",
+        "announcement_active": "fixed",
+        "announcement_nonunique": false,
+        "delay_nonunique": false,
+        "announcement_stationarity_residual": 0.0,
+        "announcement_stationarity_log_residual": null,
+        "announcement_stationarity_scaled_residual": 0.0,
+        "announcement_stationarity_representation": "finite",
+        "local_improvement_residual": 0.0,
+        "probe_improvement_found": 0.0,
+        "probe_rounds": 1,
+        "local_quality_passed": true,
+        "last_probe_improvement": 0.0,
+        "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+        "attainment": "attained",
+        "supremum": null,
+        "envelope_evaluations": 0,
+        "envelope_root_diagnostics": [],
+        "equilibrium": false,
+        "globally_certified": false,
+        "conditional_control": "delay and announcement"
+      },
+      {
+        "strategy": "DL",
+        "status": "numerical_candidate",
+        "delay": 1.0,
+        "announcement": 0.0,
+        "payoff": 0.0,
+        "share_x": 0.3508771929824561,
+        "share_y": 0.6491228070175439,
+        "evaluations": 138,
+        "delay_refinement_intervals": 2,
+        "delay_active": "lower",
+        "announcement_active": "not_applicable",
+        "announcement_nonunique": false,
+        "delay_nonunique": false,
+        "announcement_stationarity_residual": 0.0,
+        "announcement_stationarity_log_residual": null,
+        "announcement_stationarity_scaled_residual": 0.0,
+        "announcement_stationarity_representation": "finite",
+        "local_improvement_residual": 0.0,
+        "probe_improvement_found": 0.0,
+        "probe_rounds": 1,
+        "local_quality_passed": true,
+        "last_probe_improvement": 0.0,
+        "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+        "attainment": "attained",
+        "supremum": null,
+        "envelope_evaluations": 0,
+        "envelope_root_diagnostics": [],
+        "equilibrium": false,
+        "globally_certified": false,
+        "conditional_control": "delay"
+      }
+    ],
+    "actual_preference": [
+      "no_entry"
+    ],
+    "positive_feasible_control_exists": true
+  },
+  {
+    "params": {
+      "growth": 1.0,
+      "network": 0.0,
+      "growth_end": 3.0,
+      "horizon": 3.0,
+      "quality_ratio": 1.0,
+      "margin_x": 1.0,
+      "margin_y": 0.25,
+      "discount": 100001.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 1.752860430235533e+85,
+      "learning_rate": 200.0
+    },
+    "lower": {
+      "reference_200": {
+        "precision": 200,
+        "bracket": "-0.024257774562573175520821384013539359736540366437244831386069532325533527986534599091253034473353386728825769483418946784199002757483724904341489893534996476113774248831467911409108928037742791978038295",
+        "sign": -1,
+        "log_abs": "-100004.71901811246152797455308006426040145064596361901985573546472271594470003789540337007330991514275722981427202838731658758149023704933610575606742324007430590162972142120385445592399806394979098711",
+        "rounded_value": -0.0
+      },
+      "reference_400": {
+        "precision": 400,
+        "bracket": "-0.02425777456257317552082138401353935973654036643724483138606953232553352798653459909125303447335338672882576948341894678419900275748372490434148989353499647611377424883146791140910892803774279197803829534327082618233023341247256093477580886952043127207618268357971049653985183173478075842011758576544896882613243167901664410474957093133194834589973332552477037969803938355967839591680744464620926603185",
+        "sign": -1,
+        "log_abs": "-100004.7190181124615279745530800642604014506459636190198557354647227159447000378954033700733099151427572298142720283873165875814902370493361057560674232400743059016297214212038544559239980639497909871136479803826660278274108319557710949585871759265213743731146333790742843821267251993064970377625811290411621926204381872896912098795669909416945093254725400390315300665256600158311141961419840774872549",
+        "rounded_value": -0.0
+      }
+    },
+    "upper": {
+      "reference_200": {
+        "precision": 200,
+        "bracket": "4.9999000014999800002499970000349996000044999500005499940000649993000074999199974929659968248747384721173653267047187305558455986015959943452855891666353104029310418623182956799091188797443932127159512E-11",
+        "sign": 1,
+        "log_abs": "-200025.71901811040040281625881337496815198027696621134639571288483908338422237956031433842842625781590098583261771343186084236157627393077778435801760847477142004788345167902220490240683350718258848189",
+        "rounded_value": 0.0
+      },
+      "reference_400": {
+        "precision": 400,
+        "bracket": "4.999900001499980000249997000034999600004499950000549994000064999300007499919997492965996824874738472117365326704718730555845598601595994345285589166635310402931041862318295679909118879744393212715951264581476276084895465907032437906804972625368750166951111235097831700127212174607046415409188054198748136743622518400455422460080200734274262259612012677353736819214274445716327686354784451177132108930E-11",
+        "sign": 1,
+        "log_abs": "-200025.7190181104004028162588133749681519802769662113463957128848390833842223795603143384284262578159009858326177134318608423615762739307777843580176084747714200478834516790222049024068335071825884818863484293420230988686399539470870426649388396951191011152468270311407793302857047871054484248772501906100005271104591316173541482552670084045559309548281567916952513360088538864248822883544854850290538",
+        "rounded_value": 0.0
+      }
+    },
+    "selected_followers": [
+      {
+        "strategy": "RL",
+        "status": "numerical_candidate",
+        "delay": 1.0,
+        "announcement": 0.0,
+        "payoff": 0.0,
+        "share_x": 0.5,
+        "share_y": 0.5,
+        "evaluations": 138,
+        "delay_refinement_intervals": 2,
+        "delay_active": "lower",
+        "announcement_active": "fixed",
+        "announcement_nonunique": false,
+        "delay_nonunique": false,
+        "announcement_stationarity_residual": 0.0,
+        "announcement_stationarity_log_residual": null,
+        "announcement_stationarity_scaled_residual": 0.0,
+        "announcement_stationarity_representation": "finite",
+        "local_improvement_residual": 0.0,
+        "probe_improvement_found": 0.0,
+        "probe_rounds": 1,
+        "local_quality_passed": true,
+        "last_probe_improvement": 0.0,
+        "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+        "attainment": "attained",
+        "supremum": null,
+        "envelope_evaluations": 0,
+        "envelope_root_diagnostics": [],
+        "equilibrium": false,
+        "globally_certified": false,
+        "conditional_control": "delay and announcement"
+      },
+      {
+        "strategy": "DL",
+        "status": "numerical_candidate",
+        "delay": 1.0,
+        "announcement": 0.0,
+        "payoff": 0.0,
+        "share_x": 0.5,
+        "share_y": 0.5,
+        "evaluations": 138,
+        "delay_refinement_intervals": 2,
+        "delay_active": "lower",
+        "announcement_active": "not_applicable",
+        "announcement_nonunique": false,
+        "delay_nonunique": false,
+        "announcement_stationarity_residual": 0.0,
+        "announcement_stationarity_log_residual": null,
+        "announcement_stationarity_scaled_residual": 0.0,
+        "announcement_stationarity_representation": "finite",
+        "local_improvement_residual": 0.0,
+        "probe_improvement_found": 0.0,
+        "probe_rounds": 1,
+        "local_quality_passed": true,
+        "last_probe_improvement": 0.0,
+        "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+        "attainment": "attained",
+        "supremum": null,
+        "envelope_evaluations": 0,
+        "envelope_root_diagnostics": [],
+        "equilibrium": false,
+        "globally_certified": false,
+        "conditional_control": "delay"
+      }
+    ],
+    "actual_preference": [
+      "no_entry"
+    ],
+    "positive_feasible_control_exists": true
+  },
+  {
+    "params": {
+      "growth": 1.0,
+      "network": 0.85,
+      "growth_end": 3.0,
+      "horizon": 3.0,
+      "quality_ratio": 1.0,
+      "margin_x": 1.0,
+      "margin_y": 0.25,
+      "discount": 100001.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 1.752860430235533e+85,
+      "learning_rate": 200.0
+    },
+    "lower": {
+      "reference_200": {
+        "precision": 200,
+        "bracket": "-0.024257774577485157981435359179517141987127604396408815227264136647054167182516310046093526629611582473422698092047625917501912628819025233264071917297681429125097881062414326705118170046670463704580131",
+        "sign": -1,
+        "log_abs": "-100004.71901811184679794573015801627611424743697384595922363560379582477224654202865192879537729564796723430646558275411629801429410196614086118518877087202771189390652939886531268952404186667139642300",
+        "rounded_value": -0.0
+      },
+      "reference_400": {
+        "precision": 400,
+        "bracket": "-0.02425777457748515798143535917951714198712760439640881522726413664705416718251631004609352662961158247342269809204762591750191262881902523326407191729768142912509788106241432670511817004667046370458013106669195831329401224097512968807567868738414574326158551263775613787132134484675841022616373728810812889912483605905886176745735975025922474154173184030047449913012565635090928235909540496117486433808",
+        "sign": -1,
+        "log_abs": "-100004.7190181118467979457301580162761142474369738459592236356037958247722465420286519287953772956479672343064655827541162980142941019661408611851887708720277118939065293988653126895240418666713964230039723755155646391468306977971577575588985361463231214914253828242412211533921721427823003850480280514654030030637313305231135208954845232166006572261652406599595192477976743203146412381083294396316304",
+        "rounded_value": -0.0
+      }
+    },
+    "upper": {
+      "reference_200": {
+        "precision": 200,
+        "bracket": "2.7026486494594486812220822497698761072009354801138541028286121615330689093630986638657528519900708773092862264090566523569418833043062745873607032801118257851411198143041293046507130082645354812514951E-11",
+        "sign": 1,
+        "log_abs": "-200026.33420374949063625518927439282833894054035317598474280599190437373188789151062075072073215079910112272475517592913019412992817411511270221242510924378914207091998167485296946370119442237667740495",
+        "rounded_value": 0.0
+      },
+      "reference_400": {
+        "precision": 400,
+        "bracket": "2.702648649459448681222082249769876107200935480113854102828612161533068909363098663865752851990070877309286226409056652356941883304306274587360703280111825785141119814304129304650713008264535481251495089323463730079469120847563232748246235594606300166452035047963148869299285871784933661492061677323931118183122554474286068372309138443556935218642408378319119815123215447503158995957903598489684826997E-11",
+        "sign": 1,
+        "log_abs": "-200026.3342037494906362551892743928283389405403531759847428059919043737318878915106207507207321507991011227247551759291301941299281741151127022124251092437891420709199816748529694637011944223766774049490166378758516341514429692449099693743483992927453050252337746234493006535501823439913112856553555508870116464417322620663026933294352841607345265058149236165702870666089968164268229758049314366411670",
+        "rounded_value": 0.0
+      }
+    },
+    "selected_followers": [
+      {
+        "strategy": "RL",
+        "status": "numerical_candidate",
+        "delay": 1.0,
+        "announcement": 0.0,
+        "payoff": 0.0,
+        "share_x": 0.3508771929824561,
+        "share_y": 0.6491228070175439,
+        "evaluations": 138,
+        "delay_refinement_intervals": 2,
+        "delay_active": "lower",
+        "announcement_active": "fixed",
+        "announcement_nonunique": false,
+        "delay_nonunique": false,
+        "announcement_stationarity_residual": 0.0,
+        "announcement_stationarity_log_residual": null,
+        "announcement_stationarity_scaled_residual": 0.0,
+        "announcement_stationarity_representation": "finite",
+        "local_improvement_residual": 0.0,
+        "probe_improvement_found": 0.0,
+        "probe_rounds": 1,
+        "local_quality_passed": true,
+        "last_probe_improvement": 0.0,
+        "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+        "attainment": "attained",
+        "supremum": null,
+        "envelope_evaluations": 0,
+        "envelope_root_diagnostics": [],
+        "equilibrium": false,
+        "globally_certified": false,
+        "conditional_control": "delay and announcement"
+      },
+      {
+        "strategy": "DL",
+        "status": "numerical_candidate",
+        "delay": 1.0,
+        "announcement": 0.0,
+        "payoff": 0.0,
+        "share_x": 0.3508771929824561,
+        "share_y": 0.6491228070175439,
+        "evaluations": 138,
+        "delay_refinement_intervals": 2,
+        "delay_active": "lower",
+        "announcement_active": "not_applicable",
+        "announcement_nonunique": false,
+        "delay_nonunique": false,
+        "announcement_stationarity_residual": 0.0,
+        "announcement_stationarity_log_residual": null,
+        "announcement_stationarity_scaled_residual": 0.0,
+        "announcement_stationarity_representation": "finite",
+        "local_improvement_residual": 0.0,
+        "probe_improvement_found": 0.0,
+        "probe_rounds": 1,
+        "local_quality_passed": true,
+        "last_probe_improvement": 0.0,
+        "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+        "attainment": "attained",
+        "supremum": null,
+        "envelope_evaluations": 0,
+        "envelope_root_diagnostics": [],
+        "equilibrium": false,
+        "globally_certified": false,
+        "conditional_control": "delay"
+      }
+    ],
+    "actual_preference": [
+      "no_entry"
+    ],
+    "positive_feasible_control_exists": true
+  }
+]

@@ -1,0 +1,2245 @@
+{
+  "version": "0.15.0",
+  "checks": 60,
+  "confirmed_counterexamples": 27,
+  "controls": 33,
+  "issue_counts": {
+    "A05": {
+      "confirmed_counterexample": 12,
+      "control": 12
+    },
+    "A06": {
+      "confirmed_counterexample": 15,
+      "control": 21
+    }
+  },
+  "all_reproduced": true,
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+    "machine": "x86_64",
+    "cpu_model": "AMD EPYC 9V74 80-Core Processor",
+    "host_logical_cpus": 9,
+    "affinity_cpus": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "cgroup_cpu_max": "800000 100000",
+    "cgroup_memory_max": "8589934592",
+    "venv": "/workspace/scratch/aa4ad6ee311d/entrysignal_v0150/clean_env",
+    "base_prefix": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python",
+    "isolated_venv": true,
+    "hardware_scope": "Automatically read container/host-visible fields; unavailable fields are null. Host counts do not establish allocated performance."
+  },
+  "source_sha256": {
+    "__init__.py": "47d378826505bd2f59bbfba3debad5b8e5b782528dd7460cc5fa82a21f2c5fc9",
+    "audit.py": "20d2135c209c644ca63b21963cf5ea2c53a0b8b3f8bb7dbd3908b6619d681e73",
+    "batch.py": "361e49053cebf017a165edc977bb81903587f22a5cbb0d7b3195daacb463f3cd",
+    "benchmark.py": "8469e7095bfa3707b35e03a5131d6a6fe8720096ebf87d3c5fb7b9f3f60dfa6a",
+    "cli.py": "30b78a61585aa22e4bb6c908ed5684bd5f56b4687a12033df6c2c23cc9ed72e0",
+    "locking.py": "5ed05ee136d8ebf9eade59a33d7ebae083a3d11ce5b32757a40b48fe98fe0196",
+    "model.py": "7887439203b8374682519ae325615644d121ca1fb643af364c47bb8183fd1cce",
+    "plots.py": "43b7493f878ac8ce2f29a2cf21999021426ccfbd9285b59b8403de22b4a0b6ab",
+    "provenance.py": "f4dd6cb787d030ab8970c5c488c9f6bf0b5f842299afd218b6eff31795c062eb",
+    "research.py": "a0e8e8b5ebe07c7c9fa27ed1cff4802a606c4e5ae715a5952edec0545374e1b9",
+    "sampling.py": "6a4e65cf2878b28c100a2867eb5907ba10c7b090876c32d20f886e1973eb06b7",
+    "solver.py": "14cc3d0b5a75799ffcfd4ed7464a79b181f977259eb3218c7f6993434831a62c",
+    "units.py": "582b9a4ddae0c8ae8a2307d51421eadb8c1eb7d4a0c44fbad05854ecc7c69c33",
+    "workflow.py": "be36c363a4e5c37588c3317259ed9f3124a77827fffcc6c035908759e8c9de4d"
+  },
+  "scope": "Source-bound installed-wheel observations. Successful reproduction includes defective behavior. No software fixes are applied.",
+  "reference_precision": {
+    "RL_payoff": 120,
+    "Wilson_arithmetic": 400,
+    "pi_constant_digits": 200
+  },
+  "rows": [
+    {
+      "name": "A05_1e-10_0.0",
+      "issue": "A05",
+      "kind": "confirmed_counterexample",
+      "observed_as_expected": true,
+      "detail": {
+        "case": "false_attainment",
+        "params": {
+          "growth": 1000000000.0,
+          "network": 0.85,
+          "growth_end": 3e-11,
+          "horizon": 1e-10,
+          "quality_ratio": 1.0,
+          "margin_x": 2500000000.0,
+          "margin_y": 2500000000.0,
+          "discount": 0.0,
+          "announcement_cost": 0.0,
+          "deployment_cost": 0.01,
+          "learning_rate": 100000000000.0
+        },
+        "bounds": {
+          "delay_lower": 0.0,
+          "delay_upper": null,
+          "announcement_upper": null,
+          "scouting_points": 65,
+          "tolerance": 1e-10,
+          "payoff_atol": 1e-10,
+          "payoff_rtol": 1e-08,
+          "max_evaluations": 20000
+        },
+        "actual": {
+          "strategy": "RL",
+          "status": "attained_joint_optimum",
+          "delay": 3e-11,
+          "announcement": 0.0,
+          "payoff": -0.0004978706836786396,
+          "share_x": 0.4937052579609973,
+          "share_y": 0.5062947420390027,
+          "evaluations": 1,
+          "delay_refinement_intervals": 0,
+          "delay_active": "upper",
+          "announcement_active": "lower",
+          "announcement_nonunique": true,
+          "delay_nonunique": false,
+          "announcement_stationarity_residual": 0.0,
+          "announcement_stationarity_log_residual": null,
+          "announcement_stationarity_scaled_residual": 0.0,
+          "announcement_stationarity_representation": "finite",
+          "local_improvement_residual": 0.0,
+          "probe_improvement_found": 0.0,
+          "probe_rounds": 0,
+          "local_quality_passed": true,
+          "last_probe_improvement": 0.0,
+          "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+          "attainment": "attained",
+          "supremum": -0.0004978706836786396,
+          "envelope_evaluations": 2,
+          "equilibrium": false,
+          "globally_certified": false,
+          "conditional_control": "delay and announcement"
+        },
+        "finite_feasible_witness": {
+          "delay": 1.5e-11,
+          "announcement": 10000000000000.0,
+          "payoff": 0.0006522224144909598,
+          "independent_120_digit_payoff": "0.00065222241449096288612073265641697092741996777691259654485034433160238738698640020299316226979286968940560633363472706818"
+        },
+        "envelope_derivative_at_lower": "750000000.00000001170863238284724973815170701030297095712739974260330200195312500000000000000000",
+        "envelope_derivative_at_maturity": "-125212931.632136064597793955240035686699285776878526519636721011530333021532673881646769606533725136786054704940072513416",
+        "independent_envelope_maximum": {
+          "delay": "1.55534585898332948549593298220922266003668927046683397506658350868634035518677662231474745183484693550566857535113174172E-11",
+          "supremum": "0.00067785940991958254442001617766701752133567983475443606268498910877208361776441371935150487448697766741856596043336567373",
+          "precision": 120,
+          "bisection_iterations": 160,
+          "existence": "Unique internal envelope maximum; positive-delay finite intensity lies strictly below the envelope; maturity is lower."
+        },
+        "expected_status": "no_finite_joint_optimum",
+        "net_payoff_rounding_tie": false
+      }
+    },
+    {
+      "name": "A05_tight_control_1e-10_0.0",
+      "issue": "A05",
+      "kind": "control",
+      "observed_as_expected": true,
+      "detail": {
+        "time_scale": 1e-10,
+        "lower": 0.0,
+        "tighter_tolerance": 1.0000000000000001e-20,
+        "actual": {
+          "strategy": "RL",
+          "status": "no_finite_joint_optimum",
+          "delay": null,
+          "announcement": null,
+          "payoff": null,
+          "supremum": 0.0006778594099195725,
+          "supremum_delay": 1.5553458589833333e-11,
+          "attainment": "not_attained",
+          "evaluations": 3,
+          "message": "The joint envelope supremum is approached with unbounded intensity; no finite maximizing control is returned.",
+          "equilibrium": false,
+          "globally_certified": false
+        }
+      }
+    },
+    {
+      "name": "A05_1e-10_0.05",
+      "issue": "A05",
+      "kind": "confirmed_counterexample",
+      "observed_as_expected": true,
+      "detail": {
+        "case": "false_attainment",
+        "params": {
+          "growth": 1000000000.0,
+          "network": 0.85,
+          "growth_end": 3e-11,
+          "horizon": 1e-10,
+          "quality_ratio": 1.0,
+          "margin_x": 2500000000.0,
+          "margin_y": 2500000000.0,
+          "discount": 0.0,
+          "announcement_cost": 0.0,
+          "deployment_cost": 0.01,
+          "learning_rate": 100000000000.0
+        },
+        "bounds": {
+          "delay_lower": 5.0000000000000005e-12,
+          "delay_upper": null,
+          "announcement_upper": null,
+          "scouting_points": 65,
+          "tolerance": 1e-10,
+          "payoff_atol": 1e-10,
+          "payoff_rtol": 1e-08,
+          "max_evaluations": 20000
+        },
+        "actual": {
+          "strategy": "RL",
+          "status": "attained_joint_optimum",
+          "delay": 3e-11,
+          "announcement": 0.0,
+          "payoff": -0.0004978706836786396,
+          "share_x": 0.4937052579609973,
+          "share_y": 0.5062947420390027,
+          "evaluations": 1,
+          "delay_refinement_intervals": 0,
+          "delay_active": "upper",
+          "announcement_active": "lower",
+          "announcement_nonunique": true,
+          "delay_nonunique": false,
+          "announcement_stationarity_residual": 0.0,
+          "announcement_stationarity_log_residual": null,
+          "announcement_stationarity_scaled_residual": 0.0,
+          "announcement_stationarity_representation": "finite",
+          "local_improvement_residual": 0.0,
+          "probe_improvement_found": 0.0,
+          "probe_rounds": 0,
+          "local_quality_passed": true,
+          "last_probe_improvement": 0.0,
+          "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+          "attainment": "attained",
+          "supremum": -0.0004978706836786396,
+          "envelope_evaluations": 2,
+          "equilibrium": false,
+          "globally_certified": false,
+          "conditional_control": "delay and announcement"
+        },
+        "finite_feasible_witness": {
+          "delay": 1.5e-11,
+          "announcement": 10000000000000.0,
+          "payoff": 0.0006522224144909598,
+          "independent_120_digit_payoff": "0.00065222241449096288612073265641697092741996777691259654485034433160238738698640020299316226979286968940560633363472706818"
+        },
+        "envelope_derivative_at_lower": "369030659.712633397738216992007592706113320618853347110138188630957005277409081401154240620173956957291210965491857440359",
+        "envelope_derivative_at_maturity": "-125212931.632136064597793955240035686699285776878526519636721011530333021532673881646769606533725136786054704940072513416",
+        "independent_envelope_maximum": {
+          "delay": "1.55534585898332948549593298220922266003668927046767671291441693506327291884492793233976568285567984601783971118673804110E-11",
+          "supremum": "0.00067785940991958254442001617766701752133567983475443606268498910877208361776441371935150487448697710855298914678349210911",
+          "precision": 120,
+          "bisection_iterations": 160,
+          "existence": "Unique internal envelope maximum; positive-delay finite intensity lies strictly below the envelope; maturity is lower."
+        },
+        "expected_status": "no_finite_joint_optimum",
+        "net_payoff_rounding_tie": false
+      }
+    },
+    {
+      "name": "A05_tight_control_1e-10_0.05",
+      "issue": "A05",
+      "kind": "control",
+      "observed_as_expected": true,
+      "detail": {
+        "time_scale": 1e-10,
+        "lower": 0.05,
+        "tighter_tolerance": 1.0000000000000001e-20,
+        "actual": {
+          "strategy": "RL",
+          "status": "no_finite_joint_optimum",
+          "delay": null,
+          "announcement": null,
+          "payoff": null,
+          "supremum": 0.0006778594099195764,
+          "supremum_delay": 1.5553458589833353e-11,
+          "attainment": "not_attained",
+          "evaluations": 3,
+          "message": "The joint envelope supremum is approached with unbounded intensity; no finite maximizing control is returned.",
+          "equilibrium": false,
+          "globally_certified": false
+        }
+      }
+    },
+    {
+      "name": "A05_1e-10_0.1",
+      "issue": "A05",
+      "kind": "confirmed_counterexample",
+      "observed_as_expected": true,
+      "detail": {
+        "case": "understated_supremum",
+        "params": {
+          "growth": 1000000000.0,
+          "network": 0.85,
+          "growth_end": 3e-11,
+          "horizon": 1e-10,
+          "quality_ratio": 1.0,
+          "margin_x": 2500000000.0,
+          "margin_y": 2500000000.0,
+          "discount": 0.0,
+          "announcement_cost": 0.0,
+          "deployment_cost": 0.01,
+          "learning_rate": 100000000000.0
+        },
+        "bounds": {
+          "delay_lower": 1.0000000000000001e-11,
+          "delay_upper": null,
+          "announcement_upper": null,
+          "scouting_points": 65,
+          "tolerance": 1e-10,
+          "payoff_atol": 1e-10,
+          "payoff_rtol": 1e-08,
+          "max_evaluations": 20000
+        },
+        "actual": {
+          "strategy": "RL",
+          "status": "no_finite_joint_optimum",
+          "delay": null,
+          "announcement": null,
+          "payoff": null,
+          "supremum": 0.0003212055882855624,
+          "supremum_delay": 1.0000000000000001e-11,
+          "attainment": "not_attained",
+          "evaluations": 2,
+          "message": "The joint envelope supremum is approached with unbounded intensity; no finite maximizing control is returned.",
+          "equilibrium": false,
+          "globally_certified": false
+        },
+        "finite_feasible_witness": {
+          "delay": 1.5e-11,
+          "announcement": 10000000000000.0,
+          "payoff": 0.0006522224144909598,
+          "independent_120_digit_payoff": "0.00065222241449096288612073265641697092741996777691259654485034433160238738698640020299316226979286968940560633363472706818"
+        },
+        "envelope_derivative_at_lower": "142879441.171442285495587674938281373702710933875910319577730292239532200835930036199853903789930192310831044093636943138",
+        "envelope_derivative_at_maturity": "-125212931.632136064597793955240035686699285776878526519636721011530333021532673881646769606533725136786054704940072513416",
+        "independent_envelope_maximum": {
+          "delay": "1.55534585898332948549593298220922266003668927046697072314016149888087746916061357839354225866608835655151589755892063024E-11",
+          "supremum": "0.00067785940991958254442001617766701752133567983475443606268498910877208361776441371935150487448697766657435140410783090037",
+          "precision": 120,
+          "bisection_iterations": 160,
+          "existence": "Unique internal envelope maximum; positive-delay finite intensity lies strictly below the envelope; maturity is lower."
+        },
+        "expected_status": "no_finite_joint_optimum",
+        "net_payoff_rounding_tie": false
+      }
+    },
+    {
+      "name": "A05_tight_control_1e-10_0.1",
+      "issue": "A05",
+      "kind": "control",
+      "observed_as_expected": true,
+      "detail": {
+        "time_scale": 1e-10,
+        "lower": 0.1,
+        "tighter_tolerance": 1.0000000000000001e-20,
+        "actual": {
+          "strategy": "RL",
+          "status": "no_finite_joint_optimum",
+          "delay": null,
+          "announcement": null,
+          "payoff": null,
+          "supremum": 0.0006778594099195595,
+          "supremum_delay": 1.5553458589021126e-11,
+          "attainment": "not_attained",
+          "evaluations": 3,
+          "message": "The joint envelope supremum is approached with unbounded intensity; no finite maximizing control is returned.",
+          "equilibrium": false,
+          "globally_certified": false
+        }
+      }
+    },
+    {
+      "name": "A05_1e-11_0.0",
+      "issue": "A05",
+      "kind": "confirmed_counterexample",
+      "observed_as_expected": true,
+      "detail": {
+        "case": "false_attainment",
+        "params": {
+          "growth": 10000000000.000002,
+          "network": 0.85,
+          "growth_end": 2.9999999999999997e-12,
+          "horizon": 1e-11,
+          "quality_ratio": 1.0,
+          "margin_x": 25000000000.0,
+          "margin_y": 25000000000.0,
+          "discount": 0.0,
+          "announcement_cost": 0.0,
+          "deployment_cost": 0.01,
+          "learning_rate": 1000000000000.0
+        },
+        "bounds": {
+          "delay_lower": 0.0,
+          "delay_upper": null,
+          "announcement_upper": null,
+          "scouting_points": 65,
+          "tolerance": 1e-10,
+          "payoff_atol": 1e-10,
+          "payoff_rtol": 1e-08,
+          "max_evaluations": 20000
+        },
+        "actual": {
+          "strategy": "RL",
+          "status": "attained_joint_optimum",
+          "delay": 2.9999999999999997e-12,
+          "announcement": 0.0,
+          "payoff": -0.0004978706836786402,
+          "share_x": 0.4937052579609973,
+          "share_y": 0.5062947420390027,
+          "evaluations": 1,
+          "delay_refinement_intervals": 0,
+          "delay_active": "upper",
+          "announcement_active": "lower",
+          "announcement_nonunique": true,
+          "delay_nonunique": false,
+          "announcement_stationarity_residual": 0.0,
+          "announcement_stationarity_log_residual": null,
+          "announcement_stationarity_scaled_residual": 0.0,
+          "announcement_stationarity_representation": "finite",
+          "local_improvement_residual": 0.0,
+          "probe_improvement_found": 0.0,
+          "probe_rounds": 0,
+          "local_quality_passed": true,
+          "last_probe_improvement": 0.0,
+          "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+          "attainment": "attained",
+          "supremum": -0.0004978706836786402,
+          "envelope_evaluations": 2,
+          "equilibrium": false,
+          "globally_certified": false,
+          "conditional_control": "delay and announcement"
+        },
+        "finite_feasible_witness": {
+          "delay": 1.4999999999999999e-12,
+          "announcement": 100000000000000.0,
+          "payoff": 0.0006522224144909598,
+          "independent_120_digit_payoff": "0.00065222241449096263793696080238905343634316970731679444581678854948487357198981997807392942196933197846967387164978637033"
+        },
+        "envelope_derivative_at_lower": "7499999999.999999882587235709242352854093315634099582932143403786007067324259622864701668731868267059326171875000000000",
+        "envelope_derivative_at_maturity": "-1252129316.32136067735737709763594668917070187009652258396433171104216159363940286676527920634146895911165283406207969695",
+        "independent_envelope_maximum": {
+          "delay": "1.55534585898332939934852296685378687109561558957239671214622021009762932706765789087521211998463567846815953605960379195E-12",
+          "supremum": "0.00067785940991958230219760719414865526805578324258805185994331352988919452293587678274268072094189643784702513929019247848",
+          "precision": 120,
+          "bisection_iterations": 160,
+          "existence": "Unique internal envelope maximum; positive-delay finite intensity lies strictly below the envelope; maturity is lower."
+        },
+        "expected_status": "no_finite_joint_optimum",
+        "net_payoff_rounding_tie": false
+      }
+    },
+    {
+      "name": "A05_tight_control_1e-11_0.0",
+      "issue": "A05",
+      "kind": "control",
+      "observed_as_expected": true,
+      "detail": {
+        "time_scale": 1e-11,
+        "lower": 0.0,
+        "tighter_tolerance": 1e-21,
+        "actual": {
+          "strategy": "RL",
+          "status": "no_finite_joint_optimum",
+          "delay": null,
+          "announcement": null,
+          "payoff": null,
+          "supremum": 0.0006778594099195829,
+          "supremum_delay": 1.5553458589833293e-12,
+          "attainment": "not_attained",
+          "evaluations": 3,
+          "message": "The joint envelope supremum is approached with unbounded intensity; no finite maximizing control is returned.",
+          "equilibrium": false,
+          "globally_certified": false
+        }
+      }
+    },
+    {
+      "name": "A05_1e-11_0.05",
+      "issue": "A05",
+      "kind": "confirmed_counterexample",
+      "observed_as_expected": true,
+      "detail": {
+        "case": "false_attainment",
+        "params": {
+          "growth": 10000000000.000002,
+          "network": 0.85,
+          "growth_end": 2.9999999999999997e-12,
+          "horizon": 1e-11,
+          "quality_ratio": 1.0,
+          "margin_x": 25000000000.0,
+          "margin_y": 25000000000.0,
+          "discount": 0.0,
+          "announcement_cost": 0.0,
+          "deployment_cost": 0.01,
+          "learning_rate": 1000000000000.0
+        },
+        "bounds": {
+          "delay_lower": 5e-13,
+          "delay_upper": null,
+          "announcement_upper": null,
+          "scouting_points": 65,
+          "tolerance": 1e-10,
+          "payoff_atol": 1e-10,
+          "payoff_rtol": 1e-08,
+          "max_evaluations": 20000
+        },
+        "actual": {
+          "strategy": "RL",
+          "status": "attained_joint_optimum",
+          "delay": 2.9999999999999997e-12,
+          "announcement": 0.0,
+          "payoff": -0.0004978706836786402,
+          "share_x": 0.4937052579609973,
+          "share_y": 0.5062947420390027,
+          "evaluations": 1,
+          "delay_refinement_intervals": 0,
+          "delay_active": "upper",
+          "announcement_active": "lower",
+          "announcement_nonunique": true,
+          "delay_nonunique": false,
+          "announcement_stationarity_residual": 0.0,
+          "announcement_stationarity_log_residual": null,
+          "announcement_stationarity_scaled_residual": 0.0,
+          "announcement_stationarity_representation": "finite",
+          "local_improvement_residual": 0.0,
+          "probe_improvement_found": 0.0,
+          "probe_rounds": 0,
+          "local_quality_passed": true,
+          "last_probe_improvement": 0.0,
+          "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+          "attainment": "attained",
+          "supremum": -0.0004978706836786402,
+          "envelope_evaluations": 2,
+          "equilibrium": false,
+          "globally_certified": false,
+          "conditional_control": "delay and announcement"
+        },
+        "finite_feasible_witness": {
+          "delay": 1.4999999999999999e-12,
+          "announcement": 100000000000000.0,
+          "payoff": 0.0006522224144909598,
+          "independent_120_digit_payoff": "0.00065222241449096263793696080238905343634316970731679444581678854948487357198981997807392942196933197846967387164978637033"
+        },
+        "envelope_derivative_at_lower": "3690306597.12633411904248413443641318241951991307397584462023397869893128739259377595280917603074010184035163596783861640",
+        "envelope_derivative_at_maturity": "-1252129316.32136067735737709763594668917070187009652258396433171104216159363940286676527920634146895911165283406207969695",
+        "independent_envelope_maximum": {
+          "delay": "1.55534585898332939934852296685378687109561558957293521270941999459333850202412697106284212316602865795647224554536583933E-12",
+          "supremum": "0.00067785940991958230219760719414865526805578324258805185994331352988919452293587678274268072094189623963520372382763431064",
+          "precision": 120,
+          "bisection_iterations": 160,
+          "existence": "Unique internal envelope maximum; positive-delay finite intensity lies strictly below the envelope; maturity is lower."
+        },
+        "expected_status": "no_finite_joint_optimum",
+        "net_payoff_rounding_tie": false
+      }
+    },
+    {
+      "name": "A05_tight_control_1e-11_0.05",
+      "issue": "A05",
+      "kind": "control",
+      "observed_as_expected": true,
+      "detail": {
+        "time_scale": 1e-11,
+        "lower": 0.05,
+        "tighter_tolerance": 1e-21,
+        "actual": {
+          "strategy": "RL",
+          "status": "no_finite_joint_optimum",
+          "delay": null,
+          "announcement": null,
+          "payoff": null,
+          "supremum": 0.0006778594099195795,
+          "supremum_delay": 1.5553458589833271e-12,
+          "attainment": "not_attained",
+          "evaluations": 3,
+          "message": "The joint envelope supremum is approached with unbounded intensity; no finite maximizing control is returned.",
+          "equilibrium": false,
+          "globally_certified": false
+        }
+      }
+    },
+    {
+      "name": "A05_1e-11_0.1",
+      "issue": "A05",
+      "kind": "confirmed_counterexample",
+      "observed_as_expected": true,
+      "detail": {
+        "case": "understated_supremum",
+        "params": {
+          "growth": 10000000000.000002,
+          "network": 0.85,
+          "growth_end": 2.9999999999999997e-12,
+          "horizon": 1e-11,
+          "quality_ratio": 1.0,
+          "margin_x": 25000000000.0,
+          "margin_y": 25000000000.0,
+          "discount": 0.0,
+          "announcement_cost": 0.0,
+          "deployment_cost": 0.01,
+          "learning_rate": 1000000000000.0
+        },
+        "bounds": {
+          "delay_lower": 1e-12,
+          "delay_upper": null,
+          "announcement_upper": null,
+          "scouting_points": 65,
+          "tolerance": 1e-10,
+          "payoff_atol": 1e-10,
+          "payoff_rtol": 1e-08,
+          "max_evaluations": 20000
+        },
+        "actual": {
+          "strategy": "RL",
+          "status": "no_finite_joint_optimum",
+          "delay": null,
+          "announcement": null,
+          "payoff": null,
+          "supremum": 0.0003212055882855624,
+          "supremum_delay": 1e-12,
+          "attainment": "not_attained",
+          "evaluations": 2,
+          "message": "The joint envelope supremum is approached with unbounded intensity; no finite maximizing control is returned.",
+          "equilibrium": false,
+          "globally_certified": false
+        },
+        "finite_feasible_witness": {
+          "delay": 1.4999999999999999e-12,
+          "announcement": 100000000000000.0,
+          "payoff": 0.0006522224144909598,
+          "independent_120_digit_payoff": "0.00065222241449096263793696080238905343634316970731679444581678854948487357198981997807392942196933197846967387164978637033"
+        },
+        "envelope_derivative_at_lower": "1428794411.71442308360421467512357249577351243823090432731277411492891857770235686714131547141793081037818326708429839241",
+        "envelope_derivative_at_maturity": "-1252129316.32136067735737709763594668917070187009652258396433171104216159363940286676527920634146895911165283406207969695",
+        "independent_envelope_maximum": {
+          "delay": "1.55534585898332939934852296685378687109561558957311618726794238092236489070997751971524986407715190890382588743470800406E-12",
+          "supremum": "0.00067785940991958230219760719414865526805578324258805185994331352988919452293587678274268072094189605185393463937834755009",
+          "precision": 120,
+          "bisection_iterations": 160,
+          "existence": "Unique internal envelope maximum; positive-delay finite intensity lies strictly below the envelope; maturity is lower."
+        },
+        "expected_status": "no_finite_joint_optimum",
+        "net_payoff_rounding_tie": false
+      }
+    },
+    {
+      "name": "A05_tight_control_1e-11_0.1",
+      "issue": "A05",
+      "kind": "control",
+      "observed_as_expected": true,
+      "detail": {
+        "time_scale": 1e-11,
+        "lower": 0.1,
+        "tighter_tolerance": 1e-21,
+        "actual": {
+          "strategy": "RL",
+          "status": "no_finite_joint_optimum",
+          "delay": null,
+          "announcement": null,
+          "payoff": null,
+          "supremum": 0.0006778594099195699,
+          "supremum_delay": 1.555345858902108e-12,
+          "attainment": "not_attained",
+          "evaluations": 3,
+          "message": "The joint envelope supremum is approached with unbounded intensity; no finite maximizing control is returned.",
+          "equilibrium": false,
+          "globally_certified": false
+        }
+      }
+    },
+    {
+      "name": "A05_1e-12_0.0",
+      "issue": "A05",
+      "kind": "confirmed_counterexample",
+      "observed_as_expected": true,
+      "detail": {
+        "case": "false_attainment",
+        "params": {
+          "growth": 100000000000.0,
+          "network": 0.85,
+          "growth_end": 3e-13,
+          "horizon": 1e-12,
+          "quality_ratio": 1.0,
+          "margin_x": 250000000000.0,
+          "margin_y": 250000000000.0,
+          "discount": 0.0,
+          "announcement_cost": 0.0,
+          "deployment_cost": 0.01,
+          "learning_rate": 10000000000000.0
+        },
+        "bounds": {
+          "delay_lower": 0.0,
+          "delay_upper": null,
+          "announcement_upper": null,
+          "scouting_points": 65,
+          "tolerance": 1e-10,
+          "payoff_atol": 1e-10,
+          "payoff_rtol": 1e-08,
+          "max_evaluations": 20000
+        },
+        "actual": {
+          "strategy": "RL",
+          "status": "attained_joint_optimum",
+          "delay": 3e-13,
+          "announcement": 0.0,
+          "payoff": -0.0004978706836786396,
+          "share_x": 0.4937052579609973,
+          "share_y": 0.5062947420390027,
+          "evaluations": 1,
+          "delay_refinement_intervals": 0,
+          "delay_active": "upper",
+          "announcement_active": "lower",
+          "announcement_nonunique": true,
+          "delay_nonunique": false,
+          "announcement_stationarity_residual": 0.0,
+          "announcement_stationarity_log_residual": null,
+          "announcement_stationarity_scaled_residual": 0.0,
+          "announcement_stationarity_representation": "finite",
+          "local_improvement_residual": 0.0,
+          "probe_improvement_found": 0.0,
+          "probe_rounds": 0,
+          "local_quality_passed": true,
+          "last_probe_improvement": 0.0,
+          "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+          "attainment": "attained",
+          "supremum": -0.0004978706836786396,
+          "envelope_evaluations": 2,
+          "equilibrium": false,
+          "globally_certified": false,
+          "conditional_control": "delay and announcement"
+        },
+        "finite_feasible_witness": {
+          "delay": 1.5e-13,
+          "announcement": 1000000000000000.0,
+          "payoff": 0.0006522224144909394,
+          "independent_120_digit_payoff": "0.00065222241449096242055179042213152980049193930275843461290545904947489549967902792534303185584757988847119128225022539341"
+        },
+        "envelope_derivative_at_lower": "75000000000.00000258450198044077812911298829001705001928712590597569942474365234375000000000000000000000",
+        "envelope_derivative_at_maturity": "-12521293163.2136046957410518751175568346190753929731528752764373741466015859383581552327480731378204199490920769148965930",
+        "independent_envelope_maximum": {
+          "delay": "1.55534585898332956145050201275930917231583570928980933877216995367148633089194708192815436029401945380079994267377624511E-13",
+          "supremum": "0.00067785940991958209281133002462377302114303781275992649668887552948057576542954246131659360955059660908588693265810347168",
+          "precision": 120,
+          "bisection_iterations": 160,
+          "existence": "Unique internal envelope maximum; positive-delay finite intensity lies strictly below the envelope; maturity is lower."
+        },
+        "expected_status": "no_finite_joint_optimum",
+        "net_payoff_rounding_tie": false
+      }
+    },
+    {
+      "name": "A05_tight_control_1e-12_0.0",
+      "issue": "A05",
+      "kind": "control",
+      "observed_as_expected": true,
+      "detail": {
+        "time_scale": 1e-12,
+        "lower": 0.0,
+        "tighter_tolerance": 1e-22,
+        "actual": {
+          "strategy": "RL",
+          "status": "no_finite_joint_optimum",
+          "delay": null,
+          "announcement": null,
+          "payoff": null,
+          "supremum": 0.0006778594099196024,
+          "supremum_delay": 1.5553458589833293e-13,
+          "attainment": "not_attained",
+          "evaluations": 3,
+          "message": "The joint envelope supremum is approached with unbounded intensity; no finite maximizing control is returned.",
+          "equilibrium": false,
+          "globally_certified": false
+        }
+      }
+    },
+    {
+      "name": "A05_1e-12_0.05",
+      "issue": "A05",
+      "kind": "confirmed_counterexample",
+      "observed_as_expected": true,
+      "detail": {
+        "case": "false_attainment",
+        "params": {
+          "growth": 100000000000.0,
+          "network": 0.85,
+          "growth_end": 3e-13,
+          "horizon": 1e-12,
+          "quality_ratio": 1.0,
+          "margin_x": 250000000000.0,
+          "margin_y": 250000000000.0,
+          "discount": 0.0,
+          "announcement_cost": 0.0,
+          "deployment_cost": 0.01,
+          "learning_rate": 10000000000000.0
+        },
+        "bounds": {
+          "delay_lower": 5e-14,
+          "delay_upper": null,
+          "announcement_upper": null,
+          "scouting_points": 65,
+          "tolerance": 1e-10,
+          "payoff_atol": 1e-10,
+          "payoff_rtol": 1e-08,
+          "max_evaluations": 20000
+        },
+        "actual": {
+          "strategy": "RL",
+          "status": "attained_joint_optimum",
+          "delay": 3e-13,
+          "announcement": 0.0,
+          "payoff": -0.0004978706836786396,
+          "share_x": 0.4937052579609973,
+          "share_y": 0.5062947420390027,
+          "evaluations": 1,
+          "delay_refinement_intervals": 0,
+          "delay_active": "upper",
+          "announcement_active": "lower",
+          "announcement_nonunique": true,
+          "delay_nonunique": false,
+          "announcement_stationarity_residual": 0.0,
+          "announcement_stationarity_log_residual": null,
+          "announcement_stationarity_scaled_residual": 0.0,
+          "announcement_stationarity_representation": "finite",
+          "local_improvement_residual": 0.0,
+          "probe_improvement_found": 0.0,
+          "probe_rounds": 0,
+          "local_quality_passed": true,
+          "last_probe_improvement": 0.0,
+          "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+          "attainment": "attained",
+          "supremum": -0.0004978706836786396,
+          "envelope_evaluations": 2,
+          "equilibrium": false,
+          "globally_certified": false,
+          "conditional_control": "delay and announcement"
+        },
+        "finite_feasible_witness": {
+          "delay": 1.5e-13,
+          "announcement": 1000000000000000.0,
+          "payoff": 0.0006522224144909394,
+          "independent_120_digit_payoff": "0.00065222241449096242055179042213152980049193930275843461290545904947489549967902792534303185584757988847119128225022539341"
+        },
+        "envelope_derivative_at_lower": "36903065971.2633432426461171601796221020187767917175105603902882223468026520936518048354348406769245810666378154703408973",
+        "envelope_derivative_at_maturity": "-12521293163.2136046957410518751175568346190753929731528752764373741466015859383581552327480731378204199490920769148965930",
+        "independent_envelope_maximum": {
+          "delay": "1.55534585898332956145050201275930917231583570928849163635914848627537357576921900578947973911840481720739803437392693918E-13",
+          "supremum": "0.00067785940991958209281133002462377302114303781275992649668887552948057576542954246131659360955059691776421465775540605540",
+          "precision": 120,
+          "bisection_iterations": 160,
+          "existence": "Unique internal envelope maximum; positive-delay finite intensity lies strictly below the envelope; maturity is lower."
+        },
+        "expected_status": "no_finite_joint_optimum",
+        "net_payoff_rounding_tie": false
+      }
+    },
+    {
+      "name": "A05_tight_control_1e-12_0.05",
+      "issue": "A05",
+      "kind": "control",
+      "observed_as_expected": true,
+      "detail": {
+        "time_scale": 1e-12,
+        "lower": 0.05,
+        "tighter_tolerance": 1e-22,
+        "actual": {
+          "strategy": "RL",
+          "status": "no_finite_joint_optimum",
+          "delay": null,
+          "announcement": null,
+          "payoff": null,
+          "supremum": 0.0006778594099195951,
+          "supremum_delay": 1.5553458589833253e-13,
+          "attainment": "not_attained",
+          "evaluations": 3,
+          "message": "The joint envelope supremum is approached with unbounded intensity; no finite maximizing control is returned.",
+          "equilibrium": false,
+          "globally_certified": false
+        }
+      }
+    },
+    {
+      "name": "A05_1e-12_0.1",
+      "issue": "A05",
+      "kind": "confirmed_counterexample",
+      "observed_as_expected": true,
+      "detail": {
+        "case": "understated_supremum",
+        "params": {
+          "growth": 100000000000.0,
+          "network": 0.85,
+          "growth_end": 3e-13,
+          "horizon": 1e-12,
+          "quality_ratio": 1.0,
+          "margin_x": 250000000000.0,
+          "margin_y": 250000000000.0,
+          "discount": 0.0,
+          "announcement_cost": 0.0,
+          "deployment_cost": 0.01,
+          "learning_rate": 10000000000000.0
+        },
+        "bounds": {
+          "delay_lower": 1e-13,
+          "delay_upper": null,
+          "announcement_upper": null,
+          "scouting_points": 65,
+          "tolerance": 1e-10,
+          "payoff_atol": 1e-10,
+          "payoff_rtol": 1e-08,
+          "max_evaluations": 20000
+        },
+        "actual": {
+          "strategy": "RL",
+          "status": "no_finite_joint_optimum",
+          "delay": null,
+          "announcement": null,
+          "payoff": null,
+          "supremum": 0.000321205588285591,
+          "supremum_delay": 1e-13,
+          "attainment": "not_attained",
+          "evaluations": 2,
+          "message": "The joint envelope supremum is approached with unbounded intensity; no finite maximizing control is returned.",
+          "equilibrium": false,
+          "globally_certified": false
+        },
+        "finite_feasible_witness": {
+          "delay": 1.5e-13,
+          "announcement": 1000000000000000.0,
+          "payoff": 0.0006522224144909394,
+          "independent_120_digit_payoff": "0.00065222241449096242055179042213152980049193930275843461290545904947489549967902792534303185584757988847119128225022539341"
+        },
+        "envelope_derivative_at_lower": "14287944117.1442323867358192937219184593456326846171317275014902894062674124629781874274267908189242052879625041375266572",
+        "envelope_derivative_at_maturity": "-12521293163.2136046957410518751175568346190753929731528752764373741466015859383581552327480731378204199490920769148965930",
+        "independent_envelope_maximum": {
+          "delay": "1.55534585898332956145050201275930917231583570928896358665741601244277980630346474547361118568420354569977296351545621186E-13",
+          "supremum": "0.00067785940991958209281133002462377302114303781275992649668887552948057576542954246131659360955059717865198550991384500609",
+          "precision": 120,
+          "bisection_iterations": 160,
+          "existence": "Unique internal envelope maximum; positive-delay finite intensity lies strictly below the envelope; maturity is lower."
+        },
+        "expected_status": "no_finite_joint_optimum",
+        "net_payoff_rounding_tie": false
+      }
+    },
+    {
+      "name": "A05_tight_control_1e-12_0.1",
+      "issue": "A05",
+      "kind": "control",
+      "observed_as_expected": true,
+      "detail": {
+        "time_scale": 1e-12,
+        "lower": 0.1,
+        "tighter_tolerance": 1e-22,
+        "actual": {
+          "strategy": "RL",
+          "status": "no_finite_joint_optimum",
+          "delay": null,
+          "announcement": null,
+          "payoff": null,
+          "supremum": 0.0006778594099195808,
+          "supremum_delay": 1.555345858902103e-13,
+          "attainment": "not_attained",
+          "evaluations": 3,
+          "message": "The joint envelope supremum is approached with unbounded intensity; no finite maximizing control is returned.",
+          "equilibrium": false,
+          "globally_certified": false
+        }
+      }
+    },
+    {
+      "name": "A05_ordinary_scale_loose_tolerance",
+      "issue": "A05",
+      "kind": "confirmed_counterexample",
+      "observed_as_expected": true,
+      "detail": {
+        "params": {
+          "growth": 0.1,
+          "network": 0.85,
+          "growth_end": 0.3,
+          "horizon": 1.0,
+          "quality_ratio": 1.0,
+          "margin_x": 0.25,
+          "margin_y": 0.25,
+          "discount": 0.0,
+          "announcement_cost": 0.0,
+          "deployment_cost": 0.01,
+          "learning_rate": 10.0
+        },
+        "bounds": {
+          "delay_lower": 0.0,
+          "delay_upper": null,
+          "announcement_upper": null,
+          "scouting_points": 65,
+          "tolerance": 1.0,
+          "payoff_atol": 1e-10,
+          "payoff_rtol": 1e-08,
+          "max_evaluations": 20000
+        },
+        "actual": {
+          "strategy": "RL",
+          "status": "attained_joint_optimum",
+          "delay": 0.3,
+          "announcement": 0.0,
+          "payoff": -0.0004978706836786396,
+          "share_x": 0.4937052579609973,
+          "share_y": 0.5062947420390027,
+          "evaluations": 1,
+          "delay_refinement_intervals": 0,
+          "delay_active": "upper",
+          "announcement_active": "lower",
+          "announcement_nonunique": true,
+          "delay_nonunique": false,
+          "announcement_stationarity_residual": 0.0,
+          "announcement_stationarity_log_residual": null,
+          "announcement_stationarity_scaled_residual": 0.0,
+          "announcement_stationarity_representation": "finite",
+          "local_improvement_residual": 0.0,
+          "probe_improvement_found": 0.0,
+          "probe_rounds": 0,
+          "local_quality_passed": true,
+          "last_probe_improvement": 0.0,
+          "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+          "attainment": "attained",
+          "supremum": -0.0004978706836786396,
+          "envelope_evaluations": 2,
+          "equilibrium": false,
+          "globally_certified": false,
+          "conditional_control": "delay and announcement"
+        },
+        "finite_witness_payoff": 0.0006522224144909624,
+        "independent_envelope_maximum": {
+          "delay": "0.155534585898332947146566401548963838123193071685766431894234663156976934937619983099832918291488249083316614338940846223",
+          "supremum": "0.00067785940991958240828621240843252851791330070658064226931786942540301668224388642092603079649602981268355445388485851299",
+          "precision": 120,
+          "bisection_iterations": 160,
+          "existence": "Unique internal envelope maximum; positive-delay finite intensity lies strictly below the envelope; maturity is lower."
+        }
+      }
+    },
+    {
+      "name": "A05_ordinary_default_control",
+      "issue": "A05",
+      "kind": "control",
+      "observed_as_expected": true,
+      "detail": {
+        "strategy": "RL",
+        "status": "no_finite_joint_optimum",
+        "delay": null,
+        "announcement": null,
+        "payoff": null,
+        "supremum": 0.0006778594099195816,
+        "supremum_delay": 0.1555345858983331,
+        "attainment": "not_attained",
+        "evaluations": 3,
+        "message": "The joint envelope supremum is approached with unbounded intensity; no finite maximizing control is returned.",
+        "equilibrium": false,
+        "globally_certified": false
+      }
+    },
+    {
+      "name": "A05_true_maturity_control",
+      "issue": "A05",
+      "kind": "control",
+      "observed_as_expected": true,
+      "detail": {
+        "strategy": "RL",
+        "status": "attained_joint_optimum",
+        "delay": 0.3,
+        "announcement": 0.0,
+        "payoff": -0.037040911034085904,
+        "share_x": 0.4937052579609973,
+        "share_y": 0.5062947420390027,
+        "evaluations": 1,
+        "delay_refinement_intervals": 0,
+        "delay_active": "upper",
+        "announcement_active": "lower",
+        "announcement_nonunique": true,
+        "delay_nonunique": false,
+        "announcement_stationarity_residual": 0.0,
+        "announcement_stationarity_log_residual": null,
+        "announcement_stationarity_scaled_residual": 0.0,
+        "announcement_stationarity_representation": "finite",
+        "local_improvement_residual": 0.0,
+        "probe_improvement_found": 0.0,
+        "probe_rounds": 0,
+        "local_quality_passed": true,
+        "last_probe_improvement": 0.0,
+        "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+        "attainment": "attained",
+        "supremum": -0.037040911034085904,
+        "envelope_evaluations": 2,
+        "equilibrium": false,
+        "globally_certified": false,
+        "conditional_control": "delay and announcement"
+      }
+    },
+    {
+      "name": "A05_false_comparison",
+      "issue": "A05",
+      "kind": "confirmed_counterexample",
+      "observed_as_expected": true,
+      "detail": {
+        "actual": {
+          "local_quality_status": "fail",
+          "local_quality_assessment_complete": true,
+          "local_quality_by_strategy": {
+            "RF": "pass",
+            "RL": "pass",
+            "DF": "pass",
+            "DL": "fail"
+          },
+          "entry_payoff_gap": 0.00013340740588901336,
+          "entry_payoff_gap_diagnostic": {
+            "value": 0.00013340740588901336,
+            "representation": "finite",
+            "log_abs": -8.922102909614335
+          },
+          "outside_option_gap": -0.00036446327778962625,
+          "outside_option_gap_diagnostic": {
+            "value": -0.00036446327778962625,
+            "representation": "finite",
+            "log_abs": -7.917084758395728
+          },
+          "all_local_quality_passed": false,
+          "results": [
+            {
+              "strategy": "RF",
+              "status": "profile_optimum",
+              "delay": 0.0,
+              "announcement": 0.0,
+              "payoff": -0.006812499999999999,
+              "share_x": 0.5,
+              "share_y": 0.5,
+              "evaluations": 1,
+              "delay_refinement_intervals": 0,
+              "delay_active": "fixed_rival_delay",
+              "announcement_active": "lower",
+              "announcement_nonunique": true,
+              "delay_nonunique": false,
+              "announcement_stationarity_residual": 0.0,
+              "announcement_stationarity_log_residual": null,
+              "announcement_stationarity_scaled_residual": 0.0,
+              "announcement_stationarity_representation": "finite",
+              "local_improvement_residual": 0.0,
+              "probe_improvement_found": 0.0,
+              "probe_rounds": 0,
+              "local_quality_passed": true,
+              "last_probe_improvement": 0.0,
+              "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+              "attainment": "attained",
+              "supremum": null,
+              "envelope_evaluations": 0,
+              "equilibrium": false,
+              "globally_certified": false,
+              "conditional_control": "announcement; rival timing fixed"
+            },
+            {
+              "strategy": "RL",
+              "status": "attained_joint_optimum",
+              "delay": 3e-13,
+              "announcement": 0.0,
+              "payoff": -0.0004978706836786396,
+              "share_x": 0.4937052579609973,
+              "share_y": 0.5062947420390027,
+              "evaluations": 1,
+              "delay_refinement_intervals": 0,
+              "delay_active": "upper",
+              "announcement_active": "lower",
+              "announcement_nonunique": true,
+              "delay_nonunique": false,
+              "announcement_stationarity_residual": 0.0,
+              "announcement_stationarity_log_residual": null,
+              "announcement_stationarity_scaled_residual": 0.0,
+              "announcement_stationarity_representation": "finite",
+              "local_improvement_residual": 0.0,
+              "probe_improvement_found": 0.0,
+              "probe_rounds": 0,
+              "local_quality_passed": true,
+              "last_probe_improvement": 0.0,
+              "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+              "attainment": "attained",
+              "supremum": -0.0004978706836786396,
+              "envelope_evaluations": 2,
+              "equilibrium": false,
+              "globally_certified": false,
+              "conditional_control": "delay and announcement"
+            },
+            {
+              "strategy": "DF",
+              "status": "profile_optimum",
+              "delay": 0.0,
+              "announcement": 0.0,
+              "payoff": -0.006812499999999999,
+              "share_x": 0.5,
+              "share_y": 0.5,
+              "evaluations": 1,
+              "delay_refinement_intervals": 0,
+              "delay_active": "fixed_rival_delay",
+              "announcement_active": "not_applicable",
+              "announcement_nonunique": false,
+              "delay_nonunique": false,
+              "announcement_stationarity_residual": 0.0,
+              "announcement_stationarity_log_residual": null,
+              "announcement_stationarity_scaled_residual": 0.0,
+              "announcement_stationarity_representation": "finite",
+              "local_improvement_residual": 0.0,
+              "probe_improvement_found": 0.0,
+              "probe_rounds": 0,
+              "local_quality_passed": true,
+              "last_probe_improvement": 0.0,
+              "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+              "attainment": "attained",
+              "supremum": null,
+              "envelope_evaluations": 0,
+              "equilibrium": false,
+              "globally_certified": false,
+              "conditional_control": "rival timing fixed"
+            },
+            {
+              "strategy": "DL",
+              "status": "numerical_candidate",
+              "delay": 2.3438700000000006e-13,
+              "announcement": 0.0,
+              "payoff": -0.00036446327778962625,
+              "share_x": 0.4950684021035367,
+              "share_y": 0.5049315978964632,
+              "evaluations": 73,
+              "delay_refinement_intervals": 3,
+              "delay_active": "interior",
+              "announcement_active": "not_applicable",
+              "announcement_nonunique": false,
+              "delay_nonunique": false,
+              "announcement_stationarity_residual": 0.0,
+              "announcement_stationarity_log_residual": null,
+              "announcement_stationarity_scaled_residual": 0.0,
+              "announcement_stationarity_representation": "finite",
+              "local_improvement_residual": 0.0,
+              "probe_improvement_found": 1.142900160145191e-09,
+              "probe_rounds": 4,
+              "local_quality_passed": false,
+              "last_probe_improvement": 2.846074538152485e-10,
+              "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+              "attainment": "attained",
+              "supremum": null,
+              "envelope_evaluations": 0,
+              "equilibrium": false,
+              "globally_certified": false,
+              "conditional_control": "delay"
+            }
+          ],
+          "co_best": [
+            "DL"
+          ],
+          "finite_candidate_co_best": [
+            "DL"
+          ],
+          "tie_tolerance": 0.0,
+          "outside_option_payoff": 0.0,
+          "preferred_with_outside_option": [
+            "no_entry"
+          ],
+          "all_rankable": true,
+          "interpretation": "Conditional scenario comparison; first-mover cases hold rival delay fixed. No Nash or mixed-strategy equilibrium claim."
+        },
+        "expected_all_rankable": false,
+        "expected_preferred": [],
+        "positive_finite_RL_witness": 0.0006522224144909394
+      }
+    },
+    {
+      "name": "A05_false_real_CLI",
+      "issue": "A05",
+      "kind": "confirmed_counterexample",
+      "observed_as_expected": true,
+      "detail": {
+        "exit_code": 0,
+        "comparison": {
+          "all_local_quality_passed": false,
+          "all_rankable": true,
+          "co_best": [
+            "DL"
+          ],
+          "entry_payoff_gap": 0.00013340740588901336,
+          "entry_payoff_gap_diagnostic": {
+            "log_abs": -8.922102909614335,
+            "representation": "finite",
+            "value": 0.00013340740588901336
+          },
+          "finite_candidate_co_best": [
+            "DL"
+          ],
+          "interpretation": "Conditional scenario comparison; first-mover cases hold rival delay fixed. No Nash or mixed-strategy equilibrium claim.",
+          "local_quality_assessment_complete": true,
+          "local_quality_by_strategy": {
+            "DF": "pass",
+            "DL": "fail",
+            "RF": "pass",
+            "RL": "pass"
+          },
+          "local_quality_status": "fail",
+          "outside_option_gap": -0.00036446327778962625,
+          "outside_option_gap_diagnostic": {
+            "log_abs": -7.917084758395728,
+            "representation": "finite",
+            "value": -0.00036446327778962625
+          },
+          "outside_option_payoff": 0.0,
+          "preferred_with_outside_option": [
+            "no_entry"
+          ],
+          "results": [
+            {
+              "announcement": 0.0,
+              "announcement_active": "lower",
+              "announcement_nonunique": true,
+              "announcement_stationarity_log_residual": null,
+              "announcement_stationarity_representation": "finite",
+              "announcement_stationarity_residual": 0.0,
+              "announcement_stationarity_scaled_residual": 0.0,
+              "attainment": "attained",
+              "conditional_control": "announcement; rival timing fixed",
+              "delay": 0.0,
+              "delay_active": "fixed_rival_delay",
+              "delay_nonunique": false,
+              "delay_refinement_intervals": 0,
+              "envelope_evaluations": 0,
+              "equilibrium": false,
+              "evaluations": 1,
+              "globally_certified": false,
+              "last_probe_improvement": 0.0,
+              "local_improvement_residual": 0.0,
+              "local_quality_passed": true,
+              "payoff": -0.006812499999999999,
+              "probe_improvement_found": 0.0,
+              "probe_rounds": 0,
+              "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+              "share_x": 0.5,
+              "share_y": 0.5,
+              "status": "profile_optimum",
+              "strategy": "RF",
+              "supremum": null
+            },
+            {
+              "announcement": 0.0,
+              "announcement_active": "lower",
+              "announcement_nonunique": true,
+              "announcement_stationarity_log_residual": null,
+              "announcement_stationarity_representation": "finite",
+              "announcement_stationarity_residual": 0.0,
+              "announcement_stationarity_scaled_residual": 0.0,
+              "attainment": "attained",
+              "conditional_control": "delay and announcement",
+              "delay": 3e-13,
+              "delay_active": "upper",
+              "delay_nonunique": false,
+              "delay_refinement_intervals": 0,
+              "envelope_evaluations": 2,
+              "equilibrium": false,
+              "evaluations": 1,
+              "globally_certified": false,
+              "last_probe_improvement": 0.0,
+              "local_improvement_residual": 0.0,
+              "local_quality_passed": true,
+              "payoff": -0.0004978706836786396,
+              "probe_improvement_found": 0.0,
+              "probe_rounds": 0,
+              "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+              "share_x": 0.4937052579609973,
+              "share_y": 0.5062947420390027,
+              "status": "attained_joint_optimum",
+              "strategy": "RL",
+              "supremum": -0.0004978706836786396
+            },
+            {
+              "announcement": 0.0,
+              "announcement_active": "not_applicable",
+              "announcement_nonunique": false,
+              "announcement_stationarity_log_residual": null,
+              "announcement_stationarity_representation": "finite",
+              "announcement_stationarity_residual": 0.0,
+              "announcement_stationarity_scaled_residual": 0.0,
+              "attainment": "attained",
+              "conditional_control": "rival timing fixed",
+              "delay": 0.0,
+              "delay_active": "fixed_rival_delay",
+              "delay_nonunique": false,
+              "delay_refinement_intervals": 0,
+              "envelope_evaluations": 0,
+              "equilibrium": false,
+              "evaluations": 1,
+              "globally_certified": false,
+              "last_probe_improvement": 0.0,
+              "local_improvement_residual": 0.0,
+              "local_quality_passed": true,
+              "payoff": -0.006812499999999999,
+              "probe_improvement_found": 0.0,
+              "probe_rounds": 0,
+              "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+              "share_x": 0.5,
+              "share_y": 0.5,
+              "status": "profile_optimum",
+              "strategy": "DF",
+              "supremum": null
+            },
+            {
+              "announcement": 0.0,
+              "announcement_active": "not_applicable",
+              "announcement_nonunique": false,
+              "announcement_stationarity_log_residual": null,
+              "announcement_stationarity_representation": "finite",
+              "announcement_stationarity_residual": 0.0,
+              "announcement_stationarity_scaled_residual": 0.0,
+              "attainment": "attained",
+              "conditional_control": "delay",
+              "delay": 2.3438700000000006e-13,
+              "delay_active": "interior",
+              "delay_nonunique": false,
+              "delay_refinement_intervals": 3,
+              "envelope_evaluations": 0,
+              "equilibrium": false,
+              "evaluations": 73,
+              "globally_certified": false,
+              "last_probe_improvement": 2.846074538152485e-10,
+              "local_improvement_residual": 0.0,
+              "local_quality_passed": false,
+              "payoff": -0.00036446327778962625,
+              "probe_improvement_found": 1.142900160145191e-09,
+              "probe_rounds": 4,
+              "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+              "share_x": 0.4950684021035367,
+              "share_y": 0.5049315978964632,
+              "status": "numerical_candidate",
+              "strategy": "DL",
+              "supremum": null
+            }
+          ],
+          "tie_tolerance": 0.0
+        }
+      }
+    },
+    {
+      "name": "A05_CLI_integrity_control",
+      "issue": "A05",
+      "kind": "control",
+      "observed_as_expected": true,
+      "detail": {
+        "valid": true,
+        "errors": [],
+        "checked_artifacts": 3,
+        "source_verified": true,
+        "scope": "Checks schema, exact archived file inventory, configuration and hashes. Source binding is checked only when an expected package is supplied. Does not establish authorship, authenticity, scientific validity or that recorded execution actually occurred."
+      }
+    },
+    {
+      "name": "A06_zero_count_1_1e-16",
+      "issue": "A06",
+      "kind": "confirmed_counterexample",
+      "observed_as_expected": true,
+      "detail": {
+        "count": 0,
+        "total": 1,
+        "confidence": 1e-16,
+        "actual": [
+          0.0,
+          1.9361559566769736e-32
+        ],
+        "reference": [
+          0.0,
+          1.5707963267948964e-32
+        ],
+        "relative_upper_endpoint_error": 0.23259516440783168,
+        "independent_decimal_reference": {
+          "z": "1.253314137315500225010843242454358689550432994195560640189484731517925011674771937107650374619216746697542447935706654653264530041436783938696925296325657338391051176928115986418088416475134214279949677780509806136986381765967075164120856729589261958681889405182048140516402420528050349418180454171857800537156222716071487522062598830166331719556212049554481441284651752342971014953053566836236528623E-16",
+          "lower": "0",
+          "upper": "1.570796326794896553565082020099800687621977982273243589204297623225524168799136065193295284395307495866106232687176161626472078133443242361320936595375668993298999495663038449091096151834982456848669900131558633652726779991649521789270763790617280008024897836681302133459135917402674460714691461566028816936709696952621557116979128042292319299983399504087200265702282095523744444726333698283293725125E-32"
+        },
+        "rounded_tail_probability": 0.49999999999999994
+      }
+    },
+    {
+      "name": "A06_zero_count_1_1e-17",
+      "issue": "A06",
+      "kind": "confirmed_counterexample",
+      "observed_as_expected": true,
+      "detail": {
+        "count": 0,
+        "total": 1,
+        "confidence": 1e-17,
+        "actual": [
+          0.0,
+          0.0
+        ],
+        "reference": [
+          0.0,
+          1.5707963267948968e-34
+        ],
+        "relative_upper_endpoint_error": 1.0,
+        "independent_decimal_reference": {
+          "z": "1.253314137315500340873014127883693597254253684036159690265934145073461457713705336100337939801703415163481424165394748819495155741502748988961570204175309088781223078203705990088025313124253809100149828286621214521972695531208072855575164198775875337816004318963638611762449493348637431313737242095887770368441151779813021364869982737598939183259848680103932050423861980405474926228510028635757238605E-17",
+          "lower": "0",
+          "upper": "1.570796326794896843988475521645706016796542312203270563580126737362821779083885400816812201296268392873432341121146659744102579413676737577714271156061966708673838393714470459540215645999015197085559917701460983167020862217201831398416910401342156831768223647333852279938401485057595437457135231679658928225391921561110631419613926473670986997201735312468773194370527145031874041741018363019845542945E-34"
+        },
+        "rounded_tail_probability": 0.5
+      }
+    },
+    {
+      "name": "A06_zero_count_1_1e-20",
+      "issue": "A06",
+      "kind": "confirmed_counterexample",
+      "observed_as_expected": true,
+      "detail": {
+        "count": 0,
+        "total": 1,
+        "confidence": 1e-20,
+        "actual": [
+          0.0,
+          0.0
+        ],
+        "reference": [
+          0.0,
+          1.5707963267948964e-40
+        ],
+        "relative_upper_endpoint_error": 1.0,
+        "independent_decimal_reference": {
+          "z": "1.253314137315500182467702370460770304203125678015462703316113357077278796965027515811054021047299357952447483300553630072933686283813822729047717910473592319094907004520051234331263208698428211086132799948127340346086694688108595374730964489377510634612242219214921738329445598689352558278258149603064525907181015633427131960682534545207436170664338647777705111642686131027467951361744496874933633366E-20",
+          "lower": "0",
+          "upper": "1.570796326794896446925242218750942742558043540586138446993962708395766902393646374415996097999079239752925054301080516058096236070961879774756791107844155410866554954203401956816077765510168577193153729310054776923915775941193965813559897480177488797304872592630020642789786818331630736558262473509402750479218587626377566820350116507509697377548021259449516357905277606242378178870691770291503111330E-40"
+        },
+        "rounded_tail_probability": 0.5
+      }
+    },
+    {
+      "name": "A06_zero_count_1_1e-50",
+      "issue": "A06",
+      "kind": "confirmed_counterexample",
+      "observed_as_expected": true,
+      "detail": {
+        "count": 0,
+        "total": 1,
+        "confidence": 1e-50,
+        "actual": [
+          0.0,
+          0.0
+        ],
+        "reference": [
+          0.0,
+          1.5707963267948965e-100
+        ],
+        "relative_upper_endpoint_error": 1.0,
+        "independent_decimal_reference": {
+          "z": "1.253314137315500260753403485819982067343445459271606130391122560548881537921157241597896591656512993892975127161527661240757005161525680391942404338736226485935477424240832160314232457677503851132392440036053805027958996538483630966816878726576911000139696289703514007143458032895884998086217427302650956379493461520844805264561334786731505451157998352404810605046702853194027869135384161098500221126E-50",
+          "lower": "0",
+          "upper": "1.570796326794896643158394133821990716065890580117212395242624370993227525796470562705341057679370229578382645531658789908687054581820662407688219890862684419599752674111260239041063280830748134420837175821247280434495299384328724316130647480633387569131423507129260735317216232650909041208855602624265050041487842887968390280967318597768766989924729264337298759020208791944788975544270464953096664541E-100"
+        },
+        "rounded_tail_probability": 0.5
+      }
+    },
+    {
+      "name": "A06_zero_count_1_1e-160",
+      "issue": "A06",
+      "kind": "confirmed_counterexample",
+      "observed_as_expected": true,
+      "detail": {
+        "count": 0,
+        "total": 1,
+        "confidence": 1e-160,
+        "actual": [
+          0.0,
+          0.0
+        ],
+        "reference": [
+          0.0,
+          1.5706e-320
+        ],
+        "relative_upper_endpoint_error": 1.0,
+        "independent_decimal_reference": {
+          "z": "1.253314137315500236966032382287706386222721257507585465490708197629174720989757247838861069886818484062903889089568554032770668913691282698244177034184920176555117458656918273244239229573082590739794225540200896447395286830825627115951545713114932330356649450318466428938717879470375022444491421490545593454482322236982634753018088986345122934449515661752035949538446418262527444408581508714034118764E-160",
+          "lower": "0",
+          "upper": "1.570796326794896583532297146567564216440282898421761203163650187263359700045770912060275440428384252808789507613756674961484125827495724973159861128166068066343653194143803701648436086870807808772205624868861731308701049814405723918849363338793532815954957641781125336668428262347456388729926147566156823630934590722369650300471967881747899609238318365629178229719885517768809580897273674395271408560E-320"
+        },
+        "rounded_tail_probability": 0.5
+      }
+    },
+    {
+      "name": "A06_zero_count_10_1e-16",
+      "issue": "A06",
+      "kind": "confirmed_counterexample",
+      "observed_as_expected": true,
+      "detail": {
+        "count": 0,
+        "total": 10,
+        "confidence": 1e-16,
+        "actual": [
+          0.0,
+          1.936155956676974e-33
+        ],
+        "reference": [
+          0.0,
+          1.5707963267948966e-33
+        ],
+        "relative_upper_endpoint_error": 0.23259516440783168,
+        "independent_decimal_reference": {
+          "z": "1.253314137315500225010843242454358689550432994195560640189484731517925011674771937107650374619216746697542447935706654653264530041436783938696925296325657338391051176928115986418088416475134214279949677780509806136986381765967075164120856729589261958681889405182048140516402420528050349418180454171857800537156222716071487522062598830166331719556212049554481441284651752342971014953053566836236528623E-16",
+          "lower": "0",
+          "upper": "1.570796326794896553565082020099822894231880433328279297623778555998567586775908403737881751910155769767009378712193004404746308556300606208684801306280574211269438683673149115639590797699645326299274381203366042802531884506321262358435923127276618714995653546950206506808407245650606593220739696624534187668688903500045050544348967575580549501971144827216229454592127808018540886765919479976692789657E-33"
+        },
+        "rounded_tail_probability": 0.49999999999999994
+      }
+    },
+    {
+      "name": "A06_zero_count_10_1e-17",
+      "issue": "A06",
+      "kind": "confirmed_counterexample",
+      "observed_as_expected": true,
+      "detail": {
+        "count": 0,
+        "total": 10,
+        "confidence": 1e-17,
+        "actual": [
+          0.0,
+          0.0
+        ],
+        "reference": [
+          0.0,
+          1.5707963267948968e-35
+        ],
+        "relative_upper_endpoint_error": 1.0,
+        "independent_decimal_reference": {
+          "z": "1.253314137315500340873014127883693597254253684036159690265934145073461457713705336100337939801703415163481424165394748819495155741502748988961570204175309088781223078203705990088025313124253809100149828286621214521972695531208072855575164198775875337816004318963638611762449493348637431313737242095887770368441151779813021364869982737598939183259848680103932050423861980405474926228510028635757238605E-17",
+          "lower": "0",
+          "upper": "1.570796326794896843988475521645706238862641336713903035944272503379871822706080863367160272959553102664921250757696657621223379780548728456284805018716890910674502511510479538320064013115117089578304857808233627535771772358711757213648160903296426027962842435049164976918321730695200352647045088385322770502052378851112416916396168221598361448602862155176453439929413651856555721995804613626751231899E-35"
+        },
+        "rounded_tail_probability": 0.5
+      }
+    },
+    {
+      "name": "A06_zero_count_10_1e-20",
+      "issue": "A06",
+      "kind": "confirmed_counterexample",
+      "observed_as_expected": true,
+      "detail": {
+        "count": 0,
+        "total": 10,
+        "confidence": 1e-20,
+        "actual": [
+          0.0,
+          0.0
+        ],
+        "reference": [
+          0.0,
+          1.5707963267948965e-41
+        ],
+        "relative_upper_endpoint_error": 1.0,
+        "independent_decimal_reference": {
+          "z": "1.253314137315500182467702370460770304203125678015462703316113357077278796965027515811054021047299357952447483300553630072933686283813822729047717910473592319094907004520051234331263208698428211086132799948127340346086694688108595374730964489377510634612242219214921738329445598689352558278258149603064525907181015633427131960682534545207436170664338647777705111642686131027467951361744496874933633366E-20",
+          "lower": "0",
+          "upper": "1.570796326794896446925242218750942742558265606685162957514168088233584328541839199559045293452290677270768676202988300589369982831077802613496481452720738378137229505390744130590848492727908750496632623132766504555056526844250975879818094338891051094540185377303951646285252113850486462270667264548572154039819926804705674648360924195937004767392780512099386344001525313813686199514249862021996908653E-41"
+        },
+        "rounded_tail_probability": 0.5
+      }
+    },
+    {
+      "name": "A06_zero_count_10_1e-50",
+      "issue": "A06",
+      "kind": "confirmed_counterexample",
+      "observed_as_expected": true,
+      "detail": {
+        "count": 0,
+        "total": 10,
+        "confidence": 1e-50,
+        "actual": [
+          0.0,
+          0.0
+        ],
+        "reference": [
+          0.0,
+          1.5707963267948965e-101
+        ],
+        "relative_upper_endpoint_error": 1.0,
+        "independent_decimal_reference": {
+          "z": "1.253314137315500260753403485819982067343445459271606130391122560548881537921157241597896591656512993892975127161527661240757005161525680391942404338736226485935477424240832160314232457677503851132392440036053805027958996538483630966816878726576911000139696289703514007143458032895884998086217427302650956379493461520844805264561334786731505451157998352404810605046702853194027869135384161098500221126E-50",
+          "lower": "0",
+          "upper": "1.570796326794896643158394133821990716065890580117212395242624370993227525796470562705341057679370229800448744556169365597683452643380530428658792887424692090233408315976909887164368652145922002106108339816743417192057947636749224596494998749562383415832542408939226593318306717336085166118437133569823490375744806612224175281019008627230940533022834063815336115271790304096628214703957166790876696291E-101"
+        },
+        "rounded_tail_probability": 0.5
+      }
+    },
+    {
+      "name": "A06_zero_count_10_1e-160",
+      "issue": "A06",
+      "kind": "confirmed_counterexample",
+      "observed_as_expected": true,
+      "detail": {
+        "count": 0,
+        "total": 10,
+        "confidence": 1e-160,
+        "actual": [
+          0.0,
+          0.0
+        ],
+        "reference": [
+          0.0,
+          1.57e-321
+        ],
+        "relative_upper_endpoint_error": 1.0,
+        "independent_decimal_reference": {
+          "z": "1.253314137315500236966032382287706386222721257507585465490708197629174720989757247838861069886818484062903889089568554032770668913691282698244177034184920176555117458656918273244239229573082590739794225540200896447395286830825627115951545713114932330356649450318466428938717879470375022444491421490545593454482322236982634753018088986345122934449515661752035949538446418262527444408581508714034118764E-160",
+          "lower": "0",
+          "upper": "1.570796326794896583532297146567564216440282898421761203163650187263359700045770912060275440428384252808789507613756674961484125827495724973159861128166068066343653194143803701648436086870807808772205624868861731308701049814405723918849363338793532815954957641781125336668428262347456388729926147566156823630934590722369672507081870332803782620703808002534349991880847127273208948775678957382199929699E-321"
+        },
+        "rounded_tail_probability": 0.5
+      }
+    },
+    {
+      "name": "A06_zero_count_100_1e-16",
+      "issue": "A06",
+      "kind": "confirmed_counterexample",
+      "observed_as_expected": true,
+      "detail": {
+        "count": 0,
+        "total": 100,
+        "confidence": 1e-16,
+        "actual": [
+          0.0,
+          1.9361559566769735e-34
+        ],
+        "reference": [
+          0.0,
+          1.5707963267948966e-34
+        ],
+        "relative_upper_endpoint_error": 0.23259516440783168,
+        "independent_decimal_reference": {
+          "z": "1.253314137315500225010843242454358689550432994195560640189484731517925011674771937107650374619216746697542447935706654653264530041436783938696925296325657338391051176928115986418088416475134214279949677780509806136986381765967075164120856729589261958681889405182048140516402420528050349418180454171857800537156222716071487522062598830166331719556212049554481441284651752342971014953053566836236528623E-16",
+          "lower": "0",
+          "upper": "1.570796326794896553565082020099825114892870678433782868465726649310405169226269557981850177171797763540529953046727670880961806923175465086096033051891354630817647117610666905858143044307897304858775999754812160827152715192885029317411098941978124982692729637723751193601434292601697685632376305457860288710479642368452928866954142759033725801503451694712125645907247826889487350743812533687939511780E-34"
+        },
+        "rounded_tail_probability": 0.49999999999999994
+      }
+    },
+    {
+      "name": "A06_zero_count_100_1e-17",
+      "issue": "A06",
+      "kind": "confirmed_counterexample",
+      "observed_as_expected": true,
+      "detail": {
+        "count": 0,
+        "total": 100,
+        "confidence": 1e-17,
+        "actual": [
+          0.0,
+          0.0
+        ],
+        "reference": [
+          0.0,
+          1.570796326794897e-36
+        ],
+        "relative_upper_endpoint_error": 1.0,
+        "independent_decimal_reference": {
+          "z": "1.253314137315500340873014127883693597254253684036159690265934145073461457713705336100337939801703415163481424165394748819495155741502748988961570204175309088781223078203705990088025313124253809100149828286621214521972695531208072855575164198775875337816004318963638611762449493348637431313737242095887770368441151779813021364869982737598939183259848680103932050423861980405474926228510028635757238605E-17",
+          "lower": "0",
+          "upper": "1.570796326794896843988475521645706261069251239164966283180687079981580280392365678016149478848524945613608884394249484665759138351431331168697527230863988633444952114450661556085320911427717670047902376353139085242317840331717730828024558864311480149809298027761551076956277508777140291579466059776610543204850277046235902699696775114459068905813424946874671004952219791386429998182037271164069617077E-36"
+        },
+        "rounded_tail_probability": 0.5
+      }
+    },
+    {
+      "name": "A06_zero_count_100_1e-20",
+      "issue": "A06",
+      "kind": "confirmed_counterexample",
+      "observed_as_expected": true,
+      "detail": {
+        "count": 0,
+        "total": 100,
+        "confidence": 1e-20,
+        "actual": [
+          0.0,
+          0.0
+        ],
+        "reference": [
+          0.0,
+          1.5707963267948964e-42
+        ],
+        "relative_upper_endpoint_error": 1.0,
+        "independent_decimal_reference": {
+          "z": "1.253314137315500182467702370460770304203125678015462703316113357077278796965027515811054021047299357952447483300553630072933686283813822729047717910473592319094907004520051234331263208698428211086132799948127340346086694688108595374730964489377510634612242219214921738329445598689352558278258149603064525907181015633427131960682534545207436170664338647777705111642686131027467951361744496874933633366E-20",
+          "lower": "0",
+          "upper": "1.570796326794896446925242218750942742558287813295065408566188626217366071156658485526674278266003156645062098465814474225592065848154854150427184313903434602112489554773943338057540595710731428689746583920425585485175089505767314919647834660898513991079462282844056405891085440368693869414521928916923583519696030039893506941546049812255085709157514977252400617602037285495276145005254742852556952380E-42"
+        },
+        "rounded_tail_probability": 0.5
+      }
+    },
+    {
+      "name": "A06_zero_count_100_1e-50",
+      "issue": "A06",
+      "kind": "confirmed_counterexample",
+      "observed_as_expected": true,
+      "detail": {
+        "count": 0,
+        "total": 100,
+        "confidence": 1e-50,
+        "actual": [
+          0.0,
+          0.0
+        ],
+        "reference": [
+          0.0,
+          1.5707963267948966e-102
+        ],
+        "relative_upper_endpoint_error": 1.0,
+        "independent_decimal_reference": {
+          "z": "1.253314137315500260753403485819982067343445459271606130391122560548881537921157241597896591656512993892975127161527661240757005161525680391942404338736226485935477424240832160314232457677503851132392440036053805027958996538483630966816878726576911000139696289703514007143458032895884998086217427302650956379493461520844805264561334786731505451157998352404810605046702853194027869135384161098500221126E-50",
+          "lower": "0",
+          "upper": "1.570796326794896643158394133821990716065890580117212395242624370993227525796470562705341057679370229822655354458620423166583092449536517230755850187080892857296773880163474851976699189277439388874635459669617096136206842313397523097640430838493477177940506082208331038929254765833314762322726814870161153344723657860007932491709066008157607158646373825703551959921193965711110569550221471121332316244E-102"
+        },
+        "rounded_tail_probability": 0.5
+      }
+    },
+    {
+      "name": "A06_zero_count_100_1e-160",
+      "issue": "A06",
+      "kind": "confirmed_counterexample",
+      "observed_as_expected": true,
+      "detail": {
+        "count": 0,
+        "total": 100,
+        "confidence": 1e-160,
+        "actual": [
+          0.0,
+          0.0
+        ],
+        "reference": [
+          0.0,
+          1.6e-322
+        ],
+        "relative_upper_endpoint_error": 1.0,
+        "independent_decimal_reference": {
+          "z": "1.253314137315500236966032382287706386222721257507585465490708197629174720989757247838861069886818484062903889089568554032770668913691282698244177034184920176555117458656918273244239229573082590739794225540200896447395286830825627115951545713114932330356649450318466428938717879470375022444491421490545593454482322236982634753018088986345122934449515661752035949538446418262527444408581508714034118764E-160",
+          "lower": "0",
+          "upper": "1.570796326794896583532297146567564216440282898421761203163650187263359700045770912060275440428384252808789507613756674961484125827495724973159861128166068066343653194143803701648436086870807808772205624868861731308701049814405723918849363338793532815954957641781125336668428262347456388729926147566156823630934590722369674727742860577909370921850356966224867168096943288223648885563519485680892781813E-322"
+        },
+        "rounded_tail_probability": 0.5
+      }
+    },
+    {
+      "name": "A06_ordinary_0_1_0.5",
+      "issue": "A06",
+      "kind": "control",
+      "observed_as_expected": true,
+      "detail": {
+        "count": 0,
+        "total": 1,
+        "confidence": 0.5,
+        "actual": [
+          0.0,
+          0.3126847440825833
+        ],
+        "reference": [
+          0.0,
+          0.3126847440825833
+        ]
+      }
+    },
+    {
+      "name": "A06_ordinary_1_1_0.5",
+      "issue": "A06",
+      "kind": "control",
+      "observed_as_expected": true,
+      "detail": {
+        "count": 1,
+        "total": 1,
+        "confidence": 0.5,
+        "actual": [
+          0.6873152559174167,
+          1.0
+        ],
+        "reference": [
+          0.6873152559174167,
+          1.0
+        ]
+      }
+    },
+    {
+      "name": "A06_ordinary_0_1_0.95",
+      "issue": "A06",
+      "kind": "control",
+      "observed_as_expected": true,
+      "detail": {
+        "count": 0,
+        "total": 1,
+        "confidence": 0.95,
+        "actual": [
+          0.0,
+          0.7934506856227626
+        ],
+        "reference": [
+          0.0,
+          0.7934506856227626
+        ]
+      }
+    },
+    {
+      "name": "A06_ordinary_1_1_0.95",
+      "issue": "A06",
+      "kind": "control",
+      "observed_as_expected": true,
+      "detail": {
+        "count": 1,
+        "total": 1,
+        "confidence": 0.95,
+        "actual": [
+          0.2065493143772375,
+          1.0
+        ],
+        "reference": [
+          0.20654931437723745,
+          1.0
+        ]
+      }
+    },
+    {
+      "name": "A06_ordinary_0_10_0.5",
+      "issue": "A06",
+      "kind": "control",
+      "observed_as_expected": true,
+      "detail": {
+        "count": 0,
+        "total": 10,
+        "confidence": 0.5,
+        "actual": [
+          0.0,
+          0.043514030569669175
+        ],
+        "reference": [
+          0.0,
+          0.04351403056966917
+        ]
+      }
+    },
+    {
+      "name": "A06_ordinary_5_10_0.5",
+      "issue": "A06",
+      "kind": "control",
+      "observed_as_expected": true,
+      "detail": {
+        "count": 5,
+        "total": 10,
+        "confidence": 0.5,
+        "actual": [
+          0.39569991542468774,
+          0.6043000845753123
+        ],
+        "reference": [
+          0.39569991542468774,
+          0.6043000845753123
+        ]
+      }
+    },
+    {
+      "name": "A06_ordinary_10_10_0.5",
+      "issue": "A06",
+      "kind": "control",
+      "observed_as_expected": true,
+      "detail": {
+        "count": 10,
+        "total": 10,
+        "confidence": 0.5,
+        "actual": [
+          0.9564859694303309,
+          1.0
+        ],
+        "reference": [
+          0.9564859694303308,
+          1.0
+        ]
+      }
+    },
+    {
+      "name": "A06_ordinary_0_10_0.95",
+      "issue": "A06",
+      "kind": "control",
+      "observed_as_expected": true,
+      "detail": {
+        "count": 0,
+        "total": 10,
+        "confidence": 0.95,
+        "actual": [
+          0.0,
+          0.27753279986288915
+        ],
+        "reference": [
+          0.0,
+          0.2775327998628892
+        ]
+      }
+    },
+    {
+      "name": "A06_ordinary_5_10_0.95",
+      "issue": "A06",
+      "kind": "control",
+      "observed_as_expected": true,
+      "detail": {
+        "count": 5,
+        "total": 10,
+        "confidence": 0.95,
+        "actual": [
+          0.23659309051256405,
+          0.763406909487436
+        ],
+        "reference": [
+          0.23659309051256402,
+          0.763406909487436
+        ]
+      }
+    },
+    {
+      "name": "A06_ordinary_10_10_0.95",
+      "issue": "A06",
+      "kind": "control",
+      "observed_as_expected": true,
+      "detail": {
+        "count": 10,
+        "total": 10,
+        "confidence": 0.95,
+        "actual": [
+          0.7224672001371109,
+          1.0
+        ],
+        "reference": [
+          0.7224672001371109,
+          1.0
+        ]
+      }
+    },
+    {
+      "name": "A06_ordinary_0_100_0.5",
+      "issue": "A06",
+      "kind": "control",
+      "observed_as_expected": true,
+      "detail": {
+        "count": 0,
+        "total": 100,
+        "confidence": 0.5,
+        "actual": [
+          0.0,
+          0.004528761246768056
+        ],
+        "reference": [
+          0.0,
+          0.004528761246768056
+        ]
+      }
+    },
+    {
+      "name": "A06_ordinary_50_100_0.5",
+      "issue": "A06",
+      "kind": "control",
+      "observed_as_expected": true,
+      "detail": {
+        "count": 50,
+        "total": 100,
+        "confidence": 0.5,
+        "actual": [
+          0.46635196422237973,
+          0.5336480357776203
+        ],
+        "reference": [
+          0.46635196422237973,
+          0.5336480357776203
+        ]
+      }
+    },
+    {
+      "name": "A06_ordinary_100_100_0.5",
+      "issue": "A06",
+      "kind": "control",
+      "observed_as_expected": true,
+      "detail": {
+        "count": 100,
+        "total": 100,
+        "confidence": 0.5,
+        "actual": [
+          0.9954712387532318,
+          1.0
+        ],
+        "reference": [
+          0.995471238753232,
+          1.0
+        ]
+      }
+    },
+    {
+      "name": "A06_ordinary_0_100_0.95",
+      "issue": "A06",
+      "kind": "control",
+      "observed_as_expected": true,
+      "detail": {
+        "count": 0,
+        "total": 100,
+        "confidence": 0.95,
+        "actual": [
+          0.0,
+          0.03699349820698566
+        ],
+        "reference": [
+          0.0,
+          0.03699349820698567
+        ]
+      }
+    },
+    {
+      "name": "A06_ordinary_50_100_0.95",
+      "issue": "A06",
+      "kind": "control",
+      "observed_as_expected": true,
+      "detail": {
+        "count": 50,
+        "total": 100,
+        "confidence": 0.95,
+        "actual": [
+          0.4038315303659957,
+          0.5961684696340044
+        ],
+        "reference": [
+          0.4038315303659957,
+          0.5961684696340044
+        ]
+      }
+    },
+    {
+      "name": "A06_ordinary_100_100_0.95",
+      "issue": "A06",
+      "kind": "control",
+      "observed_as_expected": true,
+      "detail": {
+        "count": 100,
+        "total": 100,
+        "confidence": 0.95,
+        "actual": [
+          0.9630065017930143,
+          1.0
+        ],
+        "reference": [
+          0.9630065017930143,
+          1.0
+        ]
+      }
+    },
+    {
+      "name": "A06_genuine_binary64_collapse_1e-17",
+      "issue": "A06",
+      "kind": "control",
+      "observed_as_expected": true,
+      "detail": {
+        "actual": [
+          0.5,
+          0.5
+        ],
+        "reference": [
+          0.5,
+          0.5
+        ],
+        "independent_decimal_reference": {
+          "z": "1.253314137315500340873014127883693597254253684036159690265934145073461457713705336100337939801703415163481424165394748819495155741502748988961570204175309088781223078203705990088025313124253809100149828286621214521972695531208072855575164198775875337816004318963638611762449493348637431313737242095887770368441151779813021364869982737598939183259848680103932050423861980405474926228510028635757238605E-17",
+          "lower": "0.4999999999999999955688653727362096147404687448220070940795139470291617155216263999648717484901148802618869812883531313241911874950209346835976338002089549744729047281845025717565278454086630224651659650794421298449971144703619587615179309036296726995767267574677859405618443759411716037615600225461527024581451770286076616317380917850123738551057015705142439524432221329871950293789147704552272640733",
+          "upper": "0.5000000000000000044311346272637903852595312551779929059204860529708382844783736000351282515098851197381130187116468686758088125049790653164023661997910450255270952718154974282434721545913369775348340349205578701550028855296380412384820690963703273004232732425322140594381556240588283962384399774538472975418548229713923383682619082149876261448942984294857560475567778670128049706210852295447727359267"
+        }
+      }
+    },
+    {
+      "name": "A06_genuine_binary64_collapse_5e-324",
+      "issue": "A06",
+      "kind": "control",
+      "observed_as_expected": true,
+      "detail": {
+        "actual": [
+          0.5,
+          0.5
+        ],
+        "reference": [
+          0.5,
+          0.5
+        ],
+        "independent_decimal_reference": {
+          "z": "6.192194586947473868949867550746261090428433184123179102931542189750277760768611582151310776239090819959023425374482452122740955778295739463004171856500234291410928292182958939050438691620663695777081843556705152037674768982948077045424262550129817197941711383754806659513896855095382127238877513634881012751252818004615476722250051329453672371834087245204678120704716021004600754599802500668865575187E-324",
+          "lower": "0.4999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999978107286085714042828209415241370497784124279715505220564646048075869612641577",
+          "upper": "0.5000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000021892713914285957171790584758629502215875720284494779435353951924130387358423"
+        }
+      }
+    },
+    {
+      "name": "A06_genuine_subnormal_endpoint_underflow_1",
+      "issue": "A06",
+      "kind": "control",
+      "observed_as_expected": true,
+      "detail": {
+        "actual": [
+          0.0,
+          0.0
+        ],
+        "reference": [
+          0.0,
+          0.0
+        ],
+        "independent_decimal_reference": {
+          "z": "6.192194586947473868949867550746261090428433184123179102931542189750277760768611582151310776239090819959023425374482452122740955778295739463004171856500234291410928292182958939050438691620663695777081843556705152037674768982948077045424262550129817197941711383754806659513896855095382127238877513634881012751252818004615476722250051329453672371834087245204678120704716021004600754599802500668865575187E-324",
+          "lower": "0",
+          "upper": "3.834327380262159652027339343863898715747554169411353321665162811119814631547195817510333030357053001884817096122304543396058597429212112818902125036138395155026568442802179172376554224518935512941645158058371816070839962362717412672181058342249478596089889934349515019616811105282909999416991845526803871671342845949085912391435107470600899277722519217720513327811676457100453021506500713907267022476E-647"
+        }
+      }
+    },
+    {
+      "name": "A06_genuine_subnormal_endpoint_underflow_10",
+      "issue": "A06",
+      "kind": "control",
+      "observed_as_expected": true,
+      "detail": {
+        "actual": [
+          0.0,
+          0.0
+        ],
+        "reference": [
+          0.0,
+          0.0
+        ],
+        "independent_decimal_reference": {
+          "z": "6.192194586947473868949867550746261090428433184123179102931542189750277760768611582151310776239090819959023425374482452122740955778295739463004171856500234291410928292182958939050438691620663695777081843556705152037674768982948077045424262550129817197941711383754806659513896855095382127238877513634881012751252818004615476722250051329453672371834087245204678120704716021004600754599802500668865575187E-324",
+          "lower": "0",
+          "upper": "3.834327380262159652027339343863898715747554169411353321665162811119814631547195817510333030357053001884817096122304543396058597429212112818902125036138395155026568442802179172376554224518935512941645158058371816070839962362717412672181058342249478596089889934349515019616811105282909999416991845526803871671342845949085912391435107470600899277722519217720513327811676457100453021506500713907267022476E-648"
+        }
+      }
+    },
+    {
+      "name": "A06_genuine_subnormal_endpoint_underflow_100",
+      "issue": "A06",
+      "kind": "control",
+      "observed_as_expected": true,
+      "detail": {
+        "actual": [
+          0.0,
+          0.0
+        ],
+        "reference": [
+          0.0,
+          0.0
+        ],
+        "independent_decimal_reference": {
+          "z": "6.192194586947473868949867550746261090428433184123179102931542189750277760768611582151310776239090819959023425374482452122740955778295739463004171856500234291410928292182958939050438691620663695777081843556705152037674768982948077045424262550129817197941711383754806659513896855095382127238877513634881012751252818004615476722250051329453672371834087245204678120704716021004600754599802500668865575187E-324",
+          "lower": "0",
+          "upper": "3.834327380262159652027339343863898715747554169411353321665162811119814631547195817510333030357053001884817096122304543396058597429212112818902125036138395155026568442802179172376554224518935512941645158058371816070839962362717412672181058342249478596089889934349515019616811105282909999416991845526803871671342845949085912391435107470600899277722519217720513327811676457100453021506500713907267022476E-649"
+        }
+      }
+    }
+  ]
+}

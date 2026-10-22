@@ -1,0 +1,1394 @@
+[
+  {
+    "input_type": "exact_float",
+    "raw_delay": "0.3",
+    "stored_delay": 0.3,
+    "strategy": "RF",
+    "params": {
+      "growth": 0.1,
+      "network": 0.85,
+      "growth_end": 0.3,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 0.25,
+      "margin_y": 0.25,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "cap": 2.0,
+    "profile_result": [
+      0.0,
+      true
+    ],
+    "canonical_reference": [
+      0.0,
+      true
+    ],
+    "mismatch": false,
+    "optimize_normalized": 0.0
+  },
+  {
+    "input_type": "exact_float",
+    "raw_delay": "0.3",
+    "stored_delay": 0.3,
+    "strategy": "RL",
+    "params": {
+      "growth": 0.1,
+      "network": 0.85,
+      "growth_end": 0.3,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 0.25,
+      "margin_y": 0.25,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "cap": 2.0,
+    "profile_result": [
+      0.0,
+      true
+    ],
+    "canonical_reference": [
+      0.0,
+      true
+    ],
+    "mismatch": false
+  },
+  {
+    "input_type": "Fraction_below",
+    "raw_delay": "362677745884388738990079/1208925819614629174706176",
+    "stored_delay": 0.3,
+    "strategy": "RF",
+    "params": {
+      "growth": 0.1,
+      "network": 0.85,
+      "growth_end": 0.3,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 0.25,
+      "margin_y": 0.25,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "cap": 2.0,
+    "profile_result": [
+      2.0,
+      false
+    ],
+    "canonical_reference": [
+      0.0,
+      true
+    ],
+    "mismatch": true,
+    "optimize_normalized": 0.0
+  },
+  {
+    "input_type": "Fraction_below",
+    "raw_delay": "362677745884388738990079/1208925819614629174706176",
+    "stored_delay": 0.3,
+    "strategy": "RL",
+    "params": {
+      "growth": 0.1,
+      "network": 0.85,
+      "growth_end": 0.3,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 0.25,
+      "margin_y": 0.25,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "cap": 2.0,
+    "profile_result": [
+      2.0,
+      false
+    ],
+    "canonical_reference": [
+      0.0,
+      true
+    ],
+    "mismatch": true
+  },
+  {
+    "input_type": "Fraction_above",
+    "raw_delay": "362677745884388738990081/1208925819614629174706176",
+    "stored_delay": 0.3,
+    "strategy": "RF",
+    "params": {
+      "growth": 0.1,
+      "network": 0.85,
+      "growth_end": 0.3,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 0.25,
+      "margin_y": 0.25,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "cap": 2.0,
+    "profile_result": [
+      0.0,
+      true
+    ],
+    "canonical_reference": [
+      0.0,
+      true
+    ],
+    "mismatch": false,
+    "optimize_normalized": 0.0
+  },
+  {
+    "input_type": "Fraction_above",
+    "raw_delay": "362677745884388738990081/1208925819614629174706176",
+    "stored_delay": 0.3,
+    "strategy": "RL",
+    "params": {
+      "growth": 0.1,
+      "network": 0.85,
+      "growth_end": 0.3,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 0.25,
+      "margin_y": 0.25,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "cap": 2.0,
+    "profile_result": [
+      0.0,
+      true
+    ],
+    "canonical_reference": [
+      0.0,
+      true
+    ],
+    "mismatch": false
+  },
+  {
+    "input_type": "longdouble_below",
+    "raw_delay": "0.29999999999999998887",
+    "stored_delay": 0.3,
+    "strategy": "RF",
+    "params": {
+      "growth": 0.1,
+      "network": 0.85,
+      "growth_end": 0.3,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 0.25,
+      "margin_y": 0.25,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "cap": 2.0,
+    "profile_result": [
+      2.0,
+      false
+    ],
+    "canonical_reference": [
+      0.0,
+      true
+    ],
+    "mismatch": true,
+    "optimize_normalized": 0.0
+  },
+  {
+    "input_type": "longdouble_below",
+    "raw_delay": "0.29999999999999998887",
+    "stored_delay": 0.3,
+    "strategy": "RL",
+    "params": {
+      "growth": 0.1,
+      "network": 0.85,
+      "growth_end": 0.3,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 0.25,
+      "margin_y": 0.25,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "cap": 2.0,
+    "profile_result": [
+      2.0,
+      false
+    ],
+    "canonical_reference": [
+      0.0,
+      true
+    ],
+    "mismatch": true
+  },
+  {
+    "input_type": "exact_float",
+    "raw_delay": "1.0",
+    "stored_delay": 1.0,
+    "strategy": "RF",
+    "params": {
+      "growth": 0.1,
+      "network": 0.85,
+      "growth_end": 1.0,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 0.25,
+      "margin_y": 0.25,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "cap": 2.0,
+    "profile_result": [
+      0.0,
+      true
+    ],
+    "canonical_reference": [
+      0.0,
+      true
+    ],
+    "mismatch": false,
+    "optimize_normalized": 0.0
+  },
+  {
+    "input_type": "exact_float",
+    "raw_delay": "1.0",
+    "stored_delay": 1.0,
+    "strategy": "RL",
+    "params": {
+      "growth": 0.1,
+      "network": 0.85,
+      "growth_end": 1.0,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 0.25,
+      "margin_y": 0.25,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "cap": 2.0,
+    "profile_result": [
+      0.0,
+      true
+    ],
+    "canonical_reference": [
+      0.0,
+      true
+    ],
+    "mismatch": false
+  },
+  {
+    "input_type": "Fraction_below",
+    "raw_delay": "1208925819614629174706175/1208925819614629174706176",
+    "stored_delay": 1.0,
+    "strategy": "RF",
+    "params": {
+      "growth": 0.1,
+      "network": 0.85,
+      "growth_end": 1.0,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 0.25,
+      "margin_y": 0.25,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "cap": 2.0,
+    "profile_result": [
+      2.0,
+      false
+    ],
+    "canonical_reference": [
+      0.0,
+      true
+    ],
+    "mismatch": true,
+    "optimize_normalized": 0.0
+  },
+  {
+    "input_type": "Fraction_below",
+    "raw_delay": "1208925819614629174706175/1208925819614629174706176",
+    "stored_delay": 1.0,
+    "strategy": "RL",
+    "params": {
+      "growth": 0.1,
+      "network": 0.85,
+      "growth_end": 1.0,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 0.25,
+      "margin_y": 0.25,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "cap": 2.0,
+    "profile_result": [
+      2.0,
+      false
+    ],
+    "canonical_reference": [
+      0.0,
+      true
+    ],
+    "mismatch": true
+  },
+  {
+    "input_type": "Fraction_above",
+    "raw_delay": "1208925819614629174706177/1208925819614629174706176",
+    "stored_delay": 1.0,
+    "strategy": "RF",
+    "params": {
+      "growth": 0.1,
+      "network": 0.85,
+      "growth_end": 1.0,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 0.25,
+      "margin_y": 0.25,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "cap": 2.0,
+    "profile_result": [
+      0.0,
+      true
+    ],
+    "canonical_reference": [
+      0.0,
+      true
+    ],
+    "mismatch": false,
+    "optimize_normalized": 0.0
+  },
+  {
+    "input_type": "Fraction_above",
+    "raw_delay": "1208925819614629174706177/1208925819614629174706176",
+    "stored_delay": 1.0,
+    "strategy": "RL",
+    "params": {
+      "growth": 0.1,
+      "network": 0.85,
+      "growth_end": 1.0,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 0.25,
+      "margin_y": 0.25,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "cap": 2.0,
+    "profile_result": [
+      0.0,
+      true
+    ],
+    "canonical_reference": [
+      0.0,
+      true
+    ],
+    "mismatch": false
+  },
+  {
+    "input_type": "longdouble_below",
+    "raw_delay": "0.99999999999999999995",
+    "stored_delay": 1.0,
+    "strategy": "RF",
+    "params": {
+      "growth": 0.1,
+      "network": 0.85,
+      "growth_end": 1.0,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 0.25,
+      "margin_y": 0.25,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "cap": 2.0,
+    "profile_result": [
+      2.0,
+      false
+    ],
+    "canonical_reference": [
+      0.0,
+      true
+    ],
+    "mismatch": true,
+    "optimize_normalized": 0.0
+  },
+  {
+    "input_type": "longdouble_below",
+    "raw_delay": "0.99999999999999999995",
+    "stored_delay": 1.0,
+    "strategy": "RL",
+    "params": {
+      "growth": 0.1,
+      "network": 0.85,
+      "growth_end": 1.0,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 0.25,
+      "margin_y": 0.25,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "cap": 2.0,
+    "profile_result": [
+      2.0,
+      false
+    ],
+    "canonical_reference": [
+      0.0,
+      true
+    ],
+    "mismatch": true
+  },
+  {
+    "input_type": "exact_float",
+    "raw_delay": "3.0",
+    "stored_delay": 3.0,
+    "strategy": "RF",
+    "params": {
+      "growth": 0.1,
+      "network": 0.85,
+      "growth_end": 3.0,
+      "horizon": 3.0,
+      "quality_ratio": 1.0,
+      "margin_x": 0.25,
+      "margin_y": 0.25,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "cap": 2.0,
+    "profile_result": [
+      0.0,
+      true
+    ],
+    "canonical_reference": [
+      0.0,
+      true
+    ],
+    "mismatch": false,
+    "optimize_normalized": 0.0
+  },
+  {
+    "input_type": "exact_float",
+    "raw_delay": "3.0",
+    "stored_delay": 3.0,
+    "strategy": "RL",
+    "params": {
+      "growth": 0.1,
+      "network": 0.85,
+      "growth_end": 3.0,
+      "horizon": 3.0,
+      "quality_ratio": 1.0,
+      "margin_x": 0.25,
+      "margin_y": 0.25,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "cap": 2.0,
+    "profile_result": [
+      0.0,
+      true
+    ],
+    "canonical_reference": [
+      0.0,
+      true
+    ],
+    "mismatch": false
+  },
+  {
+    "input_type": "Fraction_below",
+    "raw_delay": "3626777458843887524118527/1208925819614629174706176",
+    "stored_delay": 3.0,
+    "strategy": "RF",
+    "params": {
+      "growth": 0.1,
+      "network": 0.85,
+      "growth_end": 3.0,
+      "horizon": 3.0,
+      "quality_ratio": 1.0,
+      "margin_x": 0.25,
+      "margin_y": 0.25,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "cap": 2.0,
+    "profile_result": [
+      2.0,
+      false
+    ],
+    "canonical_reference": [
+      0.0,
+      true
+    ],
+    "mismatch": true,
+    "optimize_normalized": 0.0
+  },
+  {
+    "input_type": "Fraction_below",
+    "raw_delay": "3626777458843887524118527/1208925819614629174706176",
+    "stored_delay": 3.0,
+    "strategy": "RL",
+    "params": {
+      "growth": 0.1,
+      "network": 0.85,
+      "growth_end": 3.0,
+      "horizon": 3.0,
+      "quality_ratio": 1.0,
+      "margin_x": 0.25,
+      "margin_y": 0.25,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "cap": 2.0,
+    "profile_result": [
+      2.0,
+      false
+    ],
+    "canonical_reference": [
+      0.0,
+      true
+    ],
+    "mismatch": true
+  },
+  {
+    "input_type": "Fraction_above",
+    "raw_delay": "3626777458843887524118529/1208925819614629174706176",
+    "stored_delay": 3.0,
+    "strategy": "RF",
+    "params": {
+      "growth": 0.1,
+      "network": 0.85,
+      "growth_end": 3.0,
+      "horizon": 3.0,
+      "quality_ratio": 1.0,
+      "margin_x": 0.25,
+      "margin_y": 0.25,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "cap": 2.0,
+    "profile_result": [
+      0.0,
+      true
+    ],
+    "canonical_reference": [
+      0.0,
+      true
+    ],
+    "mismatch": false,
+    "optimize_normalized": 0.0
+  },
+  {
+    "input_type": "Fraction_above",
+    "raw_delay": "3626777458843887524118529/1208925819614629174706176",
+    "stored_delay": 3.0,
+    "strategy": "RL",
+    "params": {
+      "growth": 0.1,
+      "network": 0.85,
+      "growth_end": 3.0,
+      "horizon": 3.0,
+      "quality_ratio": 1.0,
+      "margin_x": 0.25,
+      "margin_y": 0.25,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "cap": 2.0,
+    "profile_result": [
+      0.0,
+      true
+    ],
+    "canonical_reference": [
+      0.0,
+      true
+    ],
+    "mismatch": false
+  },
+  {
+    "input_type": "longdouble_below",
+    "raw_delay": "2.9999999999999999998",
+    "stored_delay": 3.0,
+    "strategy": "RF",
+    "params": {
+      "growth": 0.1,
+      "network": 0.85,
+      "growth_end": 3.0,
+      "horizon": 3.0,
+      "quality_ratio": 1.0,
+      "margin_x": 0.25,
+      "margin_y": 0.25,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "cap": 2.0,
+    "profile_result": [
+      2.0,
+      false
+    ],
+    "canonical_reference": [
+      0.0,
+      true
+    ],
+    "mismatch": true,
+    "optimize_normalized": 0.0
+  },
+  {
+    "input_type": "longdouble_below",
+    "raw_delay": "2.9999999999999999998",
+    "stored_delay": 3.0,
+    "strategy": "RL",
+    "params": {
+      "growth": 0.1,
+      "network": 0.85,
+      "growth_end": 3.0,
+      "horizon": 3.0,
+      "quality_ratio": 1.0,
+      "margin_x": 0.25,
+      "margin_y": 0.25,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "cap": 2.0,
+    "profile_result": [
+      2.0,
+      false
+    ],
+    "canonical_reference": [
+      0.0,
+      true
+    ],
+    "mismatch": true
+  },
+  {
+    "input_type": "exact_float",
+    "raw_delay": "0.3",
+    "stored_delay": 0.3,
+    "strategy": "RF",
+    "params": {
+      "growth": 0.1,
+      "network": 0.85,
+      "growth_end": 0.3,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 0.25,
+      "margin_y": 0.25,
+      "discount": 0.0,
+      "announcement_cost": 0.01,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "cap": 2.0,
+    "profile_result": [
+      0.0,
+      false
+    ],
+    "canonical_reference": [
+      0.0,
+      false
+    ],
+    "mismatch": false,
+    "optimize_normalized": 0.0
+  },
+  {
+    "input_type": "exact_float",
+    "raw_delay": "0.3",
+    "stored_delay": 0.3,
+    "strategy": "RL",
+    "params": {
+      "growth": 0.1,
+      "network": 0.85,
+      "growth_end": 0.3,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 0.25,
+      "margin_y": 0.25,
+      "discount": 0.0,
+      "announcement_cost": 0.01,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "cap": 2.0,
+    "profile_result": [
+      0.0,
+      false
+    ],
+    "canonical_reference": [
+      0.0,
+      false
+    ],
+    "mismatch": false
+  },
+  {
+    "input_type": "Fraction_below",
+    "raw_delay": "362677745884388738990079/1208925819614629174706176",
+    "stored_delay": 0.3,
+    "strategy": "RF",
+    "params": {
+      "growth": 0.1,
+      "network": 0.85,
+      "growth_end": 0.3,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 0.25,
+      "margin_y": 0.25,
+      "discount": 0.0,
+      "announcement_cost": 0.01,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "cap": 2.0,
+    "error_type": "NumericalError",
+    "error": "positive intensity optimum is below floating-point range; rescale inputs",
+    "canonical_reference": [
+      0.0,
+      false
+    ],
+    "mismatch": true,
+    "optimize_normalized": 0.0
+  },
+  {
+    "input_type": "Fraction_below",
+    "raw_delay": "362677745884388738990079/1208925819614629174706176",
+    "stored_delay": 0.3,
+    "strategy": "RL",
+    "params": {
+      "growth": 0.1,
+      "network": 0.85,
+      "growth_end": 0.3,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 0.25,
+      "margin_y": 0.25,
+      "discount": 0.0,
+      "announcement_cost": 0.01,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "cap": 2.0,
+    "error_type": "NumericalError",
+    "error": "positive intensity optimum is below floating-point range; rescale inputs",
+    "canonical_reference": [
+      0.0,
+      false
+    ],
+    "mismatch": true
+  },
+  {
+    "input_type": "Fraction_above",
+    "raw_delay": "362677745884388738990081/1208925819614629174706176",
+    "stored_delay": 0.3,
+    "strategy": "RF",
+    "params": {
+      "growth": 0.1,
+      "network": 0.85,
+      "growth_end": 0.3,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 0.25,
+      "margin_y": 0.25,
+      "discount": 0.0,
+      "announcement_cost": 0.01,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "cap": 2.0,
+    "profile_result": [
+      0.0,
+      false
+    ],
+    "canonical_reference": [
+      0.0,
+      false
+    ],
+    "mismatch": false,
+    "optimize_normalized": 0.0
+  },
+  {
+    "input_type": "Fraction_above",
+    "raw_delay": "362677745884388738990081/1208925819614629174706176",
+    "stored_delay": 0.3,
+    "strategy": "RL",
+    "params": {
+      "growth": 0.1,
+      "network": 0.85,
+      "growth_end": 0.3,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 0.25,
+      "margin_y": 0.25,
+      "discount": 0.0,
+      "announcement_cost": 0.01,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "cap": 2.0,
+    "profile_result": [
+      0.0,
+      false
+    ],
+    "canonical_reference": [
+      0.0,
+      false
+    ],
+    "mismatch": false
+  },
+  {
+    "input_type": "longdouble_below",
+    "raw_delay": "0.29999999999999998887",
+    "stored_delay": 0.3,
+    "strategy": "RF",
+    "params": {
+      "growth": 0.1,
+      "network": 0.85,
+      "growth_end": 0.3,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 0.25,
+      "margin_y": 0.25,
+      "discount": 0.0,
+      "announcement_cost": 0.01,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "cap": 2.0,
+    "error_type": "NumericalError",
+    "error": "positive intensity optimum is below floating-point range; rescale inputs",
+    "canonical_reference": [
+      0.0,
+      false
+    ],
+    "mismatch": true,
+    "optimize_normalized": 0.0
+  },
+  {
+    "input_type": "longdouble_below",
+    "raw_delay": "0.29999999999999998887",
+    "stored_delay": 0.3,
+    "strategy": "RL",
+    "params": {
+      "growth": 0.1,
+      "network": 0.85,
+      "growth_end": 0.3,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 0.25,
+      "margin_y": 0.25,
+      "discount": 0.0,
+      "announcement_cost": 0.01,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "cap": 2.0,
+    "error_type": "NumericalError",
+    "error": "positive intensity optimum is below floating-point range; rescale inputs",
+    "canonical_reference": [
+      0.0,
+      false
+    ],
+    "mismatch": true
+  },
+  {
+    "input_type": "exact_float",
+    "raw_delay": "1.0",
+    "stored_delay": 1.0,
+    "strategy": "RF",
+    "params": {
+      "growth": 0.1,
+      "network": 0.85,
+      "growth_end": 1.0,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 0.25,
+      "margin_y": 0.25,
+      "discount": 0.0,
+      "announcement_cost": 0.01,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "cap": 2.0,
+    "profile_result": [
+      0.0,
+      false
+    ],
+    "canonical_reference": [
+      0.0,
+      false
+    ],
+    "mismatch": false,
+    "optimize_normalized": 0.0
+  },
+  {
+    "input_type": "exact_float",
+    "raw_delay": "1.0",
+    "stored_delay": 1.0,
+    "strategy": "RL",
+    "params": {
+      "growth": 0.1,
+      "network": 0.85,
+      "growth_end": 1.0,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 0.25,
+      "margin_y": 0.25,
+      "discount": 0.0,
+      "announcement_cost": 0.01,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "cap": 2.0,
+    "profile_result": [
+      0.0,
+      false
+    ],
+    "canonical_reference": [
+      0.0,
+      false
+    ],
+    "mismatch": false
+  },
+  {
+    "input_type": "Fraction_below",
+    "raw_delay": "1208925819614629174706175/1208925819614629174706176",
+    "stored_delay": 1.0,
+    "strategy": "RF",
+    "params": {
+      "growth": 0.1,
+      "network": 0.85,
+      "growth_end": 1.0,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 0.25,
+      "margin_y": 0.25,
+      "discount": 0.0,
+      "announcement_cost": 0.01,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "cap": 2.0,
+    "error_type": "NumericalError",
+    "error": "positive intensity optimum is below floating-point range; rescale inputs",
+    "canonical_reference": [
+      0.0,
+      false
+    ],
+    "mismatch": true,
+    "optimize_normalized": 0.0
+  },
+  {
+    "input_type": "Fraction_below",
+    "raw_delay": "1208925819614629174706175/1208925819614629174706176",
+    "stored_delay": 1.0,
+    "strategy": "RL",
+    "params": {
+      "growth": 0.1,
+      "network": 0.85,
+      "growth_end": 1.0,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 0.25,
+      "margin_y": 0.25,
+      "discount": 0.0,
+      "announcement_cost": 0.01,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "cap": 2.0,
+    "error_type": "NumericalError",
+    "error": "positive intensity optimum is below floating-point range; rescale inputs",
+    "canonical_reference": [
+      0.0,
+      false
+    ],
+    "mismatch": true
+  },
+  {
+    "input_type": "Fraction_above",
+    "raw_delay": "1208925819614629174706177/1208925819614629174706176",
+    "stored_delay": 1.0,
+    "strategy": "RF",
+    "params": {
+      "growth": 0.1,
+      "network": 0.85,
+      "growth_end": 1.0,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 0.25,
+      "margin_y": 0.25,
+      "discount": 0.0,
+      "announcement_cost": 0.01,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "cap": 2.0,
+    "profile_result": [
+      0.0,
+      false
+    ],
+    "canonical_reference": [
+      0.0,
+      false
+    ],
+    "mismatch": false,
+    "optimize_normalized": 0.0
+  },
+  {
+    "input_type": "Fraction_above",
+    "raw_delay": "1208925819614629174706177/1208925819614629174706176",
+    "stored_delay": 1.0,
+    "strategy": "RL",
+    "params": {
+      "growth": 0.1,
+      "network": 0.85,
+      "growth_end": 1.0,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 0.25,
+      "margin_y": 0.25,
+      "discount": 0.0,
+      "announcement_cost": 0.01,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "cap": 2.0,
+    "profile_result": [
+      0.0,
+      false
+    ],
+    "canonical_reference": [
+      0.0,
+      false
+    ],
+    "mismatch": false
+  },
+  {
+    "input_type": "longdouble_below",
+    "raw_delay": "0.99999999999999999995",
+    "stored_delay": 1.0,
+    "strategy": "RF",
+    "params": {
+      "growth": 0.1,
+      "network": 0.85,
+      "growth_end": 1.0,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 0.25,
+      "margin_y": 0.25,
+      "discount": 0.0,
+      "announcement_cost": 0.01,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "cap": 2.0,
+    "error_type": "NumericalError",
+    "error": "positive intensity optimum is below floating-point range; rescale inputs",
+    "canonical_reference": [
+      0.0,
+      false
+    ],
+    "mismatch": true,
+    "optimize_normalized": 0.0
+  },
+  {
+    "input_type": "longdouble_below",
+    "raw_delay": "0.99999999999999999995",
+    "stored_delay": 1.0,
+    "strategy": "RL",
+    "params": {
+      "growth": 0.1,
+      "network": 0.85,
+      "growth_end": 1.0,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 0.25,
+      "margin_y": 0.25,
+      "discount": 0.0,
+      "announcement_cost": 0.01,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "cap": 2.0,
+    "error_type": "NumericalError",
+    "error": "positive intensity optimum is below floating-point range; rescale inputs",
+    "canonical_reference": [
+      0.0,
+      false
+    ],
+    "mismatch": true
+  },
+  {
+    "input_type": "exact_float",
+    "raw_delay": "3.0",
+    "stored_delay": 3.0,
+    "strategy": "RF",
+    "params": {
+      "growth": 0.1,
+      "network": 0.85,
+      "growth_end": 3.0,
+      "horizon": 3.0,
+      "quality_ratio": 1.0,
+      "margin_x": 0.25,
+      "margin_y": 0.25,
+      "discount": 0.0,
+      "announcement_cost": 0.01,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "cap": 2.0,
+    "profile_result": [
+      0.0,
+      false
+    ],
+    "canonical_reference": [
+      0.0,
+      false
+    ],
+    "mismatch": false,
+    "optimize_normalized": 0.0
+  },
+  {
+    "input_type": "exact_float",
+    "raw_delay": "3.0",
+    "stored_delay": 3.0,
+    "strategy": "RL",
+    "params": {
+      "growth": 0.1,
+      "network": 0.85,
+      "growth_end": 3.0,
+      "horizon": 3.0,
+      "quality_ratio": 1.0,
+      "margin_x": 0.25,
+      "margin_y": 0.25,
+      "discount": 0.0,
+      "announcement_cost": 0.01,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "cap": 2.0,
+    "profile_result": [
+      0.0,
+      false
+    ],
+    "canonical_reference": [
+      0.0,
+      false
+    ],
+    "mismatch": false
+  },
+  {
+    "input_type": "Fraction_below",
+    "raw_delay": "3626777458843887524118527/1208925819614629174706176",
+    "stored_delay": 3.0,
+    "strategy": "RF",
+    "params": {
+      "growth": 0.1,
+      "network": 0.85,
+      "growth_end": 3.0,
+      "horizon": 3.0,
+      "quality_ratio": 1.0,
+      "margin_x": 0.25,
+      "margin_y": 0.25,
+      "discount": 0.0,
+      "announcement_cost": 0.01,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "cap": 2.0,
+    "error_type": "NumericalError",
+    "error": "positive intensity optimum is below floating-point range; rescale inputs",
+    "canonical_reference": [
+      0.0,
+      false
+    ],
+    "mismatch": true,
+    "optimize_normalized": 0.0
+  },
+  {
+    "input_type": "Fraction_below",
+    "raw_delay": "3626777458843887524118527/1208925819614629174706176",
+    "stored_delay": 3.0,
+    "strategy": "RL",
+    "params": {
+      "growth": 0.1,
+      "network": 0.85,
+      "growth_end": 3.0,
+      "horizon": 3.0,
+      "quality_ratio": 1.0,
+      "margin_x": 0.25,
+      "margin_y": 0.25,
+      "discount": 0.0,
+      "announcement_cost": 0.01,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "cap": 2.0,
+    "error_type": "NumericalError",
+    "error": "positive intensity optimum is below floating-point range; rescale inputs",
+    "canonical_reference": [
+      0.0,
+      false
+    ],
+    "mismatch": true
+  },
+  {
+    "input_type": "Fraction_above",
+    "raw_delay": "3626777458843887524118529/1208925819614629174706176",
+    "stored_delay": 3.0,
+    "strategy": "RF",
+    "params": {
+      "growth": 0.1,
+      "network": 0.85,
+      "growth_end": 3.0,
+      "horizon": 3.0,
+      "quality_ratio": 1.0,
+      "margin_x": 0.25,
+      "margin_y": 0.25,
+      "discount": 0.0,
+      "announcement_cost": 0.01,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "cap": 2.0,
+    "profile_result": [
+      0.0,
+      false
+    ],
+    "canonical_reference": [
+      0.0,
+      false
+    ],
+    "mismatch": false,
+    "optimize_normalized": 0.0
+  },
+  {
+    "input_type": "Fraction_above",
+    "raw_delay": "3626777458843887524118529/1208925819614629174706176",
+    "stored_delay": 3.0,
+    "strategy": "RL",
+    "params": {
+      "growth": 0.1,
+      "network": 0.85,
+      "growth_end": 3.0,
+      "horizon": 3.0,
+      "quality_ratio": 1.0,
+      "margin_x": 0.25,
+      "margin_y": 0.25,
+      "discount": 0.0,
+      "announcement_cost": 0.01,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "cap": 2.0,
+    "profile_result": [
+      0.0,
+      false
+    ],
+    "canonical_reference": [
+      0.0,
+      false
+    ],
+    "mismatch": false
+  },
+  {
+    "input_type": "longdouble_below",
+    "raw_delay": "2.9999999999999999998",
+    "stored_delay": 3.0,
+    "strategy": "RF",
+    "params": {
+      "growth": 0.1,
+      "network": 0.85,
+      "growth_end": 3.0,
+      "horizon": 3.0,
+      "quality_ratio": 1.0,
+      "margin_x": 0.25,
+      "margin_y": 0.25,
+      "discount": 0.0,
+      "announcement_cost": 0.01,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "cap": 2.0,
+    "error_type": "NumericalError",
+    "error": "positive intensity optimum is below floating-point range; rescale inputs",
+    "canonical_reference": [
+      0.0,
+      false
+    ],
+    "mismatch": true,
+    "optimize_normalized": 0.0
+  },
+  {
+    "input_type": "longdouble_below",
+    "raw_delay": "2.9999999999999999998",
+    "stored_delay": 3.0,
+    "strategy": "RL",
+    "params": {
+      "growth": 0.1,
+      "network": 0.85,
+      "growth_end": 3.0,
+      "horizon": 3.0,
+      "quality_ratio": 1.0,
+      "margin_x": 0.25,
+      "margin_y": 0.25,
+      "discount": 0.0,
+      "announcement_cost": 0.01,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "cap": 2.0,
+    "error_type": "NumericalError",
+    "error": "positive intensity optimum is below floating-point range; rescale inputs",
+    "canonical_reference": [
+      0.0,
+      false
+    ],
+    "mismatch": true
+  }
+]

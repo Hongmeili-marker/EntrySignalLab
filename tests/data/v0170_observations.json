@@ -1,0 +1,418 @@
+[
+  {
+    "finding": "A09",
+    "case": "true_positive_false_exit",
+    "params": {
+      "growth": 400000000000000.0,
+      "network": 0.0,
+      "growth_end": 1.0,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 1.0,
+      "margin_y": 1.0,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 99999999999999.75,
+      "learning_rate": 0.0
+    },
+    "bounds": {
+      "delay_lower": 0.0,
+      "delay_upper": 0.0,
+      "announcement_upper": 0.0,
+      "scouting_points": 65,
+      "tolerance": 1e-10,
+      "payoff_atol": 1e-10,
+      "payoff_rtol": 1e-08,
+      "max_evaluations": 20000
+    },
+    "reference_fraction": "1/4",
+    "reference_payoff": 0.25,
+    "expected_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL"
+    ],
+    "actual_preference": [
+      "no_entry"
+    ],
+    "local_quality_status": "pass",
+    "values": {
+      "RF": {
+        "scalar": -0.328125,
+        "grid": 0.375
+      },
+      "RL": {
+        "scalar": -0.328125,
+        "grid": 0.703125
+      },
+      "DF": {
+        "scalar": -0.328125,
+        "grid": 0.375
+      },
+      "DL": {
+        "scalar": -0.328125,
+        "grid": 0.703125
+      }
+    },
+    "defect_reproduced": true
+  },
+  {
+    "finding": "A09",
+    "case": "true_negative_false_entry",
+    "params": {
+      "growth": 4000000000000.0,
+      "network": 0.0,
+      "growth_end": 1.0,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 1.0,
+      "margin_y": 1.0,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 1000000000000.0002,
+      "learning_rate": 0.0
+    },
+    "bounds": {
+      "delay_lower": 0.0,
+      "delay_upper": 0.0,
+      "announcement_upper": 0.0,
+      "scouting_points": 65,
+      "tolerance": 1e-10,
+      "payoff_atol": 1e-10,
+      "payoff_rtol": 1e-08,
+      "max_evaluations": 20000
+    },
+    "reference_fraction": "-1/4096",
+    "reference_payoff": -0.000244140625,
+    "expected_preference": [
+      "no_entry"
+    ],
+    "actual_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL"
+    ],
+    "local_quality_status": "pass",
+    "values": {
+      "RF": {
+        "scalar": 0.0023193359375,
+        "grid": -0.001220703125
+      },
+      "RL": {
+        "scalar": 0.0023193359375,
+        "grid": 0.0
+      },
+      "DF": {
+        "scalar": 0.0023193359375,
+        "grid": -0.001220703125
+      },
+      "DL": {
+        "scalar": 0.0023193359375,
+        "grid": 0.0
+      }
+    },
+    "defect_reproduced": true
+  },
+  {
+    "finding": "A09",
+    "case": "zero_false_entry",
+    "params": {
+      "growth": 400000000.0,
+      "network": 0.0,
+      "growth_end": 1.0,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 1.0,
+      "margin_y": 1.0,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 100000000.0,
+      "learning_rate": 0.0
+    },
+    "bounds": {
+      "delay_lower": 0.0,
+      "delay_upper": 0.0,
+      "announcement_upper": 0.0,
+      "scouting_points": 65,
+      "tolerance": 1e-10,
+      "payoff_atol": 1e-10,
+      "payoff_rtol": 1e-08,
+      "max_evaluations": 20000
+    },
+    "reference_fraction": "0",
+    "reference_payoff": 0.0,
+    "expected_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL",
+      "no_entry"
+    ],
+    "actual_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL"
+    ],
+    "local_quality_status": "pass",
+    "values": {
+      "RF": {
+        "scalar": 1.7881393432617188e-07,
+        "grid": -1.7881393432617188e-07
+      },
+      "RL": {
+        "scalar": 1.7881393432617188e-07,
+        "grid": -3.5762786865234375e-07
+      },
+      "DF": {
+        "scalar": 1.7881393432617188e-07,
+        "grid": -1.7881393432617188e-07
+      },
+      "DL": {
+        "scalar": 1.7881393432617188e-07,
+        "grid": -3.5762786865234375e-07
+      }
+    },
+    "defect_reproduced": true
+  },
+  {
+    "finding": "A09",
+    "case": "zero_false_exit",
+    "params": {
+      "growth": 400000000000000.0,
+      "network": 0.0,
+      "growth_end": 1.0,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 1.0,
+      "margin_y": 1.0,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 100000000000000.0,
+      "learning_rate": 0.0
+    },
+    "bounds": {
+      "delay_lower": 0.0,
+      "delay_upper": 0.0,
+      "announcement_upper": 0.0,
+      "scouting_points": 65,
+      "tolerance": 1e-10,
+      "payoff_atol": 1e-10,
+      "payoff_rtol": 1e-08,
+      "max_evaluations": 20000
+    },
+    "reference_fraction": "0",
+    "reference_payoff": 0.0,
+    "expected_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL",
+      "no_entry"
+    ],
+    "actual_preference": [
+      "no_entry"
+    ],
+    "local_quality_status": "pass",
+    "values": {
+      "RF": {
+        "scalar": -0.578125,
+        "grid": 0.125
+      },
+      "RL": {
+        "scalar": -0.578125,
+        "grid": 0.0
+      },
+      "DF": {
+        "scalar": -0.578125,
+        "grid": 0.125
+      },
+      "DL": {
+        "scalar": -0.578125,
+        "grid": 0.0
+      }
+    },
+    "defect_reproduced": true
+  },
+  {
+    "finding": "A09",
+    "case": "unit_change_2.0_1.0",
+    "time_factor": 2.0,
+    "consumer_factor": 1.0,
+    "original_params": {
+      "growth": 400000000000000.0,
+      "network": 0.0,
+      "growth_end": 1.0,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 1.0,
+      "margin_y": 1.0,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 99999999999999.75,
+      "learning_rate": 0.0
+    },
+    "converted_params": {
+      "growth": 200000000000000.0,
+      "network": 0.0,
+      "growth_end": 2.0,
+      "horizon": 2.0,
+      "quality_ratio": 1.0,
+      "margin_x": 0.5,
+      "margin_y": 0.5,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 99999999999999.75,
+      "learning_rate": 0.0
+    },
+    "reference_payoff": 0.25,
+    "original_payoff": -0.328125,
+    "converted_payoff": 0.375,
+    "original_preference": [
+      "no_entry"
+    ],
+    "converted_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL"
+    ],
+    "exact_payoff_preserved": true,
+    "defect_reproduced": true
+  },
+  {
+    "finding": "A09",
+    "case": "unit_change_1.0_4.0",
+    "time_factor": 1.0,
+    "consumer_factor": 4.0,
+    "original_params": {
+      "growth": 400000000000000.0,
+      "network": 0.0,
+      "growth_end": 1.0,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 1.0,
+      "margin_y": 1.0,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 99999999999999.75,
+      "learning_rate": 0.0
+    },
+    "converted_params": {
+      "growth": 1600000000000000.0,
+      "network": 0.0,
+      "growth_end": 1.0,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 0.25,
+      "margin_y": 0.25,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 99999999999999.75,
+      "learning_rate": 0.0
+    },
+    "reference_payoff": 0.25,
+    "original_payoff": -0.328125,
+    "converted_payoff": 0.375,
+    "original_preference": [
+      "no_entry"
+    ],
+    "converted_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL"
+    ],
+    "exact_payoff_preserved": true,
+    "defect_reproduced": true
+  },
+  {
+    "finding": "A10",
+    "case": "rounded_equal",
+    "params": {
+      "growth": 1.0,
+      "network": 1e+20,
+      "growth_end": 0.3,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 0.25,
+      "margin_y": 0.25,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "actual": {
+      "id": "RL_REVENUE_BOUND",
+      "pass": true,
+      "observed": 0.06375,
+      "market_revenue_bound": 0.06375,
+      "source_page": 14
+    },
+    "reference_payoff": 0.06375,
+    "reference_bound": 0.06375,
+    "positive_excess_fraction": "200000000000000000001/80000000000000000000000000000000000000000",
+    "relative_excess": 3.9215686274509806e-20,
+    "defect_reproduced": true
+  },
+  {
+    "finding": "A10",
+    "case": "overflow_high",
+    "params": {
+      "growth": 2.5e+307,
+      "network": 3.2e-308,
+      "growth_end": 1.0,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 0.25,
+      "margin_y": 0.25,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "actual": {
+      "id": "RL_REVENUE_BOUND",
+      "pass": true,
+      "observed": 0.0,
+      "market_revenue_bound": 3.125e+306,
+      "source_page": 14
+    },
+    "reference_payoff": 1.58203125e+307,
+    "reference_bound": 3.125e+306,
+    "positive_excess_fraction": "5211686550942593348940727243957631028177228902085317525713708015934929721007394420172075222074450671313025201743195945679032411233242869760093675991187028347281306559738256377479217139928083518171243897241623675517144976206851291221920071656457721577182681038041883761824526350723214424959091430811351209609050305951660472830212762047331651379231981568/410520540628093527272330952123277830203277725",
+    "relative_excess": 4.0625,
+    "defect_reproduced": true
+  },
+  {
+    "finding": "A10",
+    "case": "overflow_small",
+    "params": {
+      "growth": 1e-150,
+      "network": 1e+300,
+      "growth_end": 1.0,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 0.25,
+      "margin_y": 0.25,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "actual": {
+      "id": "RL_REVENUE_BOUND",
+      "pass": true,
+      "observed": 0.0,
+      "market_revenue_bound": 1.25e-151,
+      "source_page": 14
+    },
+    "reference_payoff": 1.25e-151,
+    "reference_bound": 1.25e-151,
+    "positive_excess_fraction": "2000000000000000117600236974754769152903245236729076194378108715822314489280133211492854583040919546352970823462289542115974819339437698329392520888321/8000000000000000890439029940654463299537722854683623941391828167139135948909121687428255146399946022574939606092390539575208083879647834215568822894186200205535792938629186247490040582064288138778059843803381300109688807871718203539322030274265301811506146819203412029823487718700749678283834627030175253273418120887092557535216857754912500974064705687278514920988590325477648851543860135531445054592199759422935786525128691607736934470233164139724800",
+    "relative_excess": 2e-150,
+    "defect_reproduced": true
+  }
+]

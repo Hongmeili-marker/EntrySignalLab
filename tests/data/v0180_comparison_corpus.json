@@ -1,0 +1,1846 @@
+[
+  {
+    "scale": 1.0,
+    "params": {
+      "growth": 4.0,
+      "network": 0.0,
+      "growth_end": 1.0,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 1.0,
+      "margin_y": 1.0,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "bounds": {
+      "delay_lower": 0.0,
+      "delay_upper": 0.0,
+      "announcement_upper": 2.0,
+      "scouting_points": 65,
+      "tolerance": 1e-10,
+      "payoff_atol": 1e-10,
+      "payoff_rtol": 1e-08,
+      "max_evaluations": 20000
+    },
+    "outside_option": 0.9999999999999999,
+    "reference_payoff_fraction": "1",
+    "reference_payoff": 1.0,
+    "reference_gap_fraction": "1/9007199254740992",
+    "reference_gap": 1.1102230246251565e-16,
+    "actual_payoffs": {
+      "RF": 1.0,
+      "RL": 1.0,
+      "DF": 1.0,
+      "DL": 1.0
+    },
+    "actual_gap": 1.1102230246251565e-16,
+    "expected_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL",
+      "no_entry"
+    ],
+    "actual_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL",
+      "no_entry"
+    ],
+    "local_quality_status": "pass",
+    "defect_reproduced": false
+  },
+  {
+    "scale": 1.0,
+    "params": {
+      "growth": 4.0,
+      "network": 0.0,
+      "growth_end": 1.0,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 1.0,
+      "margin_y": 1.0,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "bounds": {
+      "delay_lower": 0.0,
+      "delay_upper": 0.0,
+      "announcement_upper": 2.0,
+      "scouting_points": 65,
+      "tolerance": 1e-10,
+      "payoff_atol": 1e-10,
+      "payoff_rtol": 1e-08,
+      "max_evaluations": 20000
+    },
+    "outside_option": 1.0,
+    "reference_payoff_fraction": "1",
+    "reference_payoff": 1.0,
+    "reference_gap_fraction": "0",
+    "reference_gap": 0.0,
+    "actual_payoffs": {
+      "RF": 1.0,
+      "RL": 1.0,
+      "DF": 1.0,
+      "DL": 1.0
+    },
+    "actual_gap": 0.0,
+    "expected_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL",
+      "no_entry"
+    ],
+    "actual_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL",
+      "no_entry"
+    ],
+    "local_quality_status": "pass",
+    "defect_reproduced": false
+  },
+  {
+    "scale": 1.0,
+    "params": {
+      "growth": 4.0,
+      "network": 0.0,
+      "growth_end": 1.0,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 1.0,
+      "margin_y": 1.0,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "bounds": {
+      "delay_lower": 0.0,
+      "delay_upper": 0.0,
+      "announcement_upper": 2.0,
+      "scouting_points": 65,
+      "tolerance": 1e-10,
+      "payoff_atol": 1e-10,
+      "payoff_rtol": 1e-08,
+      "max_evaluations": 20000
+    },
+    "outside_option": 1.0000000000000002,
+    "reference_payoff_fraction": "1",
+    "reference_payoff": 1.0,
+    "reference_gap_fraction": "-1/4503599627370496",
+    "reference_gap": -2.220446049250313e-16,
+    "actual_payoffs": {
+      "RF": 1.0,
+      "RL": 1.0,
+      "DF": 1.0,
+      "DL": 1.0
+    },
+    "actual_gap": -2.220446049250313e-16,
+    "expected_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL",
+      "no_entry"
+    ],
+    "actual_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL",
+      "no_entry"
+    ],
+    "local_quality_status": "pass",
+    "defect_reproduced": false
+  },
+  {
+    "scale": 10.0,
+    "params": {
+      "growth": 40.0,
+      "network": 0.0,
+      "growth_end": 1.0,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 1.0,
+      "margin_y": 1.0,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "bounds": {
+      "delay_lower": 0.0,
+      "delay_upper": 0.0,
+      "announcement_upper": 2.0,
+      "scouting_points": 65,
+      "tolerance": 1e-10,
+      "payoff_atol": 1e-10,
+      "payoff_rtol": 1e-08,
+      "max_evaluations": 20000
+    },
+    "outside_option": 9.999999999999998,
+    "reference_payoff_fraction": "10",
+    "reference_payoff": 10.0,
+    "reference_gap_fraction": "1/562949953421312",
+    "reference_gap": 1.7763568394002505e-15,
+    "actual_payoffs": {
+      "RF": 9.999999999999998,
+      "RL": 9.999999999999998,
+      "DF": 9.999999999999998,
+      "DL": 9.999999999999998
+    },
+    "actual_gap": 0.0,
+    "expected_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL",
+      "no_entry"
+    ],
+    "actual_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL",
+      "no_entry"
+    ],
+    "local_quality_status": "pass",
+    "defect_reproduced": false
+  },
+  {
+    "scale": 10.0,
+    "params": {
+      "growth": 40.0,
+      "network": 0.0,
+      "growth_end": 1.0,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 1.0,
+      "margin_y": 1.0,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "bounds": {
+      "delay_lower": 0.0,
+      "delay_upper": 0.0,
+      "announcement_upper": 2.0,
+      "scouting_points": 65,
+      "tolerance": 1e-10,
+      "payoff_atol": 1e-10,
+      "payoff_rtol": 1e-08,
+      "max_evaluations": 20000
+    },
+    "outside_option": 10.0,
+    "reference_payoff_fraction": "10",
+    "reference_payoff": 10.0,
+    "reference_gap_fraction": "0",
+    "reference_gap": 0.0,
+    "actual_payoffs": {
+      "RF": 9.999999999999998,
+      "RL": 9.999999999999998,
+      "DF": 9.999999999999998,
+      "DL": 9.999999999999998
+    },
+    "actual_gap": -1.7763568394002505e-15,
+    "expected_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL",
+      "no_entry"
+    ],
+    "actual_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL",
+      "no_entry"
+    ],
+    "local_quality_status": "pass",
+    "defect_reproduced": false
+  },
+  {
+    "scale": 10.0,
+    "params": {
+      "growth": 40.0,
+      "network": 0.0,
+      "growth_end": 1.0,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 1.0,
+      "margin_y": 1.0,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "bounds": {
+      "delay_lower": 0.0,
+      "delay_upper": 0.0,
+      "announcement_upper": 2.0,
+      "scouting_points": 65,
+      "tolerance": 1e-10,
+      "payoff_atol": 1e-10,
+      "payoff_rtol": 1e-08,
+      "max_evaluations": 20000
+    },
+    "outside_option": 10.000000000000002,
+    "reference_payoff_fraction": "10",
+    "reference_payoff": 10.0,
+    "reference_gap_fraction": "-1/562949953421312",
+    "reference_gap": -1.7763568394002505e-15,
+    "actual_payoffs": {
+      "RF": 9.999999999999998,
+      "RL": 9.999999999999998,
+      "DF": 9.999999999999998,
+      "DL": 9.999999999999998
+    },
+    "actual_gap": -3.552713678800501e-15,
+    "expected_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL",
+      "no_entry"
+    ],
+    "actual_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL",
+      "no_entry"
+    ],
+    "local_quality_status": "pass",
+    "defect_reproduced": false
+  },
+  {
+    "scale": 1000.0,
+    "params": {
+      "growth": 4000.0,
+      "network": 0.0,
+      "growth_end": 1.0,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 1.0,
+      "margin_y": 1.0,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "bounds": {
+      "delay_lower": 0.0,
+      "delay_upper": 0.0,
+      "announcement_upper": 2.0,
+      "scouting_points": 65,
+      "tolerance": 1e-10,
+      "payoff_atol": 1e-10,
+      "payoff_rtol": 1e-08,
+      "max_evaluations": 20000
+    },
+    "outside_option": 999.9999999999999,
+    "reference_payoff_fraction": "1000",
+    "reference_payoff": 1000.0,
+    "reference_gap_fraction": "1/8796093022208",
+    "reference_gap": 1.1368683772161603e-13,
+    "actual_payoffs": {
+      "RF": 999.9999999999998,
+      "RL": 999.9999999999998,
+      "DF": 999.9999999999998,
+      "DL": 999.9999999999998
+    },
+    "actual_gap": -1.1368683772161603e-13,
+    "expected_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL",
+      "no_entry"
+    ],
+    "actual_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL",
+      "no_entry"
+    ],
+    "local_quality_status": "pass",
+    "defect_reproduced": false
+  },
+  {
+    "scale": 1000.0,
+    "params": {
+      "growth": 4000.0,
+      "network": 0.0,
+      "growth_end": 1.0,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 1.0,
+      "margin_y": 1.0,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "bounds": {
+      "delay_lower": 0.0,
+      "delay_upper": 0.0,
+      "announcement_upper": 2.0,
+      "scouting_points": 65,
+      "tolerance": 1e-10,
+      "payoff_atol": 1e-10,
+      "payoff_rtol": 1e-08,
+      "max_evaluations": 20000
+    },
+    "outside_option": 1000.0,
+    "reference_payoff_fraction": "1000",
+    "reference_payoff": 1000.0,
+    "reference_gap_fraction": "0",
+    "reference_gap": 0.0,
+    "actual_payoffs": {
+      "RF": 999.9999999999998,
+      "RL": 999.9999999999998,
+      "DF": 999.9999999999998,
+      "DL": 999.9999999999998
+    },
+    "actual_gap": -2.2737367544323206e-13,
+    "expected_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL",
+      "no_entry"
+    ],
+    "actual_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL",
+      "no_entry"
+    ],
+    "local_quality_status": "pass",
+    "defect_reproduced": false
+  },
+  {
+    "scale": 1000.0,
+    "params": {
+      "growth": 4000.0,
+      "network": 0.0,
+      "growth_end": 1.0,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 1.0,
+      "margin_y": 1.0,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "bounds": {
+      "delay_lower": 0.0,
+      "delay_upper": 0.0,
+      "announcement_upper": 2.0,
+      "scouting_points": 65,
+      "tolerance": 1e-10,
+      "payoff_atol": 1e-10,
+      "payoff_rtol": 1e-08,
+      "max_evaluations": 20000
+    },
+    "outside_option": 1000.0000000000001,
+    "reference_payoff_fraction": "1000",
+    "reference_payoff": 1000.0,
+    "reference_gap_fraction": "-1/8796093022208",
+    "reference_gap": -1.1368683772161603e-13,
+    "actual_payoffs": {
+      "RF": 999.9999999999998,
+      "RL": 999.9999999999998,
+      "DF": 999.9999999999998,
+      "DL": 999.9999999999998
+    },
+    "actual_gap": -3.410605131648481e-13,
+    "expected_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL",
+      "no_entry"
+    ],
+    "actual_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL",
+      "no_entry"
+    ],
+    "local_quality_status": "pass",
+    "defect_reproduced": false
+  },
+  {
+    "scale": 1000000.0,
+    "params": {
+      "growth": 4000000.0,
+      "network": 0.0,
+      "growth_end": 1.0,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 1.0,
+      "margin_y": 1.0,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "bounds": {
+      "delay_lower": 0.0,
+      "delay_upper": 0.0,
+      "announcement_upper": 2.0,
+      "scouting_points": 65,
+      "tolerance": 1e-10,
+      "payoff_atol": 1e-10,
+      "payoff_rtol": 1e-08,
+      "max_evaluations": 20000
+    },
+    "outside_option": 999999.9999999999,
+    "reference_payoff_fraction": "1000000",
+    "reference_payoff": 1000000.0,
+    "reference_gap_fraction": "1/8589934592",
+    "reference_gap": 1.1641532182693481e-10,
+    "actual_payoffs": {
+      "RF": 999999.9999999995,
+      "RL": 999999.9999999995,
+      "DF": 999999.9999999995,
+      "DL": 999999.9999999995
+    },
+    "actual_gap": -3.4924596548080444e-10,
+    "expected_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL",
+      "no_entry"
+    ],
+    "actual_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL",
+      "no_entry"
+    ],
+    "local_quality_status": "pass",
+    "defect_reproduced": false
+  },
+  {
+    "scale": 1000000.0,
+    "params": {
+      "growth": 4000000.0,
+      "network": 0.0,
+      "growth_end": 1.0,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 1.0,
+      "margin_y": 1.0,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "bounds": {
+      "delay_lower": 0.0,
+      "delay_upper": 0.0,
+      "announcement_upper": 2.0,
+      "scouting_points": 65,
+      "tolerance": 1e-10,
+      "payoff_atol": 1e-10,
+      "payoff_rtol": 1e-08,
+      "max_evaluations": 20000
+    },
+    "outside_option": 1000000.0,
+    "reference_payoff_fraction": "1000000",
+    "reference_payoff": 1000000.0,
+    "reference_gap_fraction": "0",
+    "reference_gap": 0.0,
+    "actual_payoffs": {
+      "RF": 999999.9999999995,
+      "RL": 999999.9999999995,
+      "DF": 999999.9999999995,
+      "DL": 999999.9999999995
+    },
+    "actual_gap": -4.656612873077393e-10,
+    "expected_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL",
+      "no_entry"
+    ],
+    "actual_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL",
+      "no_entry"
+    ],
+    "local_quality_status": "pass",
+    "defect_reproduced": false
+  },
+  {
+    "scale": 1000000.0,
+    "params": {
+      "growth": 4000000.0,
+      "network": 0.0,
+      "growth_end": 1.0,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 1.0,
+      "margin_y": 1.0,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "bounds": {
+      "delay_lower": 0.0,
+      "delay_upper": 0.0,
+      "announcement_upper": 2.0,
+      "scouting_points": 65,
+      "tolerance": 1e-10,
+      "payoff_atol": 1e-10,
+      "payoff_rtol": 1e-08,
+      "max_evaluations": 20000
+    },
+    "outside_option": 1000000.0000000001,
+    "reference_payoff_fraction": "1000000",
+    "reference_payoff": 1000000.0,
+    "reference_gap_fraction": "-1/8589934592",
+    "reference_gap": -1.1641532182693481e-10,
+    "actual_payoffs": {
+      "RF": 999999.9999999995,
+      "RL": 999999.9999999995,
+      "DF": 999999.9999999995,
+      "DL": 999999.9999999995
+    },
+    "actual_gap": -5.820766091346741e-10,
+    "expected_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL",
+      "no_entry"
+    ],
+    "actual_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL",
+      "no_entry"
+    ],
+    "local_quality_status": "pass",
+    "defect_reproduced": false
+  },
+  {
+    "scale": 100000000.0,
+    "params": {
+      "growth": 400000000.0,
+      "network": 0.0,
+      "growth_end": 1.0,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 1.0,
+      "margin_y": 1.0,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "bounds": {
+      "delay_lower": 0.0,
+      "delay_upper": 0.0,
+      "announcement_upper": 2.0,
+      "scouting_points": 65,
+      "tolerance": 1e-10,
+      "payoff_atol": 1e-10,
+      "payoff_rtol": 1e-08,
+      "max_evaluations": 20000
+    },
+    "outside_option": 99999999.99999999,
+    "reference_payoff_fraction": "100000000",
+    "reference_payoff": 100000000.0,
+    "reference_gap_fraction": "1/67108864",
+    "reference_gap": 1.4901161193847656e-08,
+    "actual_payoffs": {
+      "RF": 100000000.00000018,
+      "RL": 100000000.00000018,
+      "DF": 100000000.00000018,
+      "DL": 100000000.00000018
+    },
+    "actual_gap": 1.9371509552001953e-07,
+    "expected_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL"
+    ],
+    "actual_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL"
+    ],
+    "local_quality_status": "pass",
+    "defect_reproduced": false
+  },
+  {
+    "scale": 100000000.0,
+    "params": {
+      "growth": 400000000.0,
+      "network": 0.0,
+      "growth_end": 1.0,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 1.0,
+      "margin_y": 1.0,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "bounds": {
+      "delay_lower": 0.0,
+      "delay_upper": 0.0,
+      "announcement_upper": 2.0,
+      "scouting_points": 65,
+      "tolerance": 1e-10,
+      "payoff_atol": 1e-10,
+      "payoff_rtol": 1e-08,
+      "max_evaluations": 20000
+    },
+    "outside_option": 100000000.0,
+    "reference_payoff_fraction": "100000000",
+    "reference_payoff": 100000000.0,
+    "reference_gap_fraction": "0",
+    "reference_gap": 0.0,
+    "actual_payoffs": {
+      "RF": 100000000.00000018,
+      "RL": 100000000.00000018,
+      "DF": 100000000.00000018,
+      "DL": 100000000.00000018
+    },
+    "actual_gap": 1.7881393432617188e-07,
+    "expected_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL",
+      "no_entry"
+    ],
+    "actual_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL"
+    ],
+    "local_quality_status": "pass",
+    "defect_reproduced": true
+  },
+  {
+    "scale": 100000000.0,
+    "params": {
+      "growth": 400000000.0,
+      "network": 0.0,
+      "growth_end": 1.0,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 1.0,
+      "margin_y": 1.0,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "bounds": {
+      "delay_lower": 0.0,
+      "delay_upper": 0.0,
+      "announcement_upper": 2.0,
+      "scouting_points": 65,
+      "tolerance": 1e-10,
+      "payoff_atol": 1e-10,
+      "payoff_rtol": 1e-08,
+      "max_evaluations": 20000
+    },
+    "outside_option": 100000000.00000001,
+    "reference_payoff_fraction": "100000000",
+    "reference_payoff": 100000000.0,
+    "reference_gap_fraction": "-1/67108864",
+    "reference_gap": -1.4901161193847656e-08,
+    "actual_payoffs": {
+      "RF": 100000000.00000018,
+      "RL": 100000000.00000018,
+      "DF": 100000000.00000018,
+      "DL": 100000000.00000018
+    },
+    "actual_gap": 1.6391277313232422e-07,
+    "expected_preference": [
+      "no_entry"
+    ],
+    "actual_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL"
+    ],
+    "local_quality_status": "pass",
+    "defect_reproduced": true
+  },
+  {
+    "scale": 1000000000.0,
+    "params": {
+      "growth": 4000000000.0,
+      "network": 0.0,
+      "growth_end": 1.0,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 1.0,
+      "margin_y": 1.0,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "bounds": {
+      "delay_lower": 0.0,
+      "delay_upper": 0.0,
+      "announcement_upper": 2.0,
+      "scouting_points": 65,
+      "tolerance": 1e-10,
+      "payoff_atol": 1e-10,
+      "payoff_rtol": 1e-08,
+      "max_evaluations": 20000
+    },
+    "outside_option": 999999999.9999999,
+    "reference_payoff_fraction": "1000000000",
+    "reference_payoff": 1000000000.0,
+    "reference_gap_fraction": "1/8388608",
+    "reference_gap": 1.1920928955078125e-07,
+    "actual_payoffs": {
+      "RF": 1000000000.0000029,
+      "RL": 1000000000.0000029,
+      "DF": 1000000000.0000029,
+      "DL": 1000000000.0000029
+    },
+    "actual_gap": 2.9802322387695312e-06,
+    "expected_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL"
+    ],
+    "actual_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL"
+    ],
+    "local_quality_status": "pass",
+    "defect_reproduced": false
+  },
+  {
+    "scale": 1000000000.0,
+    "params": {
+      "growth": 4000000000.0,
+      "network": 0.0,
+      "growth_end": 1.0,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 1.0,
+      "margin_y": 1.0,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "bounds": {
+      "delay_lower": 0.0,
+      "delay_upper": 0.0,
+      "announcement_upper": 2.0,
+      "scouting_points": 65,
+      "tolerance": 1e-10,
+      "payoff_atol": 1e-10,
+      "payoff_rtol": 1e-08,
+      "max_evaluations": 20000
+    },
+    "outside_option": 1000000000.0,
+    "reference_payoff_fraction": "1000000000",
+    "reference_payoff": 1000000000.0,
+    "reference_gap_fraction": "0",
+    "reference_gap": 0.0,
+    "actual_payoffs": {
+      "RF": 1000000000.0000029,
+      "RL": 1000000000.0000029,
+      "DF": 1000000000.0000029,
+      "DL": 1000000000.0000029
+    },
+    "actual_gap": 2.86102294921875e-06,
+    "expected_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL",
+      "no_entry"
+    ],
+    "actual_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL"
+    ],
+    "local_quality_status": "pass",
+    "defect_reproduced": true
+  },
+  {
+    "scale": 1000000000.0,
+    "params": {
+      "growth": 4000000000.0,
+      "network": 0.0,
+      "growth_end": 1.0,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 1.0,
+      "margin_y": 1.0,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "bounds": {
+      "delay_lower": 0.0,
+      "delay_upper": 0.0,
+      "announcement_upper": 2.0,
+      "scouting_points": 65,
+      "tolerance": 1e-10,
+      "payoff_atol": 1e-10,
+      "payoff_rtol": 1e-08,
+      "max_evaluations": 20000
+    },
+    "outside_option": 1000000000.0000001,
+    "reference_payoff_fraction": "1000000000",
+    "reference_payoff": 1000000000.0,
+    "reference_gap_fraction": "-1/8388608",
+    "reference_gap": -1.1920928955078125e-07,
+    "actual_payoffs": {
+      "RF": 1000000000.0000029,
+      "RL": 1000000000.0000029,
+      "DF": 1000000000.0000029,
+      "DL": 1000000000.0000029
+    },
+    "actual_gap": 2.7418136596679688e-06,
+    "expected_preference": [
+      "no_entry"
+    ],
+    "actual_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL"
+    ],
+    "local_quality_status": "pass",
+    "defect_reproduced": true
+  },
+  {
+    "scale": 10000000000.0,
+    "params": {
+      "growth": 40000000000.0,
+      "network": 0.0,
+      "growth_end": 1.0,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 1.0,
+      "margin_y": 1.0,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "bounds": {
+      "delay_lower": 0.0,
+      "delay_upper": 0.0,
+      "announcement_upper": 2.0,
+      "scouting_points": 65,
+      "tolerance": 1e-10,
+      "payoff_atol": 1e-10,
+      "payoff_rtol": 1e-08,
+      "max_evaluations": 20000
+    },
+    "outside_option": 9999999999.999998,
+    "reference_payoff_fraction": "10000000000",
+    "reference_payoff": 10000000000.0,
+    "reference_gap_fraction": "1/524288",
+    "reference_gap": 1.9073486328125e-06,
+    "actual_payoffs": {
+      "RF": 10000000000.00004,
+      "RL": 10000000000.00004,
+      "DF": 10000000000.00004,
+      "DL": 10000000000.00004
+    },
+    "actual_gap": 4.1961669921875e-05,
+    "expected_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL"
+    ],
+    "actual_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL"
+    ],
+    "local_quality_status": "pass",
+    "defect_reproduced": false
+  },
+  {
+    "scale": 10000000000.0,
+    "params": {
+      "growth": 40000000000.0,
+      "network": 0.0,
+      "growth_end": 1.0,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 1.0,
+      "margin_y": 1.0,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "bounds": {
+      "delay_lower": 0.0,
+      "delay_upper": 0.0,
+      "announcement_upper": 2.0,
+      "scouting_points": 65,
+      "tolerance": 1e-10,
+      "payoff_atol": 1e-10,
+      "payoff_rtol": 1e-08,
+      "max_evaluations": 20000
+    },
+    "outside_option": 10000000000.0,
+    "reference_payoff_fraction": "10000000000",
+    "reference_payoff": 10000000000.0,
+    "reference_gap_fraction": "0",
+    "reference_gap": 0.0,
+    "actual_payoffs": {
+      "RF": 10000000000.00004,
+      "RL": 10000000000.00004,
+      "DF": 10000000000.00004,
+      "DL": 10000000000.00004
+    },
+    "actual_gap": 4.00543212890625e-05,
+    "expected_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL",
+      "no_entry"
+    ],
+    "actual_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL"
+    ],
+    "local_quality_status": "pass",
+    "defect_reproduced": true
+  },
+  {
+    "scale": 10000000000.0,
+    "params": {
+      "growth": 40000000000.0,
+      "network": 0.0,
+      "growth_end": 1.0,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 1.0,
+      "margin_y": 1.0,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "bounds": {
+      "delay_lower": 0.0,
+      "delay_upper": 0.0,
+      "announcement_upper": 2.0,
+      "scouting_points": 65,
+      "tolerance": 1e-10,
+      "payoff_atol": 1e-10,
+      "payoff_rtol": 1e-08,
+      "max_evaluations": 20000
+    },
+    "outside_option": 10000000000.000002,
+    "reference_payoff_fraction": "10000000000",
+    "reference_payoff": 10000000000.0,
+    "reference_gap_fraction": "-1/524288",
+    "reference_gap": -1.9073486328125e-06,
+    "actual_payoffs": {
+      "RF": 10000000000.00004,
+      "RL": 10000000000.00004,
+      "DF": 10000000000.00004,
+      "DL": 10000000000.00004
+    },
+    "actual_gap": 3.814697265625e-05,
+    "expected_preference": [
+      "no_entry"
+    ],
+    "actual_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL"
+    ],
+    "local_quality_status": "pass",
+    "defect_reproduced": true
+  },
+  {
+    "scale": 1000000000000.0,
+    "params": {
+      "growth": 4000000000000.0,
+      "network": 0.0,
+      "growth_end": 1.0,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 1.0,
+      "margin_y": 1.0,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "bounds": {
+      "delay_lower": 0.0,
+      "delay_upper": 0.0,
+      "announcement_upper": 2.0,
+      "scouting_points": 65,
+      "tolerance": 1e-10,
+      "payoff_atol": 1e-10,
+      "payoff_rtol": 1e-08,
+      "max_evaluations": 20000
+    },
+    "outside_option": 999999999999.9999,
+    "reference_payoff_fraction": "1000000000000",
+    "reference_payoff": 1000000000000.0,
+    "reference_gap_fraction": "1/8192",
+    "reference_gap": 0.0001220703125,
+    "actual_payoffs": {
+      "RF": 1000000000000.0026,
+      "RL": 1000000000000.0026,
+      "DF": 1000000000000.0026,
+      "DL": 1000000000000.0026
+    },
+    "actual_gap": 0.002685546875,
+    "expected_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL"
+    ],
+    "actual_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL"
+    ],
+    "local_quality_status": "pass",
+    "defect_reproduced": false
+  },
+  {
+    "scale": 1000000000000.0,
+    "params": {
+      "growth": 4000000000000.0,
+      "network": 0.0,
+      "growth_end": 1.0,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 1.0,
+      "margin_y": 1.0,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "bounds": {
+      "delay_lower": 0.0,
+      "delay_upper": 0.0,
+      "announcement_upper": 2.0,
+      "scouting_points": 65,
+      "tolerance": 1e-10,
+      "payoff_atol": 1e-10,
+      "payoff_rtol": 1e-08,
+      "max_evaluations": 20000
+    },
+    "outside_option": 1000000000000.0,
+    "reference_payoff_fraction": "1000000000000",
+    "reference_payoff": 1000000000000.0,
+    "reference_gap_fraction": "0",
+    "reference_gap": 0.0,
+    "actual_payoffs": {
+      "RF": 1000000000000.0026,
+      "RL": 1000000000000.0026,
+      "DF": 1000000000000.0026,
+      "DL": 1000000000000.0026
+    },
+    "actual_gap": 0.0025634765625,
+    "expected_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL",
+      "no_entry"
+    ],
+    "actual_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL"
+    ],
+    "local_quality_status": "pass",
+    "defect_reproduced": true
+  },
+  {
+    "scale": 1000000000000.0,
+    "params": {
+      "growth": 4000000000000.0,
+      "network": 0.0,
+      "growth_end": 1.0,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 1.0,
+      "margin_y": 1.0,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "bounds": {
+      "delay_lower": 0.0,
+      "delay_upper": 0.0,
+      "announcement_upper": 2.0,
+      "scouting_points": 65,
+      "tolerance": 1e-10,
+      "payoff_atol": 1e-10,
+      "payoff_rtol": 1e-08,
+      "max_evaluations": 20000
+    },
+    "outside_option": 1000000000000.0001,
+    "reference_payoff_fraction": "1000000000000",
+    "reference_payoff": 1000000000000.0,
+    "reference_gap_fraction": "-1/8192",
+    "reference_gap": -0.0001220703125,
+    "actual_payoffs": {
+      "RF": 1000000000000.0026,
+      "RL": 1000000000000.0026,
+      "DF": 1000000000000.0026,
+      "DL": 1000000000000.0026
+    },
+    "actual_gap": 0.00244140625,
+    "expected_preference": [
+      "no_entry"
+    ],
+    "actual_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL"
+    ],
+    "local_quality_status": "pass",
+    "defect_reproduced": true
+  },
+  {
+    "scale": 100000000000000.0,
+    "params": {
+      "growth": 400000000000000.0,
+      "network": 0.0,
+      "growth_end": 1.0,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 1.0,
+      "margin_y": 1.0,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "bounds": {
+      "delay_lower": 0.0,
+      "delay_upper": 0.0,
+      "announcement_upper": 2.0,
+      "scouting_points": 65,
+      "tolerance": 1e-10,
+      "payoff_atol": 1e-10,
+      "payoff_rtol": 1e-08,
+      "max_evaluations": 20000
+    },
+    "outside_option": 99999999999999.98,
+    "reference_payoff_fraction": "100000000000000",
+    "reference_payoff": 100000000000000.0,
+    "reference_gap_fraction": "1/64",
+    "reference_gap": 0.015625,
+    "actual_payoffs": {
+      "RF": 99999999999999.42,
+      "RL": 99999999999999.42,
+      "DF": 99999999999999.42,
+      "DL": 99999999999999.42
+    },
+    "actual_gap": -0.5625,
+    "expected_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL"
+    ],
+    "actual_preference": [
+      "no_entry"
+    ],
+    "local_quality_status": "pass",
+    "defect_reproduced": true
+  },
+  {
+    "scale": 100000000000000.0,
+    "params": {
+      "growth": 400000000000000.0,
+      "network": 0.0,
+      "growth_end": 1.0,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 1.0,
+      "margin_y": 1.0,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "bounds": {
+      "delay_lower": 0.0,
+      "delay_upper": 0.0,
+      "announcement_upper": 2.0,
+      "scouting_points": 65,
+      "tolerance": 1e-10,
+      "payoff_atol": 1e-10,
+      "payoff_rtol": 1e-08,
+      "max_evaluations": 20000
+    },
+    "outside_option": 100000000000000.0,
+    "reference_payoff_fraction": "100000000000000",
+    "reference_payoff": 100000000000000.0,
+    "reference_gap_fraction": "0",
+    "reference_gap": 0.0,
+    "actual_payoffs": {
+      "RF": 99999999999999.42,
+      "RL": 99999999999999.42,
+      "DF": 99999999999999.42,
+      "DL": 99999999999999.42
+    },
+    "actual_gap": -0.578125,
+    "expected_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL",
+      "no_entry"
+    ],
+    "actual_preference": [
+      "no_entry"
+    ],
+    "local_quality_status": "pass",
+    "defect_reproduced": true
+  },
+  {
+    "scale": 100000000000000.0,
+    "params": {
+      "growth": 400000000000000.0,
+      "network": 0.0,
+      "growth_end": 1.0,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 1.0,
+      "margin_y": 1.0,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "bounds": {
+      "delay_lower": 0.0,
+      "delay_upper": 0.0,
+      "announcement_upper": 2.0,
+      "scouting_points": 65,
+      "tolerance": 1e-10,
+      "payoff_atol": 1e-10,
+      "payoff_rtol": 1e-08,
+      "max_evaluations": 20000
+    },
+    "outside_option": 100000000000000.02,
+    "reference_payoff_fraction": "100000000000000",
+    "reference_payoff": 100000000000000.0,
+    "reference_gap_fraction": "-1/64",
+    "reference_gap": -0.015625,
+    "actual_payoffs": {
+      "RF": 99999999999999.42,
+      "RL": 99999999999999.42,
+      "DF": 99999999999999.42,
+      "DL": 99999999999999.42
+    },
+    "actual_gap": -0.59375,
+    "expected_preference": [
+      "no_entry"
+    ],
+    "actual_preference": [
+      "no_entry"
+    ],
+    "local_quality_status": "pass",
+    "defect_reproduced": false
+  },
+  {
+    "scale": 1e+16,
+    "params": {
+      "growth": 4e+16,
+      "network": 0.0,
+      "growth_end": 1.0,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 1.0,
+      "margin_y": 1.0,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "bounds": {
+      "delay_lower": 0.0,
+      "delay_upper": 0.0,
+      "announcement_upper": 2.0,
+      "scouting_points": 65,
+      "tolerance": 1e-10,
+      "payoff_atol": 1e-10,
+      "payoff_rtol": 1e-08,
+      "max_evaluations": 20000
+    },
+    "outside_option": 9999999999999998.0,
+    "reference_payoff_fraction": "10000000000000000",
+    "reference_payoff": 1e+16,
+    "reference_gap_fraction": "2",
+    "reference_gap": 2.0,
+    "actual_payoffs": {
+      "RF": 9999999999999964.0,
+      "RL": 9999999999999964.0,
+      "DF": 9999999999999964.0,
+      "DL": 9999999999999964.0
+    },
+    "actual_gap": -34.0,
+    "expected_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL"
+    ],
+    "actual_preference": [
+      "no_entry"
+    ],
+    "local_quality_status": "pass",
+    "defect_reproduced": true
+  },
+  {
+    "scale": 1e+16,
+    "params": {
+      "growth": 4e+16,
+      "network": 0.0,
+      "growth_end": 1.0,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 1.0,
+      "margin_y": 1.0,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "bounds": {
+      "delay_lower": 0.0,
+      "delay_upper": 0.0,
+      "announcement_upper": 2.0,
+      "scouting_points": 65,
+      "tolerance": 1e-10,
+      "payoff_atol": 1e-10,
+      "payoff_rtol": 1e-08,
+      "max_evaluations": 20000
+    },
+    "outside_option": 1e+16,
+    "reference_payoff_fraction": "10000000000000000",
+    "reference_payoff": 1e+16,
+    "reference_gap_fraction": "0",
+    "reference_gap": 0.0,
+    "actual_payoffs": {
+      "RF": 9999999999999964.0,
+      "RL": 9999999999999964.0,
+      "DF": 9999999999999964.0,
+      "DL": 9999999999999964.0
+    },
+    "actual_gap": -36.0,
+    "expected_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL",
+      "no_entry"
+    ],
+    "actual_preference": [
+      "no_entry"
+    ],
+    "local_quality_status": "pass",
+    "defect_reproduced": true
+  },
+  {
+    "scale": 1e+16,
+    "params": {
+      "growth": 4e+16,
+      "network": 0.0,
+      "growth_end": 1.0,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 1.0,
+      "margin_y": 1.0,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "bounds": {
+      "delay_lower": 0.0,
+      "delay_upper": 0.0,
+      "announcement_upper": 2.0,
+      "scouting_points": 65,
+      "tolerance": 1e-10,
+      "payoff_atol": 1e-10,
+      "payoff_rtol": 1e-08,
+      "max_evaluations": 20000
+    },
+    "outside_option": 1.0000000000000002e+16,
+    "reference_payoff_fraction": "10000000000000000",
+    "reference_payoff": 1e+16,
+    "reference_gap_fraction": "-2",
+    "reference_gap": -2.0,
+    "actual_payoffs": {
+      "RF": 9999999999999964.0,
+      "RL": 9999999999999964.0,
+      "DF": 9999999999999964.0,
+      "DL": 9999999999999964.0
+    },
+    "actual_gap": -38.0,
+    "expected_preference": [
+      "no_entry"
+    ],
+    "actual_preference": [
+      "no_entry"
+    ],
+    "local_quality_status": "pass",
+    "defect_reproduced": false
+  },
+  {
+    "scale": 1e+30,
+    "params": {
+      "growth": 4e+30,
+      "network": 0.0,
+      "growth_end": 1.0,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 1.0,
+      "margin_y": 1.0,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "bounds": {
+      "delay_lower": 0.0,
+      "delay_upper": 0.0,
+      "announcement_upper": 2.0,
+      "scouting_points": 65,
+      "tolerance": 1e-10,
+      "payoff_atol": 1e-10,
+      "payoff_rtol": 1e-08,
+      "max_evaluations": 20000
+    },
+    "outside_option": 9.999999999999999e+29,
+    "reference_payoff_fraction": "1000000000000000019884624838656",
+    "reference_payoff": 1e+30,
+    "reference_gap_fraction": "140737488355328",
+    "reference_gap": 140737488355328.0,
+    "actual_payoffs": {
+      "RF": 9.999999999999976e+29,
+      "RL": 9.999999999999976e+29,
+      "DF": 9.999999999999976e+29,
+      "DL": 9.999999999999976e+29
+    },
+    "actual_gap": -2251799813685248.0,
+    "expected_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL"
+    ],
+    "actual_preference": [
+      "no_entry"
+    ],
+    "local_quality_status": "pass",
+    "defect_reproduced": true
+  },
+  {
+    "scale": 1e+30,
+    "params": {
+      "growth": 4e+30,
+      "network": 0.0,
+      "growth_end": 1.0,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 1.0,
+      "margin_y": 1.0,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "bounds": {
+      "delay_lower": 0.0,
+      "delay_upper": 0.0,
+      "announcement_upper": 2.0,
+      "scouting_points": 65,
+      "tolerance": 1e-10,
+      "payoff_atol": 1e-10,
+      "payoff_rtol": 1e-08,
+      "max_evaluations": 20000
+    },
+    "outside_option": 1e+30,
+    "reference_payoff_fraction": "1000000000000000019884624838656",
+    "reference_payoff": 1e+30,
+    "reference_gap_fraction": "0",
+    "reference_gap": 0.0,
+    "actual_payoffs": {
+      "RF": 9.999999999999976e+29,
+      "RL": 9.999999999999976e+29,
+      "DF": 9.999999999999976e+29,
+      "DL": 9.999999999999976e+29
+    },
+    "actual_gap": -2392537302040576.0,
+    "expected_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL",
+      "no_entry"
+    ],
+    "actual_preference": [
+      "no_entry"
+    ],
+    "local_quality_status": "pass",
+    "defect_reproduced": true
+  },
+  {
+    "scale": 1e+30,
+    "params": {
+      "growth": 4e+30,
+      "network": 0.0,
+      "growth_end": 1.0,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 1.0,
+      "margin_y": 1.0,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "bounds": {
+      "delay_lower": 0.0,
+      "delay_upper": 0.0,
+      "announcement_upper": 2.0,
+      "scouting_points": 65,
+      "tolerance": 1e-10,
+      "payoff_atol": 1e-10,
+      "payoff_rtol": 1e-08,
+      "max_evaluations": 20000
+    },
+    "outside_option": 1.0000000000000002e+30,
+    "reference_payoff_fraction": "1000000000000000019884624838656",
+    "reference_payoff": 1e+30,
+    "reference_gap_fraction": "-140737488355328",
+    "reference_gap": -140737488355328.0,
+    "actual_payoffs": {
+      "RF": 9.999999999999976e+29,
+      "RL": 9.999999999999976e+29,
+      "DF": 9.999999999999976e+29,
+      "DL": 9.999999999999976e+29
+    },
+    "actual_gap": -2533274790395904.0,
+    "expected_preference": [
+      "no_entry"
+    ],
+    "actual_preference": [
+      "no_entry"
+    ],
+    "local_quality_status": "pass",
+    "defect_reproduced": false
+  },
+  {
+    "scale": 1e+100,
+    "params": {
+      "growth": 4e+100,
+      "network": 0.0,
+      "growth_end": 1.0,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 1.0,
+      "margin_y": 1.0,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "bounds": {
+      "delay_lower": 0.0,
+      "delay_upper": 0.0,
+      "announcement_upper": 2.0,
+      "scouting_points": 65,
+      "tolerance": 1e-10,
+      "payoff_atol": 1e-10,
+      "payoff_rtol": 1e-08,
+      "max_evaluations": 20000
+    },
+    "outside_option": 9.999999999999998e+99,
+    "reference_payoff_fraction": "10000000000000000159028911097599180468360808563945281389781327557747838772170381060813469985856815104",
+    "reference_payoff": 1e+100,
+    "reference_gap_fraction": "1942668892225729070919461906823518906642406839052139521251812409738904285205208498176",
+    "reference_gap": 1.942668892225729e+84,
+    "actual_payoffs": {
+      "RF": 9.999999999999825e+99,
+      "RL": 9.999999999999825e+99,
+      "DF": 9.999999999999825e+99,
+      "DL": 9.999999999999825e+99
+    },
+    "actual_gap": -1.728975314080899e+86,
+    "expected_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL"
+    ],
+    "actual_preference": [
+      "no_entry"
+    ],
+    "local_quality_status": "pass",
+    "defect_reproduced": true
+  },
+  {
+    "scale": 1e+100,
+    "params": {
+      "growth": 4e+100,
+      "network": 0.0,
+      "growth_end": 1.0,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 1.0,
+      "margin_y": 1.0,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "bounds": {
+      "delay_lower": 0.0,
+      "delay_upper": 0.0,
+      "announcement_upper": 2.0,
+      "scouting_points": 65,
+      "tolerance": 1e-10,
+      "payoff_atol": 1e-10,
+      "payoff_rtol": 1e-08,
+      "max_evaluations": 20000
+    },
+    "outside_option": 1e+100,
+    "reference_payoff_fraction": "10000000000000000159028911097599180468360808563945281389781327557747838772170381060813469985856815104",
+    "reference_payoff": 1e+100,
+    "reference_gap_fraction": "0",
+    "reference_gap": 0.0,
+    "actual_payoffs": {
+      "RF": 9.999999999999825e+99,
+      "RL": 9.999999999999825e+99,
+      "DF": 9.999999999999825e+99,
+      "DL": 9.999999999999825e+99
+    },
+    "actual_gap": -1.7484020030031562e+86,
+    "expected_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL",
+      "no_entry"
+    ],
+    "actual_preference": [
+      "no_entry"
+    ],
+    "local_quality_status": "pass",
+    "defect_reproduced": true
+  },
+  {
+    "scale": 1e+100,
+    "params": {
+      "growth": 4e+100,
+      "network": 0.0,
+      "growth_end": 1.0,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 1.0,
+      "margin_y": 1.0,
+      "discount": 0.0,
+      "announcement_cost": 0.0,
+      "deployment_cost": 0.0,
+      "learning_rate": 0.0
+    },
+    "bounds": {
+      "delay_lower": 0.0,
+      "delay_upper": 0.0,
+      "announcement_upper": 2.0,
+      "scouting_points": 65,
+      "tolerance": 1e-10,
+      "payoff_atol": 1e-10,
+      "payoff_rtol": 1e-08,
+      "max_evaluations": 20000
+    },
+    "outside_option": 1.0000000000000002e+100,
+    "reference_payoff_fraction": "10000000000000000159028911097599180468360808563945281389781327557747838772170381060813469985856815104",
+    "reference_payoff": 1e+100,
+    "reference_gap_fraction": "-1942668892225729070919461906823518906642406839052139521251812409738904285205208498176",
+    "reference_gap": -1.942668892225729e+84,
+    "actual_payoffs": {
+      "RF": 9.999999999999825e+99,
+      "RL": 9.999999999999825e+99,
+      "DF": 9.999999999999825e+99,
+      "DL": 9.999999999999825e+99
+    },
+    "actual_gap": -1.7678286919254135e+86,
+    "expected_preference": [
+      "no_entry"
+    ],
+    "actual_preference": [
+      "no_entry"
+    ],
+    "local_quality_status": "pass",
+    "defect_reproduced": false
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "case": "exact_rational_stationary_control",
+    "diagnostic": {
+      "raw": 0.0,
+      "log": null,
+      "scaled": 0.0,
+      "representation": "finite"
+    }
+  },
+  {
+    "case": "fixed_zero_cap",
+    "diagnostic": {
+      "raw": 0.0,
+      "log": null,
+      "scaled": 0.0,
+      "representation": "finite"
+    }
+  },
+  {
+    "case": "silent_scenario",
+    "diagnostic": {
+      "raw": 0.0,
+      "log": null,
+      "scaled": 0.0,
+      "representation": "finite"
+    }
+  },
+  {
+    "case": "zero_growth_lower",
+    "diagnostic": {
+      "raw": 0.0,
+      "log": null,
+      "scaled": 0.0,
+      "representation": "finite"
+    }
+  },
+  {
+    "case": "monotone_feasible_upper",
+    "diagnostic": {
+      "raw": 0.0,
+      "log": null,
+      "scaled": 0.0,
+      "representation": "finite"
+    }
+  }
+]

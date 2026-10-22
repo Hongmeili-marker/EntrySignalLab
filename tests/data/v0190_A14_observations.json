@@ -1,0 +1,310 @@
+{
+  "duplicate_real_CLI": {
+    "series": [
+      {
+        "strategy": "RF",
+        "vertices": [
+          [
+            4.0,
+            1.0
+          ],
+          [
+            4.0,
+            1.0
+          ]
+        ],
+        "finite_observations": 2,
+        "marker": "None",
+        "nonzero_finite_segments": 0,
+        "data_visible": false
+      },
+      {
+        "strategy": "RL",
+        "vertices": [
+          [
+            4.0,
+            1.0
+          ],
+          [
+            4.0,
+            1.0
+          ]
+        ],
+        "finite_observations": 2,
+        "marker": "None",
+        "nonzero_finite_segments": 0,
+        "data_visible": false
+      },
+      {
+        "strategy": "DF",
+        "vertices": [
+          [
+            4.0,
+            1.0
+          ],
+          [
+            4.0,
+            1.0
+          ]
+        ],
+        "finite_observations": 2,
+        "marker": "None",
+        "nonzero_finite_segments": 0,
+        "data_visible": false
+      },
+      {
+        "strategy": "DL",
+        "vertices": [
+          [
+            4.0,
+            1.0
+          ],
+          [
+            4.0,
+            1.0
+          ]
+        ],
+        "finite_observations": 2,
+        "marker": "None",
+        "nonzero_finite_segments": 0,
+        "data_visible": false
+      }
+    ],
+    "title": ""
+  },
+  "isolated_finite_API_fixture": {
+    "series": [
+      {
+        "strategy": "RF",
+        "vertices": [
+          [
+            1.0,
+            1.0
+          ],
+          [
+            2.0,
+            null
+          ],
+          [
+            3.0,
+            1.0
+          ]
+        ],
+        "finite_observations": 2,
+        "marker": "None",
+        "nonzero_finite_segments": 0,
+        "data_visible": false
+      },
+      {
+        "strategy": "RL",
+        "vertices": [
+          [
+            1.0,
+            1.0
+          ],
+          [
+            2.0,
+            null
+          ],
+          [
+            3.0,
+            1.0
+          ]
+        ],
+        "finite_observations": 2,
+        "marker": "None",
+        "nonzero_finite_segments": 0,
+        "data_visible": false
+      },
+      {
+        "strategy": "DF",
+        "vertices": [
+          [
+            1.0,
+            1.0
+          ],
+          [
+            2.0,
+            null
+          ],
+          [
+            3.0,
+            1.0
+          ]
+        ],
+        "finite_observations": 2,
+        "marker": "None",
+        "nonzero_finite_segments": 0,
+        "data_visible": false
+      },
+      {
+        "strategy": "DL",
+        "vertices": [
+          [
+            1.0,
+            1.0
+          ],
+          [
+            2.0,
+            null
+          ],
+          [
+            3.0,
+            1.0
+          ]
+        ],
+        "finite_observations": 2,
+        "marker": "None",
+        "nonzero_finite_segments": 0,
+        "data_visible": false
+      }
+    ],
+    "title": ""
+  },
+  "singleton_control": {
+    "series": [
+      {
+        "strategy": "RF",
+        "vertices": [
+          [
+            4.0,
+            1.0
+          ]
+        ],
+        "finite_observations": 1,
+        "marker": "o",
+        "nonzero_finite_segments": 0,
+        "data_visible": true
+      },
+      {
+        "strategy": "RL",
+        "vertices": [
+          [
+            4.0,
+            1.0
+          ]
+        ],
+        "finite_observations": 1,
+        "marker": "s",
+        "nonzero_finite_segments": 0,
+        "data_visible": true
+      },
+      {
+        "strategy": "DF",
+        "vertices": [
+          [
+            4.0,
+            1.0
+          ]
+        ],
+        "finite_observations": 1,
+        "marker": "^",
+        "nonzero_finite_segments": 0,
+        "data_visible": true
+      },
+      {
+        "strategy": "DL",
+        "vertices": [
+          [
+            4.0,
+            1.0
+          ]
+        ],
+        "finite_observations": 1,
+        "marker": "x",
+        "nonzero_finite_segments": 0,
+        "data_visible": true
+      }
+    ],
+    "title": ""
+  },
+  "connected_control": {
+    "series": [
+      {
+        "strategy": "RF",
+        "vertices": [
+          [
+            1.0,
+            1.0
+          ],
+          [
+            2.0,
+            1.0
+          ],
+          [
+            3.0,
+            1.0
+          ]
+        ],
+        "finite_observations": 3,
+        "marker": "None",
+        "nonzero_finite_segments": 2,
+        "data_visible": true
+      },
+      {
+        "strategy": "RL",
+        "vertices": [
+          [
+            1.0,
+            1.0
+          ],
+          [
+            2.0,
+            1.0
+          ],
+          [
+            3.0,
+            1.0
+          ]
+        ],
+        "finite_observations": 3,
+        "marker": "None",
+        "nonzero_finite_segments": 2,
+        "data_visible": true
+      },
+      {
+        "strategy": "DF",
+        "vertices": [
+          [
+            1.0,
+            1.0
+          ],
+          [
+            2.0,
+            1.0
+          ],
+          [
+            3.0,
+            1.0
+          ]
+        ],
+        "finite_observations": 3,
+        "marker": "None",
+        "nonzero_finite_segments": 2,
+        "data_visible": true
+      },
+      {
+        "strategy": "DL",
+        "vertices": [
+          [
+            1.0,
+            1.0
+          ],
+          [
+            2.0,
+            1.0
+          ],
+          [
+            3.0,
+            1.0
+          ]
+        ],
+        "finite_observations": 3,
+        "marker": "None",
+        "nonzero_finite_segments": 2,
+        "data_visible": true
+      }
+    ],
+    "title": ""
+  }
+}

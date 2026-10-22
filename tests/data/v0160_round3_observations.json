@@ -1,0 +1,604 @@
+{
+  "version": "0.16.0",
+  "python": "3.12.14",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "numpy": "2.3.5",
+  "source_sha256": {
+    "__init__.py": "51f4c4239d673182874eeb55001d9e4f775229e4e32fe99b17262e6c59512440",
+    "audit.py": "20d2135c209c644ca63b21963cf5ea2c53a0b8b3f8bb7dbd3908b6619d681e73",
+    "batch.py": "361e49053cebf017a165edc977bb81903587f22a5cbb0d7b3195daacb463f3cd",
+    "benchmark.py": "8469e7095bfa3707b35e03a5131d6a6fe8720096ebf87d3c5fb7b9f3f60dfa6a",
+    "cli.py": "30b78a61585aa22e4bb6c908ed5684bd5f56b4687a12033df6c2c23cc9ed72e0",
+    "locking.py": "5ed05ee136d8ebf9eade59a33d7ebae083a3d11ce5b32757a40b48fe98fe0196",
+    "model.py": "7887439203b8374682519ae325615644d121ca1fb643af364c47bb8183fd1cce",
+    "plots.py": "43b7493f878ac8ce2f29a2cf21999021426ccfbd9285b59b8403de22b4a0b6ab",
+    "provenance.py": "f4dd6cb787d030ab8970c5c488c9f6bf0b5f842299afd218b6eff31795c062eb",
+    "research.py": "a0e8e8b5ebe07c7c9fa27ed1cff4802a606c4e5ae715a5952edec0545374e1b9",
+    "sampling.py": "7908841fff3ce24162db99c64e218257729353c9ad5f9f6ad341dffed559cc0a",
+    "solver.py": "d7696f3cb6402670e11633c47b8be4024acdc312f9c9c772790c8d5e59c7c926",
+    "units.py": "582b9a4ddae0c8ae8a2307d51421eadb8c1eb7d4a0c44fbad05854ecc7c69c33",
+    "workflow.py": "be36c363a4e5c37588c3317259ed9f3124a77827fffcc6c035908759e8c9de4d"
+  },
+  "probe_sha256": "6a803971a043de6bdf4ae211c2060de7ab5550dd90fd0ed3c1c21918de671ef0",
+  "observations": [
+    {
+      "name": "source_growth_1e-11_H_0.3",
+      "finding": "A07",
+      "expected_defect": true,
+      "observation_reproduced": true,
+      "detail": {
+        "params": {
+          "growth": 1e-11,
+          "network": 0.85,
+          "growth_end": 0.3,
+          "horizon": 1.0,
+          "quality_ratio": 1.0,
+          "margin_x": 0.25,
+          "margin_y": 0.25,
+          "discount": 0.0,
+          "announcement_cost": 0.0,
+          "deployment_cost": 0.0,
+          "learning_rate": 0.0
+        },
+        "actual": {
+          "id": "DF_INTEGRAL_IDENTITY",
+          "pass": true,
+          "from_demand": 3.1875e-13,
+          "from_printed_eq15": -5.6249999999999994e-14,
+          "source_page": 15
+        },
+        "reference_demand": 3.1875e-13,
+        "reference_printed": -5.6249999999999994e-14,
+        "exact_gap_numerator": "33451117797795931450469530450095",
+        "exact_gap_denominator": "89202980794122492566142873090593446023921664",
+        "reference_gap": 3.7499999999999997e-13,
+        "expected_identity_pass": false
+      }
+    },
+    {
+      "name": "source_growth_1e-11_H_0.001",
+      "finding": "A07",
+      "expected_defect": true,
+      "observation_reproduced": true,
+      "detail": {
+        "params": {
+          "growth": 1e-11,
+          "network": 0.85,
+          "growth_end": 0.001,
+          "horizon": 1.0,
+          "quality_ratio": 1.0,
+          "margin_x": 0.25,
+          "margin_y": 0.25,
+          "discount": 0.0,
+          "announcement_cost": 0.0,
+          "deployment_cost": 0.0,
+          "learning_rate": 0.0
+        },
+        "actual": {
+          "id": "DF_INTEGRAL_IDENTITY",
+          "pass": true,
+          "from_demand": 1.2493750000000001e-15,
+          "from_printed_eq15": -6.25e-19,
+          "source_page": 15
+        },
+        "reference_demand": 1.249375e-15,
+        "reference_printed": -6.2499999999999995e-19,
+        "exact_gap_numerator": "7136238463529799122080179591147",
+        "exact_gap_denominator": "5708990770823839524233143877797980545530986496",
+        "reference_gap": 1.25e-15,
+        "expected_identity_pass": false
+      }
+    },
+    {
+      "name": "source_growth_1e-20_H_0.3",
+      "finding": "A07",
+      "expected_defect": true,
+      "observation_reproduced": true,
+      "detail": {
+        "params": {
+          "growth": 1e-20,
+          "network": 0.85,
+          "growth_end": 0.3,
+          "horizon": 1.0,
+          "quality_ratio": 1.0,
+          "margin_x": 0.25,
+          "margin_y": 0.25,
+          "discount": 0.0,
+          "announcement_cost": 0.0,
+          "deployment_cost": 0.0,
+          "learning_rate": 0.0
+        },
+        "actual": {
+          "id": "DF_INTEGRAL_IDENTITY",
+          "pass": true,
+          "from_demand": 3.1874999999999906e-22,
+          "from_printed_eq15": -5.625e-23,
+          "source_page": 15
+        },
+        "reference_demand": 3.1874999999999996e-22,
+        "reference_printed": -5.625e-23,
+        "exact_gap_numerator": "35917864239044266818568412800505",
+        "exact_gap_denominator": "95780971304118053647396689196894323976171195136475136",
+        "reference_gap": 3.75e-22,
+        "expected_identity_pass": false
+      }
+    },
+    {
+      "name": "source_growth_1e-20_H_0.001",
+      "finding": "A07",
+      "expected_defect": true,
+      "observation_reproduced": true,
+      "detail": {
+        "params": {
+          "growth": 1e-20,
+          "network": 0.85,
+          "growth_end": 0.001,
+          "horizon": 1.0,
+          "quality_ratio": 1.0,
+          "margin_x": 0.25,
+          "margin_y": 0.25,
+          "discount": 0.0,
+          "announcement_cost": 0.0,
+          "deployment_cost": 0.0,
+          "learning_rate": 0.0
+        },
+        "actual": {
+          "id": "DF_INTEGRAL_IDENTITY",
+          "pass": true,
+          "from_demand": 1.249375000000001e-24,
+          "from_printed_eq15": -6.25e-28,
+          "source_page": 15
+        },
+        "reference_demand": 1.249375e-24,
+        "reference_printed": -6.25e-28,
+        "exact_gap_numerator": "7662477704329444031037259992413",
+        "exact_gap_denominator": "6129982163463555433433388108601236734474956488734408704",
+        "reference_gap": 1.25e-24,
+        "expected_identity_pass": false
+      }
+    },
+    {
+      "name": "source_growth_1e-100_H_0.3",
+      "finding": "A07",
+      "expected_defect": true,
+      "observation_reproduced": true,
+      "detail": {
+        "params": {
+          "growth": 1e-100,
+          "network": 0.85,
+          "growth_end": 0.3,
+          "horizon": 1.0,
+          "quality_ratio": 1.0,
+          "margin_x": 0.25,
+          "margin_y": 0.25,
+          "discount": 0.0,
+          "announcement_cost": 0.0,
+          "deployment_cost": 0.0,
+          "learning_rate": 0.0
+        },
+        "actual": {
+          "id": "DF_INTEGRAL_IDENTITY",
+          "pass": true,
+          "from_demand": 3.1874999999999125e-102,
+          "from_printed_eq15": -5.624999999999999e-103,
+          "source_page": 15
+        },
+        "reference_demand": 3.1875e-102,
+        "reference_printed": -5.625e-103,
+        "exact_gap_numerator": "2661762906355982219903959447945",
+        "exact_gap_denominator": "709803441694928604052074031140629428079727891296209043243642772637343054798240159498233447962659731992932150006119314388217384402944",
+        "reference_gap": 3.7499999999999996e-102,
+        "expected_identity_pass": false
+      }
+    },
+    {
+      "name": "source_growth_1e-100_H_0.001",
+      "finding": "A07",
+      "expected_defect": true,
+      "observation_reproduced": true,
+      "detail": {
+        "params": {
+          "growth": 1e-100,
+          "network": 0.85,
+          "growth_end": 0.001,
+          "horizon": 1.0,
+          "quality_ratio": 1.0,
+          "margin_x": 0.25,
+          "margin_y": 0.25,
+          "discount": 0.0,
+          "announcement_cost": 0.0,
+          "deployment_cost": 0.0,
+          "learning_rate": 0.0
+        },
+        "actual": {
+          "id": "DF_INTEGRAL_IDENTITY",
+          "pass": true,
+          "from_demand": 1.249374999999997e-104,
+          "from_printed_eq15": -6.2500000000000004e-108,
+          "source_page": 15
+        },
+        "reference_demand": 1.249375e-104,
+        "reference_printed": -6.2500000000000004e-108,
+        "exact_gap_numerator": "567842753355942906414516512557",
+        "exact_gap_denominator": "45427420268475430659332737993000283397102585042957378767593137448789955507087370207886940669610222847547657600391636120845912601788416",
+        "reference_gap": 1.2500000000000001e-104,
+        "expected_identity_pass": false
+      }
+    },
+    {
+      "name": "source_H_1e-11",
+      "finding": "A07",
+      "expected_defect": true,
+      "observation_reproduced": true,
+      "detail": {
+        "params": {
+          "growth": 0.1,
+          "network": 0.85,
+          "growth_end": 1e-11,
+          "horizon": 1.0,
+          "quality_ratio": 1.0,
+          "margin_x": 0.25,
+          "margin_y": 0.25,
+          "discount": 0.0,
+          "announcement_cost": 0.0,
+          "deployment_cost": 0.0,
+          "learning_rate": 0.0
+        },
+        "actual": {
+          "id": "DF_INTEGRAL_IDENTITY",
+          "pass": true,
+          "from_demand": 1.249999999993746e-13,
+          "from_printed_eq15": -6.25e-25,
+          "source_page": 15
+        },
+        "reference_demand": 1.24999999999375e-13,
+        "reference_printed": -6.25e-25,
+        "exact_gap_numerator": "22300745198530623030213085775697",
+        "exact_gap_denominator": "178405961588244985132285746181186892047843328",
+        "reference_gap": 1.25e-13,
+        "expected_identity_pass": false
+      }
+    },
+    {
+      "name": "source_H_1e-20",
+      "finding": "A07",
+      "expected_defect": true,
+      "observation_reproduced": true,
+      "detail": {
+        "params": {
+          "growth": 0.1,
+          "network": 0.85,
+          "growth_end": 1e-20,
+          "horizon": 1.0,
+          "quality_ratio": 1.0,
+          "margin_x": 0.25,
+          "margin_y": 0.25,
+          "discount": 0.0,
+          "announcement_cost": 0.0,
+          "deployment_cost": 0.0,
+          "learning_rate": 0.0
+        },
+        "actual": {
+          "id": "DF_INTEGRAL_IDENTITY",
+          "pass": true,
+          "from_demand": 1.2500000000000039e-22,
+          "from_printed_eq15": -6.249999999999999e-43,
+          "source_page": 15
+        },
+        "reference_demand": 1.25e-22,
+        "reference_printed": -6.25e-43,
+        "exact_gap_numerator": "23945242826029513427758934841863",
+        "exact_gap_denominator": "191561942608236107294793378393788647952342390272950272",
+        "reference_gap": 1.25e-22,
+        "expected_identity_pass": false
+      }
+    },
+    {
+      "name": "source_H_1e-100",
+      "finding": "A07",
+      "expected_defect": true,
+      "observation_reproduced": true,
+      "detail": {
+        "params": {
+          "growth": 0.1,
+          "network": 0.85,
+          "growth_end": 1e-100,
+          "horizon": 1.0,
+          "quality_ratio": 1.0,
+          "margin_x": 0.25,
+          "margin_y": 0.25,
+          "discount": 0.0,
+          "announcement_cost": 0.0,
+          "deployment_cost": 0.0,
+          "learning_rate": 0.0
+        },
+        "actual": {
+          "id": "DF_INTEGRAL_IDENTITY",
+          "pass": true,
+          "from_demand": 1.2499999999999911e-102,
+          "from_printed_eq15": -6.250000000000001e-203,
+          "source_page": 15
+        },
+        "reference_demand": 1.25e-102,
+        "reference_printed": -6.250000000000001e-203,
+        "exact_gap_numerator": "1774508604237321644110998783607",
+        "exact_gap_denominator": "1419606883389857208104148062281258856159455782592418086487285545274686109596480318996466895925319463985864300012238628776434768805888",
+        "reference_gap": 1.25e-102,
+        "expected_identity_pass": false
+      }
+    },
+    {
+      "name": "source_control_0.1",
+      "finding": "A07",
+      "expected_defect": false,
+      "observation_reproduced": true,
+      "detail": {
+        "params": {
+          "growth": 0.1,
+          "network": 0.85,
+          "growth_end": 0.3,
+          "horizon": 1.0,
+          "quality_ratio": 1.0,
+          "margin_x": 0.25,
+          "margin_y": 0.25,
+          "discount": 0.0,
+          "announcement_cost": 0.0,
+          "deployment_cost": 0.0,
+          "learning_rate": 0.0
+        },
+        "actual": {
+          "id": "DF_INTEGRAL_IDENTITY",
+          "pass": false,
+          "from_demand": 0.003187500000000001,
+          "from_printed_eq15": -0.0005625,
+          "source_page": 15
+        },
+        "reference_demand": 0.0031875000000000002,
+        "reference_printed": -0.0005625,
+        "exact_gap_numerator": "19471113219505603967277331424215",
+        "exact_gap_denominator": "5192296858534827628530496329220096",
+        "reference_gap": 0.00375,
+        "expected_identity_pass": false
+      }
+    },
+    {
+      "name": "source_control_1e-05",
+      "finding": "A07",
+      "expected_defect": false,
+      "observation_reproduced": true,
+      "detail": {
+        "params": {
+          "growth": 1e-05,
+          "network": 0.85,
+          "growth_end": 0.3,
+          "horizon": 1.0,
+          "quality_ratio": 1.0,
+          "margin_x": 0.25,
+          "margin_y": 0.25,
+          "discount": 0.0,
+          "announcement_cost": 0.0,
+          "deployment_cost": 0.0,
+          "learning_rate": 0.0
+        },
+        "actual": {
+          "id": "DF_INTEGRAL_IDENTITY",
+          "pass": false,
+          "from_demand": 3.187499999999998e-07,
+          "from_printed_eq15": -5.625e-08,
+          "source_page": 15
+        },
+        "reference_demand": 3.1875e-07,
+        "reference_printed": -5.625e-08,
+        "exact_gap_numerator": "31901471898837982378737574406915",
+        "exact_gap_denominator": "85070591730234615865843651857942052864",
+        "reference_gap": 3.75e-07,
+        "expected_identity_pass": false
+      }
+    },
+    {
+      "name": "source_control_1e-10",
+      "finding": "A07",
+      "expected_defect": false,
+      "observation_reproduced": true,
+      "detail": {
+        "params": {
+          "growth": 1e-10,
+          "network": 0.85,
+          "growth_end": 0.3,
+          "horizon": 1.0,
+          "quality_ratio": 1.0,
+          "margin_x": 0.25,
+          "margin_y": 0.25,
+          "discount": 0.0,
+          "announcement_cost": 0.0,
+          "deployment_cost": 0.0,
+          "learning_rate": 0.0
+        },
+        "actual": {
+          "id": "DF_INTEGRAL_IDENTITY",
+          "pass": false,
+          "from_demand": 3.187500000000003e-12,
+          "from_printed_eq15": -5.625e-13,
+          "source_page": 15
+        },
+        "reference_demand": 3.1875e-12,
+        "reference_printed": -5.625e-13,
+        "exact_gap_numerator": "41813897247244918366326577696065",
+        "exact_gap_denominator": "11150372599265311570767859136324180752990208",
+        "reference_gap": 3.75e-12,
+        "expected_identity_pass": false
+      }
+    },
+    {
+      "name": "audit_cli_small",
+      "finding": "A07",
+      "expected_defect": true,
+      "observation_reproduced": true,
+      "detail": {
+        "actual": {
+          "from_demand": 3.1875e-13,
+          "from_printed_eq15": -5.6249999999999994e-14,
+          "id": "DF_INTEGRAL_IDENTITY",
+          "pass": true,
+          "source_page": 15
+        },
+        "manifest_verified": true,
+        "exit_code": 0
+      }
+    },
+    {
+      "name": "audit_cli_control",
+      "finding": "A07",
+      "expected_defect": false,
+      "observation_reproduced": true,
+      "detail": {
+        "actual": {
+          "from_demand": 0.003187500000000001,
+          "from_printed_eq15": -0.0005625,
+          "id": "DF_INTEGRAL_IDENTITY",
+          "pass": false,
+          "source_page": 15
+        },
+        "manifest_verified": true,
+        "exit_code": 0
+      }
+    },
+    {
+      "name": "plot_cli_small_growth",
+      "finding": "A08",
+      "expected_defect": true,
+      "observation_reproduced": true,
+      "detail": {
+        "ticks": [
+          6.000000000000001e-05,
+          0.00012000000000000002,
+          0.00018000000000000004,
+          0.00024000000000000003,
+          0.00030000000000000003
+        ],
+        "labels": [
+          "0.000",
+          "0.000",
+          "0.000",
+          "0.000",
+          "0.000"
+        ],
+        "offset": "",
+        "limits": [
+          5e-05,
+          0.00034999999999999994
+        ],
+        "formatter": "FormatStrFormatter",
+        "distinct_tick_values": 5,
+        "distinct_tick_labels": 1,
+        "svg_labels_match": true,
+        "manifest_verified": true,
+        "axes": {
+          "growth": [
+            0.0001,
+            0.0002,
+            0.0003
+          ],
+          "network": [
+            0.5,
+            1.0
+          ]
+        },
+        "exit_code": 0
+      }
+    },
+    {
+      "name": "plot_cli_small_quality",
+      "finding": "A08",
+      "expected_defect": true,
+      "observation_reproduced": true,
+      "detail": {
+        "ticks": [
+          6.000000000000001e-05,
+          0.00012000000000000002,
+          0.00018000000000000004,
+          0.00024000000000000003,
+          0.00030000000000000003
+        ],
+        "labels": [
+          "0.000",
+          "0.000",
+          "0.000",
+          "0.000",
+          "0.000"
+        ],
+        "offset": "",
+        "limits": [
+          5e-05,
+          0.00034999999999999994
+        ],
+        "formatter": "FormatStrFormatter",
+        "distinct_tick_values": 5,
+        "distinct_tick_labels": 1,
+        "svg_labels_match": true,
+        "manifest_verified": true,
+        "axes": {
+          "quality_ratio": [
+            0.0001,
+            0.0002,
+            0.0003
+          ],
+          "network": [
+            0.5,
+            1.0
+          ]
+        },
+        "exit_code": 0
+      }
+    },
+    {
+      "name": "plot_cli_control",
+      "finding": "A08",
+      "expected_defect": false,
+      "observation_reproduced": true,
+      "detail": {
+        "ticks": [
+          0.06,
+          0.12,
+          0.18,
+          0.24,
+          0.3
+        ],
+        "labels": [
+          "0.060",
+          "0.120",
+          "0.180",
+          "0.240",
+          "0.300"
+        ],
+        "offset": "",
+        "limits": [
+          0.05,
+          0.35
+        ],
+        "formatter": "FormatStrFormatter",
+        "distinct_tick_values": 5,
+        "distinct_tick_labels": 5,
+        "svg_labels_match": true,
+        "manifest_verified": true,
+        "axes": {
+          "growth": [
+            0.1,
+            0.2,
+            0.3
+          ],
+          "network": [
+            0.5,
+            1.0
+          ]
+        },
+        "exit_code": 0
+      }
+    }
+  ],
+  "total": 17,
+  "defect_observations": 12,
+  "control_observations": 5,
+  "all_observations_reproduced": true,
+  "interpretation": "Successful execution reproduces reported defects and controls; it is not repair acceptance."
+}

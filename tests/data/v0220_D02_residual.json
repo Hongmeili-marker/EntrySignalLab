@@ -1,0 +1,202 @@
+[
+  {
+    "params": {
+      "growth": 0.1,
+      "network": 0.85,
+      "growth_end": 0.3,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 0.25,
+      "margin_y": 0.25,
+      "discount": 0.0,
+      "announcement_cost": 0.0002,
+      "deployment_cost": 0.012,
+      "learning_rate": 12.0
+    },
+    "bounds": {
+      "delay_lower": 0.0,
+      "delay_upper": null,
+      "announcement_upper": 2.0,
+      "scouting_points": 3,
+      "tolerance": 1.0,
+      "payoff_atol": 0.0,
+      "payoff_rtol": 0.0,
+      "max_evaluations": 20000
+    },
+    "result": {
+      "strategy": "RL",
+      "status": "numerical_candidate",
+      "delay": 0.20730690168751575,
+      "announcement": 0.3581654657613491,
+      "payoff": -0.0001263847048294922,
+      "share_x": 0.510931615052091,
+      "share_y": 0.4890683849479089,
+      "evaluations": 10,
+      "delay_refinement_intervals": 2,
+      "delay_refinement_diagnostics": [
+        {
+          "lower": 0.0,
+          "upper": 0.15,
+          "method": "bounded_scalar",
+          "iterations": 1
+        },
+        {
+          "lower": 0.15,
+          "upper": 0.3,
+          "method": "bounded_scalar",
+          "iterations": 1
+        }
+      ],
+      "search_precision": {
+        "policy": "original_input_profile_order_v1",
+        "guard_ratio": 1e-08,
+        "guarded_comparisons": 0,
+        "rounded_order_disagreements": 0,
+        "max_precision_digits": 0,
+        "bounded_scalar_refinements": 2,
+        "guarded_golden_refinements": 0,
+        "interpretation": "Near evaluated controls use original-input gaps. Rounded-order collisions switch local refinement to comparison-driven golden steps. This is adaptive local numerical guarding, not interval or global certification.",
+        "evaluated_candidate_consistency_checks": 9
+      },
+      "delay_active": "interior",
+      "announcement_active": "interior",
+      "announcement_nonunique": false,
+      "delay_nonunique": false,
+      "announcement_stationarity_residual": 1.5269512193811715e-18,
+      "announcement_stationarity_log_residual": -41.023258593562026,
+      "announcement_stationarity_scaled_residual": 2.1316282072802778e-14,
+      "announcement_stationarity_representation": "finite",
+      "local_improvement_residual": 0.0,
+      "probe_improvement_found": 2.315862543118656e-08,
+      "probe_rounds": 4,
+      "local_quality_passed": false,
+      "last_probe_improvement": 5.787878163830869e-09,
+      "last_probe_improvement_diagnostic": {
+        "value": 5.787878163830869e-09,
+        "representation": "finite",
+        "log_abs": -18.967500078186063,
+        "sign": 1,
+        "tolerance_relation": 1,
+        "decision_basis": "rounded_payoff_difference",
+        "precision_digits": null
+      },
+      "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+      "attainment": "attained",
+      "supremum": null,
+      "envelope_evaluations": 0,
+      "envelope_root_diagnostics": [],
+      "equilibrium": false,
+      "globally_certified": false,
+      "conditional_control": "delay and announcement"
+    },
+    "independent_next_feasible_control": {
+      "delay": 0.20730990168751576,
+      "announcement": 0.3581654657613491
+    },
+    "independent_200_400_digit_gain": [
+      5.786687561970258e-09,
+      5.786687561970258e-09
+    ],
+    "qualification": "The new last-probe and quality fields already disclose the failure. The legacy field is a constant zero and the current API table presents it as a measured nearby improvement."
+  },
+  {
+    "params": {
+      "growth": 0.1,
+      "network": 0.85,
+      "growth_end": 0.3,
+      "horizon": 1.0,
+      "quality_ratio": 1.0,
+      "margin_x": 0.25,
+      "margin_y": 0.25,
+      "discount": 0.0,
+      "announcement_cost": 0.0002,
+      "deployment_cost": 0.012,
+      "learning_rate": 12.0
+    },
+    "bounds": {
+      "delay_lower": 0.0,
+      "delay_upper": null,
+      "announcement_upper": 2.0,
+      "scouting_points": 3,
+      "tolerance": 1.0,
+      "payoff_atol": 0.0,
+      "payoff_rtol": 0.0,
+      "max_evaluations": 20000
+    },
+    "result": {
+      "strategy": "DL",
+      "status": "numerical_candidate",
+      "delay": 0.20730690168751575,
+      "announcement": 0.0,
+      "payoff": -0.0001400155088000874,
+      "share_x": 0.49563320220033147,
+      "share_y": 0.5043667977996685,
+      "evaluations": 10,
+      "delay_refinement_intervals": 2,
+      "delay_refinement_diagnostics": [
+        {
+          "lower": 0.0,
+          "upper": 0.15,
+          "method": "bounded_scalar",
+          "iterations": 1
+        },
+        {
+          "lower": 0.15,
+          "upper": 0.3,
+          "method": "bounded_scalar",
+          "iterations": 1
+        }
+      ],
+      "search_precision": {
+        "policy": "original_input_profile_order_v1",
+        "guard_ratio": 1e-08,
+        "guarded_comparisons": 0,
+        "rounded_order_disagreements": 0,
+        "max_precision_digits": 0,
+        "bounded_scalar_refinements": 2,
+        "guarded_golden_refinements": 0,
+        "interpretation": "Near evaluated controls use original-input gaps. Rounded-order collisions switch local refinement to comparison-driven golden steps. This is adaptive local numerical guarding, not interval or global certification.",
+        "evaluated_candidate_consistency_checks": 9
+      },
+      "delay_active": "interior",
+      "announcement_active": "not_applicable",
+      "announcement_nonunique": false,
+      "delay_nonunique": false,
+      "announcement_stationarity_residual": 0.0,
+      "announcement_stationarity_log_residual": null,
+      "announcement_stationarity_scaled_residual": 0.0,
+      "announcement_stationarity_representation": "finite",
+      "local_improvement_residual": 0.0,
+      "probe_improvement_found": 2.5311307988570494e-08,
+      "probe_rounds": 4,
+      "local_quality_passed": false,
+      "last_probe_improvement": 6.326066758974291e-09,
+      "last_probe_improvement_diagnostic": {
+        "value": 6.326066758974291e-09,
+        "representation": "finite",
+        "log_abs": -18.87858715900857,
+        "sign": 1,
+        "tolerance_relation": 1,
+        "decision_basis": "rounded_payoff_difference",
+        "precision_digits": null
+      },
+      "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+      "attainment": "attained",
+      "supremum": null,
+      "envelope_evaluations": 0,
+      "envelope_root_diagnostics": [],
+      "equilibrium": false,
+      "globally_certified": false,
+      "conditional_control": "delay"
+    },
+    "independent_next_feasible_control": {
+      "delay": 0.20730990168751576,
+      "announcement": 0.0
+    },
+    "independent_200_400_digit_gain": [
+      6.324893345816062e-09,
+      6.324893345816062e-09
+    ],
+    "qualification": "The new last-probe and quality fields already disclose the failure. The legacy field is a constant zero and the current API table presents it as a measured nearby improvement."
+  }
+]

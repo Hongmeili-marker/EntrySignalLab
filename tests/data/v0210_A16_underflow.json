@@ -1,0 +1,1116 @@
+{
+  "params": {
+    "growth": 1.0,
+    "network": 0.0,
+    "growth_end": 3.0,
+    "horizon": 3.0,
+    "quality_ratio": 1.0,
+    "margin_x": 1.0,
+    "margin_y": 0.25,
+    "discount": 1000.0,
+    "announcement_cost": 0.0,
+    "deployment_cost": 1e+45,
+    "learning_rate": 100.0
+  },
+  "bounds": {
+    "delay_lower": 1.0,
+    "delay_upper": 2.0,
+    "announcement_upper": 0.0,
+    "scouting_points": 3,
+    "tolerance": 1.0,
+    "payoff_atol": 0.0,
+    "payoff_rtol": 0.0,
+    "max_evaluations": 20000
+  },
+  "report": {
+    "factors": [
+      1,
+      2,
+      4
+    ],
+    "reports": [
+      {
+        "local_quality_status": "fail",
+        "local_quality_assessment_complete": true,
+        "local_quality_by_strategy": {
+          "RF": "pass",
+          "RL": "fail",
+          "DF": "pass",
+          "DL": "fail"
+        },
+        "entry_payoff_gap": -0.0,
+        "entry_payoff_gap_diagnostic": {
+          "value": -0.0,
+          "representation": "finite",
+          "log_abs": null,
+          "sign": 0,
+          "tolerance_relation": 0,
+          "decision_basis": "exact_original_input_difference",
+          "precision_digits": null
+        },
+        "outside_option_gap": 0.0,
+        "outside_option_gap_diagnostic": {
+          "value": 0.0,
+          "representation": "underflow",
+          "log_abs": -1205.9286405559044,
+          "sign": 1,
+          "tolerance_relation": 1,
+          "decision_basis": "adaptive_original_input_difference",
+          "precision_digits": 160
+        },
+        "all_local_quality_passed": false,
+        "results": [
+          {
+            "strategy": "RF",
+            "status": "profile_optimum",
+            "delay": 0.0,
+            "announcement": 0.0,
+            "payoff": -1e+45,
+            "share_x": 0.5,
+            "share_y": 0.5,
+            "evaluations": 1,
+            "delay_refinement_intervals": 0,
+            "delay_refinement_diagnostics": [],
+            "search_precision": {
+              "policy": "original_input_profile_order_v1",
+              "guard_ratio": 1e-08,
+              "guarded_comparisons": 0,
+              "rounded_order_disagreements": 0,
+              "max_precision_digits": 0,
+              "bounded_scalar_refinements": 0,
+              "guarded_golden_refinements": 0,
+              "interpretation": "Near evaluated controls use original-input gaps. Rounded-order collisions switch local refinement to comparison-driven golden steps. This is adaptive local numerical guarding, not interval or global certification.",
+              "evaluated_candidate_consistency_checks": 0
+            },
+            "delay_active": "fixed_rival_delay",
+            "announcement_active": "fixed",
+            "announcement_nonunique": false,
+            "delay_nonunique": false,
+            "announcement_stationarity_residual": 0.0,
+            "announcement_stationarity_log_residual": null,
+            "announcement_stationarity_scaled_residual": 0.0,
+            "announcement_stationarity_representation": "finite",
+            "local_improvement_residual": 0.0,
+            "probe_improvement_found": 0.0,
+            "probe_rounds": 0,
+            "local_quality_passed": true,
+            "last_probe_improvement": 0.0,
+            "last_probe_improvement_diagnostic": null,
+            "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+            "attainment": "attained",
+            "supremum": null,
+            "envelope_evaluations": 0,
+            "envelope_root_diagnostics": [],
+            "equilibrium": false,
+            "globally_certified": false,
+            "conditional_control": "announcement; rival timing fixed"
+          },
+          {
+            "strategy": "RL",
+            "status": "numerical_candidate",
+            "delay": 1.1909430056250523,
+            "announcement": 0.0,
+            "payoff": 0.0,
+            "share_x": 0.5,
+            "share_y": 0.5,
+            "evaluations": 14,
+            "delay_refinement_intervals": 3,
+            "delay_refinement_diagnostics": [
+              {
+                "lower": 1.0,
+                "upper": 1.5,
+                "method": "guarded_golden",
+                "iterations": 0,
+                "termination": "normalized_interval_width"
+              },
+              {
+                "lower": 1.0,
+                "upper": 2.0,
+                "method": "guarded_golden",
+                "iterations": 0,
+                "termination": "normalized_interval_width"
+              },
+              {
+                "lower": 1.5,
+                "upper": 2.0,
+                "method": "guarded_golden",
+                "iterations": 0,
+                "termination": "normalized_interval_width"
+              }
+            ],
+            "search_precision": {
+              "policy": "original_input_profile_order_v1",
+              "guard_ratio": 1e-08,
+              "guarded_comparisons": 29,
+              "rounded_order_disagreements": 29,
+              "max_precision_digits": 160,
+              "bounded_scalar_refinements": 0,
+              "guarded_golden_refinements": 3,
+              "interpretation": "Near evaluated controls use original-input gaps. Rounded-order collisions switch local refinement to comparison-driven golden steps. This is adaptive local numerical guarding, not interval or global certification.",
+              "evaluated_candidate_consistency_checks": 13
+            },
+            "delay_active": "interior",
+            "announcement_active": "fixed",
+            "announcement_nonunique": false,
+            "delay_nonunique": false,
+            "announcement_stationarity_residual": 0.0,
+            "announcement_stationarity_log_residual": null,
+            "announcement_stationarity_scaled_residual": 0.0,
+            "announcement_stationarity_representation": "finite",
+            "local_improvement_residual": 0.0,
+            "probe_improvement_found": 0.0,
+            "probe_rounds": 4,
+            "local_quality_passed": false,
+            "last_probe_improvement": 0.0,
+            "last_probe_improvement_diagnostic": {
+              "value": 0.0,
+              "representation": "underflow",
+              "log_abs": -1210.6015165647955,
+              "sign": 1,
+              "tolerance_relation": 1,
+              "decision_basis": "adaptive_original_input_difference",
+              "precision_digits": 160
+            },
+            "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+            "attainment": "attained",
+            "supremum": null,
+            "envelope_evaluations": 0,
+            "envelope_root_diagnostics": [],
+            "equilibrium": false,
+            "globally_certified": false,
+            "conditional_control": "delay and announcement"
+          },
+          {
+            "strategy": "DF",
+            "status": "profile_optimum",
+            "delay": 0.0,
+            "announcement": 0.0,
+            "payoff": -1e+45,
+            "share_x": 0.5,
+            "share_y": 0.5,
+            "evaluations": 1,
+            "delay_refinement_intervals": 0,
+            "delay_refinement_diagnostics": [],
+            "search_precision": {
+              "policy": "original_input_profile_order_v1",
+              "guard_ratio": 1e-08,
+              "guarded_comparisons": 0,
+              "rounded_order_disagreements": 0,
+              "max_precision_digits": 0,
+              "bounded_scalar_refinements": 0,
+              "guarded_golden_refinements": 0,
+              "interpretation": "Near evaluated controls use original-input gaps. Rounded-order collisions switch local refinement to comparison-driven golden steps. This is adaptive local numerical guarding, not interval or global certification.",
+              "evaluated_candidate_consistency_checks": 0
+            },
+            "delay_active": "fixed_rival_delay",
+            "announcement_active": "not_applicable",
+            "announcement_nonunique": false,
+            "delay_nonunique": false,
+            "announcement_stationarity_residual": 0.0,
+            "announcement_stationarity_log_residual": null,
+            "announcement_stationarity_scaled_residual": 0.0,
+            "announcement_stationarity_representation": "finite",
+            "local_improvement_residual": 0.0,
+            "probe_improvement_found": 0.0,
+            "probe_rounds": 0,
+            "local_quality_passed": true,
+            "last_probe_improvement": 0.0,
+            "last_probe_improvement_diagnostic": null,
+            "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+            "attainment": "attained",
+            "supremum": null,
+            "envelope_evaluations": 0,
+            "envelope_root_diagnostics": [],
+            "equilibrium": false,
+            "globally_certified": false,
+            "conditional_control": "rival timing fixed"
+          },
+          {
+            "strategy": "DL",
+            "status": "numerical_candidate",
+            "delay": 1.1909430056250523,
+            "announcement": 0.0,
+            "payoff": 0.0,
+            "share_x": 0.5,
+            "share_y": 0.5,
+            "evaluations": 14,
+            "delay_refinement_intervals": 3,
+            "delay_refinement_diagnostics": [
+              {
+                "lower": 1.0,
+                "upper": 1.5,
+                "method": "guarded_golden",
+                "iterations": 0,
+                "termination": "normalized_interval_width"
+              },
+              {
+                "lower": 1.0,
+                "upper": 2.0,
+                "method": "guarded_golden",
+                "iterations": 0,
+                "termination": "normalized_interval_width"
+              },
+              {
+                "lower": 1.5,
+                "upper": 2.0,
+                "method": "guarded_golden",
+                "iterations": 0,
+                "termination": "normalized_interval_width"
+              }
+            ],
+            "search_precision": {
+              "policy": "original_input_profile_order_v1",
+              "guard_ratio": 1e-08,
+              "guarded_comparisons": 29,
+              "rounded_order_disagreements": 29,
+              "max_precision_digits": 160,
+              "bounded_scalar_refinements": 0,
+              "guarded_golden_refinements": 3,
+              "interpretation": "Near evaluated controls use original-input gaps. Rounded-order collisions switch local refinement to comparison-driven golden steps. This is adaptive local numerical guarding, not interval or global certification.",
+              "evaluated_candidate_consistency_checks": 13
+            },
+            "delay_active": "interior",
+            "announcement_active": "not_applicable",
+            "announcement_nonunique": false,
+            "delay_nonunique": false,
+            "announcement_stationarity_residual": 0.0,
+            "announcement_stationarity_log_residual": null,
+            "announcement_stationarity_scaled_residual": 0.0,
+            "announcement_stationarity_representation": "finite",
+            "local_improvement_residual": 0.0,
+            "probe_improvement_found": 0.0,
+            "probe_rounds": 4,
+            "local_quality_passed": false,
+            "last_probe_improvement": 0.0,
+            "last_probe_improvement_diagnostic": {
+              "value": 0.0,
+              "representation": "underflow",
+              "log_abs": -1210.6015165647955,
+              "sign": 1,
+              "tolerance_relation": 1,
+              "decision_basis": "adaptive_original_input_difference",
+              "precision_digits": 160
+            },
+            "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+            "attainment": "attained",
+            "supremum": null,
+            "envelope_evaluations": 0,
+            "envelope_root_diagnostics": [],
+            "equilibrium": false,
+            "globally_certified": false,
+            "conditional_control": "delay"
+          }
+        ],
+        "co_best": [
+          "RL",
+          "DL"
+        ],
+        "finite_candidate_co_best": [
+          "RL",
+          "DL"
+        ],
+        "tie_tolerance": 0.0,
+        "outside_option_payoff": 0.0,
+        "preferred_with_outside_option": [
+          "RL",
+          "DL"
+        ],
+        "all_rankable": true,
+        "interpretation": "Conditional scenario comparison; first-mover cases hold rival delay fixed. No Nash or mixed-strategy equilibrium claim.",
+        "comparison_precision": {
+          "policy": "original_input_gap_guard_v2",
+          "guard_ratio": 1e-08,
+          "refined_comparisons": [
+            {
+              "left": "DF",
+              "right": "RF",
+              "value": 0.0,
+              "representation": "finite",
+              "log_abs": null,
+              "sign": 0,
+              "tolerance_relation": 0,
+              "decision_basis": "exact_original_input_difference",
+              "precision_digits": null
+            },
+            {
+              "left": "DL",
+              "right": "RL",
+              "value": 0.0,
+              "representation": "finite",
+              "log_abs": null,
+              "sign": 0,
+              "tolerance_relation": 0,
+              "decision_basis": "exact_original_input_difference",
+              "precision_digits": null
+            },
+            {
+              "left": "RL",
+              "right": "RL",
+              "value": 0.0,
+              "representation": "finite",
+              "log_abs": null,
+              "sign": 0,
+              "tolerance_relation": 0,
+              "decision_basis": "exact_original_input_difference",
+              "precision_digits": null
+            },
+            {
+              "left": "RL",
+              "right": "outside_option",
+              "value": 0.0,
+              "representation": "underflow",
+              "log_abs": -1205.9286405559044,
+              "sign": 1,
+              "tolerance_relation": 1,
+              "decision_basis": "adaptive_original_input_difference",
+              "precision_digits": 160
+            }
+          ],
+          "interpretation": "Near gaps use original model inputs at recorded controls and may differ from subtracting displayed payoffs. Extreme decays use a factored exponential sum with an omitted-tail bound. Adaptive guards are not interval or global certificates; unresolved order or an unrepresentable log magnitude raises NumericalError."
+        }
+      },
+      {
+        "local_quality_status": "fail",
+        "local_quality_assessment_complete": true,
+        "local_quality_by_strategy": {
+          "RF": "pass",
+          "RL": "fail",
+          "DF": "pass",
+          "DL": "fail"
+        },
+        "entry_payoff_gap": -0.0,
+        "entry_payoff_gap_diagnostic": {
+          "value": -0.0,
+          "representation": "finite",
+          "log_abs": null,
+          "sign": 0,
+          "tolerance_relation": 0,
+          "decision_basis": "exact_original_input_difference",
+          "precision_digits": null
+        },
+        "outside_option_gap": 0.0,
+        "outside_option_gap_diagnostic": {
+          "value": 0.0,
+          "representation": "underflow",
+          "log_abs": -1205.9286405559044,
+          "sign": 1,
+          "tolerance_relation": 1,
+          "decision_basis": "adaptive_original_input_difference",
+          "precision_digits": 160
+        },
+        "all_local_quality_passed": false,
+        "results": [
+          {
+            "strategy": "RF",
+            "status": "profile_optimum",
+            "delay": 0.0,
+            "announcement": 0.0,
+            "payoff": -1e+45,
+            "share_x": 0.5,
+            "share_y": 0.5,
+            "evaluations": 1,
+            "delay_refinement_intervals": 0,
+            "delay_refinement_diagnostics": [],
+            "search_precision": {
+              "policy": "original_input_profile_order_v1",
+              "guard_ratio": 1e-08,
+              "guarded_comparisons": 0,
+              "rounded_order_disagreements": 0,
+              "max_precision_digits": 0,
+              "bounded_scalar_refinements": 0,
+              "guarded_golden_refinements": 0,
+              "interpretation": "Near evaluated controls use original-input gaps. Rounded-order collisions switch local refinement to comparison-driven golden steps. This is adaptive local numerical guarding, not interval or global certification.",
+              "evaluated_candidate_consistency_checks": 0
+            },
+            "delay_active": "fixed_rival_delay",
+            "announcement_active": "fixed",
+            "announcement_nonunique": false,
+            "delay_nonunique": false,
+            "announcement_stationarity_residual": 0.0,
+            "announcement_stationarity_log_residual": null,
+            "announcement_stationarity_scaled_residual": 0.0,
+            "announcement_stationarity_representation": "finite",
+            "local_improvement_residual": 0.0,
+            "probe_improvement_found": 0.0,
+            "probe_rounds": 0,
+            "local_quality_passed": true,
+            "last_probe_improvement": 0.0,
+            "last_probe_improvement_diagnostic": null,
+            "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+            "attainment": "attained",
+            "supremum": null,
+            "envelope_evaluations": 0,
+            "envelope_root_diagnostics": [],
+            "equilibrium": false,
+            "globally_certified": false,
+            "conditional_control": "announcement; rival timing fixed"
+          },
+          {
+            "strategy": "RL",
+            "status": "numerical_candidate",
+            "delay": 1.1909430056250523,
+            "announcement": 0.0,
+            "payoff": 0.0,
+            "share_x": 0.5,
+            "share_y": 0.5,
+            "evaluations": 16,
+            "delay_refinement_intervals": 3,
+            "delay_refinement_diagnostics": [
+              {
+                "lower": 1.0,
+                "upper": 1.25,
+                "method": "guarded_golden",
+                "iterations": 0,
+                "termination": "normalized_interval_width"
+              },
+              {
+                "lower": 1.0,
+                "upper": 1.5,
+                "method": "guarded_golden",
+                "iterations": 0,
+                "termination": "normalized_interval_width"
+              },
+              {
+                "lower": 1.75,
+                "upper": 2.0,
+                "method": "guarded_golden",
+                "iterations": 0,
+                "termination": "normalized_interval_width"
+              }
+            ],
+            "search_precision": {
+              "policy": "original_input_profile_order_v1",
+              "guard_ratio": 1e-08,
+              "guarded_comparisons": 35,
+              "rounded_order_disagreements": 35,
+              "max_precision_digits": 160,
+              "bounded_scalar_refinements": 0,
+              "guarded_golden_refinements": 3,
+              "interpretation": "Near evaluated controls use original-input gaps. Rounded-order collisions switch local refinement to comparison-driven golden steps. This is adaptive local numerical guarding, not interval or global certification.",
+              "evaluated_candidate_consistency_checks": 15
+            },
+            "delay_active": "interior",
+            "announcement_active": "fixed",
+            "announcement_nonunique": false,
+            "delay_nonunique": false,
+            "announcement_stationarity_residual": 0.0,
+            "announcement_stationarity_log_residual": null,
+            "announcement_stationarity_scaled_residual": 0.0,
+            "announcement_stationarity_representation": "finite",
+            "local_improvement_residual": 0.0,
+            "probe_improvement_found": 0.0,
+            "probe_rounds": 4,
+            "local_quality_passed": false,
+            "last_probe_improvement": 0.0,
+            "last_probe_improvement_diagnostic": {
+              "value": 0.0,
+              "representation": "underflow",
+              "log_abs": -1210.6015165647955,
+              "sign": 1,
+              "tolerance_relation": 1,
+              "decision_basis": "adaptive_original_input_difference",
+              "precision_digits": 160
+            },
+            "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+            "attainment": "attained",
+            "supremum": null,
+            "envelope_evaluations": 0,
+            "envelope_root_diagnostics": [],
+            "equilibrium": false,
+            "globally_certified": false,
+            "conditional_control": "delay and announcement"
+          },
+          {
+            "strategy": "DF",
+            "status": "profile_optimum",
+            "delay": 0.0,
+            "announcement": 0.0,
+            "payoff": -1e+45,
+            "share_x": 0.5,
+            "share_y": 0.5,
+            "evaluations": 1,
+            "delay_refinement_intervals": 0,
+            "delay_refinement_diagnostics": [],
+            "search_precision": {
+              "policy": "original_input_profile_order_v1",
+              "guard_ratio": 1e-08,
+              "guarded_comparisons": 0,
+              "rounded_order_disagreements": 0,
+              "max_precision_digits": 0,
+              "bounded_scalar_refinements": 0,
+              "guarded_golden_refinements": 0,
+              "interpretation": "Near evaluated controls use original-input gaps. Rounded-order collisions switch local refinement to comparison-driven golden steps. This is adaptive local numerical guarding, not interval or global certification.",
+              "evaluated_candidate_consistency_checks": 0
+            },
+            "delay_active": "fixed_rival_delay",
+            "announcement_active": "not_applicable",
+            "announcement_nonunique": false,
+            "delay_nonunique": false,
+            "announcement_stationarity_residual": 0.0,
+            "announcement_stationarity_log_residual": null,
+            "announcement_stationarity_scaled_residual": 0.0,
+            "announcement_stationarity_representation": "finite",
+            "local_improvement_residual": 0.0,
+            "probe_improvement_found": 0.0,
+            "probe_rounds": 0,
+            "local_quality_passed": true,
+            "last_probe_improvement": 0.0,
+            "last_probe_improvement_diagnostic": null,
+            "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+            "attainment": "attained",
+            "supremum": null,
+            "envelope_evaluations": 0,
+            "envelope_root_diagnostics": [],
+            "equilibrium": false,
+            "globally_certified": false,
+            "conditional_control": "rival timing fixed"
+          },
+          {
+            "strategy": "DL",
+            "status": "numerical_candidate",
+            "delay": 1.1909430056250523,
+            "announcement": 0.0,
+            "payoff": 0.0,
+            "share_x": 0.5,
+            "share_y": 0.5,
+            "evaluations": 16,
+            "delay_refinement_intervals": 3,
+            "delay_refinement_diagnostics": [
+              {
+                "lower": 1.0,
+                "upper": 1.25,
+                "method": "guarded_golden",
+                "iterations": 0,
+                "termination": "normalized_interval_width"
+              },
+              {
+                "lower": 1.0,
+                "upper": 1.5,
+                "method": "guarded_golden",
+                "iterations": 0,
+                "termination": "normalized_interval_width"
+              },
+              {
+                "lower": 1.75,
+                "upper": 2.0,
+                "method": "guarded_golden",
+                "iterations": 0,
+                "termination": "normalized_interval_width"
+              }
+            ],
+            "search_precision": {
+              "policy": "original_input_profile_order_v1",
+              "guard_ratio": 1e-08,
+              "guarded_comparisons": 35,
+              "rounded_order_disagreements": 35,
+              "max_precision_digits": 160,
+              "bounded_scalar_refinements": 0,
+              "guarded_golden_refinements": 3,
+              "interpretation": "Near evaluated controls use original-input gaps. Rounded-order collisions switch local refinement to comparison-driven golden steps. This is adaptive local numerical guarding, not interval or global certification.",
+              "evaluated_candidate_consistency_checks": 15
+            },
+            "delay_active": "interior",
+            "announcement_active": "not_applicable",
+            "announcement_nonunique": false,
+            "delay_nonunique": false,
+            "announcement_stationarity_residual": 0.0,
+            "announcement_stationarity_log_residual": null,
+            "announcement_stationarity_scaled_residual": 0.0,
+            "announcement_stationarity_representation": "finite",
+            "local_improvement_residual": 0.0,
+            "probe_improvement_found": 0.0,
+            "probe_rounds": 4,
+            "local_quality_passed": false,
+            "last_probe_improvement": 0.0,
+            "last_probe_improvement_diagnostic": {
+              "value": 0.0,
+              "representation": "underflow",
+              "log_abs": -1210.6015165647955,
+              "sign": 1,
+              "tolerance_relation": 1,
+              "decision_basis": "adaptive_original_input_difference",
+              "precision_digits": 160
+            },
+            "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+            "attainment": "attained",
+            "supremum": null,
+            "envelope_evaluations": 0,
+            "envelope_root_diagnostics": [],
+            "equilibrium": false,
+            "globally_certified": false,
+            "conditional_control": "delay"
+          }
+        ],
+        "co_best": [
+          "RL",
+          "DL"
+        ],
+        "finite_candidate_co_best": [
+          "RL",
+          "DL"
+        ],
+        "tie_tolerance": 0.0,
+        "outside_option_payoff": 0.0,
+        "preferred_with_outside_option": [
+          "RL",
+          "DL"
+        ],
+        "all_rankable": true,
+        "interpretation": "Conditional scenario comparison; first-mover cases hold rival delay fixed. No Nash or mixed-strategy equilibrium claim.",
+        "comparison_precision": {
+          "policy": "original_input_gap_guard_v2",
+          "guard_ratio": 1e-08,
+          "refined_comparisons": [
+            {
+              "left": "DF",
+              "right": "RF",
+              "value": 0.0,
+              "representation": "finite",
+              "log_abs": null,
+              "sign": 0,
+              "tolerance_relation": 0,
+              "decision_basis": "exact_original_input_difference",
+              "precision_digits": null
+            },
+            {
+              "left": "DL",
+              "right": "RL",
+              "value": 0.0,
+              "representation": "finite",
+              "log_abs": null,
+              "sign": 0,
+              "tolerance_relation": 0,
+              "decision_basis": "exact_original_input_difference",
+              "precision_digits": null
+            },
+            {
+              "left": "RL",
+              "right": "RL",
+              "value": 0.0,
+              "representation": "finite",
+              "log_abs": null,
+              "sign": 0,
+              "tolerance_relation": 0,
+              "decision_basis": "exact_original_input_difference",
+              "precision_digits": null
+            },
+            {
+              "left": "RL",
+              "right": "outside_option",
+              "value": 0.0,
+              "representation": "underflow",
+              "log_abs": -1205.9286405559044,
+              "sign": 1,
+              "tolerance_relation": 1,
+              "decision_basis": "adaptive_original_input_difference",
+              "precision_digits": 160
+            }
+          ],
+          "interpretation": "Near gaps use original model inputs at recorded controls and may differ from subtracting displayed payoffs. Extreme decays use a factored exponential sum with an omitted-tail bound. Adaptive guards are not interval or global certificates; unresolved order or an unrepresentable log magnitude raises NumericalError."
+        }
+      },
+      {
+        "local_quality_status": "fail",
+        "local_quality_assessment_complete": true,
+        "local_quality_by_strategy": {
+          "RF": "pass",
+          "RL": "fail",
+          "DF": "pass",
+          "DL": "fail"
+        },
+        "entry_payoff_gap": -0.0,
+        "entry_payoff_gap_diagnostic": {
+          "value": -0.0,
+          "representation": "finite",
+          "log_abs": null,
+          "sign": 0,
+          "tolerance_relation": 0,
+          "decision_basis": "exact_original_input_difference",
+          "precision_digits": null
+        },
+        "outside_option_gap": 0.0,
+        "outside_option_gap_diagnostic": {
+          "value": 0.0,
+          "representation": "underflow",
+          "log_abs": -1234.9801978167557,
+          "sign": 1,
+          "tolerance_relation": 1,
+          "decision_basis": "adaptive_original_input_difference",
+          "precision_digits": 160
+        },
+        "all_local_quality_passed": false,
+        "results": [
+          {
+            "strategy": "RF",
+            "status": "profile_optimum",
+            "delay": 0.0,
+            "announcement": 0.0,
+            "payoff": -1e+45,
+            "share_x": 0.5,
+            "share_y": 0.5,
+            "evaluations": 1,
+            "delay_refinement_intervals": 0,
+            "delay_refinement_diagnostics": [],
+            "search_precision": {
+              "policy": "original_input_profile_order_v1",
+              "guard_ratio": 1e-08,
+              "guarded_comparisons": 0,
+              "rounded_order_disagreements": 0,
+              "max_precision_digits": 0,
+              "bounded_scalar_refinements": 0,
+              "guarded_golden_refinements": 0,
+              "interpretation": "Near evaluated controls use original-input gaps. Rounded-order collisions switch local refinement to comparison-driven golden steps. This is adaptive local numerical guarding, not interval or global certification.",
+              "evaluated_candidate_consistency_checks": 0
+            },
+            "delay_active": "fixed_rival_delay",
+            "announcement_active": "fixed",
+            "announcement_nonunique": false,
+            "delay_nonunique": false,
+            "announcement_stationarity_residual": 0.0,
+            "announcement_stationarity_log_residual": null,
+            "announcement_stationarity_scaled_residual": 0.0,
+            "announcement_stationarity_representation": "finite",
+            "local_improvement_residual": 0.0,
+            "probe_improvement_found": 0.0,
+            "probe_rounds": 0,
+            "local_quality_passed": true,
+            "last_probe_improvement": 0.0,
+            "last_probe_improvement_diagnostic": null,
+            "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+            "attainment": "attained",
+            "supremum": null,
+            "envelope_evaluations": 0,
+            "envelope_root_diagnostics": [],
+            "equilibrium": false,
+            "globally_certified": false,
+            "conditional_control": "announcement; rival timing fixed"
+          },
+          {
+            "strategy": "RL",
+            "status": "numerical_candidate",
+            "delay": 1.220451502812526,
+            "announcement": 0.0,
+            "payoff": 0.0,
+            "share_x": 0.5,
+            "share_y": 0.5,
+            "evaluations": 20,
+            "delay_refinement_intervals": 3,
+            "delay_refinement_diagnostics": [
+              {
+                "lower": 1.0,
+                "upper": 1.125,
+                "method": "guarded_golden",
+                "iterations": 0,
+                "termination": "normalized_interval_width"
+              },
+              {
+                "lower": 1.125,
+                "upper": 1.375,
+                "method": "guarded_golden",
+                "iterations": 0,
+                "termination": "normalized_interval_width"
+              },
+              {
+                "lower": 1.875,
+                "upper": 2.0,
+                "method": "guarded_golden",
+                "iterations": 0,
+                "termination": "normalized_interval_width"
+              }
+            ],
+            "search_precision": {
+              "policy": "original_input_profile_order_v1",
+              "guard_ratio": 1e-08,
+              "guarded_comparisons": 46,
+              "rounded_order_disagreements": 46,
+              "max_precision_digits": 160,
+              "bounded_scalar_refinements": 0,
+              "guarded_golden_refinements": 3,
+              "interpretation": "Near evaluated controls use original-input gaps. Rounded-order collisions switch local refinement to comparison-driven golden steps. This is adaptive local numerical guarding, not interval or global certification.",
+              "evaluated_candidate_consistency_checks": 19
+            },
+            "delay_active": "interior",
+            "announcement_active": "fixed",
+            "announcement_nonunique": false,
+            "delay_nonunique": false,
+            "announcement_stationarity_residual": 0.0,
+            "announcement_stationarity_log_residual": null,
+            "announcement_stationarity_scaled_residual": 0.0,
+            "announcement_stationarity_representation": "finite",
+            "local_improvement_residual": 0.0,
+            "probe_improvement_found": 0.0,
+            "probe_rounds": 4,
+            "local_quality_passed": false,
+            "last_probe_improvement": 0.0,
+            "last_probe_improvement_diagnostic": {
+              "value": 0.0,
+              "representation": "underflow",
+              "log_abs": -1239.592378691063,
+              "sign": 1,
+              "tolerance_relation": 1,
+              "decision_basis": "adaptive_original_input_difference",
+              "precision_digits": 160
+            },
+            "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+            "attainment": "attained",
+            "supremum": null,
+            "envelope_evaluations": 0,
+            "envelope_root_diagnostics": [],
+            "equilibrium": false,
+            "globally_certified": false,
+            "conditional_control": "delay and announcement"
+          },
+          {
+            "strategy": "DF",
+            "status": "profile_optimum",
+            "delay": 0.0,
+            "announcement": 0.0,
+            "payoff": -1e+45,
+            "share_x": 0.5,
+            "share_y": 0.5,
+            "evaluations": 1,
+            "delay_refinement_intervals": 0,
+            "delay_refinement_diagnostics": [],
+            "search_precision": {
+              "policy": "original_input_profile_order_v1",
+              "guard_ratio": 1e-08,
+              "guarded_comparisons": 0,
+              "rounded_order_disagreements": 0,
+              "max_precision_digits": 0,
+              "bounded_scalar_refinements": 0,
+              "guarded_golden_refinements": 0,
+              "interpretation": "Near evaluated controls use original-input gaps. Rounded-order collisions switch local refinement to comparison-driven golden steps. This is adaptive local numerical guarding, not interval or global certification.",
+              "evaluated_candidate_consistency_checks": 0
+            },
+            "delay_active": "fixed_rival_delay",
+            "announcement_active": "not_applicable",
+            "announcement_nonunique": false,
+            "delay_nonunique": false,
+            "announcement_stationarity_residual": 0.0,
+            "announcement_stationarity_log_residual": null,
+            "announcement_stationarity_scaled_residual": 0.0,
+            "announcement_stationarity_representation": "finite",
+            "local_improvement_residual": 0.0,
+            "probe_improvement_found": 0.0,
+            "probe_rounds": 0,
+            "local_quality_passed": true,
+            "last_probe_improvement": 0.0,
+            "last_probe_improvement_diagnostic": null,
+            "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+            "attainment": "attained",
+            "supremum": null,
+            "envelope_evaluations": 0,
+            "envelope_root_diagnostics": [],
+            "equilibrium": false,
+            "globally_certified": false,
+            "conditional_control": "rival timing fixed"
+          },
+          {
+            "strategy": "DL",
+            "status": "numerical_candidate",
+            "delay": 1.220451502812526,
+            "announcement": 0.0,
+            "payoff": 0.0,
+            "share_x": 0.5,
+            "share_y": 0.5,
+            "evaluations": 20,
+            "delay_refinement_intervals": 3,
+            "delay_refinement_diagnostics": [
+              {
+                "lower": 1.0,
+                "upper": 1.125,
+                "method": "guarded_golden",
+                "iterations": 0,
+                "termination": "normalized_interval_width"
+              },
+              {
+                "lower": 1.125,
+                "upper": 1.375,
+                "method": "guarded_golden",
+                "iterations": 0,
+                "termination": "normalized_interval_width"
+              },
+              {
+                "lower": 1.875,
+                "upper": 2.0,
+                "method": "guarded_golden",
+                "iterations": 0,
+                "termination": "normalized_interval_width"
+              }
+            ],
+            "search_precision": {
+              "policy": "original_input_profile_order_v1",
+              "guard_ratio": 1e-08,
+              "guarded_comparisons": 46,
+              "rounded_order_disagreements": 46,
+              "max_precision_digits": 160,
+              "bounded_scalar_refinements": 0,
+              "guarded_golden_refinements": 3,
+              "interpretation": "Near evaluated controls use original-input gaps. Rounded-order collisions switch local refinement to comparison-driven golden steps. This is adaptive local numerical guarding, not interval or global certification.",
+              "evaluated_candidate_consistency_checks": 19
+            },
+            "delay_active": "interior",
+            "announcement_active": "not_applicable",
+            "announcement_nonunique": false,
+            "delay_nonunique": false,
+            "announcement_stationarity_residual": 0.0,
+            "announcement_stationarity_log_residual": null,
+            "announcement_stationarity_scaled_residual": 0.0,
+            "announcement_stationarity_representation": "finite",
+            "local_improvement_residual": 0.0,
+            "probe_improvement_found": 0.0,
+            "probe_rounds": 4,
+            "local_quality_passed": false,
+            "last_probe_improvement": 0.0,
+            "last_probe_improvement_diagnostic": {
+              "value": 0.0,
+              "representation": "underflow",
+              "log_abs": -1239.592378691063,
+              "sign": 1,
+              "tolerance_relation": 1,
+              "decision_basis": "adaptive_original_input_difference",
+              "precision_digits": 160
+            },
+            "quality_interpretation": "Local diagnostics on evaluated controls; no global certificate.",
+            "attainment": "attained",
+            "supremum": null,
+            "envelope_evaluations": 0,
+            "envelope_root_diagnostics": [],
+            "equilibrium": false,
+            "globally_certified": false,
+            "conditional_control": "delay"
+          }
+        ],
+        "co_best": [
+          "RL",
+          "DL"
+        ],
+        "finite_candidate_co_best": [
+          "RL",
+          "DL"
+        ],
+        "tie_tolerance": 0.0,
+        "outside_option_payoff": 0.0,
+        "preferred_with_outside_option": [
+          "RL",
+          "DL"
+        ],
+        "all_rankable": true,
+        "interpretation": "Conditional scenario comparison; first-mover cases hold rival delay fixed. No Nash or mixed-strategy equilibrium claim.",
+        "comparison_precision": {
+          "policy": "original_input_gap_guard_v2",
+          "guard_ratio": 1e-08,
+          "refined_comparisons": [
+            {
+              "left": "DF",
+              "right": "RF",
+              "value": 0.0,
+              "representation": "finite",
+              "log_abs": null,
+              "sign": 0,
+              "tolerance_relation": 0,
+              "decision_basis": "exact_original_input_difference",
+              "precision_digits": null
+            },
+            {
+              "left": "DL",
+              "right": "RL",
+              "value": 0.0,
+              "representation": "finite",
+              "log_abs": null,
+              "sign": 0,
+              "tolerance_relation": 0,
+              "decision_basis": "exact_original_input_difference",
+              "precision_digits": null
+            },
+            {
+              "left": "RL",
+              "right": "RL",
+              "value": 0.0,
+              "representation": "finite",
+              "log_abs": null,
+              "sign": 0,
+              "tolerance_relation": 0,
+              "decision_basis": "exact_original_input_difference",
+              "precision_digits": null
+            },
+            {
+              "left": "RL",
+              "right": "outside_option",
+              "value": 0.0,
+              "representation": "underflow",
+              "log_abs": -1234.9801978167557,
+              "sign": 1,
+              "tolerance_relation": 1,
+              "decision_basis": "adaptive_original_input_difference",
+              "precision_digits": 160
+            }
+          ],
+          "interpretation": "Near gaps use original model inputs at recorded controls and may differ from subtracting displayed payoffs. Extreme decays use a factored exponential sum with an omitted-tail bound. Adaptive guards are not interval or global certificates; unresolved order or an unrepresentable log magnitude raises NumericalError."
+        }
+      }
+    ],
+    "strategies": [
+      {
+        "strategy": "RF",
+        "payoffs": [
+          -1e+45,
+          -1e+45,
+          -1e+45
+        ],
+        "observed_payoff_spread": 0.0,
+        "within_quality_tolerance": true
+      },
+      {
+        "strategy": "RL",
+        "payoffs": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "observed_payoff_spread": 0.0,
+        "within_quality_tolerance": true
+      },
+      {
+        "strategy": "DF",
+        "payoffs": [
+          -1e+45,
+          -1e+45,
+          -1e+45
+        ],
+        "observed_payoff_spread": 0.0,
+        "within_quality_tolerance": true
+      },
+      {
+        "strategy": "DL",
+        "payoffs": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "observed_payoff_spread": 0.0,
+        "within_quality_tolerance": true
+      }
+    ],
+    "ranking_stable": true,
+    "payoff_stable": true,
+    "globally_certified": false,
+    "interpretation": "Observed agreement across meshes and tighter delay tolerances; this is not a global error bound or empirical robustness guarantee."
+  },
+  "independent_references": [
+    {
+      "strategy": "RL",
+      "true_spread_sign": 1,
+      "spread_log_abs": -1205.9286405559048,
+      "spread_decimal_400": "1.8700182178320198627442594219759360482900649392786314818285401252663540173641582639966318972042668992905544383605756534876901964901311377987614911251587570808073848494585838898818492744694677122412784405344218553199114168939756919750492017071388994643722614589677246676365966241465222764724149910654013019228702855677295207161493330790270800203706360720249844544715231451323267201525672980990653437072380502664226E-524",
+      "reported_spread": 0.0
+    },
+    {
+      "strategy": "DL",
+      "true_spread_sign": 1,
+      "spread_log_abs": -1205.9286405559048,
+      "spread_decimal_400": "1.8700182178320198627442594219759360482900649392786314818285401252663540173641582639966318972042668992905544383605756534876901964901311377987614911251587570808073848494585838898818492744694677122412784405344218553199114168939756919750492017071388994643722614589677246676365966241465222764724149910654013019228702855677295207161493330790270800203706360720249844544715231451323267201525672980990653437072380502664226E-524",
+      "reported_spread": 0.0
+    }
+  ]
+}

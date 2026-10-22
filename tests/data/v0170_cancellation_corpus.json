@@ -1,0 +1,730 @@
+[
+  {
+    "scale": 1,
+    "cost": 0.9999999999999999,
+    "reference_fraction": "1/9007199254740992",
+    "reference_payoff": 1.1102230246251565e-16,
+    "scalar": 1.1102230246251565e-16,
+    "grid": 1.1102230246251565e-16,
+    "expected_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL",
+      "no_entry"
+    ],
+    "actual_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL",
+      "no_entry"
+    ],
+    "preference_mismatch": false
+  },
+  {
+    "scale": 1,
+    "cost": 1,
+    "reference_fraction": "0",
+    "reference_payoff": 0.0,
+    "scalar": 0.0,
+    "grid": 0.0,
+    "expected_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL",
+      "no_entry"
+    ],
+    "actual_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL",
+      "no_entry"
+    ],
+    "preference_mismatch": false
+  },
+  {
+    "scale": 1,
+    "cost": 1.0000000000000002,
+    "reference_fraction": "-1/4503599627370496",
+    "reference_payoff": -2.220446049250313e-16,
+    "scalar": -2.220446049250313e-16,
+    "grid": -2.220446049250313e-16,
+    "expected_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL",
+      "no_entry"
+    ],
+    "actual_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL",
+      "no_entry"
+    ],
+    "preference_mismatch": false
+  },
+  {
+    "scale": 10,
+    "cost": 9.999999999999998,
+    "reference_fraction": "1/562949953421312",
+    "reference_payoff": 1.7763568394002505e-15,
+    "scalar": 0.0,
+    "grid": 3.552713678800501e-15,
+    "expected_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL",
+      "no_entry"
+    ],
+    "actual_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL",
+      "no_entry"
+    ],
+    "preference_mismatch": false
+  },
+  {
+    "scale": 10,
+    "cost": 10,
+    "reference_fraction": "0",
+    "reference_payoff": 0.0,
+    "scalar": -1.7763568394002505e-15,
+    "grid": 0.0,
+    "expected_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL",
+      "no_entry"
+    ],
+    "actual_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL",
+      "no_entry"
+    ],
+    "preference_mismatch": false
+  },
+  {
+    "scale": 10,
+    "cost": 10.000000000000002,
+    "reference_fraction": "-1/562949953421312",
+    "reference_payoff": -1.7763568394002505e-15,
+    "scalar": -3.552713678800501e-15,
+    "grid": 0.0,
+    "expected_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL",
+      "no_entry"
+    ],
+    "actual_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL",
+      "no_entry"
+    ],
+    "preference_mismatch": false
+  },
+  {
+    "scale": 1000,
+    "cost": 999.9999999999999,
+    "reference_fraction": "1/8796093022208",
+    "reference_payoff": 1.1368683772161603e-13,
+    "scalar": -1.1368683772161603e-13,
+    "grid": 0.0,
+    "expected_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL",
+      "no_entry"
+    ],
+    "actual_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL",
+      "no_entry"
+    ],
+    "preference_mismatch": false
+  },
+  {
+    "scale": 1000,
+    "cost": 1000,
+    "reference_fraction": "0",
+    "reference_payoff": 0.0,
+    "scalar": -2.2737367544323206e-13,
+    "grid": 0.0,
+    "expected_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL",
+      "no_entry"
+    ],
+    "actual_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL",
+      "no_entry"
+    ],
+    "preference_mismatch": false
+  },
+  {
+    "scale": 1000,
+    "cost": 1000.0000000000001,
+    "reference_fraction": "-1/8796093022208",
+    "reference_payoff": -1.1368683772161603e-13,
+    "scalar": -3.410605131648481e-13,
+    "grid": 0.0,
+    "expected_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL",
+      "no_entry"
+    ],
+    "actual_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL",
+      "no_entry"
+    ],
+    "preference_mismatch": false
+  },
+  {
+    "scale": 1000000.0,
+    "cost": 999999.9999999999,
+    "reference_fraction": "1/8589934592",
+    "reference_payoff": 1.1641532182693481e-10,
+    "scalar": -3.4924596548080444e-10,
+    "grid": 0.0,
+    "expected_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL",
+      "no_entry"
+    ],
+    "actual_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL",
+      "no_entry"
+    ],
+    "preference_mismatch": false
+  },
+  {
+    "scale": 1000000.0,
+    "cost": 1000000.0,
+    "reference_fraction": "0",
+    "reference_payoff": 0.0,
+    "scalar": -4.656612873077393e-10,
+    "grid": 0.0,
+    "expected_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL",
+      "no_entry"
+    ],
+    "actual_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL",
+      "no_entry"
+    ],
+    "preference_mismatch": false
+  },
+  {
+    "scale": 1000000.0,
+    "cost": 1000000.0000000001,
+    "reference_fraction": "-1/8589934592",
+    "reference_payoff": -1.1641532182693481e-10,
+    "scalar": -5.820766091346741e-10,
+    "grid": 0.0,
+    "expected_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL",
+      "no_entry"
+    ],
+    "actual_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL",
+      "no_entry"
+    ],
+    "preference_mismatch": false
+  },
+  {
+    "scale": 100000000.0,
+    "cost": 99999999.99999999,
+    "reference_fraction": "1/67108864",
+    "reference_payoff": 1.4901161193847656e-08,
+    "scalar": 1.9371509552001953e-07,
+    "grid": 0.0,
+    "expected_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL"
+    ],
+    "actual_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL"
+    ],
+    "preference_mismatch": false
+  },
+  {
+    "scale": 100000000.0,
+    "cost": 100000000.0,
+    "reference_fraction": "0",
+    "reference_payoff": 0.0,
+    "scalar": 1.7881393432617188e-07,
+    "grid": -3.5762786865234375e-07,
+    "expected_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL",
+      "no_entry"
+    ],
+    "actual_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL"
+    ],
+    "preference_mismatch": true
+  },
+  {
+    "scale": 100000000.0,
+    "cost": 100000000.00000001,
+    "reference_fraction": "-1/67108864",
+    "reference_payoff": -1.4901161193847656e-08,
+    "scalar": 1.6391277313232422e-07,
+    "grid": -3.5762786865234375e-07,
+    "expected_preference": [
+      "no_entry"
+    ],
+    "actual_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL"
+    ],
+    "preference_mismatch": true
+  },
+  {
+    "scale": 1000000000.0,
+    "cost": 999999999.9999999,
+    "reference_fraction": "1/8388608",
+    "reference_payoff": 1.1920928955078125e-07,
+    "scalar": 2.9802322387695312e-06,
+    "grid": 0.0,
+    "expected_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL"
+    ],
+    "actual_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL"
+    ],
+    "preference_mismatch": false
+  },
+  {
+    "scale": 1000000000.0,
+    "cost": 1000000000.0,
+    "reference_fraction": "0",
+    "reference_payoff": 0.0,
+    "scalar": 2.86102294921875e-06,
+    "grid": 0.0,
+    "expected_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL",
+      "no_entry"
+    ],
+    "actual_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL"
+    ],
+    "preference_mismatch": true
+  },
+  {
+    "scale": 1000000000.0,
+    "cost": 1000000000.0000001,
+    "reference_fraction": "-1/8388608",
+    "reference_payoff": -1.1920928955078125e-07,
+    "scalar": 2.7418136596679688e-06,
+    "grid": 0.0,
+    "expected_preference": [
+      "no_entry"
+    ],
+    "actual_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL"
+    ],
+    "preference_mismatch": true
+  },
+  {
+    "scale": 10000000000.0,
+    "cost": 9999999999.999998,
+    "reference_fraction": "1/524288",
+    "reference_payoff": 1.9073486328125e-06,
+    "scalar": 4.1961669921875e-05,
+    "grid": 0.0,
+    "expected_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL"
+    ],
+    "actual_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL"
+    ],
+    "preference_mismatch": false
+  },
+  {
+    "scale": 10000000000.0,
+    "cost": 10000000000.0,
+    "reference_fraction": "0",
+    "reference_payoff": 0.0,
+    "scalar": 4.00543212890625e-05,
+    "grid": 0.0,
+    "expected_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL",
+      "no_entry"
+    ],
+    "actual_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL"
+    ],
+    "preference_mismatch": true
+  },
+  {
+    "scale": 10000000000.0,
+    "cost": 10000000000.000002,
+    "reference_fraction": "-1/524288",
+    "reference_payoff": -1.9073486328125e-06,
+    "scalar": 3.814697265625e-05,
+    "grid": 0.0,
+    "expected_preference": [
+      "no_entry"
+    ],
+    "actual_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL"
+    ],
+    "preference_mismatch": true
+  },
+  {
+    "scale": 1000000000000.0,
+    "cost": 999999999999.9999,
+    "reference_fraction": "1/8192",
+    "reference_payoff": 0.0001220703125,
+    "scalar": 0.002685546875,
+    "grid": 0.0,
+    "expected_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL"
+    ],
+    "actual_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL"
+    ],
+    "preference_mismatch": false
+  },
+  {
+    "scale": 1000000000000.0,
+    "cost": 1000000000000.0,
+    "reference_fraction": "0",
+    "reference_payoff": 0.0,
+    "scalar": 0.0025634765625,
+    "grid": 0.0,
+    "expected_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL",
+      "no_entry"
+    ],
+    "actual_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL"
+    ],
+    "preference_mismatch": true
+  },
+  {
+    "scale": 1000000000000.0,
+    "cost": 1000000000000.0001,
+    "reference_fraction": "-1/8192",
+    "reference_payoff": -0.0001220703125,
+    "scalar": 0.00244140625,
+    "grid": 0.0,
+    "expected_preference": [
+      "no_entry"
+    ],
+    "actual_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL"
+    ],
+    "preference_mismatch": true
+  },
+  {
+    "scale": 100000000000000.0,
+    "cost": 99999999999999.98,
+    "reference_fraction": "1/64",
+    "reference_payoff": 0.015625,
+    "scalar": -0.5625,
+    "grid": 0.0,
+    "expected_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL"
+    ],
+    "actual_preference": [
+      "no_entry"
+    ],
+    "preference_mismatch": true
+  },
+  {
+    "scale": 100000000000000.0,
+    "cost": 100000000000000.0,
+    "reference_fraction": "0",
+    "reference_payoff": 0.0,
+    "scalar": -0.578125,
+    "grid": 0.0,
+    "expected_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL",
+      "no_entry"
+    ],
+    "actual_preference": [
+      "no_entry"
+    ],
+    "preference_mismatch": true
+  },
+  {
+    "scale": 100000000000000.0,
+    "cost": 100000000000000.02,
+    "reference_fraction": "-1/64",
+    "reference_payoff": -0.015625,
+    "scalar": -0.59375,
+    "grid": 0.0,
+    "expected_preference": [
+      "no_entry"
+    ],
+    "actual_preference": [
+      "no_entry"
+    ],
+    "preference_mismatch": false
+  },
+  {
+    "scale": 1e+16,
+    "cost": 9999999999999998.0,
+    "reference_fraction": "2",
+    "reference_payoff": 2.0,
+    "scalar": -34.0,
+    "grid": 70.0,
+    "expected_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL"
+    ],
+    "actual_preference": [
+      "no_entry"
+    ],
+    "preference_mismatch": true
+  },
+  {
+    "scale": 1e+16,
+    "cost": 1e+16,
+    "reference_fraction": "0",
+    "reference_payoff": 0.0,
+    "scalar": -36.0,
+    "grid": 0.0,
+    "expected_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL",
+      "no_entry"
+    ],
+    "actual_preference": [
+      "no_entry"
+    ],
+    "preference_mismatch": true
+  },
+  {
+    "scale": 1e+16,
+    "cost": 1.0000000000000002e+16,
+    "reference_fraction": "-2",
+    "reference_payoff": -2.0,
+    "scalar": -38.0,
+    "grid": 0.0,
+    "expected_preference": [
+      "no_entry"
+    ],
+    "actual_preference": [
+      "no_entry"
+    ],
+    "preference_mismatch": false
+  },
+  {
+    "scale": 1e+30,
+    "cost": 9.999999999999999e+29,
+    "reference_fraction": "140737488355328",
+    "reference_payoff": 140737488355328.0,
+    "scalar": -2251799813685248.0,
+    "grid": 0.0,
+    "expected_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL"
+    ],
+    "actual_preference": [
+      "no_entry"
+    ],
+    "preference_mismatch": true
+  },
+  {
+    "scale": 1e+30,
+    "cost": 1e+30,
+    "reference_fraction": "0",
+    "reference_payoff": 0.0,
+    "scalar": -2392537302040576.0,
+    "grid": 0.0,
+    "expected_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL",
+      "no_entry"
+    ],
+    "actual_preference": [
+      "no_entry"
+    ],
+    "preference_mismatch": true
+  },
+  {
+    "scale": 1e+30,
+    "cost": 1.0000000000000002e+30,
+    "reference_fraction": "-140737488355328",
+    "reference_payoff": -140737488355328.0,
+    "scalar": -2533274790395904.0,
+    "grid": 0.0,
+    "expected_preference": [
+      "no_entry"
+    ],
+    "actual_preference": [
+      "no_entry"
+    ],
+    "preference_mismatch": false
+  },
+  {
+    "scale": 1e+100,
+    "cost": 9.999999999999998e+99,
+    "reference_fraction": "1942668892225729070919461906823518906642406839052139521251812409738904285205208498176",
+    "reference_payoff": 1.942668892225729e+84,
+    "scalar": -1.728975314080899e+86,
+    "grid": -2.855723271571822e+86,
+    "expected_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL"
+    ],
+    "actual_preference": [
+      "no_entry"
+    ],
+    "preference_mismatch": true
+  },
+  {
+    "scale": 1e+100,
+    "cost": 1e+100,
+    "reference_fraction": "0",
+    "reference_payoff": 0.0,
+    "scalar": -1.7484020030031562e+86,
+    "grid": -2.855723271571822e+86,
+    "expected_preference": [
+      "RF",
+      "RL",
+      "DF",
+      "DL",
+      "no_entry"
+    ],
+    "actual_preference": [
+      "no_entry"
+    ],
+    "preference_mismatch": true
+  },
+  {
+    "scale": 1e+100,
+    "cost": 1.0000000000000002e+100,
+    "reference_fraction": "-1942668892225729070919461906823518906642406839052139521251812409738904285205208498176",
+    "reference_payoff": -1.942668892225729e+84,
+    "scalar": -1.7678286919254135e+86,
+    "grid": -2.855723271571822e+86,
+    "expected_preference": [
+      "no_entry"
+    ],
+    "actual_preference": [
+      "no_entry"
+    ],
+    "preference_mismatch": false
+  }
+]
