@@ -1,0 +1,48 @@
+{
+  "params": {
+    "announcement_cost": 0.0002,
+    "deployment_cost": 0.012,
+    "learning_rate": 12
+  },
+  "seed": 104,
+  "label": "Bounded nonuniform Gaussian copula example",
+  "uncertainty": {
+    "samples": 40,
+    "marginals": {
+      "growth": {
+        "distribution": "triangular",
+        "lower": 0.08,
+        "upper": 0.12,
+        "mode": 0.1
+      },
+      "network": {
+        "distribution": "beta",
+        "lower": 0.6,
+        "upper": 1.1,
+        "alpha": 2,
+        "beta": 3
+      },
+      "deployment_cost": {
+        "distribution": "loguniform",
+        "lower": 0.0001,
+        "upper": 0.016
+      }
+    },
+    "correlation": {
+      "names": [
+        "growth",
+        "network"
+      ],
+      "matrix": [
+        [
+          1,
+          0.65
+        ],
+        [
+          0.65,
+          1
+        ]
+      ]
+    }
+  }
+}

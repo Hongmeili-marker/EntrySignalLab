@@ -1,0 +1,6 @@
+{
+  "label": "Zero announcement cost with an attained joint maturity boundary",
+  "params": {"deployment_cost": 0.05, "learning_rate": 1.0},
+  "bounds": {"announcement_upper": null}, "rival_delay": 0.0,
+  "plot": {"surface_announcement_max": 3.0}, "seed": 104
+}

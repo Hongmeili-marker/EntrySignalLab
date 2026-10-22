@@ -1,0 +1,22 @@
+{
+  "bounds": {
+    "scouting_points": 9
+  },
+  "seed": 104,
+  "uncertainty": {
+    "ranges": {
+      "growth": [
+        0.08,
+        0.12
+      ]
+    },
+    "samples": 10,
+    "constraints": [
+      {
+        "left": "growth",
+        "relation": "le",
+        "right": "growth"
+      }
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "label": "Unattained optima are unassessed, not failed local checks",
+  "bounds": {
+    "announcement_upper": null,
+    "scouting_points": 3
+  },
+  "rival_delay": 0.15,
+  "uncertainty": {
+    "ranges": {
+      "growth": [
+        0.1,
+        0.11
+      ]
+    },
+    "samples": 2
+  },
+  "seed": 104
+}

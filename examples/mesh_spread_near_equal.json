@@ -1,0 +1,30 @@
+{
+  "params": {
+    "growth": 1,
+    "network": 1,
+    "growth_end": 3,
+    "horizon": 3,
+    "margin_x": 0.001,
+    "deployment_cost": 100000000000000.0
+  },
+  "bounds": {
+    "delay_lower": 0,
+    "delay_upper": 3,
+    "announcement_upper": 100,
+    "scouting_points": 3,
+    "tolerance": 1,
+    "payoff_atol": 1e-08,
+    "payoff_rtol": 0
+  },
+  "rival_delay": 0,
+  "comparison": {
+    "tie_tolerance": 0
+  },
+  "stability": {
+    "factors": [
+      1,
+      2,
+      4
+    ]
+  }
+}

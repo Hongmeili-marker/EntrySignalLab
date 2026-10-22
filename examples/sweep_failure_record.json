@@ -1,0 +1,12 @@
+{
+  "label": "Recorded infeasible Cartesian case",
+  "axes": {
+    "growth_end": [
+      0.1,
+      0.2,
+      0.3
+    ]
+  },
+  "on_error": "record",
+  "rival_delay": 0.15
+}

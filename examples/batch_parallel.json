@@ -1,0 +1,27 @@
+{
+  "params": {
+    "announcement_cost": 0.0002,
+    "deployment_cost": 0.012,
+    "learning_rate": 12
+  },
+  "seed": 104,
+  "label": "Paired deterministic process batch",
+  "axes": {
+    "deployment_cost": [
+      0,
+      0.002,
+      0.004,
+      0.006,
+      0.008,
+      0.012
+    ],
+    "learning_rate": [
+      0,
+      12
+    ]
+  },
+  "batch": {
+    "workers": 2,
+    "checkpoint_every": 2
+  }
+}

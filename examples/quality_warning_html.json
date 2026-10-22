@@ -1,0 +1,21 @@
+{
+  "params": {
+    "announcement_cost": 0.0002,
+    "deployment_cost": 0.012,
+    "learning_rate": 12
+  },
+  "bounds": {
+    "scouting_points": 3,
+    "tolerance": 1,
+    "payoff_atol": 0,
+    "payoff_rtol": 0
+  },
+  "rival_delay": 0,
+  "stability": {
+    "factors": [
+      1,
+      2,
+      4
+    ]
+  }
+}

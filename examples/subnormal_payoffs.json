@@ -1,0 +1,60 @@
+{
+  "batch": {
+    "checkpoint_every": 1
+  },
+  "bounds": {
+    "announcement_upper": 0,
+    "delay_lower": 0.0,
+    "delay_upper": null,
+    "max_evaluations": 20000,
+    "payoff_atol": 1e-10,
+    "payoff_rtol": 1e-08,
+    "scouting_points": 3,
+    "tolerance": 1e-10
+  },
+  "params": {
+    "announcement_cost": 0.0,
+    "deployment_cost": 0.0,
+    "discount": 0.0,
+    "growth": 1.0,
+    "growth_end": 1.0,
+    "horizon": 3.0,
+    "learning_rate": 0.0,
+    "margin_x": 0.25,
+    "margin_y": 0.25,
+    "network": 0.0,
+    "quality_ratio": 1.0
+  },
+  "rival_delay": 0,
+  "seed": 2,
+  "uncertainty": {
+    "correlation": {
+      "matrix": [
+        [
+          1,
+          -1
+        ],
+        [
+          -1,
+          1
+        ]
+      ],
+      "names": [
+        "margin_x",
+        "deployment_cost"
+      ]
+    },
+    "ranges": {
+      "deployment_cost": [
+        0,
+        2e-323
+      ],
+      "margin_x": [
+        0,
+        2e-323
+      ]
+    },
+    "samples": 2
+  },
+  "label": "Subnormal payoff quantiles; exact endpoint interpolation"
+}

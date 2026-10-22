@@ -1,0 +1,8 @@
+{
+  "label": "Paired parameter uncertainty using explicitly chosen uniform ranges",
+  "params": {"growth": 0.1, "network": 0.85, "growth_end": 0.3, "announcement_cost": 0.0002, "deployment_cost": 0.012, "learning_rate": 12.0},
+  "bounds": {"announcement_upper": 2.0, "scouting_points": 65},
+  "rival_delay": 0.15,
+  "uncertainty": {"samples": 100, "ranges": {"growth": [0.08, 0.12], "network": [0.6, 1.1], "deployment_cost": [0.0, 0.016]}},
+  "seed": 104
+}

@@ -1,0 +1,7 @@
+{
+  "label": "Diagnostic configuration with no intensity bound and no announcement cost",
+  "params": {"growth": 0.1, "network": 0.85, "growth_end": 0.3},
+  "bounds": {"announcement_upper": null},
+  "rival_delay": 0.15,
+  "seed": 104
+}

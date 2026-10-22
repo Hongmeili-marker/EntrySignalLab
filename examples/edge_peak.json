@@ -1,0 +1,17 @@
+{
+  "label": "Strict-audit near-boundary delay peak",
+  "params": {
+    "growth": 1,
+    "network": 0,
+    "growth_end": 1,
+    "horizon": 2,
+    "quality_ratio": 1,
+    "margin_x": 1,
+    "margin_y": 1,
+    "deployment_cost": 0.01,
+    "learning_rate": 1000
+  },
+  "rival_delay": 0.15,
+  "bounds": {"announcement_upper": 2, "scouting_points": 65},
+  "plot": {"announcement": 0}
+}

@@ -1,0 +1,7 @@
+{
+  "label": "Synthetic product launch with quadratic announcement and declining deployment costs",
+  "params": {"growth": 0.1, "network": 0.85, "growth_end": 0.3, "announcement_cost": 0.0002, "deployment_cost": 0.012, "learning_rate": 12.0},
+  "bounds": {"announcement_upper": 2.0, "scouting_points": 65},
+  "rival_delay": 0.15,
+  "seed": 104
+}

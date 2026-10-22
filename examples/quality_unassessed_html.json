@@ -1,0 +1,12 @@
+{
+  "params": {},
+  "bounds": {
+    "announcement_upper": null
+  },
+  "stability": {
+    "factors": [
+      1,
+      2
+    ]
+  }
+}

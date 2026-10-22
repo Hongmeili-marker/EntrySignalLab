@@ -1,0 +1,25 @@
+{
+  "bounds": {
+    "scouting_points": 3
+  },
+  "seed": 104,
+  "on_error": "record",
+  "uncertainty": {
+    "ranges": {
+      "growth": [
+        0,
+        1
+      ]
+    },
+    "samples": 3,
+    "constraints": [
+      {
+        "left": "growth",
+        "relation": "le",
+        "value": 1e-15
+      }
+    ],
+    "constraint_mode": "resample",
+    "max_draw_attempts": 3
+  }
+}

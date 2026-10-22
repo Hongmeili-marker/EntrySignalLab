@@ -1,0 +1,15 @@
+{
+  "params": {},
+  "bounds": {
+    "delay_lower": 0.1,
+    "delay_upper": 0.1,
+    "announcement_upper": 0
+  },
+  "rival_delay": 0,
+  "stability": {
+    "factors": [
+      1,
+      2
+    ]
+  }
+}

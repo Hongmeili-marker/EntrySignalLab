@@ -1,0 +1,20 @@
+{
+  "params": {
+    "growth": 4,
+    "network": 0,
+    "growth_end": 1,
+    "horizon": 1,
+    "margin_x": 1,
+    "deployment_cost": 1,
+    "discount": 1e-100
+  },
+  "bounds": {
+    "delay_lower": 0,
+    "delay_upper": 0,
+    "announcement_upper": 0
+  },
+  "rival_delay": 0,
+  "comparison": {
+    "tie_tolerance": 0
+  }
+}

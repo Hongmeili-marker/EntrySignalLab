@@ -1,0 +1,4 @@
+{
+  "label": "Numerical stress with a representable optimum and tiny positive cost",
+  "params": {"announcement_cost": 1e-100}, "bounds": {"announcement_upper": null}, "seed": 104
+}

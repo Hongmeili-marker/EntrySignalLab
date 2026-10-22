@@ -1,0 +1,18 @@
+{
+  "params": {
+    "growth": 4000000000000.0,
+    "network": 0,
+    "growth_end": 1,
+    "horizon": 1,
+    "margin_x": 1,
+    "margin_y": 1
+  },
+  "bounds": {
+    "delay_upper": 0,
+    "announcement_upper": 2
+  },
+  "rival_delay": 0,
+  "comparison": {
+    "outside_option": 1000000000000.0002
+  }
+}

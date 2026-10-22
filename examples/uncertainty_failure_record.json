@@ -1,0 +1,15 @@
+{
+  "label": "Recorded infeasible paired draws",
+  "uncertainty": {
+    "ranges": {
+      "growth_end": [
+        0.1,
+        0.2
+      ]
+    },
+    "samples": 20
+  },
+  "seed": 104,
+  "on_error": "record",
+  "rival_delay": 0.15
+}

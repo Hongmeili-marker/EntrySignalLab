@@ -1,0 +1,7 @@
+{
+  "bounds": {
+    "delay_lower": -0.0,
+    "scouting_points": 3,
+    "max_evaluations": 1000
+  }
+}

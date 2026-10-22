@@ -1,0 +1,13 @@
+{
+  "params": {
+    "growth_end": 1e-323,
+    "horizon": 1,
+    "network": 0
+  },
+  "bounds": {
+    "delay_lower": 5e-324,
+    "delay_upper": 1e-323,
+    "announcement_upper": 0
+  },
+  "rival_delay": 0
+}

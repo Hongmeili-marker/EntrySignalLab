@@ -1,0 +1,28 @@
+{
+  "params": {
+    "announcement_cost": 0.0002,
+    "deployment_cost": 0.012,
+    "learning_rate": 12
+  },
+  "seed": 104,
+  "label": "Explicit feasible conditional draws",
+  "rival_delay": 0.15,
+  "uncertainty": {
+    "samples": 20,
+    "ranges": {
+      "growth_end": [
+        0.1,
+        0.2
+      ]
+    },
+    "constraints": [
+      {
+        "left": "growth_end",
+        "relation": "ge",
+        "value": 0.16
+      }
+    ],
+    "constraint_mode": "resample",
+    "max_draw_attempts": 50
+  }
+}

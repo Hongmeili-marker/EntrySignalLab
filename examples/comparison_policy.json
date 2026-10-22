@@ -1,0 +1,11 @@
+{
+  "label": "Explicit tiny-payoff comparison policy",
+  "params": {
+    "margin_x": 1e-10,
+    "margin_y": 1e-10
+  },
+  "comparison": {
+    "tie_tolerance": 0,
+    "outside_option": 0
+  }
+}

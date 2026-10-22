@@ -1,0 +1,47 @@
+{
+  "bounds": {
+    "scouting_points": 3,
+    "announcement_upper": 0
+  },
+  "uncertainty": {
+    "ranges": {
+      "growth_end": [
+        0.3,
+        0.6
+      ],
+      "horizon": [
+        0.3,
+        0.6
+      ]
+    },
+    "samples": 3,
+    "correlation": {
+      "names": [
+        "growth_end",
+        "horizon"
+      ],
+      "matrix": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    "constraints": [
+      {
+        "left": "growth_end",
+        "relation": "le",
+        "right": "horizon"
+      },
+      {
+        "left": "growth_end",
+        "relation": "ge",
+        "right": "horizon"
+      }
+    ]
+  }
+}

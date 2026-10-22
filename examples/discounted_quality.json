@@ -1,0 +1,8 @@
+{
+  "label": "Unequal-quality deployment over an extended discounted horizon",
+  "params": {"growth": 0.12, "network": 1.1, "growth_end": 0.6, "horizon": 2.5, "quality_ratio": 1.8,
+             "margin_x": 0.3, "margin_y": 0.22, "discount": 0.4, "announcement_cost": 0.0003,
+             "deployment_cost": 0.024, "learning_rate": 5.0},
+  "bounds": {"announcement_upper": 1.5, "scouting_points": 129},
+  "rival_delay": 0.2, "seed": 104
+}

@@ -1,0 +1,11 @@
+{
+  "params": {
+    "growth_end": 1,
+    "horizon": 1
+  },
+  "bounds": {
+    "delay_lower": 0.3,
+    "delay_upper": 0.30000000000000004
+  },
+  "rival_delay": 0.3
+}

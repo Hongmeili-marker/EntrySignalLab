@@ -1,0 +1,7 @@
+{
+  "label": "Source demand model with an explicitly imposed intensity cap",
+  "params": {"growth": 0.1, "network": 0.85, "growth_end": 0.3},
+  "bounds": {"announcement_upper": 2.0, "scouting_points": 65},
+  "rival_delay": 0.15,
+  "seed": 104
+}

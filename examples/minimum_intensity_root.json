@@ -1,0 +1,26 @@
+{
+  "params": {
+    "growth": 5e-324,
+    "network": 4.4989137945431964e+161,
+    "growth_end": 4.498913794543197e+161,
+    "horizon": 4.498913794543197e+161,
+    "quality_ratio": 1.0,
+    "margin_x": 5e-324,
+    "margin_y": 0.25,
+    "discount": 0.0,
+    "announcement_cost": 3.118500483648e+290,
+    "deployment_cost": 0.0,
+    "learning_rate": 0.0
+  },
+  "bounds": {
+    "delay_lower": 0.0,
+    "delay_upper": null,
+    "announcement_upper": null,
+    "scouting_points": 65,
+    "tolerance": 1e-10,
+    "payoff_atol": 1e-10,
+    "payoff_rtol": 1e-08,
+    "max_evaluations": 20000
+  },
+  "rival_delay": 4.4989137945431964e+161
+}

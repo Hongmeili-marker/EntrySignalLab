@@ -1,0 +1,17 @@
+{
+  "params": {
+    "growth": 400000000000000.0,
+    "network": 0,
+    "growth_end": 1,
+    "horizon": 1,
+    "margin_x": 1,
+    "margin_y": 1,
+    "deployment_cost": 99999999999999.75
+  },
+  "bounds": {
+    "delay_lower": 0,
+    "delay_upper": 0,
+    "announcement_upper": 2
+  },
+  "rival_delay": 0
+}

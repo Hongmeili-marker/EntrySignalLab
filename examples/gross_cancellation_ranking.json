@@ -1,0 +1,32 @@
+{
+  "params": {
+    "growth": 1.0,
+    "network": 1.0,
+    "growth_end": 3.0,
+    "horizon": 3.0,
+    "quality_ratio": 1.0,
+    "margin_x": 1e+16,
+    "margin_y": 0.25,
+    "discount": 0.0,
+    "announcement_cost": 1e+29,
+    "deployment_cost": 3.8333332949616664e+16,
+    "learning_rate": 0.0
+  },
+  "bounds": {
+    "delay_lower": 1.0,
+    "delay_upper": 1.0,
+    "announcement_upper": 2.0,
+    "scouting_points": 65,
+    "tolerance": 1e-10,
+    "payoff_atol": 1e-10,
+    "payoff_rtol": 1e-08,
+    "max_evaluations": 20000
+  },
+  "rival_delay": 1,
+  "stability": {
+    "factors": [
+      1,
+      2
+    ]
+  }
+}

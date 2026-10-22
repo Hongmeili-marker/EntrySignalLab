@@ -1,0 +1,21 @@
+{
+  "params": {
+    "growth": 1,
+    "network": 0,
+    "growth_end": 2,
+    "horizon": 2,
+    "margin_x": 1,
+    "discount": 99999,
+    "learning_rate": 20,
+    "deployment_cost": 0.01
+  },
+  "bounds": {
+    "delay_lower": 1,
+    "delay_upper": 1,
+    "announcement_upper": 0
+  },
+  "rival_delay": 0,
+  "comparison": {
+    "tie_tolerance": 0
+  }
+}

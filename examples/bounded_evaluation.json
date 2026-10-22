@@ -1,0 +1,9 @@
+{
+  "label": "Configured feasibility diagnostic",
+  "bounds": {
+    "delay_lower": 0.2,
+    "delay_upper": 0.25,
+    "announcement_upper": 0.01
+  },
+  "rival_delay": 0.15
+}

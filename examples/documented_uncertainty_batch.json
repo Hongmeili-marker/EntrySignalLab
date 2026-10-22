@@ -1,0 +1,45 @@
+{
+  "params": {
+    "growth": 0.1
+  },
+  "rival_delay": 0.15,
+  "uncertainty": {
+    "ranges": {
+      "growth": [
+        0.1,
+        0.1
+      ]
+    },
+    "samples": 2,
+    "marginals": {
+      "deployment_cost": {
+        "distribution": "uniform",
+        "lower": 0.004,
+        "upper": 0.012
+      }
+    },
+    "correlation": {
+      "names": [
+        "deployment_cost"
+      ],
+      "matrix": [
+        [
+          1
+        ]
+      ]
+    },
+    "constraints": [
+      {
+        "left": "growth_end",
+        "relation": "le",
+        "right": "horizon"
+      }
+    ],
+    "constraint_mode": "record",
+    "max_draw_attempts": 10
+  },
+  "batch": {
+    "workers": 2,
+    "checkpoint_every": 1
+  }
+}

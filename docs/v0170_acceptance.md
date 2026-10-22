@@ -1,0 +1,18 @@
+# v0.17.0 source audit and figure acceptance
+
+| Finding | Repair | Independent acceptance |
+|---|---|---|
+| A07 P3 | Decide DF source nonidentity from the exact positive difference sH/8 on the admitted source domain; numerical magnitudes are descriptive | 36 source cases, exact Fraction references, all original small-scale source inputs, ordinary and large controls, printed-value underflow, audit CLI and reproduction HTML |
+| A08 P3 | Format both numeric region axes with adaptive precision, scientific scale factors and explicit offsets | 19 figure cases, label-to-coordinate reconstruction for both axes, small/ordinary/large scales, shifted axes, singletons, PNG/PDF/SVG and actual sweep CLI |
+
+The source assumptions include T=1, equal quality, unit revenue coefficient 1/4, s>0 and 0<H<=1. At zero DF lag, demand integration is sH(2-H)/16 and the printed expression is -sH^2/16. Their difference sH/8 is strictly positive. The diagnostic therefore reports pass=false independently of their absolute magnitude. New additive fields record decision_basis=analytic_nonidentity, exact_difference, normalized_discrepancy=2/(2-H), and numerical_values_are_descriptive=true. A rounded printed zero does not invalidate the analytic decision. Unsupported source scales still receive the existing controlled refusal.
+
+The suite adds 20 regressions (654 total). The 4462-check validator includes 4096 independent rational zero-discount controls over 256 wide-scale parameter sets; the source and figure checks remain separate from operational optimization. It executes five actual CLI processes and uses the frozen v0.16.0 observations as the original audit baseline. Its result and artifacts are bound to the current package, validator and seed 20261018. The standalone numerical reference probe and baseline fixture are additional sealed release inputs.
+
+Three new shipped examples cover a small-scale source audit and small horizontal/vertical region axes. All nineteen validators and 31 experiments are regenerated with the isolated current wheel. The operational model, optimizer, research interface, units and indexed-pcg64-v2 sampling retain the v0.16.0 implementation; all earlier acceptance remains required, including 72 frozen random streams.
+
+Original report, evidence ZIP, probes, original v0.16.0 source/wheel, input identity and observations remain unchanged under audit/v0.16.0. The heading identifies the prior release used for repair; the original report itself audited v0.14.0 and additionally checked A07/A08 against v0.16.0. Old probes intentionally expect defects and must not be described as repaired-version acceptance.
+
+Plot reconstruction checks rendered numeric labels together with the actual formatter exponent and offset, using a tolerance of max(8 raw-coordinate ULPs, 1e-9 of a tick step). Distinct visible positions must have distinct labels and nonzero scale/offset must have an annotation. It does not merely assert a formatter class, file existence or hash. Singleton dimensions use visible, colored sampled points at their exact coordinates rather than zero-width mesh cells. Their displayed axis range does not add model samples. Position and visible-color checks cover all three singleton configurations.
+
+The exact rational control corpus has no announcement or deployment cost and zero discount. It checks four scenarios' scalar/grid payoff and both demands with max(8 reference ULPs, 1e-11 relative) allowance. Neither the corpus nor plotted-coordinate tests certify all floating-point inputs, nonzero-cost cancellation, arbitrary graphics settings, global optimality or empirical calibration. Actual execution remains local Linux; remote CI is configured only.

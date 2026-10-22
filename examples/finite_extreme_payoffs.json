@@ -1,0 +1,43 @@
+{
+  "params": {
+    "growth": 1,
+    "network": 0,
+    "growth_end": 1,
+    "horizon": 3
+  },
+  "bounds": {
+    "scouting_points": 3,
+    "announcement_upper": 0
+  },
+  "rival_delay": 0,
+  "seed": 2,
+  "uncertainty": {
+    "ranges": {
+      "margin_x": [
+        0,
+        1e+308
+      ],
+      "deployment_cost": [
+        0,
+        1.7e+308
+      ]
+    },
+    "samples": 2,
+    "correlation": {
+      "names": [
+        "margin_x",
+        "deployment_cost"
+      ],
+      "matrix": [
+        [
+          1,
+          -1
+        ],
+        [
+          -1,
+          1
+        ]
+      ]
+    }
+  }
+}
