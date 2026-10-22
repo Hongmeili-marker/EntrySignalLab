@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+type: software
+title: EntrySignalLab
+version: 0.25.0
+date-released: 2026-10-20
+license: MIT
+repository-code: "https://github.com/Hongmeili-marker/EntrySignalLab"
+url: "https://github.com/Hongmeili-marker/EntrySignalLab"
+authors:
+  - family-names: "Li"
+    given-names: "Hongmei"
+    affiliation: "School of Medical Information Engineering, Shenyang Medical College, Shenyang, China"
+    email: "Hongmeili@symc.edu.cn"
+abstract: "A reproducible toolkit for conditional preannouncement and market-entry timing analysis."
