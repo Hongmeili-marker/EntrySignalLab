@@ -2,6 +2,10 @@
 
 This example compares four conditional entry scenarios and a zero-payoff non-entry reference. Inputs are synthetic and normalized. It does not predict an observed firm's behavior or solve a game equilibrium.
 
+## Download and cite
+
+Download the [v0.25.0 release](https://github.com/Hongmeili-marker/EntrySignalLab/releases/tag/v0.25.0). Its archived version DOI is [10.5281/zenodo.23565682](https://doi.org/10.5281/zenodo.23565682). Use that DOI to cite this version.
+
 ## Install the frozen release
 
 Use a fresh virtual environment. The executed scientific environment is Linux/Python 3.12.14. The package declares Python >=3.10 with compatible dependencies; requirements-lock.txt has pins requiring Python >=3.11, and this CI revision additionally validates a separate Linux/Python 3.10 minimum-dependency environment. See CI_FIX_NOTES_zh.md for the executed scope. From the extracted EntrySignalLab-0.25.0 directory:

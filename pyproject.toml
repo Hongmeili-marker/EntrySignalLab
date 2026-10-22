@@ -16,6 +16,9 @@ dependencies = ["numpy>=1.24", "scipy>=1.10", "matplotlib>=3.7"]
 Repository = "https://github.com/Hongmeili-marker/EntrySignalLab"
 Documentation = "https://github.com/Hongmeili-marker/EntrySignalLab/blob/main/README.md"
 Issues = "https://github.com/Hongmeili-marker/EntrySignalLab/issues"
+Release = "https://github.com/Hongmeili-marker/EntrySignalLab/releases/tag/v0.25.0"
+DOI = "https://doi.org/10.5281/zenodo.23565682"
+Archive = "https://zenodo.org/records/23565682"
 
 [project.scripts]
 entrysignal = "entrysignallab.cli:main"

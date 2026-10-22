@@ -1,11 +1,13 @@
 # EntrySignalLab
 
+[![DOI](https://zenodo.org/badge/1429496748.svg)](https://doi.org/10.5281/zenodo.23565681)
+
 Current v0.25.0 acceptance: canonical typed profiler inputs, actual local probe records and explicit displayed-payoff precision notices. See docs/v0250_acceptance.md; generated counts are in docs/api.md.
 EntrySignalLab is a research toolkit for preannouncement and market-entry timing. It evaluates four conditional scenarios, integrates piecewise demand, profiles announcement intensity, searches a bounded follower delay, and saves reproducible experiment records. Version 0.25.0 uses Python, NumPy, SciPy and Matplotlib under the MIT license.
 
 ## Install and first run
 
-The package declares Python >=3.10 with compatible dependencies. The locked scientific environment was executed on Python 3.12.14; those pins require Python >=3.11. This CI revision also passed the full local Linux test suite on Python 3.10.22 with minimum dependencies and Python 3.13.16 with newer dependencies; native Windows/macOS results require the new remote matrix. Use a virtual environment. From this directory:
+The package declares Python >=3.10 with compatible dependencies. The locked scientific environment was executed on Python 3.12.14; those pins require Python >=3.11. This CI revision also passed the full local Linux test suite on Python 3.10.22 with minimum dependencies and Python 3.13.16 with newer dependencies; all eight remote CI jobs passed for commit `6d5831f74bf080ee20a2922872b4c517238baa00`, including native Windows and macOS. Use a virtual environment. From this directory:
 
 ```sh
 python -m pip install .
@@ -78,7 +80,7 @@ The current CI portability revision includes 919 unit/workflow tests (907 origin
 
 `examples/discounted_quality.json` changes quality, discounting and the horizon. `examples/joint_boundary.json` reproduces the corrected joint-attainment case. The public `rescale_experiment` API preserves payoff meaning for representable unit changes and rejects positive underflow; `scripts/unit_invariance.py` demonstrates it. These are synthetic reuse checks, not empirical applications.
 
-Execution has been verified on the Linux environment recorded in the shipped manifests. Other supported Python environments can run the package; Windows and macOS executions are not claimed as tested. CI configuration is included for future automated runs and does not represent a remotely executed CI result.
+The [v0.25.0 CI run](https://github.com/Hongmeili-marker/EntrySignalLab/actions/runs/39780966352) passed all eight jobs for commit `6d5831f74bf080ee20a2922872b4c517238baa00`: Linux, Windows and macOS with Python 3.12/3.13, minimum dependencies with Python 3.10, and locked-reference replay. The shipped local manifests document their own earlier execution scope.
 
 ## Authors
 
@@ -88,16 +90,22 @@ Email: [Hongmeili@symc.edu.cn](mailto:Hongmeili@symc.edu.cn)
 
 ## Citation, support and publication status
 
-A populated `CITATION.cff` provides human author details for citation metadata. The public source repository is [https://github.com/Hongmeili-marker/EntrySignalLab](https://github.com/Hongmeili-marker/EntrySignalLab). A versioned GitHub Release and an archival DOI are not yet assigned. Support contact: Hongmei Li (Hongmeili@symc.edu.cn). The accompanying SoftwareX manuscript is a complete technical draft; its submission metadata must be completed before journal submission. See the release readiness document in the complete bundle. No external adoption, downloads, citations or market validation are claimed.
+A populated `CITATION.cff` provides human author details for citation metadata. The public source repository is [https://github.com/Hongmeili-marker/EntrySignalLab](https://github.com/Hongmeili-marker/EntrySignalLab). The [v0.25.0 release](https://github.com/Hongmeili-marker/EntrySignalLab/releases/tag/v0.25.0) is archived on [Zenodo](https://zenodo.org/records/23565682). Version DOI: [**10.5281/zenodo.23565682**](https://doi.org/10.5281/zenodo.23565682). All-versions DOI: [10.5281/zenodo.23565681](https://doi.org/10.5281/zenodo.23565681). Support contact: Hongmei Li (Hongmeili@symc.edu.cn). The accompanying SoftwareX manuscript is a complete technical draft; its submission metadata must be completed before journal submission. See the release readiness document in the complete bundle. No external adoption, downloads, citations or market validation are claimed.
 
 ## Submission documentation revision
 
 The frozen v0.25.0 release passed 907 tests, 28 validators and 61 experiments on Linux/Python 3.12.14. The original specialized v0.25.0 validator recorded 4217 checks. The current CI portability revision updates validation tooling and documentation; its actual counts are recorded with the new outputs. All fourteen runtime modules, the dependency locks and examples retain their verified standalone v0.25.0 bytes. Tests and validators have been revised for portable scientific checks and a separate exact-replay mode. The wheel in this upload package is rebuilt from those unchanged runtime modules to include the supplied author and public repository metadata. Original whole-wheel hashes and historical receipts identify the original frozen distribution, rather than this metadata revision.
 
-Install `dist/entrysignallab-0.25.0-py3-none-any.whl` from this version. See `QUICKSTART.md` for a complete launch experiment and `RELEASE_CHECKLIST.md` for publication metadata and permanent links still required. Historical audit narratives are available in the original complete release, rather than mixed into the current quickstart.
+Install `dist/entrysignallab-0.25.0-py3-none-any.whl` from this version. See `QUICKSTART.md` for a complete launch experiment and `RELEASE_CHECKLIST.md` for remaining publication metadata and verified permanent links. Historical audit narratives are available in the original complete release, rather than mixed into the current quickstart.
 
 ## CI portability revision
 
 The compatibility matrix retains Windows, macOS, Python 3.12/3.13 and the Python 3.10 minimum-dependency job. A separate Linux/Python 3.12 job installs requirements-lock.txt and sets ENTRYSIGNAL_STRICT_REPLAY=1 for exact frozen replay. Other environments use scripts/validation_portability.py: exact categorical decisions, no payoff sign or zero/nonzero waiver, declared numerical/control tolerances, independent original-input event integrals and comparator sign/band/amount checks. Execution counts and sorting-comparator call order are not cross-interpreter scientific invariants. Actual probe ledgers and derivative checks remain independently tested. Windows lock inventories retain file identity, size and modification-time checks without trying to read a byte that the OS deliberately locks.
 
-See CI_FIX_NOTES_zh.md and docs/ci_portability_validation.json for the executed local checks. Uploading this source does not establish a successful remote matrix; inspect the new Actions run before making that claim. Numerical model code is unchanged.
+See CI_FIX_NOTES_zh.md and docs/ci_portability_validation.json for the executed local checks. The release commit passed the [complete remote matrix](https://github.com/Hongmeili-marker/EntrySignalLab/actions/runs/39780966352). This DOI metadata update changes documentation and package metadata; numerical runtime modules are unchanged. Numerical model code is unchanged.
+
+## Suggested software citation
+
+Li, H. (2026). *EntrySignalLab* (Version 0.25.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.23565682
+
+Use the version DOI when citing these results. The badge above uses the all-versions DOI.

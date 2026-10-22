@@ -3,10 +3,11 @@ message: "If you use this software, please cite it using the metadata below."
 type: software
 title: EntrySignalLab
 version: 0.25.0
-date-released: 2026-10-20
+date-released: 2026-10-22
+doi: "10.5281/zenodo.23565682"
 license: MIT
 repository-code: "https://github.com/Hongmeili-marker/EntrySignalLab"
-url: "https://github.com/Hongmeili-marker/EntrySignalLab"
+url: "https://doi.org/10.5281/zenodo.23565682"
 authors:
   - family-names: "Li"
     given-names: "Hongmei"

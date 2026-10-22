@@ -1,5 +1,7 @@
 # EntrySignalLab 使用说明
 
+[![DOI](https://zenodo.org/badge/1429496748.svg)](https://doi.org/10.5281/zenodo.23565681)
+
 当前 v0.25.0：统一强度求解输入，保存实际局部探测记录，并明确提示显示收益与受保护判断的差异。验收见 docs/v0250_acceptance.md；自动生成数量见 docs/api.md。
 当前版本 v0.25.0。本软件用于预公告与市场进入时机的科研计算。它支持 RF、RL、DF、DL 四种情景、原文公式核验、约束求解、参数扫描、不确定性分析和图表导出。软件完全本地运行，不需要服务器或 API Key。
 
@@ -30,16 +32,16 @@ RF 和 DF 情景中，对象平台在时间 0 进入，竞争平台的进入滞�
 
 `no_finite_announcement_optimum` 表示当前设定缺少有限的预公告最优解，需要提供强度上限或正的预公告成本。`announcement_nonunique` 表示最优强度可能不唯一。原文公式的六项核验记录与正常计算结果分开保存。
 
-产品发布示例使用人为指定的成本参数，不是实际企业数据。软件和文稿没有预设“RL 总是最优”。作者及支持邮箱已填写；公开仓库为 [https://github.com/Hongmeili-marker/EntrySignalLab](https://github.com/Hongmeili-marker/EntrySignalLab)。正式投稿仍需固定版本发布链接等信息。
+产品发布示例使用人为指定的成本参数，不是实际企业数据。软件和文稿没有预设“RL 总是最优”。作者及支持邮箱已填写；公开仓库为 [https://github.com/Hongmeili-marker/EntrySignalLab](https://github.com/Hongmeili-marker/EntrySignalLab)。正式版本及归档 DOI 见下方“版本归档与引用”。
 
 
 ## 当前版本和核验范围
 
 软件版本为 0.25.0。原发行的 907 项测试、28 个校验器与 61 组实验均通过本地 Linux 核验。原投稿准备版只调整文档与文稿；本次 CI 修订另行调整测试、验证脚本与工作流；十四个运行模块、依赖锁和示例保持原字节。测试与校验器已增加跨环境科学核验和独立的严格回放模式。本上传包的 wheel 从未改动的运行模块重新构建，以更新作者及公开仓库元数据；原发行的整包哈希与历史收据不代表这次元数据修订。不要安装历史版本的 wheel。
 
-包声明最低 Python 3.10，要求选择兼容依赖；已锁定的科学环境需要 Python 3.11 以上，实际执行版本为 Python 3.12.14。本次 CI 修订已在本地 Linux 实测 Python 3.10 最低依赖、3.12 锁定环境和 3.13 较新依赖；原生 Windows、macOS 和修订后的远程矩阵仍以上传后结果为准。
+包声明最低 Python 3.10，要求选择兼容依赖；已锁定的科学环境需要 Python 3.11 以上，实际执行版本为 Python 3.12.14。本次 CI 修订已在本地 Linux 实测 Python 3.10 最低依赖、3.12 锁定环境和 3.13 较新依赖；发行提交 `6d5831f74bf080ee20a2922872b4c517238baa00` 的 8 个远程任务已全部通过，包含原生 Windows 和 macOS。
 
-完整操作见 QUICKSTART.md。局部探测记录不构成全局最优证明。原文完整书目、公开版本链接及官方专用模板核对仍须完成，见 RELEASE_CHECKLIST.md。
+完整操作见 QUICKSTART.md。局部探测记录不构成全局最优证明。原文完整书目与官方专用模板核对仍须完成，见 RELEASE_CHECKLIST.md。
 
 ## 作者与联系信息
 
@@ -49,4 +51,15 @@ School of Medical Information Engineering, Shenyang Medical College, Shenyang, C
 
 ## 跨环境 CI 修复
 
-当前共有 919 项测试，包含原 907 项和 12 项新增的验证策略反例。CI 保留 Windows、macOS、Python 3.12/3.13 及 Python 3.10 最低依赖任务，另设 Linux/Python 3.12 锁定依赖的严格回放任务。跨环境检查允许有明确界限的数值误差，仍严格核验策略、收益符号、零与非零、配置边界及独立积分；不要求排序比较函数的内部调用顺序一致。具体修改和本地实测见 CI_FIX_NOTES_zh.md。远程矩阵的成功状态须以上传后实际 Actions 结果为准。
+当前共有 919 项测试，包含原 907 项和 12 项新增的验证策略反例。CI 保留 Windows、macOS、Python 3.12/3.13 及 Python 3.10 最低依赖任务，另设 Linux/Python 3.12 锁定依赖的严格回放任务。跨环境检查允许有明确界限的数值误差，仍严格核验策略、收益符号、零与非零、配置边界及独立积分；不要求排序比较函数的内部调用顺序一致。具体修改和本地实测见 CI_FIX_NOTES_zh.md。发行提交的[完整远程检查](https://github.com/Hongmeili-marker/EntrySignalLab/actions/runs/39780966352)已全部通过。本次仅回填 DOI 和发布元数据。
+
+## 版本归档与引用
+
+- 正式版本：[v0.25.0](https://github.com/Hongmeili-marker/EntrySignalLab/releases/tag/v0.25.0)
+- 版本 DOI：[10.5281/zenodo.23565682](https://doi.org/10.5281/zenodo.23565682)
+- 所有版本 DOI：[10.5281/zenodo.23565681](https://doi.org/10.5281/zenodo.23565681)
+- 归档页面：[Zenodo](https://zenodo.org/records/23565682)
+
+建议论文引用固定版本 DOI：
+
+Li, H. (2026). *EntrySignalLab* (Version 0.25.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.23565682
