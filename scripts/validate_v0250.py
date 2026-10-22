@@ -1,5 +1,6 @@
 """Independent typed-control and recorded-probe acceptance for A21/U03."""
 from pathlib import Path
+from validation_portability import STRICT_REPLAY, finite_close, frozen_matches, result_matches, comparison_evidence_valid, validation_policy_record
 from fractions import Fraction as F
 from decimal import Decimal as D,localcontext
 from dataclasses import asdict
@@ -118,14 +119,15 @@ def main():
             lo,hi=x['reference_adjacent_lower'],x['reference_adjacent_upper']
             check('root_bracket_sign_'+str(i),rational_gradient(p,st,t,lo)>=0 and rational_gradient(p,st,t,hi)<=0)
             check('root_accuracy_'+str(i),lo<=actual<=hi or abs(actual-lo)/lo<=1e-9)
-        check('root_native_control_preserved_'+str(i),actual==x['actual'])
+        check('root_native_control_preserved_'+str(i),actual==x['actual'] if STRICT_REPLAY else finite_close(actual,x['actual'],1e-9))
         profiles.append({'case_index':i,'actual':actual})
     for x in read_json(data/'v0240_probe_baselines.json'):
         c=x['config'];p=ModelParams(**c.get('params',{}));b=DecisionBounds(**c.get('bounds',{}));rival=c.get('rival_delay',min(.15,p.growth_end));report=compare(p,b,rival,**c.get('comparison',{}))
         for key,value in x['original_comparison'].items():
-            if key!='results':check('scientific_comparison_'+x['name']+'_'+key,report[key]==value)
+            if key!='results':check('scientific_comparison_'+x['name']+'_'+key,frozen_matches(report[key],value,key))
+        check('independent_comparison_'+x['name'],comparison_evidence_valid(p,report))
         for old,result in zip(x['original_comparison']['results'],report['results']):
-            check('scientific_result_'+x['name']+'_'+old['strategy'],all(result[key]==value for key,value in old.items()))
+            check('scientific_result_'+x['name']+'_'+old['strategy'],result_matches(p,b,rival,result,old))
             for row in check_probe_result(p,b,result):check(x['name']+'_'+old['strategy']+'_'+row['name'],row['pass'])
             captured={};fn=solver.payoff
             def observed(q,st,t,d):
@@ -170,6 +172,6 @@ def main():
     with (out/'resume/uncertainty.csv').open(newline='') as f:rows=list(csv.DictReader(f))
     check('resume_probe_roundtrip',all(json.loads(row['local_probe_diagnostics'])['policy']=='recorded_local_probes_v1' for row in rows))
     write_json(out/'ingress.json',ingress);write_json(out/'profiles.json',profiles);write_json(out/'probe_cases.json',probe_cases);write_json(out/'CLI_observations.json',cli);write_json(out/'checks.json',checks)
-    summary={'version':__version__,'all_pass':all(x['pass'] for x in checks),'checks':len(checks),'typed_ingress_cases':len(ingress),'wide_longdouble_supported':bool(wide),'wide_cases_skipped':skipped,'profile_cases':len(profiles),'unchanged_native_controls':len(profiles),'baseline_parameter_sets':len(cases),'probe_results':len(probe_cases),'CLI_processes':len(cli),'scope':'Original binary64 rational derivatives and independent global antiderivatives at recorded controls, with 200/400-digit agreement. Existing scientific fields preserved on frozen native-control baselines. Bounded records do not certify continuous or global optimality.'}
+    summary={'validation_policy':validation_policy_record(),'version':__version__,'all_pass':all(x['pass'] for x in checks),'checks':len(checks),'typed_ingress_cases':len(ingress),'wide_longdouble_supported':bool(wide),'wide_cases_skipped':skipped,'profile_cases':len(profiles),'native_controls_within_declared_contract':len(profiles),'exact_replay':STRICT_REPLAY,'baseline_parameter_sets':len(cases),'probe_results':len(probe_cases),'CLI_processes':len(cli),'scope':'Original binary64 rational derivatives and independent global antiderivatives at recorded controls, with 200/400-digit agreement. Frozen scientific fields use exact replay when requested; portable runs use declared numerical tolerances, independent original-input values and actual probe ledgers. Bounded records do not certify continuous or global optimality.'}
     write_json(out/'v0250_summary.json',summary);record_validation(out,Path(__file__),20261020);print(json.dumps(summary,indent=2))
 if __name__=='__main__':main()

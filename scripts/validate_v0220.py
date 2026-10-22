@@ -10,6 +10,7 @@ from entrysignallab.solver import NumericalError
 from entrysignallab.workflow import (read_json,write_json,record_validation,
                                    verify_manifest,current_source_hashes)
 from sync_api_docs import synchronize
+from validation_portability import frozen_matches, comparison_evidence_valid, validation_policy_record
 
 
 def named_params(**changes):
@@ -89,7 +90,9 @@ def main():
     for old in frozen:
         name=old['name'];p=ModelParams(**old['params']);b=DecisionBounds(**old['bounds'])
         report=compare_stability(p,b,0,{'tie_tolerance':0},(1,2,4));refs=[]
-        check(name+'_unchanged_controls_and_comparison',comparison_projection(report['reports'])==comparison_projection(old['report']['reports']))
+        check(name+'_unchanged_controls_and_comparison',frozen_matches(comparison_projection(report['reports']),comparison_projection(old['report']['reports'])))
+        for mesh in report['reports']:
+            check(name+'_independent_comparison',comparison_evidence_valid(p,mesh))
         unchanged_reports+=len(report['reports'])
         check(name+'_new_policy',report['payoff_stability_precision']['policy']=='original_input_mesh_spread_v1')
         for i,st in enumerate(('RF','RL','DF','DL')):
@@ -238,7 +241,7 @@ def main():
     dest=invoke('ordinary_reproduce','reproduce',ordinary)
     check('reproduce_emits_spread_policy',read_json(dest/'stability.json')['payoff_stability_precision']['policy']=='original_input_mesh_spread_v1')
     write_json(out/'CLI_processes.json',cli);write_json(out/'checks.json',checks)
-    summary={'all_pass':all(x['pass'] for x in checks),'checks':len(checks),
+    summary={'validation_policy':validation_policy_record(),'all_pass':all(x['pass'] for x in checks),'checks':len(checks),
         'frozen_rational_cases':len(frozen),'rational_false_passes_repaired':false_passes,
         'rational_relative_cases':len(relative_cases),
         'normal_controls':2,'unchanged_original_mesh_reports':unchanged_reports,

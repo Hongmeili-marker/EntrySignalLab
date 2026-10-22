@@ -18,7 +18,16 @@ from entrysignallab.locking import DirectoryLock
 
 
 def inventory(path):
-    return {str(p.relative_to(path)):hashlib.sha256(p.read_bytes()).hexdigest() for p in path.rglob('*') if p.is_file()}
+    result={}
+    for p in path.rglob('*'):
+        if not p.is_file():continue
+        if p.name.endswith('.entrysignal.lock'):
+            # Windows byte-range locks deliberately deny reads by other handles.
+            # Retain identity/size/mtime checks instead of reading the locked byte.
+            s=p.stat();value=('lock',s.st_dev,s.st_ino,s.st_size,s.st_mtime_ns)
+        else:value=hashlib.sha256(p.read_bytes()).hexdigest()
+        result[str(p.relative_to(path))]=value
+    return result
 
 
 def decimal_quantiles(values,qs):

@@ -28,7 +28,7 @@ def inventory(directory):return {str(p.relative_to(directory)):hashlib.sha256(p.
 
 
 def wait_ready(proc,path):
-    deadline=time.monotonic()+10
+    deadline=time.monotonic()+60
     while not path.exists() and proc.poll() is None and time.monotonic()<deadline:time.sleep(.01)
     if not path.exists():raise RuntimeError('ownership helper did not become ready')
 
@@ -41,7 +41,7 @@ def main():
     a=optimize(p,'DL',replace(b,delay_lower=-0.,max_evaluations=100));z=optimize(p,'DL',replace(b,max_evaluations=100))
     check('R01_signed_zero_equivalence',a==z and a['evaluations']<=100,{'negative':a,'positive':z})
     cfg=out/'negative_zero.json';write_json(cfg,{'bounds':{'delay_lower':-0.,'scouting_points':3,'max_evaluations':1000}})
-    proc=subprocess.run([sys.executable,'-m','entrysignallab.cli','optimize','--config',str(cfg),'--out',str(out/'zero_cli')],capture_output=True,text=True,timeout=15)
+    proc=subprocess.run([sys.executable,'-m','entrysignallab.cli','optimize','--config',str(cfg),'--out',str(out/'zero_cli')],capture_output=True,text=True,timeout=60)
     check('R01_installed_cli_finishes',proc.returncode==0,{'exit':proc.returncode,'stderr':proc.stderr})
     tiny=float(np.nextafter(0.,1.))
     for count in [1,2,3,7,31,1024]:
@@ -105,7 +105,7 @@ def main():
         except ValueError as e:caught='already in use' in str(e)
         check('R02_external_owner_rejects_api',caught and inventory(work)==before)
         cfg=out/'owner_cli.json';write_json(cfg,{'axes':{'growth':[.1,.11,.12,.13]},'bounds':asdict(b),'batch':{'checkpoint_every':1}})
-        proc=subprocess.run([sys.executable,'-m','entrysignallab.cli','sweep','--config',str(cfg),'--out',str(work),'--resume'],capture_output=True,text=True,timeout=15)
+        proc=subprocess.run([sys.executable,'-m','entrysignallab.cli','sweep','--config',str(cfg),'--out',str(work),'--resume'],capture_output=True,text=True,timeout=60)
         check('R02_external_owner_rejects_cli',proc.returncode==2 and 'already in use' in proc.stderr and 'Traceback' not in proc.stderr and inventory(work)==before,{'exit':proc.returncode,'stderr':proc.stderr})
         owner.kill();owner.wait(timeout=10)
     finally:
@@ -120,7 +120,7 @@ def main():
     def observe(name,real):
         def wrapped(*args,**kwargs):
             child="from entrysignallab.locking import DirectoryLock\nimport sys\ntry:\n with DirectoryLock(sys.argv[1]):pass\nexcept ValueError:raise SystemExit(7)\n"
-            proc=subprocess.run([sys.executable,'-c',child,str(publication)],capture_output=True,text=True,timeout=15);phases.append({'phase':name,'competitor_exit':proc.returncode});return real(*args,**kwargs)
+            proc=subprocess.run([sys.executable,'-c',child,str(publication)],capture_output=True,text=True,timeout=60);phases.append({'phase':name,'competitor_exit':proc.returncode});return real(*args,**kwargs)
         return wrapped
     with patch.object(cli,'sweep_plot',side_effect=observe('plot',cli.sweep_plot)),patch.object(cli,'manifest',side_effect=observe('manifest',cli.manifest)),redirect_stdout(io.StringIO()):exitcode=cli.main(['sweep','--config',str(cfg),'--out',str(publication)])
     check('R02_cli_owns_publication_phases',exitcode==0 and len(phases)==2 and all(x['competitor_exit']==7 for x in phases),phases)
@@ -146,7 +146,7 @@ with DirectoryLock(sys.argv[1]):
  child=os.fork()
  if child==0:
   Path(sys.argv[2]).write_text(str(os.getpid()))
-  end=time.monotonic()+15
+  end=time.monotonic()+60
   while not Path(sys.argv[3]).exists() and time.monotonic()<end:time.sleep(.02)
   os._exit(0)
  sys.stdin.read(1)

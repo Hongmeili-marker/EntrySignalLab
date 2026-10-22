@@ -100,7 +100,7 @@ def release_inputs(root,results,validation):
                  'audit/v0.17.0/baseline_observations/observations.json',
                  'docs/v0170_acceptance.md','docs/v0160_acceptance.md','docs/v0150_acceptance.md','docs/v0100_acceptance.md','docs/batch_ownership.md','docs/reproducibility.md','.github/workflows/tests.yml','scripts/workflow_performance.py',
                  'scripts/build_release.py','scripts/reproduce.py','scripts/unit_invariance.py',
-                 'scripts/package_release.py','scripts/check_release.py','scripts/probe_release_gate.py',
+                 'scripts/validation_portability.py','scripts/package_release.py','scripts/check_release.py','scripts/probe_release_gate.py',
                  'pyproject.toml','requirements-lock.txt','CITATION.cff.template','LICENSE',
                  'README.md','README_zh.md','CHANGELOG.md','docs/api.md','docs/model_contract.md',
                  'docs/source_audit.md','docs/joint_envelope.md','docs/related_software.md']:

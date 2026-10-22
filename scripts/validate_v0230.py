@@ -1,5 +1,6 @@
 """Independent A17/A18 derivatives, D02 schema and U01 report acceptance."""
 from pathlib import Path
+from validation_portability import result_matches, validation_policy_record
 from fractions import Fraction as F
 from decimal import Decimal as D,localcontext,MAX_EMAX,MIN_EMIN
 from dataclasses import asdict
@@ -68,7 +69,7 @@ def main():
     for i,old in enumerate(frozen):
         p=ModelParams(**old['params']);st=old['strategy'];b=DecisionBounds(**old['bounds']);r=optimize(p,st,b,1)
         g,scale=rational_derivative(p,st,r['delay'],r['announcement']);diagnostic=r['announcement_stationarity_diagnostic']
-        check('rational_control_'+str(i),(r['delay'],r['announcement'],r['payoff'])==(old['result']['delay'],old['result']['announcement'],old['result']['payoff']))
+        check('rational_control_'+str(i),result_matches(p,b,1,r,{k:old['result'][k] for k in ('strategy','delay','announcement','payoff')}))
         check('rational_raw_'+str(i),r['announcement_stationarity_residual']==float(abs(g)))
         check('rational_scalar_'+str(i),announcement_gradient(p,st,r['delay'],r['announcement'])==float(g))
         check('rational_scaled_'+str(i),r['announcement_stationarity_scaled_residual']==float(abs(g)/scale))
@@ -206,7 +207,7 @@ def main():
     api=(root/'docs/api.md').read_text()
     for word in ['local_improvement_residual_assessment','announcement_stationarity_diagnostic','not_checked','assessed_zero']:
         check('documented_'+word,word in api)
-    summary={'version':'0.23.0','all_pass':all(x['pass'] for x in checks),'checks':len(checks),
+    summary={'validation_policy':validation_policy_record(),'version':'0.23.0','all_pass':all(x['pass'] for x in checks),'checks':len(checks),
         'frozen_rational_derivative_cases':len(frozen),'false_zero_diagnostics_repaired':repaired,
         'unchanged_positive_cost_controls':len(frozen),'discounted_derivative_cases':decimal_cases,
         'discounted_reference_evaluations':2*decimal_cases,'true_zero_controls':len(true_zero),

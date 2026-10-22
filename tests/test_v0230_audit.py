@@ -5,6 +5,7 @@ from math import nextafter,inf
 import json,sys,tempfile,unittest
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
 from validate_v0230 import rational_derivative,decimal_derivative,coarse_case
+from validation_portability import result_matches
 from entrysignallab import ModelParams,DecisionBounds,optimize,compare,compare_stability
 from entrysignallab.model import announcement_gradient
 from entrysignallab.solver import announcement_stationarity,NumericalError
@@ -27,7 +28,7 @@ class AnnouncementDiagnostics(unittest.TestCase):
             g,scale=rational_derivative(p,st,r['delay'],r['announcement'])
             with self.subTest(strategy=st,scale=old['scale']):
                 self.assertEqual(r['announcement'],old['result']['announcement'])
-                self.assertEqual(r['payoff'],old['result']['payoff'])
+                self.assertTrue(result_matches(p,DecisionBounds(**old['bounds']),1,r,{k:old['result'][k] for k in ('strategy','delay','announcement','payoff')}))
                 self.assertEqual(r['announcement_stationarity_residual'],float(abs(g)))
                 self.assertEqual(r['announcement_stationarity_scaled_residual'],float(abs(g)/scale))
     def test_discounted_derivative_has_independent_reference(self):

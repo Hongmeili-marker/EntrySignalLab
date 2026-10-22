@@ -12,7 +12,15 @@ from entrysignallab.batch import run_batch
 from entrysignallab.locking import DirectoryLock
 
 
-def inventory(root):return {str(p.relative_to(root)):hashlib.sha256(p.read_bytes()).hexdigest() for p in root.rglob('*') if p.is_file()}
+def inventory(root):
+    result={}
+    for p in root.rglob('*'):
+        if not p.is_file():continue
+        if p.name.endswith('.entrysignal.lock'):
+            s=p.stat();value=('lock',s.st_dev,s.st_ino,s.st_size,s.st_mtime_ns)
+        else:value=hashlib.sha256(p.read_bytes()).hexdigest()
+        result[str(p.relative_to(root))]=value
+    return result
 
 
 def wait_for(paths,processes):

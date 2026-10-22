@@ -1,0 +1,286 @@
+{
+  "revision": "v0.25.0 CI portability revision",
+  "created_utc": "2026-10-22T11:22:38.970398+00:00",
+  "base_git_commit": "3ed1d07743407cca9b3128761fdae9d66817d6c7",
+  "platform": "Linux",
+  "environments": [
+    {
+      "environment": "py310",
+      "python": "3.10.22",
+      "numpy": "1.24.4",
+      "scipy": "1.10.1",
+      "matplotlib": "3.7.5"
+    },
+    {
+      "environment": "py312",
+      "python": "3.12.14",
+      "numpy": "2.3.5",
+      "scipy": "1.17.0",
+      "matplotlib": "3.10.8"
+    },
+    {
+      "environment": "py313",
+      "python": "3.13.16",
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "matplotlib": "3.11.2"
+    }
+  ],
+  "unit_tests": [
+    {
+      "environment": "py310-final",
+      "tests_run": 917,
+      "successful": true,
+      "failures": 0,
+      "errors": 0,
+      "skips": 0,
+      "validation_policy": {
+        "control_rtol": 2e-07,
+        "gross_component_display_ulps": 64,
+        "mode": "portable_scientific_contract",
+        "numeric_rtol": 2e-11,
+        "policy_sha256": "b077bffce95264107537eb3dd364896001dd2c380414fdc38be6183a7fdc44e6"
+      },
+      "test_log_sha256": "8c884c414931b6963caa4227ef14745e128e6d5de1b8fc5b6a786e67396ef735"
+    },
+    {
+      "environment": "py312-strict-final",
+      "tests_run": 917,
+      "successful": true,
+      "failures": 0,
+      "errors": 0,
+      "skips": 0,
+      "validation_policy": {
+        "control_rtol": 2e-07,
+        "gross_component_display_ulps": 64,
+        "mode": "exact_frozen_replay",
+        "numeric_rtol": 2e-11,
+        "policy_sha256": "b077bffce95264107537eb3dd364896001dd2c380414fdc38be6183a7fdc44e6"
+      },
+      "test_log_sha256": "0a03e5aff6c2db5657824c4934300ecbab820e80115577c40161b9e44802ece6"
+    },
+    {
+      "environment": "py313-final",
+      "tests_run": 917,
+      "successful": true,
+      "failures": 0,
+      "errors": 0,
+      "skips": 0,
+      "validation_policy": {
+        "control_rtol": 2e-07,
+        "gross_component_display_ulps": 64,
+        "mode": "portable_scientific_contract",
+        "numeric_rtol": 2e-11,
+        "policy_sha256": "b077bffce95264107537eb3dd364896001dd2c380414fdc38be6183a7fdc44e6"
+      },
+      "test_log_sha256": "52e251c85b65a6f3daf004161ffdd14266bb74ddde25f24df8e0f3df9f19e292"
+    }
+  ],
+  "independent_validation": {
+    "py310": [
+      {
+        "script": "validate_v0220.py",
+        "exit": 0,
+        "receipt_verified": true,
+        "script_sha256": "c4538669712a04ab2846e7fd820b5725eacf54964b211d07a6ce48c40f291614"
+      },
+      {
+        "script": "validate_v0230.py",
+        "exit": 0,
+        "receipt_verified": true,
+        "script_sha256": "807479af03c8e95d640aa90f24717b29837e6c83e2f54593456de575c79ba065"
+      },
+      {
+        "script": "validate_v0250.py",
+        "exit": 0,
+        "receipt_verified": true,
+        "script_sha256": "02876f3284b69d5b3a98fd61b41b37fa6cb9dfd54c9ec67ea286b3dcf3f30ce6"
+      }
+    ],
+    "py312": [
+      {
+        "script": "validate_v0220.py",
+        "exit": 0,
+        "receipt_verified": true,
+        "script_sha256": "c4538669712a04ab2846e7fd820b5725eacf54964b211d07a6ce48c40f291614"
+      },
+      {
+        "script": "validate_v0230.py",
+        "exit": 0,
+        "receipt_verified": true,
+        "script_sha256": "807479af03c8e95d640aa90f24717b29837e6c83e2f54593456de575c79ba065"
+      },
+      {
+        "script": "validate_v0250.py",
+        "exit": 0,
+        "receipt_verified": true,
+        "script_sha256": "02876f3284b69d5b3a98fd61b41b37fa6cb9dfd54c9ec67ea286b3dcf3f30ce6"
+      }
+    ],
+    "py313": [
+      {
+        "script": "validate_deepening.py",
+        "exit": 0,
+        "receipt_verified": true,
+        "script_sha256": "ac8c69fa0730e9647012b48dcb7a9f1fdad1f9bb181b7590c33886c7fd2f6c29"
+      },
+      {
+        "script": "validate_interfaces.py",
+        "exit": 0,
+        "receipt_verified": true,
+        "script_sha256": "e641675f01bc08fad43839e7609c9ad97bac6dd52bbc70aed4a14d50d0337711"
+      },
+      {
+        "script": "validate_repairs.py",
+        "exit": 0,
+        "receipt_verified": true,
+        "script_sha256": "5df16929d05d9a7a53953442c9055fa2adaf6f8a0ae2ffbf5844e95004af4116"
+      },
+      {
+        "script": "validate_v0100.py",
+        "exit": 0,
+        "receipt_verified": true,
+        "script_sha256": "8d41407fe37481f8566b48496651bc81480525b3fc9955f591e566ed036e3100"
+      },
+      {
+        "script": "validate_v0110.py",
+        "exit": 0,
+        "receipt_verified": true,
+        "script_sha256": "25bb4afad227b70caab2dae64c19dc53b9dc385f02125ff2d0f8ae1a8ef42f6d"
+      },
+      {
+        "script": "validate_v0120.py",
+        "exit": 0,
+        "receipt_verified": true,
+        "script_sha256": "db0177e2f705fce5457281cdc712a00f353aad15d9cd9ac2b5e64b783d5275d1"
+      },
+      {
+        "script": "validate_v0130.py",
+        "exit": 0,
+        "receipt_verified": true,
+        "script_sha256": "8c719df129cacbc1cf8484db86f0a6268db98faff3f7ff7e453537751c047d24"
+      },
+      {
+        "script": "validate_v0140.py",
+        "exit": 0,
+        "receipt_verified": true,
+        "script_sha256": "ed2816084b86cbdcdccf5cd973241b0d4c2107c4db7c5f795bccd2fb8aabb046"
+      },
+      {
+        "script": "validate_v0150.py",
+        "exit": 0,
+        "receipt_verified": true,
+        "script_sha256": "b27ab65b58e64296a7a90dfaf3b4250c59e4bdc1a5f314af2757613f82f2c6e2"
+      },
+      {
+        "script": "validate_v0160.py",
+        "exit": 0,
+        "receipt_verified": true,
+        "script_sha256": "07a2962df1c2fb62c1b2e421406c85f393d9dfea32b280cd92d3a0aefa310b50"
+      },
+      {
+        "script": "validate_v0170.py",
+        "exit": 0,
+        "receipt_verified": true,
+        "script_sha256": "13c735e1acda67ec3e63b5bfc650a8351bb13f1d54e20499ced8ee70f2a0aa7a"
+      },
+      {
+        "script": "validate_v0180.py",
+        "exit": 0,
+        "receipt_verified": true,
+        "script_sha256": "c8cd4bb83175db0d2341a9d7c6ad69ea767d739e5119f4cf4b1f08d4dcda4ccf"
+      },
+      {
+        "script": "validate_v0190.py",
+        "exit": 0,
+        "receipt_verified": true,
+        "script_sha256": "daf8f103e409606e39d21042eb7adc61cc72fb16f60ae5b53f8ad236b1e89761"
+      },
+      {
+        "script": "validate_v0200.py",
+        "exit": 0,
+        "receipt_verified": true,
+        "script_sha256": "def31414c1110ae8e2aa5f483d06bef5541593054d27d7d29d0ca6921adaca30"
+      },
+      {
+        "script": "validate_v0210.py",
+        "exit": 0,
+        "receipt_verified": true,
+        "script_sha256": "94211974ed24c1586889455f6f7254c818c38376fece3e5156593f1056f289e7"
+      },
+      {
+        "script": "validate_v0220.py",
+        "exit": 0,
+        "receipt_verified": true,
+        "script_sha256": "c4538669712a04ab2846e7fd820b5725eacf54964b211d07a6ce48c40f291614"
+      },
+      {
+        "script": "validate_v0230.py",
+        "exit": 0,
+        "receipt_verified": true,
+        "script_sha256": "807479af03c8e95d640aa90f24717b29837e6c83e2f54593456de575c79ba065"
+      },
+      {
+        "script": "validate_v0240.py",
+        "exit": 0,
+        "receipt_verified": true,
+        "script_sha256": "4fb60951db0417ad4088bf95ff7bba2e3d13c785366388b593d83d2375531bc0"
+      },
+      {
+        "script": "validate_v0250.py",
+        "exit": 0,
+        "receipt_verified": true,
+        "script_sha256": "02876f3284b69d5b3a98fd61b41b37fa6cb9dfd54c9ec67ea286b3dcf3f30ce6"
+      }
+    ]
+  },
+  "runtime_sha256": {
+    "__init__.py": "8333b15d3fc8b5ded886ed143b8b95f810fbf83a12c645de66588da00b5a78a3",
+    "audit.py": "4e9efd0a2b46f5beca99af5592aa192bb1569faccd698950ea80d7dad48238d6",
+    "batch.py": "39763fd3a8cc14ada674eac2cf28d24916f7a8eb35abcea80a455564fc0e6393",
+    "benchmark.py": "8469e7095bfa3707b35e03a5131d6a6fe8720096ebf87d3c5fb7b9f3f60dfa6a",
+    "cli.py": "d3774bcac3e6b40ed0f5f3436b01dce1c718ebc66c7973ec091acd5e87da8331",
+    "locking.py": "5ed05ee136d8ebf9eade59a33d7ebae083a3d11ce5b32757a40b48fe98fe0196",
+    "model.py": "1768ebb1674f994f6b85e08185e763f51cf16f97a0595587798562415ec34821",
+    "plots.py": "6cf32f715e53573092fed4aa29df62d8f86ed69f2e5d145fa49a0b4f5ae52097",
+    "provenance.py": "f4dd6cb787d030ab8970c5c488c9f6bf0b5f842299afd218b6eff31795c062eb",
+    "research.py": "268ca89bbd56134384a41eeecccfaf923d0bf0747b35f6bceb802c7e8da58d2c",
+    "sampling.py": "7908841fff3ce24162db99c64e218257729353c9ad5f9f6ad341dffed559cc0a",
+    "solver.py": "9f6a8942c168e64284f21bb68b1edd290af4e4f1ed40d62f997c00e4d93d1526",
+    "units.py": "582b9a4ddae0c8ae8a2307d51421eadb8c1eb7d4a0c44fbad05854ecc7c69c33",
+    "workflow.py": "c1af3397131fb30c880cd646d3dc3a84e059c6fe71cd70490f7d58c88724f0af"
+  },
+  "runtime_modules_unchanged": 14,
+  "examples_and_frozen_test_data_unchanged": true,
+  "wheel_contract": {
+    "wheel": "entrysignallab-0.25.0-py3-none-any.whl",
+    "sha256": "cef453d14d12a690f24c424e383cca458476bdfc06ad9c789a10bb4b443bbf4a",
+    "name": "entrysignallab",
+    "version": "0.25.0",
+    "requires_python": ">=3.10",
+    "requires_dist": [
+      "numpy>=1.24",
+      "scipy>=1.10",
+      "matplotlib>=3.7"
+    ],
+    "entry_points": {
+      "console_scripts": {
+        "entrysignal": "entrysignallab.cli:main"
+      }
+    },
+    "tags": [
+      "py3-none-any"
+    ],
+    "record_members": 20,
+    "all_pass": true
+  },
+  "fresh_wheel_cli_version_and_help": {
+    "py310": true,
+    "py313": true
+  },
+  "packaged_runtime_launch_and_verify": {
+    "310": true,
+    "313": true
+  },
+  "scope": "Actual local Linux execution. Exact reference replay retained; other environments use the documented independent scientific contract. No native Windows/macOS or remote GitHub success is claimed for this revision."
+}

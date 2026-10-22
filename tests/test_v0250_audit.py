@@ -7,6 +7,7 @@ import json,sys,unittest,csv
 import numpy as np
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
 from validate_v0250 import typed_delay,check_probe_result
+from validation_portability import result_matches
 from entrysignallab import ModelParams,DecisionBounds,optimize,compare
 from entrysignallab.solver import profile_announcement,NumericalError
 from entrysignallab.workflow import csv_export_row
@@ -47,7 +48,7 @@ class ProbeRecords(unittest.TestCase):
         for name in CASES:
             for st in ['RF','RL','DF','DL']:
                 p,b,rival,result=case(name,st);old=next(x for x in CASES[name]['original_comparison']['results'] if x['strategy']==st)
-                with self.subTest(name=name,strategy=st):self.assertTrue(all(result[k]==v for k,v in old.items()))
+                with self.subTest(name=name,strategy=st):self.assertTrue(result_matches(p,b,rival,result,old))
     def test_independent_global_integrals_verify_recorded_gains(self):
         for name in ['product_launch','quality_warning_html','recorded_probe_promoted','recorded_probe_subnormal']:
             for st in ['RL','DL']:

@@ -7,6 +7,7 @@ import json,subprocess,sys,tempfile,unittest
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
 from validate_v0220 import named_params,named_bounds,rational_objective,decimal_objective,comparison_projection
 from entrysignallab import ModelParams,DecisionBounds,compare_stability
+from validation_portability import frozen_matches, comparison_evidence_valid
 from entrysignallab.solver import NumericalError
 
 
@@ -24,7 +25,8 @@ class MeshSpread(unittest.TestCase):
         for case in cases:
             p=ModelParams(**case['params']);r=compare_stability(p,DecisionBounds(**case['bounds']),0,{'tie_tolerance':0})
             with self.subTest(case=case['name']):
-                self.assertEqual(comparison_projection(r['reports']),comparison_projection(case['report']['reports']))
+                self.assertTrue(frozen_matches(comparison_projection(r['reports']),comparison_projection(case['report']['reports'])))
+                self.assertTrue(all(comparison_evidence_valid(p,mesh) for mesh in r['reports']))
                 for i,row in enumerate(r['strategies']):
                     values=[rational_objective(p,x['results'][i]) for x in r['reports']];spread=max(values)-min(values)
                     self.assertEqual(row['observed_payoff_spread'],float(spread))
