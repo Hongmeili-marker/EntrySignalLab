@@ -1,0 +1,96 @@
+name: Installed research software checks
+on: [push, pull_request]
+jobs:
+  tested-release:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        python: ['3.12', '3.13']
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -m pip install --upgrade pip build
+      - run: python -m build --wheel
+      - shell: bash
+        run: python -m pip install dist/*.whl
+      - run: python scripts/run_tests.py --out ci-tests
+      - run: python scripts/validate_interfaces.py --out ci-interfaces
+      - run: python scripts/validate_deepening.py --out ci-deepening
+      - run: python scripts/validate_repairs.py --out ci-repairs
+      - run: python scripts/validate_v0100.py --out ci-v0100
+        if: runner.os == 'Linux'
+      - run: python scripts/validate_v0110.py --out ci-v0110
+      - run: python scripts/validate_v0120.py --out ci-v0120
+      - run: python scripts/validate_v0130.py --out ci-v0130
+        # This validator requires a measured longdouble wider than binary64.
+        if: runner.os == 'Linux'
+      - run: python scripts/validate_v0140.py --out ci-v0140
+      - run: python scripts/validate_v0150.py --out ci-v0150
+      - run: python scripts/validate_v0160.py --out ci-v0160
+      - run: python scripts/validate_v0170.py --out ci-v0170
+      - run: python scripts/validate_v0180.py --out ci-v0180
+      - run: python scripts/validate_v0190.py --out ci-v0190
+      - run: python scripts/validate_v0200.py --out ci-v0200
+      - run: python scripts/validate_v0210.py --out ci-v0210
+      - run: python scripts/validate_v0220.py --out ci-v0220
+      - run: python scripts/validate_v0230.py --out ci-v0230
+      - run: python scripts/validate_v0240.py --out ci-v0240
+      - run: python scripts/validate_v0250.py --out ci-v0250
+      - run: entrysignal reproduce --config examples/product_launch.json --out ci-reproduce
+      - run: entrysignal uncertainty --config examples/correlated_uncertainty.json --out ci-uncertainty
+      - run: entrysignal verify ci-reproduce --check-source
+      - run: entrysignal verify ci-uncertainty --check-source
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: evidence-${{ matrix.os }}-${{ matrix.python }}
+          path: |
+            ci-tests
+            ci-interfaces
+            ci-deepening
+            ci-repairs
+            ci-v0100
+            ci-v0110
+            ci-v0120
+            ci-v0130
+            ci-v0140
+            ci-v0150
+            ci-v0160
+            ci-v0170
+            ci-v0180
+            ci-v0190
+            ci-v0200
+            ci-v0210
+            ci-v0220
+            ci-v0230
+            ci-v0240
+            ci-v0250
+            ci-reproduce
+            ci-uncertainty
+  minimum-dependencies:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      - run: python -m pip install numpy==1.24.4 scipy==1.10.1 matplotlib==3.7.5 build tomli==2.2.1
+      - run: python -m build --wheel
+      - shell: bash
+        run: python -m pip install --no-deps dist/*.whl
+      - run: python scripts/run_tests.py --out ci-minimum-tests
+      - run: python scripts/validate_repairs.py --out ci-minimum-repairs
+      - run: entrysignal reproduce --config examples/product_launch.json --out ci-minimum-reproduce
+      - run: entrysignal verify ci-minimum-reproduce --check-source
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: evidence-minimum-py310
+          path: |
+            ci-minimum-tests
+            ci-minimum-repairs
+            ci-minimum-reproduce
