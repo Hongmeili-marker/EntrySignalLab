@@ -49,4 +49,4 @@ School of Medical Information Engineering, Shenyang Medical College, Shenyang, C
 
 ## 跨环境 CI 修复
 
-当前共有 917 项测试，包含原 907 项和 10 项新增的验证策略反例。CI 保留 Windows、macOS、Python 3.12/3.13 及 Python 3.10 最低依赖任务，另设 Linux/Python 3.12 锁定依赖的严格回放任务。跨环境检查允许有明确界限的数值误差，仍严格核验策略、收益符号、零与非零、配置边界及独立积分；不要求排序比较函数的内部调用顺序一致。具体修改和本地实测见 CI_FIX_NOTES_zh.md。远程矩阵的成功状态须以上传后实际 Actions 结果为准。
+当前共有 919 项测试，包含原 907 项和 12 项新增的验证策略反例。CI 保留 Windows、macOS、Python 3.12/3.13 及 Python 3.10 最低依赖任务，另设 Linux/Python 3.12 锁定依赖的严格回放任务。跨环境检查允许有明确界限的数值误差，仍严格核验策略、收益符号、零与非零、配置边界及独立积分；不要求排序比较函数的内部调用顺序一致。具体修改和本地实测见 CI_FIX_NOTES_zh.md。远程矩阵的成功状态须以上传后实际 Actions 结果为准。

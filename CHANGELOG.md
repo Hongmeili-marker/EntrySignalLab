@@ -1,5 +1,9 @@
 # Version 0.25.0
 
+## CI remote follow-up (2026-10-22)
+
+Preserve LF checkout bytes across Windows runners with .gitattributes; keep frozen corpus SHA256 checks unchanged. Check ordinary Wilson intervals against both the portable frozen snapshot and an independent 400-digit reference; retain exact replay in the locked job. Add two counterexample tests (919 total) and refresh the README counts and wheel metadata. See the second-round notes in CI_FIX_NOTES_zh.md.
+
 ## CI portability revision (2026-10-22)
 
 Keep the 14 runtime modules, formulas, frozen test fixtures and example inputs unchanged. Separate exact frozen replay in a pinned Linux/Python 3.12 job from portable scientific contracts in the existing compatibility matrix. Check independent event integrals, configured bounds and comparator signs/bands/amounts at actual returned controls. Retain exact categorical and zero/sign semantics; do not freeze comparator call order or execution work across interpreters. Avoid opening Windows byte-range-locked files while checking their identity/size/mtime. Print failure diagnostics directly in CI. Add 10 negative contract tests (917 discovered tests total). See CI_FIX_NOTES_zh.md for executed environments and limitations.

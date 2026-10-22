@@ -52,3 +52,14 @@ Windows 锁文件读取限制有针对性的模拟反例，但本机没有运行
 - `tests/test_v0220_audit.py`
 - `tests/test_v0230_audit.py`
 - `tests/test_v0250_audit.py`
+
+## 第二轮远程检查与修复（2026-10-22）
+
+核对提交 `85aa09e135f5dade02ac851420e6617103328d95`：211 个 Git blob 全部与第一轮修复包一致，无漏传。远程 run 39774585310 中仍观察到两类失败：
+
+- macOS/Python 3.13：`validate_v0160.py` 的 39 项普通 Wilson 区间冻结比较中，7 项要求浮点完全相等而失败。独立 400 位 Wilson 验证均通过。改为同时核验冻结数值容差与独立参考区间；零端点、有效区间和独立参考检查保留。锁定环境仍精确比较，并在 locked-reference 任务加入此验证器。
+- Windows/Python 3.12：`validate_v0220.py` 在冻结 JSON 的原始 SHA256 检查失败。下载证据中的运行模块哈希与 CRLF 转换后的文件完全一致，而非原 LF 字节。新增 `.gitattributes`，强制文本检出 LF，保留二进制文件；不修改原数据、原哈希，也不绕过完整性检查。这也防止后续 v0.23/0.24/0.25 的冻结输入检查遇到同一问题。
+
+对 Git `core.autocrlf=true` 实际建库、加入、删除并重新检出 45 个源文件、冻结数据和 wheel，字节全部保持不变；v0.21/v0.24 冻结输入哈希全部通过。新增两项测试验证 Wilson 区间错误不能被容差掩盖，严格回放仍保持完全相等。最新本地实测附加在 `docs/ci_portability_validation.json` 的 `remote_followup` 字段；原第一轮记录保留为历史验证事实。
+
+此轮不修改模型运行模块或原测试数据；同步中英文 README 的 919 项测试计数，并重新打包 wheel 的说明元数据。新增根目录 `.gitattributes`，覆盖 `.github/workflows/tests.yml`、`scripts/validate_v0160.py`、`tests/test_ci_portability.py`、本说明、上传指南、验证记录及 SHA256 清单；同时同步 CHANGELOG、中英文 README 和 wheel 内的说明。上传后仍须由原生远程 Windows/macOS 新一轮 Actions 确认完整矩阵成功。
