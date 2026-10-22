@@ -85,6 +85,19 @@ class PortabilityContract(unittest.TestCase):
         record['value'] = 123.
         self.assertFalse(policy.comparison_evidence_valid(ModelParams(growth=0), report))
 
+    def test_ordinary_interval_roundoff_retains_independent_reference(self):
+        from validate_v0160 import ordinary_interval_matches
+        with patch.object(policy, 'STRICT_REPLAY', False):
+            self.assertTrue(ordinary_interval_matches([.1, math.nextafter(.9, 0.)], [.1,.9], [.1,.9]))
+            self.assertFalse(ordinary_interval_matches([.1,.900001], [.1,.9], [.1,.9]))
+            self.assertFalse(ordinary_interval_matches([.1,.9], [.1,.9], [.2,.9]))
+            self.assertFalse(ordinary_interval_matches([5e-324,.9], [0.,.9], [0.,.9]))
+
+    def test_ordinary_interval_locked_replay_is_still_exact(self):
+        from validate_v0160 import ordinary_interval_matches
+        with patch.object(policy, 'STRICT_REPLAY', True):
+            self.assertFalse(ordinary_interval_matches([.1, math.nextafter(.9, 0.)], [.1,.9], [.1,.9]))
+
 
 if __name__ == '__main__':
     unittest.main()

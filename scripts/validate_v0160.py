@@ -10,6 +10,7 @@ from entrysignallab import ModelParams,DecisionBounds,optimize,payoff,compare
 from entrysignallab.sampling import wilson_interval
 from entrysignallab.solver import _envelope_root_candidates,NumericalError
 from entrysignallab.workflow import write_json,record_validation,verify_manifest,current_source_hashes
+from validation_portability import frozen_matches, validation_policy_record
 
 PI=Decimal('3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798214808651328230664709384460955058223172535940812848111745028410270193852110555964462294895493038196')
 D=Decimal.from_float
@@ -65,6 +66,16 @@ def wilson_reference(count,total,confidence):
             center=(k+z2/2)/(n+z2);half=z*(k*(n-k)/n+z2/4).sqrt()/(n+z2)
             lo,hi=center-half,center+half
         return [max(0.,float(lo)),min(1.,float(hi))]
+
+def ordinary_interval_matches(actual, frozen, reference):
+    """Retain exact locked replay; independently check portable endpoints."""
+    return (len(actual)==len(frozen)==len(reference)==2
+        and frozen_matches(actual,frozen)
+        and 0<=actual[0]<=actual[1]<=1
+        and all(math.isfinite(a) and math.isfinite(r)
+                and (a==0)==(r==0)
+                and abs(a-r)<=max(abs(r)*5e-12,8*math.ulp(r))
+                for a,r in zip(actual,reference)))
 
 def main():
     ap=argparse.ArgumentParser();ap.add_argument('--out',type=Path,required=True);out=ap.parse_args().out.resolve()
@@ -142,14 +153,17 @@ def main():
         intervals.append({'count':k,'total':n,'confidence':c,'actual':actual,'reference':reference})
     old=json.loads((root/'tests/data/v0150_wilson_ordinary_golden.json').read_text())
     for index,row in enumerate(old):
-        check('A06_unchanged_ordinary_'+str(index),wilson_interval(row['count'],row['total'],row['confidence'])==row['interval'])
+        actual=wilson_interval(row['count'],row['total'],row['confidence'])
+        reference=wilson_reference(row['count'],row['total'],row['confidence'])
+        check('A06_unchanged_ordinary_'+str(index),ordinary_interval_matches(actual,row['interval'],reference),
+              {'actual':actual,'frozen':row['interval'],'independent_reference':reference})
     write_json(out/'v0160_checks.json',checks);write_json(out/'independent_envelopes.json',envelopes);write_json(out/'independent_wilson.json',intervals)
-    summary={'all_pass':all(c['pass'] for c in checks),'checks':len(checks),'original_A05_API_cases':10,'original_A06_intervals':15,
+    summary={'validation_policy':validation_policy_record(),'all_pass':all(c['pass'] for c in checks),'checks':len(checks),'original_A05_API_cases':10,'original_A06_intervals':15,
         'independent_decimal_envelope_cases':len(envelopes),'independent_wilson_cases':len(intervals),
         'unchanged_ordinary_intervals':len(old),'envelope_precision':120,'wilson_arithmetic_precision':400,
         'max_envelope_relative_error':max(abs(row['actual']['supremum']/float(row['reference']['supremum'])-1.) for row in envelopes),
         'max_envelope_location_relative_error':max(abs(row['actual'].get('supremum_delay',row['actual']['delay'])/float(row['reference']['delay'])-1.) for row in envelopes),
-        'scope':'Installed current wheel; independent piecewise Decimal envelope integrals and bisection, central-normal integral-series inversion for Wilson intervals, real CLI, unresolved-boundary rejection and frozen ordinary-interval bits. Sampled numerical evidence, not interval/global certification.'}
+        'scope':'Installed current wheel; independent piecewise Decimal envelope integrals and bisection, central-normal integral-series inversion for Wilson intervals, real CLI, unresolved-boundary rejection and independently checked ordinary intervals (exact frozen equality in strict replay). Sampled numerical evidence, not interval/global certification.'}
     write_json(out/'v0160_summary.json',summary);record_validation(out,Path(__file__),seed=20261018)
     print(json.dumps(summary,indent=2))
     if not summary['all_pass']:raise SystemExit('v0.16.0 acceptance failed')

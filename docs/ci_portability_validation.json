@@ -282,5 +282,180 @@
     "310": true,
     "313": true
   },
-  "scope": "Actual local Linux execution. Exact reference replay retained; other environments use the documented independent scientific contract. No native Windows/macOS or remote GitHub success is claimed for this revision."
+  "scope": "Actual local Linux execution. Exact reference replay retained; other environments use the documented independent scientific contract. No native Windows/macOS or remote GitHub success is claimed for this revision.",
+  "remote_followup": {
+    "created_utc": "2026-10-22T12:21:10.399219+00:00",
+    "base_git_commit": "85aa09e135f5dade02ac851420e6617103328d95",
+    "base_files_exactly_matched": 211,
+    "observed_remote_run": 39774585310,
+    "observed_remote_jobs": {
+      "success": 5,
+      "failure": 3
+    },
+    "failures": {
+      "macos_python313": "ordinary Wilson frozen float equality; independent references passed",
+      "windows_python312_and313": "frozen JSON raw SHA256 differs after automatic CRLF checkout"
+    },
+    "unit_tests": [
+      {
+        "environment": "followup-py312-strict",
+        "result": {
+          "discovered_tests": 919,
+          "errors": 0,
+          "failures": 0,
+          "skips": 0,
+          "source_sha256": {
+            "__init__.py": "8333b15d3fc8b5ded886ed143b8b95f810fbf83a12c645de66588da00b5a78a3",
+            "audit.py": "4e9efd0a2b46f5beca99af5592aa192bb1569faccd698950ea80d7dad48238d6",
+            "batch.py": "39763fd3a8cc14ada674eac2cf28d24916f7a8eb35abcea80a455564fc0e6393",
+            "benchmark.py": "8469e7095bfa3707b35e03a5131d6a6fe8720096ebf87d3c5fb7b9f3f60dfa6a",
+            "cli.py": "d3774bcac3e6b40ed0f5f3436b01dce1c718ebc66c7973ec091acd5e87da8331",
+            "locking.py": "5ed05ee136d8ebf9eade59a33d7ebae083a3d11ce5b32757a40b48fe98fe0196",
+            "model.py": "1768ebb1674f994f6b85e08185e763f51cf16f97a0595587798562415ec34821",
+            "plots.py": "6cf32f715e53573092fed4aa29df62d8f86ed69f2e5d145fa49a0b4f5ae52097",
+            "provenance.py": "f4dd6cb787d030ab8970c5c488c9f6bf0b5f842299afd218b6eff31795c062eb",
+            "research.py": "268ca89bbd56134384a41eeecccfaf923d0bf0747b35f6bceb802c7e8da58d2c",
+            "sampling.py": "7908841fff3ce24162db99c64e218257729353c9ad5f9f6ad341dffed559cc0a",
+            "solver.py": "9f6a8942c168e64284f21bb68b1edd290af4e4f1ed40d62f997c00e4d93d1526",
+            "units.py": "582b9a4ddae0c8ae8a2307d51421eadb8c1eb7d4a0c44fbad05854ecc7c69c33",
+            "workflow.py": "c1af3397131fb30c880cd646d3dc3a84e059c6fe71cd70490f7d58c88724f0af"
+          },
+          "successful": true,
+          "tests_run": 919,
+          "validation_policy": {
+            "control_rtol": 2e-07,
+            "gross_component_display_ulps": 64,
+            "mode": "exact_frozen_replay",
+            "numeric_rtol": 2e-11,
+            "policy_sha256": "b077bffce95264107537eb3dd364896001dd2c380414fdc38be6183a7fdc44e6"
+          },
+          "version": "0.25.0"
+        }
+      },
+      {
+        "environment": "followup-py313",
+        "result": {
+          "discovered_tests": 919,
+          "errors": 0,
+          "failures": 0,
+          "skips": 0,
+          "source_sha256": {
+            "__init__.py": "8333b15d3fc8b5ded886ed143b8b95f810fbf83a12c645de66588da00b5a78a3",
+            "audit.py": "4e9efd0a2b46f5beca99af5592aa192bb1569faccd698950ea80d7dad48238d6",
+            "batch.py": "39763fd3a8cc14ada674eac2cf28d24916f7a8eb35abcea80a455564fc0e6393",
+            "benchmark.py": "8469e7095bfa3707b35e03a5131d6a6fe8720096ebf87d3c5fb7b9f3f60dfa6a",
+            "cli.py": "d3774bcac3e6b40ed0f5f3436b01dce1c718ebc66c7973ec091acd5e87da8331",
+            "locking.py": "5ed05ee136d8ebf9eade59a33d7ebae083a3d11ce5b32757a40b48fe98fe0196",
+            "model.py": "1768ebb1674f994f6b85e08185e763f51cf16f97a0595587798562415ec34821",
+            "plots.py": "6cf32f715e53573092fed4aa29df62d8f86ed69f2e5d145fa49a0b4f5ae52097",
+            "provenance.py": "f4dd6cb787d030ab8970c5c488c9f6bf0b5f842299afd218b6eff31795c062eb",
+            "research.py": "268ca89bbd56134384a41eeecccfaf923d0bf0747b35f6bceb802c7e8da58d2c",
+            "sampling.py": "7908841fff3ce24162db99c64e218257729353c9ad5f9f6ad341dffed559cc0a",
+            "solver.py": "9f6a8942c168e64284f21bb68b1edd290af4e4f1ed40d62f997c00e4d93d1526",
+            "units.py": "582b9a4ddae0c8ae8a2307d51421eadb8c1eb7d4a0c44fbad05854ecc7c69c33",
+            "workflow.py": "c1af3397131fb30c880cd646d3dc3a84e059c6fe71cd70490f7d58c88724f0af"
+          },
+          "successful": true,
+          "tests_run": 919,
+          "validation_policy": {
+            "control_rtol": 2e-07,
+            "gross_component_display_ulps": 64,
+            "mode": "portable_scientific_contract",
+            "numeric_rtol": 2e-11,
+            "policy_sha256": "b077bffce95264107537eb3dd364896001dd2c380414fdc38be6183a7fdc44e6"
+          },
+          "version": "0.25.0"
+        }
+      }
+    ],
+    "v0160_validation": [
+      {
+        "environment": "followup-v0160-py312-strict",
+        "result": {
+          "all_pass": true,
+          "checks": 378,
+          "envelope_precision": 120,
+          "independent_decimal_envelope_cases": 55,
+          "independent_wilson_cases": 129,
+          "max_envelope_location_relative_error": 4.5630166312093934e-14,
+          "max_envelope_relative_error": 2.815525590449397e-13,
+          "original_A05_API_cases": 10,
+          "original_A06_intervals": 15,
+          "scope": "Installed current wheel; independent piecewise Decimal envelope integrals and bisection, central-normal integral-series inversion for Wilson intervals, real CLI, unresolved-boundary rejection and independently checked ordinary intervals (exact frozen equality in strict replay). Sampled numerical evidence, not interval/global certification.",
+          "unchanged_ordinary_intervals": 39,
+          "validation_policy": {
+            "control_rtol": 2e-07,
+            "gross_component_display_ulps": 64,
+            "mode": "exact_frozen_replay",
+            "numeric_rtol": 2e-11,
+            "policy_sha256": "b077bffce95264107537eb3dd364896001dd2c380414fdc38be6183a7fdc44e6"
+          },
+          "wilson_arithmetic_precision": 400
+        }
+      },
+      {
+        "environment": "followup-v0160-py313",
+        "result": {
+          "all_pass": true,
+          "checks": 378,
+          "envelope_precision": 120,
+          "independent_decimal_envelope_cases": 55,
+          "independent_wilson_cases": 129,
+          "max_envelope_location_relative_error": 4.5630166312093934e-14,
+          "max_envelope_relative_error": 2.815525590449397e-13,
+          "original_A05_API_cases": 10,
+          "original_A06_intervals": 15,
+          "scope": "Installed current wheel; independent piecewise Decimal envelope integrals and bisection, central-normal integral-series inversion for Wilson intervals, real CLI, unresolved-boundary rejection and independently checked ordinary intervals (exact frozen equality in strict replay). Sampled numerical evidence, not interval/global certification.",
+          "unchanged_ordinary_intervals": 39,
+          "validation_policy": {
+            "control_rtol": 2e-07,
+            "gross_component_display_ulps": 64,
+            "mode": "portable_scientific_contract",
+            "numeric_rtol": 2e-11,
+            "policy_sha256": "b077bffce95264107537eb3dd364896001dd2c380414fdc38be6183a7fdc44e6"
+          },
+          "wilson_arithmetic_precision": 400
+        }
+      }
+    ],
+    "minimum_python310_portability_tests": {
+      "tests_run": 12,
+      "successful": true
+    },
+    "real_git_autocrlf_checkout": {
+      "core_autocrlf": true,
+      "byte_identical_files": 45,
+      "v0210_and_v0240_frozen_hashes_pass": true,
+      "wheel_bytes_unchanged": true
+    },
+    "downloaded_macos313_intervals_replayed": {
+      "cases": 13,
+      "includes_float_mismatches": 4,
+      "all_pass": true
+    },
+    "runtime_and_original_data_unchanged": true,
+    "wheel_contract": {
+      "wheel": "entrysignallab-0.25.0-py3-none-any.whl",
+      "sha256": "cfee183813a59d7c0353f1c95f2fe00a9a2db0294889de44a6fc23e52287bf23",
+      "name": "entrysignallab",
+      "version": "0.25.0",
+      "requires_python": ">=3.10",
+      "requires_dist": [
+        "numpy>=1.24",
+        "scipy>=1.10",
+        "matplotlib>=3.7"
+      ],
+      "entry_points": {
+        "console_scripts": {
+          "entrysignal": "entrysignallab.cli:main"
+        }
+      },
+      "tags": [
+        "py3-none-any"
+      ],
+      "record_members": 20,
+      "all_pass": true
+    },
+    "scope": "Local follow-up verification and downloaded evidence from the base commit. Native Windows/macOS and complete remote CI still require a new run after upload."
+  }
 }
