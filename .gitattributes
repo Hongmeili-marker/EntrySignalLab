@@ -1,0 +1,7 @@
+# Keep frozen input bytes and source hashes identical on every CI runner.
+* text=auto eol=lf
+*.whl binary
+*.zip binary
+*.png binary
+*.pdf binary
+*.docx binary
