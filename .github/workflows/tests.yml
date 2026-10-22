@@ -13,6 +13,7 @@ jobs:
       - run: python -m pip install -r requirements-lock.txt
       - run: python -m pip install --no-deps .
       - run: python scripts/run_tests.py --out ci-locked-tests
+      - run: python scripts/validate_v0160.py --out ci-locked-v0160
       - run: python scripts/validate_v0220.py --out ci-locked-v0220
       - run: python scripts/validate_v0230.py --out ci-locked-v0230
       - run: python scripts/validate_v0250.py --out ci-locked-v0250
@@ -22,6 +23,7 @@ jobs:
           name: evidence-locked-reference
           path: |
             ci-locked-tests
+            ci-locked-v0160
             ci-locked-v0220
             ci-locked-v0230
             ci-locked-v0250
