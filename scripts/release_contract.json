@@ -1,0 +1,431 @@
+{
+  "version": "0.25.0",
+  "experiments": [
+    "source_audit",
+    "baseline",
+    "product_launch",
+    "unbounded",
+    "sensitivity",
+    "regions",
+    "uncertainty",
+    "discounted_quality",
+    "joint_boundary",
+    "tiny_cost",
+    "benchmark",
+    "units",
+    "edge_peak",
+    "comparison_policy",
+    "sweep_failure_record",
+    "uncertainty_failure_record",
+    "stable_solver",
+    "correlated_uncertainty",
+    "constrained_uncertainty",
+    "batch_parallel",
+    "workflow_performance",
+    "negative_zero_bounds",
+    "sampling_exhaustion",
+    "tautological_constraint",
+    "finite_extreme_payoffs",
+    "equal_joint_domain",
+    "subnormal_payoffs",
+    "unassessed_quality",
+    "source_audit_small_scale",
+    "small_scale_regions",
+    "small_scale_y_regions",
+    "net_cancellation_positive",
+    "net_cancellation_negative",
+    "source_bound_extreme",
+    "discounted_cancellation",
+    "near_outside_positive",
+    "near_outside_negative",
+    "near_outside_tie",
+    "singleton_surface",
+    "singleton_sensitivity",
+    "extreme_decay_negative",
+    "extreme_decay_positive",
+    "duplicate_sensitivity",
+    "underflow_profile_search",
+    "underflow_profile_stability",
+    "underflow_profile_batch",
+    "strict_profile_quality",
+    "mesh_spread_near_equal",
+    "mesh_spread_underflow",
+    "documented_uncertainty_batch",
+    "announcement_stationarity_guard",
+    "quality_warning_html",
+    "quality_pass_html",
+    "quality_unassessed_html",
+    "gross_cancellation_ranking",
+    "gross_cancellation_delay",
+    "minimum_intensity_root",
+    "maximum_intensity_root",
+    "recorded_probe_promoted",
+    "recorded_probe_coincidence",
+    "recorded_probe_subnormal"
+  ],
+  "validators": {
+    "independent": {
+      "script": "validate_release.py",
+      "seed": 20261005
+    },
+    "envelope": {
+      "script": "validate_envelope.py",
+      "seed": 20261010
+    },
+    "workflows": {
+      "script": "probe_workflows.py",
+      "seed": 104
+    },
+    "discounted": {
+      "script": "validate_discounted.py",
+      "seed": 20261011
+    },
+    "revision": {
+      "script": "validate_revision.py",
+      "seed": 20261012
+    },
+    "adversarial": {
+      "script": "validate_adversarial.py",
+      "seed": 0
+    },
+    "hardening": {
+      "script": "validate_hardening.py",
+      "seed": 0
+    },
+    "boundary": {
+      "script": "validate_boundary.py",
+      "seed": 0
+    },
+    "interfaces": {
+      "script": "validate_interfaces.py",
+      "seed": 104
+    },
+    "deepening": {
+      "script": "validate_deepening.py",
+      "seed": 104
+    },
+    "repairs": {
+      "script": "validate_repairs.py",
+      "seed": 20261018
+    },
+    "audit_v0100": {
+      "script": "validate_v0100.py",
+      "seed": 20261018
+    },
+    "audit_v0110": {
+      "script": "validate_v0110.py",
+      "seed": 20261018
+    },
+    "audit_v0120": {
+      "script": "validate_v0120.py",
+      "seed": 20261018
+    },
+    "audit_v0130": {
+      "script": "validate_v0130.py",
+      "seed": 20261018
+    },
+    "audit_v0140": {
+      "script": "validate_v0140.py",
+      "seed": 20261018
+    },
+    "audit_v0150": {
+      "script": "validate_v0150.py",
+      "seed": 20261018
+    },
+    "audit_v0160": {
+      "script": "validate_v0160.py",
+      "seed": 20261018
+    },
+    "audit_v0170": {
+      "script": "validate_v0170.py",
+      "seed": 20261018
+    },
+    "audit_v0180": {
+      "script": "validate_v0180.py",
+      "seed": 20261019
+    },
+    "audit_v0190": {
+      "script": "validate_v0190.py",
+      "seed": 20261019
+    },
+    "audit_v0200": {
+      "script": "validate_v0200.py",
+      "seed": 20261019
+    },
+    "audit_v0210": {
+      "script": "validate_v0210.py",
+      "seed": 20261019
+    },
+    "audit_v0220": {
+      "script": "validate_v0220.py",
+      "seed": 20261019
+    },
+    "audit_v0230": {
+      "script": "validate_v0230.py",
+      "seed": 20261020
+    },
+    "audit_v0240": {
+      "script": "validate_v0240.py",
+      "seed": 20261020
+    },
+    "wheel_installation": {
+      "script": "validate_wheel.py",
+      "seed": 20261020
+    },
+    "audit_v0250": {
+      "script": "validate_v0250.py",
+      "seed": 20261020
+    }
+  },
+  "experiment_specs": {
+    "source_audit": {
+      "operation": "audit",
+      "config_path": "examples/source_baseline.json"
+    },
+    "baseline": {
+      "operation": "reproduce",
+      "config_path": "examples/source_baseline.json"
+    },
+    "product_launch": {
+      "operation": "reproduce",
+      "config_path": "examples/product_launch.json"
+    },
+    "unbounded": {
+      "operation": "optimize",
+      "config_path": "examples/unbounded_announcement.json"
+    },
+    "sensitivity": {
+      "operation": "sweep",
+      "config_path": "examples/cost_sensitivity.json"
+    },
+    "regions": {
+      "operation": "sweep",
+      "config_path": "examples/strategy_regions.json"
+    },
+    "uncertainty": {
+      "operation": "uncertainty",
+      "config_path": "examples/uncertainty.json"
+    },
+    "discounted_quality": {
+      "operation": "reproduce",
+      "config_path": "examples/discounted_quality.json"
+    },
+    "joint_boundary": {
+      "operation": "reproduce",
+      "config_path": "examples/joint_boundary.json"
+    },
+    "tiny_cost": {
+      "operation": "optimize",
+      "config_path": "examples/tiny_announcement_cost.json"
+    },
+    "edge_peak": {
+      "operation": "optimize",
+      "config_path": "examples/edge_peak.json"
+    },
+    "units": {
+      "operation": "unit_conversion",
+      "config_path": "examples/discounted_quality.json"
+    },
+    "benchmark": {
+      "operation": "benchmark",
+      "config": {
+        "seed": 104,
+        "accuracy_cases": 80,
+        "repeats": 5,
+        "grid_points": 201
+      }
+    },
+    "comparison_policy": {
+      "operation": "optimize",
+      "config_path": "examples/comparison_policy.json"
+    },
+    "sweep_failure_record": {
+      "operation": "sweep",
+      "config_path": "examples/sweep_failure_record.json"
+    },
+    "uncertainty_failure_record": {
+      "operation": "uncertainty",
+      "config_path": "examples/uncertainty_failure_record.json"
+    },
+    "stable_solver": {
+      "operation": "optimize",
+      "config_path": "examples/stable_solver.json"
+    },
+    "correlated_uncertainty": {
+      "operation": "uncertainty",
+      "config_path": "examples/correlated_uncertainty.json"
+    },
+    "constrained_uncertainty": {
+      "operation": "uncertainty",
+      "config_path": "examples/constrained_uncertainty.json"
+    },
+    "batch_parallel": {
+      "operation": "sweep",
+      "config_path": "examples/batch_parallel.json"
+    },
+    "workflow_performance": {
+      "operation": "workflow_benchmark",
+      "config_path": "examples/workflow_performance.json"
+    },
+    "negative_zero_bounds": {
+      "operation": "optimize",
+      "config_path": "examples/negative_zero_bounds.json"
+    },
+    "sampling_exhaustion": {
+      "operation": "uncertainty",
+      "config_path": "examples/sampling_exhaustion.json"
+    },
+    "tautological_constraint": {
+      "operation": "uncertainty",
+      "config_path": "examples/tautological_constraint.json"
+    },
+    "finite_extreme_payoffs": {
+      "operation": "uncertainty",
+      "config_path": "examples/finite_extreme_payoffs.json"
+    },
+    "equal_joint_domain": {
+      "operation": "uncertainty",
+      "config_path": "examples/equal_joint_domain.json"
+    },
+    "subnormal_payoffs": {
+      "operation": "uncertainty",
+      "config_path": "examples/subnormal_payoffs.json"
+    },
+    "unassessed_quality": {
+      "operation": "uncertainty",
+      "config_path": "examples/unassessed_quality.json"
+    },
+    "source_audit_small_scale": {
+      "operation": "audit",
+      "config_path": "examples/source_audit_small_scale.json"
+    },
+    "small_scale_regions": {
+      "operation": "sweep",
+      "config_path": "examples/small_scale_regions.json"
+    },
+    "small_scale_y_regions": {
+      "operation": "sweep",
+      "config_path": "examples/small_scale_y_regions.json"
+    },
+    "net_cancellation_positive": {
+      "operation": "reproduce",
+      "config_path": "examples/net_cancellation_positive.json"
+    },
+    "net_cancellation_negative": {
+      "operation": "optimize",
+      "config_path": "examples/net_cancellation_negative.json"
+    },
+    "source_bound_extreme": {
+      "operation": "audit",
+      "config_path": "examples/source_bound_extreme.json"
+    },
+    "discounted_cancellation": {
+      "operation": "optimize",
+      "config_path": "examples/discounted_cancellation.json"
+    },
+    "near_outside_positive": {
+      "operation": "reproduce",
+      "config_path": "examples/near_outside_positive.json"
+    },
+    "near_outside_negative": {
+      "operation": "optimize",
+      "config_path": "examples/near_outside_negative.json"
+    },
+    "near_outside_tie": {
+      "operation": "optimize",
+      "config_path": "examples/near_outside_tie.json"
+    },
+    "singleton_surface": {
+      "operation": "reproduce",
+      "config_path": "examples/singleton_surface.json"
+    },
+    "singleton_sensitivity": {
+      "operation": "sweep",
+      "config_path": "examples/singleton_sensitivity.json"
+    },
+    "extreme_decay_negative": {
+      "operation": "optimize",
+      "config_path": "examples/extreme_decay_negative.json"
+    },
+    "extreme_decay_positive": {
+      "operation": "optimize",
+      "config_path": "examples/extreme_decay_positive.json"
+    },
+    "duplicate_sensitivity": {
+      "operation": "sweep",
+      "config_path": "examples/duplicate_sensitivity.json"
+    },
+    "underflow_profile_search": {
+      "operation": "optimize",
+      "config_path": "examples/underflow_profile_search.json"
+    },
+    "underflow_profile_stability": {
+      "operation": "optimize",
+      "config_path": "examples/underflow_profile_stability.json"
+    },
+    "underflow_profile_batch": {
+      "operation": "sweep",
+      "config_path": "examples/underflow_profile_batch.json"
+    },
+    "strict_profile_quality": {
+      "operation": "optimize",
+      "config_path": "examples/strict_profile_quality.json"
+    },
+    "mesh_spread_near_equal": {
+      "operation": "optimize",
+      "config_path": "examples/mesh_spread_near_equal.json"
+    },
+    "mesh_spread_underflow": {
+      "operation": "optimize",
+      "config_path": "examples/mesh_spread_underflow.json"
+    },
+    "documented_uncertainty_batch": {
+      "operation": "uncertainty",
+      "config_path": "examples/documented_uncertainty_batch.json"
+    },
+    "announcement_stationarity_guard": {
+      "operation": "optimize",
+      "config_path": "examples/announcement_stationarity_guard.json"
+    },
+    "quality_warning_html": {
+      "operation": "reproduce",
+      "config_path": "examples/quality_warning_html.json"
+    },
+    "quality_pass_html": {
+      "operation": "reproduce",
+      "config_path": "examples/quality_pass_html.json"
+    },
+    "quality_unassessed_html": {
+      "operation": "reproduce",
+      "config_path": "examples/quality_unassessed_html.json"
+    },
+    "gross_cancellation_ranking": {
+      "operation": "reproduce",
+      "config_path": "examples/gross_cancellation_ranking.json"
+    },
+    "gross_cancellation_delay": {
+      "operation": "optimize",
+      "config_path": "examples/gross_cancellation_delay.json"
+    },
+    "minimum_intensity_root": {
+      "operation": "optimize",
+      "config_path": "examples/minimum_intensity_root.json"
+    },
+    "maximum_intensity_root": {
+      "operation": "optimize",
+      "config_path": "examples/maximum_intensity_root.json"
+    },
+    "recorded_probe_promoted": {
+      "operation": "reproduce",
+      "config_path": "examples/recorded_probe_promoted.json"
+    },
+    "recorded_probe_coincidence": {
+      "operation": "optimize",
+      "config_path": "examples/recorded_probe_coincidence.json"
+    },
+    "recorded_probe_subnormal": {
+      "operation": "optimize",
+      "config_path": "examples/recorded_probe_subnormal.json"
+    }
+  }
+}
