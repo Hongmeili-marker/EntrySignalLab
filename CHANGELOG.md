@@ -1,5 +1,10 @@
 # Version 0.25.0
 
+## CI portability revision (2026-10-22)
+
+Keep the 14 runtime modules, formulas, frozen test fixtures and example inputs unchanged. Separate exact frozen replay in a pinned Linux/Python 3.12 job from portable scientific contracts in the existing compatibility matrix. Check independent event integrals, configured bounds and comparator signs/bands/amounts at actual returned controls. Retain exact categorical and zero/sign semantics; do not freeze comparator call order or execution work across interpreters. Avoid opening Windows byte-range-locked files while checking their identity/size/mtime. Print failure diagnostics directly in CI. Add 10 negative contract tests (917 discovered tests total). See CI_FIX_NOTES_zh.md for executed environments and limitations.
+
+
 Current metadata update (2026-10-22): author Hongmei Li and contact/affiliation are populated; public repository: https://github.com/Hongmeili-marker/EntrySignalLab. Pending authorship/deposit statements in the version history below describe their historical stage. Runtime modules are unchanged; the upload wheel metadata is refreshed.
 
 - Normalize direct intensity-profiler Real inputs before structural decisions (A21).

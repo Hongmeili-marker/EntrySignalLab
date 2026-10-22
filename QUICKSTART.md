@@ -4,7 +4,7 @@ This example compares four conditional entry scenarios and a zero-payoff non-ent
 
 ## Install the frozen release
 
-Use a fresh virtual environment. The executed scientific environment is Linux/Python 3.12.14. The package declares Python >=3.10 with compatible dependencies; requirements-lock.txt has pins requiring Python >=3.11, and that minimum-version alternative remains unverified. From the extracted EntrySignalLab-0.25.0 directory:
+Use a fresh virtual environment. The executed scientific environment is Linux/Python 3.12.14. The package declares Python >=3.10 with compatible dependencies; requirements-lock.txt has pins requiring Python >=3.11, and this CI revision additionally validates a separate Linux/Python 3.10 minimum-dependency environment. See CI_FIX_NOTES_zh.md for the executed scope. From the extracted EntrySignalLab-0.25.0 directory:
 
 ```sh
 python -m venv .venv

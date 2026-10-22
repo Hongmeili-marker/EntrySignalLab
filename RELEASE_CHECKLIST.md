@@ -17,6 +17,6 @@ Issue tracker: https://github.com/Hongmeili-marker/EntrySignalLab/issues
 
 ## Metadata revision and validation scope
 
-All fourteen runtime modules, examples, tests, validators and dependency locks retain their original bytes. The upload wheel is rebuilt from the unchanged runtime modules to carry the supplied author and repository metadata. This changes its whole-wheel hash and embedded README, rather than its numerical algorithms. Original whole-wheel hashes, original benchmark outputs and historical validation receipts continue to refer to the original frozen distribution; they are not regenerated evidence for the metadata revision.
+All fourteen runtime modules, examples and dependency locks retain their original bytes. Tests and validators now separate exact replay from portable scientific checks; see CI_FIX_NOTES_zh.md. The upload wheel is rebuilt from the unchanged runtime modules to carry the supplied author and repository metadata. This changes its whole-wheel hash and embedded README, rather than its numerical algorithms. Original whole-wheel hashes, original benchmark outputs and historical validation receipts continue to refer to the original frozen distribution; they are not regenerated evidence for the metadata revision.
 
 SHA256SUMS.txt records the actual files in this upload package. No journal submission, GitHub Release or DOI is created by preparing these files.
